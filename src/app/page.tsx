@@ -229,12 +229,13 @@ export default function Home() {
         {/* --- MIS NÚMEROS --- */}
         < ExpandableSection id="numbers" number="01" title="Mis Números" >
           <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+1.2M" label="Impacto Total" description="Personas alcanzadas." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+10M" label="Impacto Total" description="Personas alcanzadas." />
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label="Webs & E-commerce" description="Desarrollados y lanzados." />
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Lightbulb size={24} />} value="+20" label="Marcas Branding" description="Identidades corporativas creadas." />
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Brain size={24} />} value="+10" label="Soluciones IA" description="Implementaciones en real." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Briefcase size={24} />} value="10" label="Negocios Impulsados" description="Proyectos empresariales lanzados." />
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+40" label="Sistemas" description="Automatizaciones de procesos." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+100k €" label="Presupuesto" description="Gestionado en proyectos." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+1M €" label="Presupuesto" description="Gestionado en proyectos." />
           </div>
         </ExpandableSection >
 
