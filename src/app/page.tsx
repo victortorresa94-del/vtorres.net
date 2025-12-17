@@ -6,9 +6,12 @@ import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lig
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "../components/AchievementsCarousel";
+import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const { t } = useLanguage();
 
 
   // Lock body scroll when mobile menu is open
@@ -89,11 +92,12 @@ export default function Home() {
 
           {/* New Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <NavLink href="#ia">Experiencia</NavLink>
-            <NavLink href="#freelance">Freelance</NavLink>
-            <NavLink href="#stack">Stack</NavLink>
+            <NavLink href="#ia">{t.nav.experience}</NavLink>
+            <NavLink href="#freelance">{t.nav.projects}</NavLink>
+            <NavLink href="#stack">{t.nav.stack}</NavLink>
+            <LanguageSwitcher />
             <Link href="#contact" className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold text-white hover:bg-white/10 transition-all">
-              Hablemos
+              {t.hero.contact}
             </Link>
           </nav>
 
