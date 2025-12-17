@@ -157,7 +157,7 @@ export default function Home() {
                 <span className="text-[#82ff1f] text-xs font-bold tracking-wider uppercase">Open to Work</span>
               </div>
 
-              <h1 className="text-5xl md:text-7xl lg:text-7xl font-heading font-bold tracking-tighter text-white leading-[0.9]">
+              <h1 className="text-5xl md:text-7xl lg:text-7xl font-heading font-light tracking-tighter text-white leading-[0.9]">
                 Víctor<br />Torres Arana<span className="text-[#82ff1f]">.</span>
               </h1>
 
@@ -721,7 +721,7 @@ function ProjectRow({ title, role, desc, tags, link, icon, className }: { title:
     >
       <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
         <div>
-          <h3 className="text-2xl font-heading font-bold text-white flex items-center gap-3 group-hover:text-[#82ff1f] transition-colors">
+          <h3 className="text-2xl font-heading font-medium text-white flex items-center gap-3 group-hover:text-[#82ff1f] transition-colors">
             {icon && <span className="text-[#82ff1f] opacity-80 group-hover:opacity-100">{icon}</span>}
             {title}
             {link && <Code size={20} className="text-[#82ff1f] opacity-50 group-hover:opacity-100 transition-opacity ml-1" />}
@@ -757,7 +757,7 @@ function TimelineItem({ year, title, role, desc }: { year: string; title: string
         <span className="absolute inset-0 bg-[#82ff1f] rounded-full animate-ping opacity-20"></span>
       </span>
       <div className="mb-2 flex flex-col md:flex-row md:items-baseline gap-2 md:gap-4">
-        <h3 className="text-2xl font-heading font-bold text-white">{title}</h3>
+        <h3 className="text-2xl font-heading font-medium text-white">{title}</h3>
         <span className="text-[#82ff1f] text-sm font-bold bg-[#82ff1f]/10 px-3 py-1 rounded-full border border-[#82ff1f]/20 font-mono w-fit">{year}</span>
       </div>
       <p className="text-white/90 font-medium mb-3 text-lg">{role}</p>
@@ -791,7 +791,7 @@ function SkillCard({ icon, title, desc, className }: { icon: React.ReactNode; ti
           {icon}
         </div>
         <div>
-          <h3 className="text-xl font-heading font-bold text-white mb-3 group-hover:text-[#82ff1f] transition-colors">{title}</h3>
+          <h3 className="text-xl font-heading font-medium text-white mb-3 group-hover:text-[#82ff1f] transition-colors">{title}</h3>
           <p className="text-zinc-400 text-sm leading-relaxed font-light">{desc}</p>
         </div>
       </div>
@@ -818,7 +818,7 @@ function ExpandableSection({ id, title, number, children, className }: { id?: st
         onClick={() => setIsOpen(!isOpen)}
         className="group flex items-center justify-between w-full pb-4 hover:border-[#82ff1f] transition-all duration-300 text-left"
       >
-        <h2 className="font-heading text-3xl font-bold text-white flex items-center gap-3">
+        <h2 className="font-heading text-3xl font-light text-white flex items-center gap-3">
           <span className="text-[#82ff1f]">{number}.</span> {title}
         </h2>
         <motion.div
@@ -859,7 +859,7 @@ function NumberCard({ icon, value, label, description, className }: { icon: Reac
         <div className="p-4 bg-white/5 rounded-2xl text-[#82ff1f] w-fit mb-6 group-hover:bg-[#82ff1f] group-hover:text-black transition-all duration-300 shadow-[0_0_15px_-5px_#82ff1f]">
           {icon}
         </div>
-        <h3 className="text-5xl font-heading font-bold text-white mb-2 tracking-tighter">{value}</h3>
+        <h3 className="text-5xl font-heading font-medium text-white mb-2 tracking-tighter">{value}</h3>
         <p className="text-xs font-bold text-[#82ff1f] uppercase tracking-[0.2em] mb-4 bg-[#82ff1f]/5 w-fit px-2 py-1 rounded border border-[#82ff1f]/10">{label}</p>
         <p className="text-zinc-400 text-sm leading-relaxed font-light">{description}</p>
       </div>
