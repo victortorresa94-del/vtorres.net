@@ -299,119 +299,119 @@ export default function Home() {
                 <Zap size={20} /> Desarrollos IA Propios
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {/* Voice Agents */}
+                {/* Nuria - Voice Agent */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Mic size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Agentes de Voz</h4>
-                      <p className="text-xs text-zinc-400">Asistentes telefónicos con IA para atención al cliente y ventas (Vapi/Retell + Twilio)</p>
+                      <h4 className="font-bold text-white text-sm mb-1">Núria - Agente Rostisseria</h4>
+                      <p className="text-xs text-zinc-400">Agente telefónico que gestiona pedidos retail, consulta stock en tiempo real y registra pedidos automáticamente</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Medical Chatbot */}
+                {/* Jason ClickUp Manager */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                      <MessageSquare size={18} className="text-[#82ff1f]" />
+                      <ClipboardList size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Chatbot Médico</h4>
-                      <p className="text-xs text-zinc-400">Asistente virtual para Suma Salut: triaje, cita previa y WhatsApp Business API</p>
+                      <h4 className="font-bold text-white text-sm mb-1">Jason ClickUp Manager</h4>
+                      <p className="text-xs text-zinc-400">Agente de productividad que crea tareas en ClickUp por voz/texto, asigna responsables y automatiza proyectos</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Content Automation */}
-                <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <div className="flex items-start gap-3 mb-3">
-                    <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                      <Video size={18} className="text-[#82ff1f]" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Motor de Contenido IA</h4>
-                      <p className="text-xs text-zinc-400">Sistema automatizado de video-clipping, upscaling y generación de assets visuales</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* SEO Content Generator */}
-                <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <div className="flex items-start gap-3 mb-3">
-                    <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                      <Terminal size={18} className="text-[#82ff1f]" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Generador SEO Masivo</h4>
-                      <p className="text-xs text-zinc-400">Workflow n8n para research + redacción automatizada de artículos SEO-friendly</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Product Photo Generator */}
-                <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <div className="flex items-start gap-3 mb-3">
-                    <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                      <Palette size={18} className="text-[#82ff1f]" />
-                    </div>
-                    <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Foto Producto IA</h4>
-                      <p className="text-xs text-zinc-400">Generación de imágenes de producto en contextos profesionales con Stable Diffusion</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* AI Avatars */}
+                {/* UGC Avatar Studio */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Users size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Avatares IA</h4>
-                      <p className="text-xs text-zinc-400">Generación de avatares profesionales y artísticos mediante fine-tuning de modelos</p>
+                      <h4 className="font-bold text-white text-sm mb-1">UGC Avatar Studio</h4>
+                      <p className="text-xs text-zinc-400">Generador de avatares consistentes fotorrealistas para marcas, thumbnails y creatividades estáticas</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Virtual Staging */}
+                {/* Editor de Fotos IA */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                      <Lightbulb size={18} className="text-[#82ff1f]" />
+                      <Palette size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Virtual Staging</h4>
-                      <p className="text-xs text-zinc-400">Amueblado virtual de espacios inmobiliarios con IA generativa</p>
+                      <h4 className="font-bold text-white text-sm mb-1">Editor de Fotos IA</h4>
+                      <p className="text-xs text-zinc-400">Web app de edición: eliminación de objetos/fondos (Inpainting), restauración y mejora de calidad en segundos</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Email Automation */}
+                {/* Gestor de Partículas 3D */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                      <Workflow size={18} className="text-[#82ff1f]" />
+                      <Zap size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Respuesta Email IA</h4>
-                      <p className="text-xs text-zinc-400">Agente que redacta respuestas personalizadas basándose en el contexto del email</p>
+                      <h4 className="font-bold text-white text-sm mb-1">Gestor de Partículas 3D</h4>
+                      <p className="text-xs text-zinc-400">Control de partículas con las manos (Webcam). Vision Tech en el navegador con experiencia visual reactiva</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Meeting Summarizer */}
+                {/* Chleopatra - Historias IA */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Brain size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Resumen de Reuniones</h4>
-                      <p className="text-xs text-zinc-400">Transcripción y resumen automático de meetings con extracción de action items</p>
+                      <h4 className="font-bold text-white text-sm mb-1">Chleopatra - Historias IA</h4>
+                      <p className="text-xs text-zinc-400">Plataforma EdTech que genera historias visuales educativas con voces clonadas y vídeos sintéticos</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Aura Tasks AI */}
+                <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
+                      <Target size={18} className="text-[#82ff1f]" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-sm mb-1">Aura Tasks AI</h4>
+                      <p className="text-xs text-zinc-400">Super app de productividad con NLP avanzado, CTAs inteligentes y planificación automática por IA</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Musikeeo */}
+                <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
+                      <Music size={18} className="text-[#82ff1f]" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-sm mb-1">Musikeeo</h4>
+                      <p className="text-xs text-zinc-400">Red social vertical para músicos: marketplace de segunda mano, servicios y pedidos para conciertos</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Numa - Suma Salut */}
+                <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-start gap-3 mb-3">
+                    <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
+                      <MessageSquare size={18} className="text-[#82ff1f]" />
+                    </div>
+                    <div>
+                      <h4 className="font-bold text-white text-sm mb-1">Numa - Asistente Suma Salut</h4>
+                      <p className="text-xs text-zinc-400">Agente de atención al paciente 24/7: gestión de citas, triaje inteligente y resolución de dudas médicas</p>
                     </div>
                   </div>
                 </div>
