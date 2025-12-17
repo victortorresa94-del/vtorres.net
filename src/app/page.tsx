@@ -237,8 +237,8 @@ export default function Home() {
           </div>
         </ExpandableSection>
 
-        {/* --- EXPERIENCIA IA REAL --- */}
-        <ExpandableSection id="ia" number="02" title="Experiencia IA Real">
+        {/* --- EXPERIENCIA IA --- */}
+        <ExpandableSection id="ia" number="03" title="Experiencia IA">
           <div className="space-y-8">
             <p className="text-zinc-300 text-lg font-light leading-relaxed mb-6">
               Mi enfoque con la IA va más allá del <i>hype</i>. He pasado de diseñar la estrategia de startups deep-tech a "bajar al barro" para programar agentes en n8n. Entiendo el ciclo completo: <strong className="text-white">desde la venta y la estrategia, hasta la implementación técnica y el despliegue.</strong>
@@ -449,7 +449,7 @@ export default function Home() {
         </ExpandableSection>
 
         {/* --- TRAYECTORIA --- */}
-        <ExpandableSection id="career" number="03" title="Trayectoria Profesional">
+        <ExpandableSection id="career" number="02" title="Trayectoria Profesional">
           <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
             <TimelineItem
               year="2025 - Present"
@@ -521,54 +521,185 @@ export default function Home() {
 
         {/* --- SKILLS --- */}
         <ExpandableSection id="skills" number="05" title="Skills">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-            {/* Pillars as big cards */}
-            <div className="p-8 rounded-3xl bg-[#0a0a0a] border border-white/10 relative overflow-hidden group hover:border-[#82ff1f]/30 transition-all">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-[#82ff1f]/5 blur-[60px] rounded-full group-hover:bg-[#82ff1f]/10 transition-all"></div>
-              <div className="relative z-10">
-                <div className="w-12 h-12 bg-[#82ff1f]/10 rounded-xl flex items-center justify-center mb-6">
-                  <Target size={24} className="text-[#82ff1f]" />
-                </div>
-                <h3 className="text-3xl font-heading font-bold text-white mb-4">Project Management</h3>
-                <p className="text-zinc-400 leading-relaxed mb-6 text-lg">Visión estratégica para liderar equipos y traducir objetivos de negocio en sistemas técnicos funcionales.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 rounded-lg text-xs font-bold bg-[#82ff1f]/10 text-[#82ff1f] border border-[#82ff1f]/20">Scrum Master</span>
-                  <span className="px-3 py-1 rounded-lg text-xs font-bold bg-[#82ff1f]/10 text-[#82ff1f] border border-[#82ff1f]/20">Team Lead</span>
-                </div>
-              </div>
-            </div>
 
-            <div className="p-8 rounded-3xl bg-[#0a0a0a] border border-white/10 relative overflow-hidden group hover:border-white/30 transition-all">
-              <div className="relative z-10">
-                <div className="w-12 h-12 bg-white/5 rounded-xl flex items-center justify-center mb-6 border border-white/10">
-                  <TrendingUp size={24} className="text-white" />
-                </div>
-                <h3 className="text-3xl font-heading font-bold text-white mb-4">Marketing Strategy</h3>
-                <p className="text-zinc-400 leading-relaxed mb-6 text-lg">Diseño de estrategias Go-to-Market y Growth Hacking. Capacidad para escalar productos digitales.</p>
-                <div className="flex gap-2 flex-wrap">
-                  <span className="px-3 py-1 rounded-lg text-xs font-bold bg-white/5 text-zinc-300 border border-white/10">GTM Strategy</span>
-                  <span className="px-3 py-1 rounded-lg text-xs font-bold bg-white/5 text-zinc-300 border border-white/10">Growth</span>
+          {/* Core Skills - Destacados */}
+          <div className="mb-12">
+            <h3 className="text-lg font-bold text-zinc-400 mb-6 uppercase tracking-wider">Core Skills</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+
+              {/* Project Management */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Target size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">Project Management</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Visión estratégica para liderar equipos y traducir objetivos de negocio en sistemas funcionales.</p>
                 </div>
               </div>
+
+              {/* Marketing Strategy */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <TrendingUp size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">Marketing Strategy</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Diseño de estrategias Go-to-Market y Growth Hacking para escalar productos digitales.</p>
+                </div>
+              </div>
+
+              {/* Business Development */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Briefcase size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">Business Development</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Identificación de oportunidades, cierre de ventas B2B y construcción de relaciones estratégicas.</p>
+                </div>
+              </div>
+
+              {/* AI Strategy & Execution */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Brain size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">AI Strategy & Execution</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">De la estrategia a la implementación técnica real. Ciclo completo de proyectos de IA aplicada.</p>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 md:pb-0">
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Terminal size={24} className="text-[#82ff1f]" />} title="Prompt Engineering Avanzado" desc="Diseño de sistemas, few-shot, context layering y evaluación de modelos para chat y voz. Optimización de tokens." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Workflow size={24} className="text-[#82ff1f]" />} title="Automatización de Procesos" desc="Orquestación de flujos complejos en n8n/Make. Transformación de operaciones manuales en sistemas autónomos." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<ClipboardList size={24} className="text-[#82ff1f]" />} title="AI Project Management" desc="Liderazgo de equipos técnicos y creativos. Gestión de expectativas, roadmaps y metodologías ágiles." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Mic size={24} className="text-[#82ff1f]" />} title="Voice AI Deployment" desc="Implementación de agentes de voz (Retell, Vapi) con baja latencia, manejo de interrupciones y Twilio." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<MessageSquare size={24} className="text-[#82ff1f]" />} title="Chatbot Architecture" desc="Diseño de flujos conversacionales (Chatbase, Voiceflow), gestión de contexto, intents y personalidad." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Database size={24} className="text-[#82ff1f]" />} title="RAG & Knowledge Bases" desc="Tecnología de recuperación para asistentes corporativos precisos. Embeddings y bases de datos vectoriales." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<TrendingUp size={24} className="text-[#82ff1f]" />} title="Estrategia de Negocio & GTM" desc="Visión estratégica para lanzar productos de IA. Análisis de mercado, pricing y validación de MVPs." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Target size={24} className="text-[#82ff1f]" />} title="Growth & Captación" desc="Diseño de funnels automatizados y estrategias de adquisición de clientes B2B/B2C apoyadas en IA." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Lightbulb size={24} className="text-[#82ff1f]" />} title="Creatividad & Producto" desc="Ideación de soluciones disruptivas. Capacidad para traducir necesidades abstractas en productos técnicos viables." />
-            <SkillCard className="min-w-[85vw] md:min-w-0 snap-center" icon={<Video size={24} className="text-[#82ff1f]" />} title="Edición de Video & Contenido" desc="Creación de narrativas visuales de alto impacto. Edición dinámica, viralización (5M+ views) y dirección creativa." />
+          {/* Subcategorías de Skills */}
+          <div className="space-y-8">
+
+            {/* Gestión de Proyectos y Metodologías */}
+            <div>
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <ClipboardList size={16} /> Gestión de Proyectos y Metodologías
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Scrum</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Kanban</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Planificación y seguimiento</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Gestión de riesgos</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Coordinación de equipos</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Cloud & IaC */}
+            <div>
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Globe size={16} /> Cloud & IaC
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Paradigmas Cloud</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Terraform / IaC</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Despliegue y APIs</p>
+                </div>
+              </div>
+            </div>
+
+            {/* IA Conversacional y Automatización */}
+            <div>
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <MessageSquare size={16} /> IA Conversacional y Automatización
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">ChatBase</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">ElevenLabs / Retell</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">n8n, Make, Zapier</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Vapi</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Voiceflow</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Desarrollo y Despliegues Operativos */}
+            <div>
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Code size={16} /> Desarrollo y Despliegues Operativos
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Next.js</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Node.js</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">GitHub</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Integraciones API</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Version Control</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Habilidades IA Avanzadas */}
+            <div>
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Brain size={16} /> Habilidades IA Avanzadas
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Prompt Engineering</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">RAG & Vector DBs</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Fine-Tuning</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Agentic Workflows</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Local LLMs</p>
+                </div>
+              </div>
+            </div>
+
           </div>
         </ExpandableSection>
 
         {/* --- FREELANCE & EMPRENDIMIENTO --- */}
-        <ExpandableSection id="freelance" number="06" title="Emprendimiento & Freelance">
+        <ExpandableSection id="freelance" number="07" title="Emprendimiento & Freelance">
           <div className="space-y-12">
 
             {/* Proyectos Propios */}
@@ -675,7 +806,7 @@ export default function Home() {
         </ExpandableSection>
 
         {/* --- STACK --- */}
-        <ExpandableSection id="stack" number="07" title="Stack Tecnológico">
+        <ExpandableSection id="stack" number="06" title="Stack Tecnológico">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* AI */}
             <div className="space-y-4">
@@ -756,7 +887,7 @@ export default function Home() {
         </ExpandableSection>
 
         {/* --- QUÉ BUSCO --- */}
-        <ExpandableSection id="seeking" number="08" title="¿Qué busco?">
+        <ExpandableSection id="seeking" number="08" title="Mis Objetivos">
           <div className="max-w-4xl space-y-8 text-lg text-zinc-300 font-light leading-relaxed">
             <p>
               Llevo mucho tiempo trabajando por mi cuenta. El camino del emprendedor solitario curte, pero también agota. Ahora busco un cambio de etapa: <strong className="text-white">busco hogar</strong>.
@@ -791,22 +922,215 @@ export default function Home() {
           </div>
         </ExpandableSection>
 
+        {/* --- CONTACT CTA --- */}
+        <section id="contact" className="py-20 relative overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505]"></div>
+          <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#82ff1f]/5 blur-[120px] rounded-full"></div>
+
+          <div className="max-w-6xl mx-auto px-6 relative z-10">
+
+            {/* Header */}
+            <div className="text-center mb-16">
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 mb-6"
+              >
+                <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
+                <span className="text-[#82ff1f] text-sm font-bold tracking-wider uppercase">Disponible para Nuevos Retos</span>
+              </motion.div>
+
+              <h2 className="text-5xl md:text-6xl font-heading font-light text-white mb-6 tracking-tight">
+                Hablemos de tu proyecto
+              </h2>
+              <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
+                ¿Buscas alguien que entienda tanto la estrategia como la ejecución? Conectemos.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+
+              {/* Contact Form */}
+              <motion.div
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
+              >
+                <h3 className="text-2xl font-heading font-medium text-white mb-6">Envíame un mensaje</h3>
+                <form
+                  action="https://formsubmit.co/victortorresa94@gmail.com"
+                  method="POST"
+                  className="space-y-4"
+                >
+                  <input type="hidden" name="_captcha" value="false" />
+                  <input type="hidden" name="_next" value="https://vtorres.net?submitted=true" />
+                  <input type="hidden" name="_subject" value="Nuevo contacto desde vtorres.net" />
+
+                  <div>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">Nombre</label>
+                    <input
+                      type="text"
+                      name="name"
+                      required
+                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors"
+                      placeholder="Tu nombre"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">Email</label>
+                    <input
+                      type="email"
+                      name="email"
+                      required
+                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors"
+                      placeholder="tu@email.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">Empresa (opcional)</label>
+                    <input
+                      type="text"
+                      name="company"
+                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors"
+                      placeholder="Tu empresa"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">Mensaje</label>
+                    <textarea
+                      name="message"
+                      required
+                      rows={4}
+                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors resize-none"
+                      placeholder="Cuéntame en qué puedo ayudarte..."
+                    ></textarea>
+                  </div>
+
+                  <button
+                    type="submit"
+                    className="w-full px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-xl hover:bg-[#6ed617] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#82ff1f]/20"
+                  >
+                    <Mail size={20} />
+                    Enviar mensaje
+                  </button>
+                </form>
+              </motion.div>
+
+              {/* Contact Options */}
+              <motion.div
+                initial={{ opacity: 0, x: 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                className="space-y-6"
+              >
+
+                {/* Email Direct */}
+                <div className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#82ff1f]/30 transition-all group">
+                  <div className="flex items-start gap-4">
+                    <div className="p-4 bg-[#82ff1f]/10 rounded-2xl group-hover:bg-[#82ff1f] transition-colors">
+                      <Mail size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">Email</h4>
+                      <a
+                        href="mailto:victortorresa94@gmail.com"
+                        className="text-zinc-400 hover:text-[#82ff1f] transition-colors break-all"
+                      >
+                        victortorresa94@gmail.com
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* WhatsApp */}
+                <div className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#82ff1f]/30 transition-all group">
+                  <div className="flex items-start gap-4">
+                    <div className="p-4 bg-[#82ff1f]/10 rounded-2xl group-hover:bg-[#82ff1f] transition-colors">
+                      <MessageSquare size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">WhatsApp</h4>
+                      <p className="text-zinc-400 mb-4 text-sm">Escríbeme directamente</p>
+                      <a
+                        href="https://wa.me/34644359569?text=Hola%20V%C3%ADctor,%20vengo%20de%20tu%20web%20y%20me%20gustar%C3%ADa%20hablar%20contigo"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all font-medium"
+                      >
+                        <MessageSquare size={18} />
+                        Abrir WhatsApp
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Call */}
+                <div className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#82ff1f]/30 transition-all group">
+                  <div className="flex items-start gap-4">
+                    <div className="p-4 bg-[#82ff1f]/10 rounded-2xl group-hover:bg-[#82ff1f] transition-colors">
+                      <Mic size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">Llamada</h4>
+                      <p className="text-zinc-400 mb-4 text-sm">Prefiero hablar por teléfono</p>
+                      <a
+                        href="tel:+34644359569"
+                        className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all font-medium"
+                      >
+                        <Mic size={18} />
+                        +34 644 35 95 69
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                {/* LinkedIn */}
+                <div className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10 hover:border-[#82ff1f]/30 transition-all group">
+                  <div className="flex items-start gap-4">
+                    <div className="p-4 bg-[#82ff1f]/10 rounded-2xl group-hover:bg-[#82ff1f] transition-colors">
+                      <Linkedin size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
+                    </div>
+                    <div className="flex-1">
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">LinkedIn</h4>
+                      <a
+                        href="https://www.linkedin.com/in/v%C3%ADctor-torres-arana/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-zinc-400 hover:text-[#82ff1f] transition-colors"
+                      >
+                        /in/victortorresarana
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+              </motion.div>
+
+            </div>
+          </div>
+        </section>
+
         {/* --- FOOTER --- */}
-        <footer id="contact" className="py-20 border-t border-white/5 bg-[#020202]">
-          <div className="max-w-4xl mx-auto px-6 text-center space-y-8">
-            <h2 className="text-4xl font-heading font-bold text-white">¿Hablamos?</h2>
-            <p className="text-zinc-400 max-w-lg mx-auto">
-              Estoy disponible para nuevos retos. Si buscas un perfil híbrido que entienda tanto el código como el negocio, contáctame.
-            </p>
-            <a
-              href="mailto:victortorresa94@gmail.com"
-              className="inline-flex items-center gap-2 px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-full hover:bg-[#6ed617] transition-all"
-            >
-              <Mail size={20} /> victortorresa94@gmail.com
-            </a>
-            <p className="text-zinc-600 text-sm pt-12">
-              © 2025 Víctor Torres Arana. Built with Next.js & Tailwind.
-            </p>
+        <footer className="py-8 border-t border-white/5 bg-[#020202]">
+          <div className="max-w-6xl mx-auto px-6">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-4">
+              <p className="text-zinc-600 text-sm">
+                © 2025 Víctor Torres Arana. Built with Next.js & Tailwind.
+              </p>
+              <div className="flex items-center gap-6">
+                <a href="#story" className="text-zinc-600 hover:text-white text-sm transition-colors">Inicio</a>
+                <a href="/cv.pdf" className="text-zinc-600 hover:text-white text-sm transition-colors flex items-center gap-1">
+                  <Download size={14} />
+                  CV PDF
+                </a>
+              </div>
+            </div>
           </div>
         </footer>
       </div >
