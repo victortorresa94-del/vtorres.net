@@ -80,22 +80,191 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-/* Print Styles */
+/* Print Styles - Optimized 2-Page CV */
 @media print {
   @page {
-    margin: 1cm;
-    size: A4;
+    margin: 1.5cm;
+    size: A4 portrait;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
   }
 
   body {
-    background: white;
-    color: black;
+    background: white !important;
+    color: black !important;
+    font-size: 10pt !important;
+    line-height: 1.4 !important;
   }
 
+  /* Hide unnecessary elements */
   header,
-  button,
   nav,
-  .print\:hidden {
+  button,
+  .print\:hidden,
+  #contact,
+  footer,
+  [id="story"],
+  [id="achievements"],
+  [id="seeking"],
+  [id="freelance"] {
     display: none !important;
+  }
+
+  /* Show only essential sections for 2-page CV */
+  main {
+    background: white !important;
+  }
+
+  /* Hero section - Compact */
+  section:first-of-type {
+    padding: 0 !important;
+    margin-bottom: 1.5rem !important;
+    page-break-after: avoid !important;
+  }
+
+  section:first-of-type h1 {
+    font-size: 28pt !important;
+    margin-bottom: 0.5rem !important;
+    color: black !important;
+  }
+
+  section:first-of-type h2 {
+    font-size: 14pt !important;
+    margin-bottom: 0.5rem !important;
+    color: #333 !important;
+  }
+
+  section:first-of-type p {
+    font-size: 10pt !important;
+    margin-bottom: 1rem !important;
+  }
+
+  section:first-of-type img {
+    display: none !important;
+  }
+
+  /* Section titles */
+  [id] h2,
+  [id] h3 {
+    font-size: 14pt !important;
+    font-weight: bold !important;
+    color: black !important;
+    margin-top: 1.2rem !important;
+    margin-bottom: 0.8rem !important;
+    border-bottom: 2px solid #82ff1f !important;
+    padding-bottom: 0.3rem !important;
+    page-break-after: avoid !important;
+  }
+
+  /* Career timeline - Compact */
+  [id="career"] div {
+    margin-bottom: 0.8rem !important;
+    page-break-inside: avoid !important;
+  }
+
+  [id="career"] h3 {
+    font-size: 11pt !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  [id="career"] p {
+    font-size: 9pt !important;
+    line-height: 1.3 !important;
+  }
+
+  /* Experience IA - Compact */
+  [id="ia"]>div>div {
+    margin-bottom: 0.8rem !important;
+    page-break-inside: avoid !important;
+  }
+
+  [id="ia"] h3,
+  [id="ia"] h4 {
+    font-size: 10pt !important;
+    margin-bottom: 0.2rem !important;
+  }
+
+  [id="ia"] p {
+    font-size: 8.5pt !important;
+    line-height: 1.2 !important;
+  }
+
+  /* Skills section - Grid layout */
+  [id="skills"] {
+    page-break-before: auto !important;
+  }
+
+  [id="skills"]>div {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    gap: 0.5rem !important;
+  }
+
+  [id="skills"] h4 {
+    font-size: 9pt !important;
+  }
+
+  [id="skills"] p {
+    font-size: 8pt !important;
+    display: none !important;
+    /* Hide descriptions to save space */
+  }
+
+  /* Stack - Compact list */
+  [id="stack"] div {
+    display: inline !important;
+    margin: 0 0.3rem !important;
+    font-size: 8pt !important;
+  }
+
+  /* Numbers section - Grid */
+  [id="numbers"]>div {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.5rem !important;
+  }
+
+  [id="numbers"] div {
+    page-break-inside: avoid !important;
+  }
+
+  [id="numbers"] p {
+    font-size: 8pt !important;
+  }
+
+  /* Force page breaks */
+  [id="skills"] {
+    page-break-before: always !important;
+  }
+
+  /* Remove backgrounds and borders for print */
+  div[class*="bg-"],
+  div[class*="border-"] {
+    background: transparent !important;
+    border-color: #ccc !important;
+  }
+
+  /* Ensure text is black */
+  * {
+    color: black !important;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black !important;
+  }
+
+  /* Keep accent color for highlights */
+  span[class*="text-[#82ff1f]"],
+  .text-\[\#82ff1f\] {
+    color: #82ff1f !important;
+    font-weight: bold !important;
   }
 }

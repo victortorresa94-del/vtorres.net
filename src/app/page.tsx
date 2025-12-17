@@ -146,56 +146,59 @@ export default function Home() {
       <div className="relative z-10">
 
         {/* --- HERO SECTION --- */}
-        <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 relative">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center relative z-10"
-          >
-            {/* Open to Work Badge */}
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 mb-6 md:mb-8">
-              <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
-              <span className="text-[#82ff1f] text-xs sm:text-sm font-bold tracking-wider uppercase">Open to Work</span>
+        <section className="pt-32 pb-20 px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.6 }}
+              className="space-y-6 text-center md:text-left order-2 md:order-1"
+            >
+
+              {/* Open to work badge */}
+              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 w-fit mx-auto md:mx-0">
+                <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
+                <span className="text-[#82ff1f] text-xs font-bold tracking-wider uppercase">Open to Work</span>
+              </div>
+
+              <h1 className="text-5xl md:text-7xl lg:text-7xl font-heading font-light tracking-tighter text-white leading-[0.9]">
+                Víctor<br />Torres Arana<span className="text-[#82ff1f]">.</span>
+              </h1>
+
+              <h2 className="text-2xl md:text-3xl text-zinc-400 font-light">
+                AI Project Manager & <span className="text-white font-bold border-b-4 border-[#82ff1f]">Business Builder</span>
+              </h2>
+
+              <p className="text-lg text-zinc-500 max-w-xl mx-auto md:mx-0 leading-relaxed">
+                Transformo ideas abstractas en productos digitales funcionales. Especializado en <span className="text-zinc-300">Generative AI</span>, automatización de negocio y diseño de experiencias.
+              </p>
+
+              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
+                <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-full hover:bg-[#6ed617] transition-all flex items-center justify-center gap-2">
+                  <Mail size={20} />
+                  CONTACTO
+                </a>
+                <a href="https://www.linkedin.com/in/víctor-torres-arana-54618b99/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-white/5 text-white font-bold rounded-full hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center gap-2">
+                  <Linkedin size={20} />
+                  LINKEDIN
+                </a>
+                <button onClick={() => window.print()} className="w-full sm:w-auto px-8 py-4 bg-transparent text-zinc-400 font-bold rounded-full hover:text-white transition-all flex items-center justify-center gap-2 border border-white/5 hover:border-white/20">
+                  <Download size={20} />
+                  CV .PDF
+                </button>
+              </div>
+            </motion.div>
+
+            <div className="relative mx-auto md:mr-0 order-1 md:order-2">
+              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full p-2 relative z-10">
+                <div className="w-full h-full rounded-full overflow-hidden relative transition-all duration-500">
+                  <Image src="/images/profile.jpg" alt="Víctor Torres" fill className="object-cover" priority />
+                </div>
+              </div>
             </div>
 
-            {/* Main Title */}
-            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-light text-white mb-4 md:mb-6 tracking-tight leading-tight px-2">
-              Víctor Torres Arana
-            </h1>
-            <p className="text-lg sm:text-xl md:text-2xl text-[#82ff1f] mb-3 md:mb-4 font-medium px-2">
-              AI Project Manager & Business Builder
-            </p>
-            <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed px-4">
-              Transformo ideas abstractas en productos digitales funcionales. Especializado en Generative AI, automatización de negocio y diseño de experiencias.
-            </p>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4">
-              <a
-                href="#contact"
-                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-full hover:bg-[#6ed617] transition-all shadow-lg shadow-[#82ff1f]/20 text-center text-sm sm:text-base"
-              >
-                CONTACTO
-              </a>
-              <a
-                href="https://www.linkedin.com/in/víctor-torres-arana/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
-              >
-                <Linkedin size={18} className="sm:w-5 sm:h-5" />
-                LINKEDIN
-              </a>
-              <button
-                onClick={() => window.print()}
-                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
-              >
-                <Download size={18} className="sm:w-5 sm:h-5" />
-                CV .PDF
-              </button>
-            </div>
-          </motion.div>
+          </div>
         </section>
 
         {/* --- MI HISTORIA --- */}
@@ -1097,7 +1100,7 @@ export default function Home() {
                     <div className="flex-1">
                       <h4 className="text-lg font-heading font-medium text-white mb-2">LinkedIn</h4>
                       <a
-                        href="https://www.linkedin.com/in/v%C3%ADctor-torres-arana/"
+                        href="https://www.linkedin.com/in/v%C3%ADctor-torres-arana-54618b99/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-zinc-400 hover:text-[#82ff1f] transition-colors"
