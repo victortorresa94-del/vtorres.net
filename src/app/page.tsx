@@ -144,64 +144,62 @@ export default function Home() {
       </header>
 
       <div className="relative z-10">
-        {/* Hero Section */}
-        <section className="pt-32 pb-20 px-6">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
 
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              className="space-y-6 text-center md:text-left order-2 md:order-1"
-            >
-
-              {/* Open to work badge */}
-              <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 w-fit mx-auto md:mx-0">
-                <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
-                <span className="text-[#82ff1f] text-xs font-bold tracking-wider uppercase">Open to Work</span>
-              </div>
-
-              <h1 className="text-5xl md:text-7xl lg:text-7xl font-heading font-light tracking-tighter text-white leading-[0.9]">
-                Víctor<br />Torres Arana<span className="text-[#82ff1f]">.</span>
-              </h1>
-
-              <h2 className="text-2xl md:text-3xl text-zinc-400 font-light">
-                AI Project Manager & <span className="text-white font-bold border-b-4 border-[#82ff1f]">Business Builder</span>
-              </h2>
-
-              <p className="text-lg text-zinc-500 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                Transformo ideas abstractas en productos digitales funcionales. Especializado en <span className="text-zinc-300">Generative AI</span>, automatización de negocio y diseño de experiencias.
-              </p>
-
-              <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
-                <Link href="#contact" className="px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-full hover:bg-[#6ed617] transition-all flex items-center gap-2">
-                  <Mail size={20} />
-                  CONTACTO
-                </Link>
-                <Link href="https://linkedin.com/in/victortorres" target="_blank" className="px-8 py-4 bg-white/5 text-white font-bold rounded-full hover:bg-white/10 transition-all border border-white/10 flex items-center gap-2">
-                  <Linkedin size={20} />
-                  LINKEDIN
-                </Link>
-                <Link href="/cv.pdf" className="px-8 py-4 bg-transparent text-zinc-400 font-bold rounded-full hover:text-white transition-all flex items-center gap-2 border border-white/5 hover:border-white/20">
-                  <Download size={20} />
-                  CV .PDF
-                </Link>
-              </div>
-            </motion.div>
-
-            <div className="relative mx-auto md:mr-0 order-1 md:order-2">
-              <div className="w-64 h-64 md:w-80 md:h-80 rounded-full p-2 relative z-10">
-                <div className="w-full h-full rounded-full overflow-hidden relative transition-all duration-500">
-                  <Image src="/images/profile.jpg" alt="Víctor Torres" fill className="object-cover" priority />
-                </div>
-              </div>
+        {/* --- HERO SECTION --- */}
+        <section className="min-h-screen flex items-center justify-center px-4 sm:px-6 relative">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="max-w-4xl mx-auto text-center relative z-10"
+          >
+            {/* Open to Work Badge */}
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 mb-6 md:mb-8">
+              <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
+              <span className="text-[#82ff1f] text-xs sm:text-sm font-bold tracking-wider uppercase">Open to Work</span>
             </div>
 
-          </div>
+            {/* Main Title */}
+            <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-heading font-light text-white mb-4 md:mb-6 tracking-tight leading-tight px-2">
+              Víctor Torres Arana
+            </h1>
+            <p className="text-lg sm:text-xl md:text-2xl text-[#82ff1f] mb-3 md:mb-4 font-medium px-2">
+              AI Project Manager & Business Builder
+            </p>
+            <p className="text-base sm:text-lg md:text-xl text-zinc-400 max-w-2xl mx-auto mb-8 md:mb-12 leading-relaxed px-4">
+              Transformo ideas abstractas en productos digitales funcionales. Especializado en Generative AI, automatización de negocio y diseño de experiencias.
+            </p>
+
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3 sm:gap-4 px-4">
+              <a
+                href="#contact"
+                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-full hover:bg-[#6ed617] transition-all shadow-lg shadow-[#82ff1f]/20 text-center text-sm sm:text-base"
+              >
+                CONTACTO
+              </a>
+              <a
+                href="https://www.linkedin.com/in/víctor-torres-arana/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <Linkedin size={18} className="sm:w-5 sm:h-5" />
+                LINKEDIN
+              </a>
+              <button
+                onClick={() => window.print()}
+                className="w-full sm:w-auto px-6 sm:px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                <Download size={18} className="sm:w-5 sm:h-5" />
+                CV .PDF
+              </button>
+            </div>
+          </motion.div>
         </section>
 
         {/* --- MI HISTORIA --- */}
-        <ExpandableSection id="story" number="00" title="Mi Historia">
+        < ExpandableSection id="story" number="00" title="Mi Historia" >
           <div className="space-y-6 text-lg text-zinc-300 font-light leading-relaxed">
             <p className="font-medium text-white text-xl">Organizo e impulso ideas, equipos y negocios.</p>
             <p>
@@ -223,10 +221,10 @@ export default function Home() {
               Actualmente busco incorporarme como <strong className="text-white">Project Manager</strong> en una compañía donde pueda aportar esta experiencia híbrida y seguir creciendo en un entorno estable.
             </p>
           </div>
-        </ExpandableSection>
+        </ExpandableSection >
 
         {/* --- MIS NÚMEROS --- */}
-        <ExpandableSection id="numbers" number="01" title="Mis Números">
+        < ExpandableSection id="numbers" number="01" title="Mis Números" >
           <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+1.2M" label="Impacto Total" description="Personas alcanzadas." />
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label="Webs & E-commerce" description="Desarrollados y lanzados." />
@@ -235,10 +233,76 @@ export default function Home() {
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+40" label="Sistemas" description="Automatizaciones de procesos." />
             <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+100k €" label="Presupuesto" description="Gestionado en proyectos." />
           </div>
-        </ExpandableSection>
+        </ExpandableSection >
+
+        {/* --- TRAYECTORIA --- */}
+        < ExpandableSection id="career" number="02" title="Trayectoria Profesional" >
+          <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
+            <TimelineItem
+              year="2025 - Present"
+              title="Autónomo"
+              role="Consultor de Negocio & IA"
+              desc="Gestión de eventos de música en vivo, implementación de soluciones de IA para empresas y consultoría estratégica de marketing."
+            />
+            <TimelineItem
+              year="2023 - 2025"
+              title="Kmeleon"
+              role="CMO & Marketing AI"
+              desc="• Marketing & Sales (2025): IA, estrategias GTM y automatización. • CMO (2023-24): Estrategia de marca internacional."
+            />
+            <TimelineItem
+              year="2024"
+              title="DisrupTT"
+              role="Netsuite Oracle Project Manager"
+              desc="Oracle Netsuite implementation leadership. Coordinación de equipos y estrategias de marketing."
+            />
+            <TimelineItem
+              year="2023 - 2024"
+              title="Konektor"
+              role="Growth Partner & BizDev"
+              desc="• Growth Partner (2024): Expansión de negocio. • Business Dev (2023): Estrategias de venta consultiva con IA."
+            />
+            <TimelineItem
+              year="2022 - 2023"
+              title="Eme Growth Agency"
+              role="Web / App Project Manager"
+              desc="Liderazgo de equipos multidisciplinarios. Diseño web, automatización y relación con cliente (CSS, UX)."
+            />
+            <TimelineItem
+              year="2021 - 2022"
+              title="Growbox Digital"
+              role="Marketing Account Manager"
+              desc="Optimización del embudo de conversión, gestión de CRM y marketing automatizado."
+            />
+            <TimelineItem
+              year="2020 - 2021"
+              title="HTW Spain"
+              role="Responsable de Marketing"
+              desc="Creación de marca Emelson (éxito nacional). Diseño de catálogos y gestión web."
+            />
+            <TimelineItem
+              year="2019 - 2020"
+              title="Denetic"
+              role="Business Manager"
+              desc="Coordinación de equipos, CRM y desarrollo empresarial."
+            />
+            <TimelineItem
+              year="2017 - 2019"
+              title="Mondo Convenienza"
+              role="Jefe de logística"
+              desc="Coordinación y liderazgo de equipos de trabajo logístico."
+            />
+            <TimelineItem
+              year="2016 - 2017"
+              title="Reauxi"
+              role="Marketing & Compras"
+              desc="Gestión de bases de datos, negociación y atención al cliente."
+            />
+          </div>
+        </ExpandableSection >
 
         {/* --- EXPERIENCIA IA --- */}
-        <ExpandableSection id="ia" number="03" title="Experiencia IA">
+        < ExpandableSection id="ia" number="03" title="Experiencia IA" >
           <div className="space-y-8">
             <p className="text-zinc-300 text-lg font-light leading-relaxed mb-6">
               Mi enfoque con la IA va más allá del <i>hype</i>. He pasado de diseñar la estrategia de startups deep-tech a "bajar al barro" para programar agentes en n8n. Entiendo el ciclo completo: <strong className="text-white">desde la venta y la estrategia, hasta la implementación técnica y el despliegue.</strong>
@@ -446,86 +510,20 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </ExpandableSection>
-
-        {/* --- TRAYECTORIA --- */}
-        <ExpandableSection id="career" number="02" title="Trayectoria Profesional">
-          <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
-            <TimelineItem
-              year="2025 - Present"
-              title="Autónomo"
-              role="Consultor de Negocio & IA"
-              desc="Gestión de eventos de música en vivo, implementación de soluciones de IA para empresas y consultoría estratégica de marketing."
-            />
-            <TimelineItem
-              year="2023 - 2025"
-              title="Kmeleon"
-              role="CMO & Marketing AI"
-              desc="• Marketing & Sales (2025): IA, estrategias GTM y automatización. • CMO (2023-24): Estrategia de marca internacional."
-            />
-            <TimelineItem
-              year="2024"
-              title="DisrupTT"
-              role="Netsuite Oracle Project Manager"
-              desc="Oracle Netsuite implementation leadership. Coordinación de equipos y estrategias de marketing."
-            />
-            <TimelineItem
-              year="2023 - 2024"
-              title="Konektor"
-              role="Growth Partner & BizDev"
-              desc="• Growth Partner (2024): Expansión de negocio. • Business Dev (2023): Estrategias de venta consultiva con IA."
-            />
-            <TimelineItem
-              year="2022 - 2023"
-              title="Eme Growth Agency"
-              role="Web / App Project Manager"
-              desc="Liderazgo de equipos multidisciplinarios. Diseño web, automatización y relación con cliente (CSS, UX)."
-            />
-            <TimelineItem
-              year="2021 - 2022"
-              title="Growbox Digital"
-              role="Marketing Account Manager"
-              desc="Optimización del embudo de conversión, gestión de CRM y marketing automatizado."
-            />
-            <TimelineItem
-              year="2020 - 2021"
-              title="HTW Spain"
-              role="Responsable de Marketing"
-              desc="Creación de marca Emelson (éxito nacional). Diseño de catálogos y gestión web."
-            />
-            <TimelineItem
-              year="2019 - 2020"
-              title="Denetic"
-              role="Business Manager"
-              desc="Coordinación de equipos, CRM y desarrollo empresarial."
-            />
-            <TimelineItem
-              year="2017 - 2019"
-              title="Mondo Convenienza"
-              role="Jefe de logística"
-              desc="Coordinación y liderazgo de equipos de trabajo logístico."
-            />
-            <TimelineItem
-              year="2016 - 2017"
-              title="Reauxi"
-              role="Marketing & Compras"
-              desc="Gestión de bases de datos, negociación y atención al cliente."
-            />
-          </div>
-        </ExpandableSection>
+        </ExpandableSection >
 
         {/* --- HITOS Y LOGROS --- */}
-        <ExpandableSection id="achievements" number="04" title="Hitos & Logros">
+        < ExpandableSection id="achievements" number="04" title="Hitos & Logros" >
           <AchievementsCarousel items={achievements} />
-        </ExpandableSection>
+        </ExpandableSection >
 
         {/* --- SKILLS --- */}
-        <ExpandableSection id="skills" number="05" title="Skills">
+        < ExpandableSection id="skills" number="05" title="Skills" >
 
           {/* Core Skills - Destacados */}
-          <div className="mb-12">
-            <h3 className="text-lg font-bold text-zinc-400 mb-6 uppercase tracking-wider">Core Skills</h3>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+          < div className="mb-12" >
+            <h3 className="text-base sm:text-lg font-bold text-zinc-400 mb-4 sm:mb-6 uppercase tracking-wider">Core Skills</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
 
               {/* Project Management */}
               <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
@@ -576,13 +574,13 @@ export default function Home() {
               </div>
 
             </div>
-          </div>
+          </div >
 
           {/* Subcategorías de Skills */}
-          <div className="space-y-8">
+          < div className="space-y-8" >
 
             {/* Gestión de Proyectos y Metodologías */}
-            <div>
+            < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
                 <ClipboardList size={16} /> Gestión de Proyectos y Metodologías
               </h3>
@@ -603,10 +601,10 @@ export default function Home() {
                   <p className="text-sm font-medium text-white">Coordinación de equipos</p>
                 </div>
               </div>
-            </div>
+            </div >
 
             {/* Cloud & IaC */}
-            <div>
+            < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
                 <Globe size={16} /> Cloud & IaC
               </h3>
@@ -621,10 +619,10 @@ export default function Home() {
                   <p className="text-sm font-medium text-white">Despliegue y APIs</p>
                 </div>
               </div>
-            </div>
+            </div >
 
             {/* IA Conversacional y Automatización */}
-            <div>
+            < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
                 <MessageSquare size={16} /> IA Conversacional y Automatización
               </h3>
@@ -645,10 +643,10 @@ export default function Home() {
                   <p className="text-sm font-medium text-white">Voiceflow</p>
                 </div>
               </div>
-            </div>
+            </div >
 
             {/* Desarrollo y Despliegues Operativos */}
-            <div>
+            < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
                 <Code size={16} /> Desarrollo y Despliegues Operativos
               </h3>
@@ -669,10 +667,10 @@ export default function Home() {
                   <p className="text-sm font-medium text-white">Version Control</p>
                 </div>
               </div>
-            </div>
+            </div >
 
             {/* Habilidades IA Avanzadas */}
-            <div>
+            < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
                 <Brain size={16} /> Habilidades IA Avanzadas
               </h3>
@@ -693,13 +691,13 @@ export default function Home() {
                   <p className="text-sm font-medium text-white">Local LLMs</p>
                 </div>
               </div>
-            </div>
+            </div >
 
-          </div>
-        </ExpandableSection>
+          </div >
+        </ExpandableSection >
 
         {/* --- FREELANCE & EMPRENDIMIENTO --- */}
-        <ExpandableSection id="freelance" number="07" title="Emprendimiento & Freelance">
+        < ExpandableSection id="freelance" number="07" title="Emprendimiento & Freelance" >
           <div className="space-y-12">
 
             {/* Proyectos Propios */}
@@ -803,10 +801,10 @@ export default function Home() {
             </div>
 
           </div>
-        </ExpandableSection>
+        </ExpandableSection >
 
         {/* --- STACK --- */}
-        <ExpandableSection id="stack" number="06" title="Stack Tecnológico">
+        < ExpandableSection id="stack" number="06" title="Stack Tecnológico" >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* AI */}
             <div className="space-y-4">
@@ -884,10 +882,10 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </ExpandableSection>
+        </ExpandableSection >
 
         {/* --- QUÉ BUSCO --- */}
-        <ExpandableSection id="seeking" number="08" title="Mis Objetivos">
+        < ExpandableSection id="seeking" number="08" title="Mis Objetivos" >
           <div className="max-w-4xl space-y-8 text-lg text-zinc-300 font-light leading-relaxed">
             <p>
               Llevo mucho tiempo trabajando por mi cuenta. El camino del emprendedor solitario curte, pero también agota. Ahora busco un cambio de etapa: <strong className="text-white">busco hogar</strong>.
@@ -920,12 +918,12 @@ export default function Home() {
               "Busco algo más que un empleo; busco un equipo, una cultura y una 'familia' profesional con la que crecer."
             </p>
           </div>
-        </ExpandableSection>
+        </ExpandableSection >
 
         {/* --- CONTACT CTA --- */}
-        <section id="contact" className="py-20 relative overflow-hidden">
+        < section id="contact" className="py-20 relative overflow-hidden" >
           {/* Background Effects */}
-          <div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505]"></div>
+          < div className="absolute inset-0 bg-gradient-to-b from-[#050505] via-[#0a0a0a] to-[#050505]" ></div >
           <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#82ff1f]/5 blur-[120px] rounded-full"></div>
 
           <div className="max-w-6xl mx-auto px-6 relative z-10">
@@ -957,7 +955,7 @@ export default function Home() {
                 initial={{ opacity: 0, x: -20 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
-                className="p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
+                className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
                 <h3 className="text-2xl font-heading font-medium text-white mb-6">Envíame un mensaje</h3>
                 <form
@@ -975,7 +973,7 @@ export default function Home() {
                       type="text"
                       name="name"
                       required
-                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors"
+                      className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors text-base"
                       placeholder="Tu nombre"
                     />
                   </div>
@@ -986,7 +984,7 @@ export default function Home() {
                       type="email"
                       name="email"
                       required
-                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors"
+                      className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors text-base"
                       placeholder="tu@email.com"
                     />
                   </div>
@@ -996,7 +994,7 @@ export default function Home() {
                     <input
                       type="text"
                       name="company"
-                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors"
+                      className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors text-base"
                       placeholder="Tu empresa"
                     />
                   </div>
@@ -1007,14 +1005,14 @@ export default function Home() {
                       name="message"
                       required
                       rows={4}
-                      className="w-full px-4 py-3 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors resize-none"
+                      className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors resize-none text-base"
                       placeholder="Cuéntame en qué puedo ayudarte..."
                     ></textarea>
                   </div>
 
                   <button
                     type="submit"
-                    className="w-full px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-xl hover:bg-[#6ed617] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#82ff1f]/20"
+                    className="w-full px-8 py-5 bg-[#82ff1f] text-black font-bold rounded-xl hover:bg-[#6ed617] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#82ff1f]/20 text-base"
                   >
                     <Mail size={20} />
                     Enviar mensaje
@@ -1058,7 +1056,7 @@ export default function Home() {
                       <h4 className="text-lg font-heading font-medium text-white mb-2">WhatsApp</h4>
                       <p className="text-zinc-400 mb-4 text-sm">Escríbeme directamente</p>
                       <a
-                        href="https://wa.me/34644359569?text=Hola%20V%C3%ADctor,%20vengo%20de%20tu%20web%20y%20me%20gustar%C3%ADa%20hablar%20contigo"
+                        href="https://wa.me/34627281459?text=Hola%20V%C3%ADctor,%20vengo%20de%20tu%20web%20y%20me%20gustar%C3%ADa%20hablar%20contigo"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all font-medium"
@@ -1080,11 +1078,11 @@ export default function Home() {
                       <h4 className="text-lg font-heading font-medium text-white mb-2">Llamada</h4>
                       <p className="text-zinc-400 mb-4 text-sm">Prefiero hablar por teléfono</p>
                       <a
-                        href="tel:+34644359569"
+                        href="tel:+34627281459"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all font-medium"
                       >
                         <Mic size={18} />
-                        +34 644 35 95 69
+                        +34 627 28 14 59
                       </a>
                     </div>
                   </div>
@@ -1114,10 +1112,10 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        </section >
 
         {/* --- FOOTER --- */}
-        <footer className="py-8 border-t border-white/5 bg-[#020202]">
+        < footer className="py-8 border-t border-white/5 bg-[#020202]" >
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-zinc-600 text-sm">
@@ -1132,7 +1130,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer >
       </div >
 
     </main >
