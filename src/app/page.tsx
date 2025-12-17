@@ -23,12 +23,12 @@ export default function Home() {
   const achievements = [
     {
       id: 1,
-      title: "Implementación ERP Multinacional",
+      title: "Implementación Oracle NetSuite",
       role: "Project Manager Lead",
       desc: "Liderazgo técnico y operativo en la implementación de ERP Oracle para multinacional logística. Coordinación de equipos internacionales, migración de datos críticos y formación a +50 empleados.",
       tags: ["Oracle ERP", "Logística", "Liderazgo"],
       metric: "Impacto Global",
-      image: "/images/erp.png"
+      image: "/images/achievements/netsuite.jpg"
     },
     {
       id: 2,
@@ -37,7 +37,7 @@ export default function Home() {
       desc: "Liderazgo en la negociación y cierre de venta de Oracle NetSuite a Bluespace. Gestión del ciclo de venta complejo (6 meses), validación técnica y cierre contractual.",
       tags: ["Ventas B2B", "Negociación", "SaaS"],
       metric: "100.000 € Deal",
-      image: "/images/deal.png"
+      image: "/images/achievements/proyectos.jpg"
     },
     {
       id: 3,
@@ -46,7 +46,7 @@ export default function Home() {
       desc: "Creación desde cero, branding y estrategia de lanzamiento de la marca de climatización Emelson. Hoy líder en grandes superficies (Leroy Merlin, Bricomart).",
       tags: ["Branding", "Desarrollo Producto", "Retail"],
       metric: "Líder de Sector",
-      image: "/images/branding.png"
+      image: "/images/achievements/ecommerce.jpg"
     },
     {
       id: 4,
@@ -55,7 +55,7 @@ export default function Home() {
       desc: "Diseño de narrativa, posicionamiento y estrategia Go-To-Market para startup de IA. Lanzamiento en US y Latam, captación de primeros clientes Enterprise.",
       tags: ["Startup IA", "GTM Strategy", "Growth"],
       metric: "Lanzamiento Global",
-      image: "/images/startup.png"
+      image: "/images/achievements/startups.jpg"
     },
     {
       id: 5,
@@ -64,7 +64,7 @@ export default function Home() {
       desc: "Gestión 360º de carreras artísticas (94 Music, Condor). Booking, producción de eventos en vivo, logística de giras y negociación con salas/promotores.",
       tags: ["Música", "Producción", "Management"],
       metric: "+15 Artistas",
-      image: "/images/music.png"
+      image: "/images/achievements/eventos.jpg"
     }
   ];
 
@@ -391,7 +391,7 @@ export default function Home() {
         </ExpandableSection>
 
         {/* --- SKILLS --- */}
-        <ExpandableSection id="skills" number="05" title="Skills & Superpowers">
+        <ExpandableSection id="skills" number="05" title="Skills">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
             {/* Pillars as big cards */}
             <div className="p-8 rounded-3xl bg-[#0a0a0a] border border-white/10 relative overflow-hidden group hover:border-[#82ff1f]/30 transition-all">
