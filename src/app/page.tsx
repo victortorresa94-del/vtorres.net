@@ -5,8 +5,8 @@ import Link from "next/link";
 import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
-import AchievementsCarousel from "../components/AchievementsCarousel";
-import LanguageSwitcher from "../components/LanguageSwitcher";
+import AchievementsCarousel from "@/components/AchievementsCarousel";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
