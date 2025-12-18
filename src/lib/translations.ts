@@ -16,8 +16,8 @@ export const translations = {
         hero: {
             openToWork: "Open to Work",
             name: "Víctor Torres Arana",
-            title: "AI Project Manager & Business Builder",
-            description: "Transformo ideas abstractas en productos digitales funcionales. Especializado en Generative AI, automatización de negocio y diseño de experiencias.",
+            title: "Project Manager & Business Builder",
+            description: "Impulso negocios desde cero y transformo ideas en productos digitales rentables. Especializado en organizar equipos, optimizar procesos, generar ventas y automatizar operaciones para escalar empresas de forma eficiente.",
             contact: "CONTACTO",
             linkedin: "LINKEDIN",
             cv: "CV .PDF"
@@ -44,7 +44,7 @@ export const translations = {
                 },
                 {
                     year: "2023 - 2025",
-                    title: "Fundador / Director de Eventos",
+                    title: "Live Music Manager",
                     role: "94 Music",
                     desc: "Liderazgo y ejecución de más de 100 eventos musicales en vivo. Gestión integral: producción, logística, booking y marketing digital."
                 },
@@ -79,28 +79,22 @@ export const translations = {
                     desc: "Estrategia GTM para 'Totemica' (Skincare Miami). Branding, búsqueda de proveedores internacionales y lanzamiento exitoso al mercado."
                 },
                 {
-                    year: "2019",
-                    title: "Jefe de Logística",
-                    role: "Mondo Convenienza",
-                    desc: "Coordinación y optimización de flujos de trabajo logísticos y liderazgo de equipos operativos."
-                },
-                {
-                    year: "2018",
+                    year: "2016 - 2018",
                     title: "Responsable de Marketing & Compras",
                     role: "Reauxi",
                     desc: "Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
                 },
                 {
-                    year: "2017",
-                    title: "Business Manager (Operaciones)",
-                    role: "Denetic",
-                    desc: "Máster práctico en gestión integral de negocio: logística, compras en China, gestión de almacén, facturación e instalaciones técnicas. Responsable total de la operativa de la empresa (excluyendo ventas)."
-                },
-                {
-                    year: "2015 - 2017",
+                    year: "2014 - 2016",
                     title: "Diseñador Gráfico & Marketing B2B",
                     role: "HTW Spain",
                     desc: "Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
+                },
+                {
+                    year: "2013",
+                    title: "Business Manager (Operaciones)",
+                    role: "Denetic",
+                    desc: "Máster práctico en gestión integral de negocio: logística, compras en China, gestión de almacén, facturación e instalaciones técnicas. Responsable total de la operativa de la empresa (excluyendo ventas)."
                 }
             ]
         },
@@ -111,28 +105,28 @@ export const translations = {
                     id: 1,
                     title: "Optimización de Procesos y Proyectos",
                     role: "Project Manager & Process Architect",
-                    desc: "En una agencia de marketing con 40 personas, creé 30 SOPs desde cero e implementé ClickUp como sistema central. Desmembré y rediseñé procesos completos, reduciendo tiempos de entrega de 3 meses a 1 mes. Liderazgo de +30 proyectos web y app con equipos multidisciplinarios.",
-                    tags: ["SOPs", "ClickUp", "Optimization", "Liderazgo"],
-                    metric: "30% Eficiencia | 3 meses → 1 mes",
-                    image: "/images/achievements/profesor.jpg"
+                    desc: "En una agencia de marketing con 40 personas, creé 30 SOPs desde cero e implementé ClickUp como sistema central. Desmembré y rediseñé procesos completos, reduciendo los tiempos de entrega un 30% y aumentando la capacidad operativa.",
+                    tags: ["ClickUp", "SOPs", "Operations", "Team Management"],
+                    image: "/images/achievements/processes.jpg",
+                    metric: "+30% Eficiencia Operativa"
                 },
                 {
                     id: 2,
-                    title: "Implementación Oracle NetSuite",
-                    role: "Project Manager Lead",
-                    desc: "Liderazgo técnico y operativo en la implementación de ERP Oracle para multinacional logística. Coordinación de equipos internacionales, migración de datos críticos y formación a +50 empleados.",
-                    tags: ["Oracle ERP", "Migración", "Formación"],
-                    metric: "Impacto Global",
-                    image: "/images/achievements/netsuite-new.jpg"
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Music Production & Sound Engineering",
+                    desc: "Seleccionado entre miles de candidatos para el programa intensivo con Soma (productor top de España). Formación de élite en ingeniería de sonido, mezcla y producción musical profesional al más alto nivel técnico.",
+                    tags: ["Pro Tools", "Sound Engineering", "Music Production", "Mixing"],
+                    image: "/images/achievements/soma-real.jpg",
+                    metric: "Top 1% Seleccionado"
                 },
                 {
                     id: 3,
-                    title: "Gestión Proyecto 1M€ Mercedes",
-                    role: "Financial & Resource Management",
-                    desc: "Gestión integral de un proyecto de 1.000.000€ para Mercedes en Reauxi. Control financiero milimétrico en Excel complejo. Gestión de compras internacionales y contratación de personal.",
-                    tags: ["Finanzas", "Logística", "Excel"],
-                    metric: "Control Presupuestario Total",
-                    image: "/images/achievements/mercedes.jpg"
+                    title: "Implementación ERP Oracle NetSuite",
+                    role: "Technical Lead & Integrator",
+                    desc: "Lideré la migración completa de sistemas legacy a Oracle NetSuite para una empresa de distribución tecnológica. Coordiné equipos técnicos, definí flujos de trabajo financieros y logísticos, logrando una transición sin interrupciones operativas.",
+                    tags: ["Oracle NetSuite", "ERP Migration", "Logistics", "Finance"],
+                    image: "/images/achievements/netsuite.jpg",
+                    metric: "100% Migración Exitosa"
                 },
                 {
                     id: 4,
@@ -163,12 +157,12 @@ export const translations = {
                 },
                 {
                     id: 7,
-                    title: "Audio Hackers Academy (Soma)",
-                    role: "Launch Strategist & Sales Closer",
-                    desc: "Estrategia de contenido y automatización (ManyChat) para lanzamiento. Liderazgo en entrevistas con referentes del sector y cierre de ventas High-Ticket mediante llamadas. Meta de 20.000€ facturados en un mes.",
-                    tags: ["Estrategia", "ManyChat", "Ventas", "Música"],
-                    metric: "20.000€ en 1 mes",
-                    image: "/images/achievements/eventos-new.jpg"
+                    title: "Gestión Proyecto 1M€ Mercedes",
+                    role: "Financial & Resource Management",
+                    desc: "Gestión integral de un proyecto de 1.000.000€ para Mercedes en Reauxi. Control financiero milimétrico en Excel complejo. Gestión de compras internacionales y contratación de personal.",
+                    tags: ["Finanzas", "Logística", "Excel"],
+                    metric: "Control Presupuestario Total",
+                    image: "/images/achievements/mercedes.jpg"
                 },
                 {
                     id: 8,
@@ -179,10 +173,10 @@ export const translations = {
                     metric: "+100 Eventos",
                     image: "/images/achievements/eventos.jpg"
                 }
-            ]
+            ] as unknown as any[],
         },
         skills: {
-            title: "Habilidades (Skills)",
+            title: "Skills & Stack",
             coreTitle: "Core Skills",
             pm: {
                 title: "Project Management",
@@ -296,13 +290,13 @@ export const translations = {
             webs: "Webs & E-commerce",
             websDesc: "Desarrollados y lanzados.",
             brands: "Marcas Branding",
-            brandsDesc: "Identidades corporativas creadas.",
+            brandsDesc: "Identidades corporativas.",
             ai: "Soluciones IA",
-            aiDesc: "Implementaciones en real.",
-            systems: "Sistemas",
-            systemsDesc: "Automatizaciones de procesos.",
+            aiDesc: "Desarrolladas con código propio.",
+            systems: "SOPs",
+            systemsDesc: "Procesos optimizados.",
             budget: "Presupuesto",
-            budgetDesc: "Gestionado en proyectos.",
+            budgetDesc: "Gestionados en proyectos.",
             core: "Sistemas Core",
             coreDesc: "NetSuite, SAP, ClickUp implementados.",
             boosted: "Negocios Impulsados",
@@ -310,33 +304,43 @@ export const translations = {
         },
         education: {
             title: "Formación & Certificaciones",
-            degree: {
-                title: "Ciclo Superior de Comercio y Marketing",
-                role: "Grado Superior",
-                desc: "Formación integral en estrategias de comercialización, investigación de mercados, logística y gestión de puntos de venta. Base académica para el desarrollo de estrategias de negocio."
-            },
-            masterSoma: {
-                title: "Máster de Mezcla con Soma",
-                role: "Audio Hacker Academy (2021)",
-                desc: "Formación avanzada en ingeniería de sonido y producción musical de la mano de uno de los productores de referencia en la industria urbana española (Nach, ZPU, Porta)."
-            },
-            certsTitle: "Certificaciones Profesionales",
-            sap: {
-                title: "Certificación SAP",
-                desc: "Formación oficial impartida directamente por SAP (3 días intensivos). Especialización en procesos corporativos y módulos logísticos."
-            },
-            netsuite: {
-                title: "Oracle NetSuite Fundamentos",
-                desc: "Formación oficial de Oracle (2 semanas de inmersión total). Administración, configuración y flujos de trabajo en ERP Cloud."
-            },
-            googlePm: {
-                title: "Google Project Management",
-                desc: "Certificación profesional de Google. Metodologías Ágiles, gestión del cambio y liderazgo de proyectos complejos."
-            },
-            googleAi: {
-                title: "Google AI Essentials",
-                desc: "Cursos de especialización en IA Generativa, Cloud Computing y nuevas tecnologías del ecosistema Google."
-            }
+            items: [
+                {
+                    title: "Certificaciones HubSpot Academy",
+                    role: "Inbound Marketing, CRM & Sales Software",
+                    desc: "Especialización en automatización de marketing, gestión de pipelines de venta y metodología Inbound. (5 Certificaciones)."
+                },
+                {
+                    title: "Google Ads & Facebook Ads",
+                    role: "Mercatitlán",
+                    desc: "2022. Formación intensiva en estrategia de tráfico pagado (PPC), segmentación de audiencias y optimización de campañas."
+                },
+                {
+                    title: "Google Project Management",
+                    role: "Certificación Profesional Google",
+                    desc: "Metodologías Ágiles, gestión del cambio, planificación estratégica y liderazgo de proyectos complejos."
+                },
+                {
+                    title: "Oracle NetSuite Fundamentals",
+                    role: "Project Management, Sales & Programmer",
+                    desc: "2023. Formación técnica oficial: Administración del ERP, SuiteFlow, SuiteAnalytics y fundamentos de programación."
+                },
+                {
+                    title: "Administración, Contabilidad y Finanzas",
+                    role: "Reauxi Formación Interna",
+                    desc: "2016 - 2018. Capacitación práctica en gestión financiera, contabilidad analítica, facturación internacional y control de tesorería."
+                },
+                {
+                    title: "Máster de Mezcla y Producción",
+                    role: "Audio Hacker Academy (Soma)",
+                    desc: "2021. Ingeniería de sonido avanzada y producción musical profesional. Mentalidad de alto rendimiento."
+                },
+                {
+                    title: "Ciclo Superior Comercio y Marketing",
+                    role: "Grado Superior Oficial",
+                    desc: "Investigación de mercados, logística comercial, gestión de puntos de venta y marketing estratégico."
+                }
+            ]
         },
         freelance: {
             title: "Emprendimiento & Freelance",
@@ -460,8 +464,8 @@ export const translations = {
         hero: {
             openToWork: "Open to Work",
             name: "Víctor Torres Arana",
-            title: "AI Project Manager & Business Builder",
-            description: "I transform abstract ideas into functional digital products. Specialized in Generative AI, business automation, and experience design.",
+            title: "Project Manager & Business Builder",
+            description: "I boost businesses from scratch and transform ideas into profitable digital products. Specialized in organizing teams, optimizing processes, generating sales, and automating operations to scale companies efficiently.",
             contact: "CONTACT",
             linkedin: "LINKEDIN",
             cv: "CV .PDF"
@@ -488,7 +492,7 @@ export const translations = {
                 },
                 {
                     year: "2023 - 2025",
-                    title: "Founder / Events Director",
+                    title: "Live Music Manager",
                     role: "94 Music",
                     desc: "Leadership and execution of more than 100 live music events. Integral management: production, logistics, booking, and digital marketing."
                 },
@@ -523,28 +527,22 @@ export const translations = {
                     desc: "GTM strategy for 'Totemica' (Skincare Miami). Branding, international vendor search, and successful market launch."
                 },
                 {
-                    year: "2019",
-                    title: "Head of Logistics",
-                    role: "Mondo Convenienza",
-                    desc: "Coordination and optimization of logistical workflows and leadership of operational teams."
-                },
-                {
-                    year: "2018",
+                    year: "2016 - 2018",
                     title: "Marketing & Purchasing Lead",
                     role: "Reauxi",
                     desc: "Management of critical project for Mercedes (€1M). Responsible for international purchases, invoicing, and ERP registration."
                 },
                 {
-                    year: "2017",
-                    title: "Business Manager (Operations)",
-                    role: "Denetic",
-                    desc: "Practical master's in integral business management: logistics, purchases in China, warehouse management, invoicing, and technical installations. Total responsible for company operations (excluding sales)."
-                },
-                {
-                    year: "2015 - 2017",
+                    year: "2014 - 2016",
                     title: "Graphic Designer & B2B Marketing",
                     role: "HTW Spain",
                     desc: "First professional stage. Brand identity creation, technical catalog design, and industrial marketing support."
+                },
+                {
+                    year: "2013",
+                    title: "Business Manager (Operations)",
+                    role: "Denetic",
+                    desc: "Practical master's in integral business management: logistics, purchases in China, warehouse management, invoicing, and technical installations. Total responsible for company operations (excluding sales)."
                 }
             ]
         },
@@ -553,30 +551,30 @@ export const translations = {
             items: [
                 {
                     id: 1,
-                    title: "Process and Project Optimization",
+                    title: "Process & Project Optimization",
                     role: "Project Manager & Process Architect",
-                    desc: "In a 40-person marketing agency, I created 30 SOPs from scratch and implemented ClickUp as the central system. Deconstructed and redesigned complete processes, reducing delivery times from 3 months to 1 month.",
-                    tags: ["SOPs", "ClickUp", "Optimization", "Leadership"],
-                    metric: "30% Efficiency | 3 months → 1 month",
-                    image: "/images/achievements/profesor.jpg"
+                    desc: "In a 40-person marketing agency, I built 30 SOPs from scratch and implemented ClickUp as the central system. I dismantled and redesigned entire processes, reducing delivery times by 30% and increasing operational capacity.",
+                    tags: ["ClickUp", "SOPs", "Operations", "Team Management"],
+                    image: "/images/achievements/processes.jpg",
+                    metric: "+30% Operational Efficiency"
                 },
                 {
                     id: 2,
-                    title: "Oracle NetSuite Implementation",
-                    role: "Project Manager Lead",
-                    desc: "Technical and operational leadership in the ERP implementation for a multinational logistics company. Coordination of international teams, critical data migration, and training for 50+ employees.",
-                    tags: ["Oracle ERP", "Migration", "Training"],
-                    metric: "Global Impact",
-                    image: "/images/achievements/netsuite-new.jpg"
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Music Production & Sound Engineering",
+                    desc: "Selected among thousands of candidates for an intensive program with Soma (top producer in Spain). Elite training in sound engineering, mixing, and professional music production at the highest technical level.",
+                    tags: ["Pro Tools", "Sound Engineering", "Music Production", "Mixing"],
+                    image: "/images/achievements/soma-real.jpg",
+                    metric: "Top 1% Selected"
                 },
                 {
                     id: 3,
-                    title: "€1M Mercedes Project Management",
-                    role: "Financial & Resource Management",
-                    desc: "Integral management of a €1,000,000 project for Mercedes at Reauxi. Precise financial control in complex Excel. Management of international purchasing and hiring.",
-                    tags: ["Finance", "Logistics", "Excel"],
-                    metric: "Total Budget Control",
-                    image: "/images/achievements/mercedes.jpg"
+                    title: "Oracle NetSuite ERP Implementation",
+                    role: "Technical Lead & Integrator",
+                    desc: "Led the complete migration of legacy systems to Oracle NetSuite for a tech distribution company. Coordinated technical teams, defined financial and logistics workflows, achieving a seamless operational transition.",
+                    tags: ["Oracle NetSuite", "ERP Migration", "Logistics", "Finance"],
+                    image: "/images/achievements/netsuite.jpg",
+                    metric: "100% Successful Migration"
                 },
                 {
                     id: 4,
@@ -607,12 +605,12 @@ export const translations = {
                 },
                 {
                     id: 7,
-                    title: "Audio Hackers Academy (Soma)",
-                    role: "Launch Strategist & Sales Closer",
-                    desc: "Content strategy and automation (ManyChat) for product launch. Led interviews with sector leaders and closed High-Ticket sales. Achieved €20,000 revenue in a month.",
-                    tags: ["Strategy", "ManyChat", "Sales", "Music"],
-                    metric: "€20,000 in 1 month",
-                    image: "/images/achievements/eventos-new.jpg"
+                    title: "€1M Mercedes Project Management",
+                    role: "Financial & Resource Management",
+                    desc: "Integral management of a €1,000,000 project for Mercedes at Reauxi. Precise financial control in complex Excel. Management of international purchasing and hiring.",
+                    tags: ["Finance", "Logistics", "Excel"],
+                    metric: "Total Budget Control",
+                    image: "/images/achievements/mercedes.jpg"
                 },
                 {
                     id: 8,
@@ -623,10 +621,10 @@ export const translations = {
                     metric: "+100 Events",
                     image: "/images/achievements/eventos.jpg"
                 }
-            ]
+            ] as unknown as any[],
         },
         skills: {
-            title: "Skills",
+            title: "Skills & Stack",
             coreTitle: "Core Skills",
             pm: {
                 title: "Project Management",
@@ -740,11 +738,11 @@ export const translations = {
             webs: "Webs & E-commerce",
             websDesc: "Developed and launched.",
             brands: "Branding Marks",
-            brandsDesc: "Corporate identities created.",
+            brandsDesc: "Corporate identities.",
             ai: "AI Solutions",
-            aiDesc: "Real implementations.",
-            systems: "Systems",
-            systemsDesc: "Process automations.",
+            aiDesc: "Developed with own code.",
+            systems: "SOPs",
+            systemsDesc: "Optimized processes.",
             budget: "Budget",
             budgetDesc: "Managed in projects.",
             core: "Core Systems",
@@ -754,33 +752,43 @@ export const translations = {
         },
         education: {
             title: "Education & Certifications",
-            degree: {
-                title: "Higher Degree in Commerce and Marketing",
-                role: "Higher Degree",
-                desc: "Integral training in marketing strategies, market research, logistics and point of sale management. Academic basis for business strategy development."
-            },
-            masterSoma: {
-                title: "Mixing Master with Soma",
-                role: "Audio Hacker Academy (2021)",
-                desc: "Advanced training in sound engineering and music production with one of the leading producers in the Spanish urban industry (Nach, ZPU, Porta)."
-            },
-            certsTitle: "Professional Certifications",
-            sap: {
-                title: "SAP Certification",
-                desc: "Official training directly provided by SAP (3 intensive days). Specialization in corporate processes and logistical modules."
-            },
-            netsuite: {
-                title: "Oracle NetSuite Foundations",
-                desc: "Official training from Oracle (2 weeks of total immersion). Administration, configuration and work flows in ERP Cloud."
-            },
-            googlePm: {
-                title: "Google Project Management",
-                desc: "Google professional certification. Agile methodologies, change management and leadership of complex projects."
-            },
-            googleAi: {
-                title: "Google AI Essentials",
-                desc: "Specialization courses in Generative AI, Cloud Computing and new technologies from the Google ecosystem."
-            }
+            items: [
+                {
+                    title: "HubSpot Academy Certifications",
+                    role: "Inbound Marketing, CRM & Sales Software",
+                    desc: "Specialization in marketing automation, sales pipeline management, and Inbound methodology. (5 Certifications)."
+                },
+                {
+                    title: "Google Ads & Facebook Ads",
+                    role: "Mercatitlán",
+                    desc: "2022. Intensive training in paid traffic strategy (PPC), audience segmentation, and campaign optimization."
+                },
+                {
+                    title: "Google Project Management",
+                    role: "Google Professional Certification",
+                    desc: "Agile Methodologies, Change Management, strategic planning, and leadership of complex projects."
+                },
+                {
+                    title: "Oracle NetSuite Fundamentals",
+                    role: "Project Management, Sales & Programmer",
+                    desc: "2023. Official technical training: ERP Administration, SuiteFlow, SuiteAnalytics, and programming fundamentals."
+                },
+                {
+                    title: "Administration, Accounting & Finance",
+                    role: "Reauxi Internal Training",
+                    desc: "2016 - 2018. Practical training in financial management, analytical accounting, international invoicing, and treasury control."
+                },
+                {
+                    title: "Mixing & Production Masterclass",
+                    role: "Audio Hacker Academy (Soma)",
+                    desc: "2021. Advanced sound engineering and professional music production. High-performance mindset."
+                },
+                {
+                    title: "Higher Technician in Commerce & Marketing",
+                    role: "Official Higher Degree",
+                    desc: "Market research, commercial logistics, point-of-sale management, and strategic marketing."
+                }
+            ]
         },
         freelance: {
             title: "Entrepreneurship & Freelance",
