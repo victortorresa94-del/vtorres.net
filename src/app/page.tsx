@@ -148,23 +148,23 @@ export default function Home() {
               exit={{ opacity: 0, y: -20 }}
               className="fixed inset-0 bg-[#050505] z-40 flex flex-col items-center justify-center space-y-8 md:hidden"
             >
-              <MobileNavLink href="#ia" onClick={() => setMobileMenuOpen(false)}>Experiencia</MobileNavLink>
-              <MobileNavLink href="#freelance" onClick={() => setMobileMenuOpen(false)}>Freelance</MobileNavLink>
-              <MobileNavLink href="#stack" onClick={() => setMobileMenuOpen(false)}>Stack</MobileNavLink>
-              <MobileNavLink href="#contact" onClick={() => setMobileMenuOpen(false)}>Hablemos</MobileNavLink>
+              <MobileNavLink href="#ia" onClick={() => setMobileMenuOpen(false)}>{t.nav.experience}</MobileNavLink>
+              <MobileNavLink href="#freelance" onClick={() => setMobileMenuOpen(false)}>{t.nav.projects}</MobileNavLink>
+              <MobileNavLink href="#stack" onClick={() => setMobileMenuOpen(false)}>{t.nav.stack}</MobileNavLink>
+              <MobileNavLink href="#contact" onClick={() => setMobileMenuOpen(false)}>{t.nav.contact}</MobileNavLink>
 
               <div className="pt-8 flex flex-col items-center gap-6 w-full px-12">
                 <button
                   onClick={() => { window.print(); setMobileMenuOpen(false); }}
                   className="flex items-center gap-2 text-zinc-400 hover:text-white"
                 >
-                  <Download size={16} /> Descargar CV PDF
+                  <Download size={16} /> {t.nav.download}
                 </button>
                 <a
                   href="mailto:victortorresa94@gmail.com"
                   className="w-full bg-[#82ff1f] text-black py-4 rounded-xl text-center font-bold text-lg"
                 >
-                  Contactar
+                  {t.nav.contact}
                 </a>
               </div>
             </motion.div>
@@ -188,7 +188,7 @@ export default function Home() {
               {/* Open to work badge */}
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 w-fit mx-auto md:mx-0">
                 <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
-                <span className="text-[#82ff1f] text-xs font-bold tracking-wider uppercase">Open to Work</span>
+                <span className="text-[#82ff1f] text-xs font-bold tracking-wider uppercase">{t.hero.openToWork}</span>
               </div>
 
               <h1 className="text-5xl md:text-7xl lg:text-7xl font-heading font-light tracking-tighter text-white leading-[0.9]">
@@ -200,21 +200,21 @@ export default function Home() {
               </h2>
 
               <p className="text-lg text-zinc-500 max-w-xl mx-auto md:mx-0 leading-relaxed">
-                Transformo ideas abstractas en productos digitales funcionales. Especializado en <span className="text-zinc-300">Generative AI</span>, automatización de negocio y diseño de experiencias.
+                {t.hero.description}
               </p>
 
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
                 <a href="#contact" className="w-full sm:w-auto px-8 py-4 bg-[#82ff1f] text-black font-bold rounded-full hover:bg-[#6ed617] transition-all flex items-center justify-center gap-2">
                   <Mail size={20} />
-                  CONTACTO
+                  {t.hero.contact}
                 </a>
                 <a href="https://www.linkedin.com/in/víctor-torres-arana-54618b99/" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-4 bg-white/5 text-white font-bold rounded-full hover:bg-white/10 transition-all border border-white/10 flex items-center justify-center gap-2">
                   <Linkedin size={20} />
-                  LINKEDIN
+                  {t.hero.linkedin}
                 </a>
                 <button onClick={() => window.print()} className="w-full sm:w-auto px-8 py-4 bg-transparent text-zinc-400 font-bold rounded-full hover:text-white transition-all flex items-center justify-center gap-2 border border-white/5 hover:border-white/20">
                   <Download size={20} />
-                  CV .PDF
+                  {t.hero.cv}
                 </button>
               </div>
             </motion.div>
@@ -231,113 +231,46 @@ export default function Home() {
         </section>
 
         {/* --- MI HISTORIA --- */}
-        < ExpandableSection id="story" number="00" title="Mi Historia" >
+        < ExpandableSection id="story" number="00" title={t.story.title} >
           <div className="space-y-6 text-lg text-zinc-300 font-light leading-relaxed">
-            <p className="font-medium text-white text-xl">Organizo e impulso ideas, equipos y negocios.</p>
-            <p>
-              A lo largo de mi trayectoria he trabajado en <strong className="text-white">prácticamente todos los departamentos de una empresa</strong> —ventas, compras, contabilidad, logística, marketing y gerencia—, lo que me ha permitido desarrollar una visión global y muy práctica de cómo funcionan realmente las organizaciones y cuáles son sus necesidades operativas reales.
-            </p>
-            <p>
-              Durante más de ocho años trabajé en marketing digital y ventas. En 2022 di un paso clave al asumir mi primer rol como <strong className="text-white">Project Manager y líder de procesos</strong> en una agencia de marketing, donde diseñé desde cero la estructura operativa, logrando <span className="text-[#82ff1f]">mejorar la eficiencia global en torno a un 30%</span>.
-            </p>
-            <p>
-              Tras la pandemia me trasladé a Colombia sin un plan definido. Allí creé y gestioné múltiples emprendimientos propios que se convirtieron en un <strong className="text-white">auténtico máster práctico en negocio y ejecución bajo presión</strong>.
-            </p>
-            <p>
-              Descubrí que mi fortaleza es la <strong className="text-white">capacidad para organizar el caos y mejorar sistemas</strong>. La irrupción de ChatGPT me llevó a especializarme en <span className="text-[#82ff1f]">Inteligencia Artificial aplicada</span>, integrándola de forma práctica en proyectos reales.
-            </p>
-            <p>
-              De vuelta en España lideré la implementación de un ERP de Oracle y la estrategia GTM de una startup de IA. No soy un perfil puramente técnico, pero tampoco exclusivamente estratégico. Me sitúo en un punto intermedio que me permite <strong className="text-white">traducir necesidades de negocio en sistemas funcionales</strong>.
-            </p>
+            <p className="font-medium text-white text-xl">{t.story.intro}</p>
+            <p>{t.story.p1}</p>
+            <p>{t.story.p2}</p>
+            <p>{t.story.p3}</p>
+            <p>{t.story.p4}</p>
+            <p>{t.story.p5}</p>
+            <p>{t.story.p5_5}</p>
             <p className="border-l-2 border-[#82ff1f] pl-4 italic text-zinc-400">
-              Actualmente busco incorporarme como <strong className="text-white">Project Manager</strong> en una compañía donde pueda aportar esta experiencia híbrida y seguir creciendo en un entorno estable.
+              {t.story.p6}
             </p>
           </div>
         </ExpandableSection >
 
-        {/* --- TRAYECTORIA (ROLE SWAPPED WITH COMPANY) --- */}
-        < ExpandableSection id="career" number="01" title="Trayectoria Profesional" >
+        < ExpandableSection id="career" number="01" title={t.career.title} >
           <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
-            <TimelineItem
-              year="2025 - Present"
-              title="Consultor de Negocio & IA"
-              role="Autónomo"
-              desc="Implementación de soluciones de IA para empresas, consultoría estratégica de marketing y dirección de proyectos tecnológicos."
-            />
-            <TimelineItem
-              year="2023 - 2025"
-              title="Fundador / Director de Eventos"
-              role="94 Music"
-              desc="Liderazgo y ejecución de más de 100 eventos musicales en vivo. Gestión integral: producción, logística, booking y marketing digital."
-            />
-            <TimelineItem
-              year="2023 - 2024"
-              title="CMO & Marketing AI"
-              role="Kmeleon"
-              desc="Estrategia de marca internacional y Go-to-Market para soluciones de IA. Automatización de procesos de venta y narrativa tecnológica."
-            />
-            <TimelineItem
-              year="2023"
-              title="Netsuite Oracle Project Manager"
-              role="DisrupTT"
-              desc="Liderazgo en la implementación del ERP Oracle Netsuite. Coordinación de equipos técnicos y consultoría de procesos."
-            />
-            <TimelineItem
-              year="2022 - 2023"
-              title="Growth Partner & BizDev"
-              role="Konektor"
-              desc="Desarrollo de negocio y expansión estratégica. Implementación de ventas consultivas apoyadas en herramientas de IA."
-            />
-            <TimelineItem
-              year="2022"
-              title="PM & Líder de Procesos"
-              role="Eme Growth Agency"
-              desc="Diseño y ejecución de la estructura operativa de la agencia. Liderazgo de equipos multidisciplinares y creación de 'EME Academy'."
-            />
-            <TimelineItem
-              year="2021"
-              title="Marketing Account Manager"
-              role="Growbox Digital"
-              desc="Estrategia GTM para 'Totemica' (Skincare Miami). Branding, búsqueda de proveedores internacionales y lanzamiento exitoso al mercado."
-            />
-            <TimelineItem
-              year="2019"
-              title="Jefe de Logística"
-              role="Mondo Convenienza"
-              desc="Coordinación y optimización de flujos de trabajo logísticos y liderazgo de equipos operativos."
-            />
-            <TimelineItem
-              year="2018"
-              title="Responsable de Marketing & Compras"
-              role="Reauxi"
-              desc="Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
-            />
-            <TimelineItem
-              year="2017"
-              title="Business Manager (Operaciones)"
-              role="Denetic"
-              desc="Máster práctico en gestión integral de negocio: logística, compras en China, gestión de almacén, facturación e instalaciones técnicas. Responsable total de la operativa de la empresa (excluyendo ventas)."
-            />
-            <TimelineItem
-              year="2015 - 2017"
-              title="Diseñador Gráfico & Marketing B2B"
-              role="HTW Spain"
-              desc="Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
-            />
+            {t.career.items.map((item, index) => (
+              <TimelineItem
+                key={index}
+                year={item.year}
+                title={item.title}
+                role={item.role}
+                desc={item.desc}
+              />
+            ))}
           </div>
         </ExpandableSection >
 
         {/* --- HITOS Y LOGROS --- */}
-        < ExpandableSection id="achievements" number="02" title="Hitos & Logros" >
+        < ExpandableSection id="achievements" number="02" title={t.achievements.title} >
           <AchievementsCarousel items={achievements} />
         </ExpandableSection >
 
         {/* --- SKILLS --- */}
-        < ExpandableSection id="skills" number="03" title="Skills" >
+        < ExpandableSection id="skills" number="03" title={t.skills.title} >
 
           {/* Core Skills - Destacados */}
           < div className="mb-12" >
-            <h3 className="text-base sm:text-lg font-bold text-zinc-400 mb-4 sm:mb-6 uppercase tracking-wider">Core Skills</h3>
+            <h3 className="text-base sm:text-lg font-bold text-zinc-400 mb-4 sm:mb-6 uppercase tracking-wider">{t.skills.coreTitle}</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
 
               {/* Project Management */}
@@ -347,8 +280,8 @@ export default function Home() {
                   <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
                     <Target size={20} className="text-black" />
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">Project Management</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Visión estratégica para liderar equipos y traducir objetivos de negocio en sistemas funcionales.</p>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.pm.title}</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.pm.desc}</p>
                 </div>
               </div>
 
@@ -359,8 +292,8 @@ export default function Home() {
                   <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
                     <Megaphone size={20} className="text-black" />
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">Marketing & Growth</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Estrategias GTM, diseño de funnels de conversión y posicionamiento de marca.</p>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.marketing.title}</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.marketing.desc}</p>
                 </div>
               </div>
 
@@ -371,8 +304,8 @@ export default function Home() {
                   <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
                     <Users size={20} className="text-black" />
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">Client Relationship</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Gestión de cuentas (KAM), fidelización y traducción de necesidades técnicas a lenguaje de negocio.</p>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.client.title}</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.client.desc}</p>
                 </div>
               </div>
 
@@ -383,8 +316,8 @@ export default function Home() {
                   <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
                     <Brain size={20} className="text-black" />
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">AI Strategy & Execution</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">De la estrategia a la implementación técnica real. Ciclo completo de proyectos de IA aplicada.</p>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.ai.title}</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.ai.desc}</p>
                 </div>
               </div>
 
@@ -397,96 +330,56 @@ export default function Home() {
             {/* Gestión de Proyectos y Metodologías */}
             < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <ClipboardList size={16} /> Gestión de Proyectos y Agilismo
+                <ClipboardList size={16} /> {t.skills.categories.pm}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Scrum</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Kanban</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Liderazgo de Equipos</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Gestión de Riesgos</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Planificación Estratégica</p>
-                </div>
+                {t.skills.pm.items.map((skill) => (
+                  <div key={skill} className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                    <p className="text-sm font-medium text-white">{skill}</p>
+                  </div>
+                ))}
               </div>
             </div >
 
             {/* Relación con Cliente (New) */}
             <div>
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Users size={16} /> Relación con Cliente & Gestión
+                <Users size={16} /> {t.skills.categories.client}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Key Account Management</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Atención al Cliente</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Fidelización</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Resolución de Conflictos</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Comunicación Asertiva</p>
-                </div>
+                {t.skills.client.items.map((skill) => (
+                  <div key={skill} className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                    <p className="text-sm font-medium text-white">{skill}</p>
+                  </div>
+                ))}
               </div>
             </div>
 
             {/* Habilidades de Negocio */}
             <div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Briefcase size={16} /> Habilidades de Negocio
+                <Briefcase size={16} /> {t.skills.categories.business}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Desarrollo de Negocio</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Negociación B2B</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Estrategia GTM</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Visión de Producto</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Gestión de Stakeholders</p>
-                </div>
+                {t.skills.categories.businessItems.map((skill) => (
+                  <div key={skill} className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                    <p className="text-sm font-medium text-white">{skill}</p>
+                  </div>
+                ))}
               </div>
             </div >
 
             {/* Habilidades Técnicas Conceptuales */}
             < div >
               <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Code size={16} /> Habilidades Técnicas
+                <Code size={16} /> {t.skills.categories.tech}
               </h3>
               <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Arquitectura de Soluciones</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Integración de Sistemas</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Automatización de Procesos</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Prompt Engineering</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Cloud Computing Concepts</p>
-                </div>
+                {t.skills.categories.techItems.map((skill) => (
+                  <div key={skill} className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                    <p className="text-sm font-medium text-white">{skill}</p>
+                  </div>
+                ))}
               </div>
             </div >
           </div >
@@ -494,14 +387,14 @@ export default function Home() {
           {/* --- TECH STACK & HERRAMIENTAS (Bloque Diferenciado) --- */}
           <div className="mt-12 pt-8 border-t border-white/10">
             <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
-              <span className="text-[#82ff1f]">#</span> Tech Stack & Herramientas
+              <span className="text-[#82ff1f]">#</span> {t.skills.categories.stack}
             </h3>
 
             <div className="space-y-8">
 
               {/* Stack IA & Automatización */}
               <div>
-                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">IA & Automatización Avanzada</h4>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.ai}</h4>
                 <div className="flex flex-wrap gap-2">
                   {["n8n", "Make", "Zapier", "Cursor (IDE)", "Antigravity", "ChatBase", "Voiceflow", "Retell AI", "Vapi", "Google Flow", "Midjourney", "Google AI Studio", "OpenAI API", "Hume AI"].map((tool) => (
                     <span key={tool} className="px-3 py-1.5 rounded-lg bg-[#82ff1f]/10 text-[#82ff1f] text-sm border border-[#82ff1f]/20 font-medium">
@@ -513,7 +406,7 @@ export default function Home() {
 
               {/* Stack Marketing & Ventas */}
               <div>
-                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Marketing, Ventas & CRM</h4>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.marketing}</h4>
                 <div className="flex flex-wrap gap-2">
                   {["HubSpot CRM", "Salesforce", "Google Ads", "Meta Ads", "YouTube Growth", "Email Automation (ActiveC)", "Pipedrive", "Cold Outbound Tools", "Google Analytics 4"].map((tool) => (
                     <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
@@ -525,7 +418,7 @@ export default function Home() {
 
               {/* Stack Creativo */}
               <div>
-                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Diseño & Contenido</h4>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.creative}</h4>
                 <div className="flex flex-wrap gap-2">
                   {["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Premiere Pro", "CapCut", "DaVinci Resolve", "Studio One", "Canva", "OBS Studio"].map((tool) => (
                     <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
@@ -537,7 +430,7 @@ export default function Home() {
 
               {/* Stack Desarrollo & Web */}
               <div>
-                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Desarrollo Web & Código</h4>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.dev}</h4>
                 <div className="flex flex-wrap gap-2">
                   {["Next.js", "React", "Node.js", "Tailwind CSS", "TypeScript", "Git/GitHub", "VS Code", "Vercel"].map((tool) => (
                     <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
@@ -549,7 +442,7 @@ export default function Home() {
 
               {/* Stack Operaciones & ERP */}
               <div>
-                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Operaciones & ERPs</h4>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.ops}</h4>
                 <div className="flex flex-wrap gap-2">
                   {["Oracle NetSuite", "SAP ERP", "ClickUp", "Notion", "Slack", "Jira", "Monday", "Microsoft Excel (Adv)"].map((tool) => (
                     <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
@@ -566,56 +459,50 @@ export default function Home() {
 
 
         {/* --- EXPERIENCIA IA --- */}
-        < ExpandableSection id="ia" number="04" title="Experiencia IA" >
+        < ExpandableSection id="ia" number="04" title={t.aiExperience.title} >
           <div className="space-y-8">
             <p className="text-zinc-300 text-lg font-light leading-relaxed mb-6">
-              Mi enfoque en la Inteligencia Artificial combina la <strong className="text-white">visión estratégica con la capacidad de ejecución técnica</strong>. Me especializo en el ciclo completo de vida del proyecto: desde el diseño de la arquitectura de la solución hasta la implementación técnica de agentes y la orquestación de workflows complejos. Actúo como el puente que traduce los objetivos de negocio en sistemas operativos eficientes.
+              {t.aiExperience.intro}
             </p>
 
             <div className="grid grid-cols-1 gap-6">
-              {/* Aether Labs - The Technical Hub */}
-              {/* Aether Labs - The Technical Hub */}
               <ProjectRow
-                title="Aether Labs"
-                role="Founder & AI Engineer"
-                desc="Mi laboratorio de implementación técnica. Desarrollo de agentes de voz autónomos para Call Centers (integrando Twilio + Vapi/Retell). Orquestación de workflows complejos en n8n para automatizar procesos de research y generación de contenido SEO-friendly masivo. Conexión de LLMs con APIs externas (Gmail, Calendar, CRMs)."
+                title={t.aiExperience.projects.aether.title}
+                role={t.aiExperience.projects.aether.role}
+                desc={t.aiExperience.projects.aether.desc}
                 tags={["Vapi / Retell", "n8n Workflows", "OpenAI API", "Function Calling"]}
                 link="https://aetherlabs.es"
                 icon={<Brain size={24} />}
               />
 
-              {/* Futura AI - The Product Launch */}
               <ProjectRow
-                title="Futura AI (by Konektor)"
-                role="Product Lead & Strategy"
-                desc="Lideré la creación de esta marca desde cero. Realicé el benchmark técnico de proveedores de voz (ElevenLabs vs PlayHT vs Rime), definí el stack tecnológico y construí la oferta comercial B2B. Diseñé los funnels de venta y los scripts para vender 'empleados digitales' a empresas tradicionales."
+                title={t.aiExperience.projects.futura.title}
+                role={t.aiExperience.projects.futura.role}
+                desc={t.aiExperience.projects.futura.desc}
                 tags={["Product Design", "Tech Benchmark", "B2B Sales", "Voice Agents"]}
                 icon={<Mic size={24} />}
               />
 
-              {/* Suma Salut - End-to-End Implementation */}
               <ProjectRow
-                title="Suma Salut - Clínica"
-                role="Full-Stack AI Implementation"
-                desc="Desarrollo e integración de un asistente virtual para triaje médico y cita previa. Ingeniería de prompts avanzada para dotar al bot de empatía y seguridad clínica. Conexión con WhatsApp Business API y automatización de la agenda de doctores mediante webhooks."
+                title={t.aiExperience.projects.suma.title}
+                role={t.aiExperience.projects.suma.role}
+                desc={t.aiExperience.projects.suma.desc}
                 tags={["Chatbase / Voiceflow", "Prompt Engineering", "WhatsApp API", "Medical"]}
                 icon={<MessageSquare size={24} />}
               />
 
-              {/* Kmeleon - The Strategy */}
               <ProjectRow
-                title="Kmeleon Startup"
-                role="CMO & AI Strategist"
-                desc="Traducción de capacidades técnicas complejas (Sistemas Multi-Agente) a una narrativa de negocio comprensible para clientes Enterprise. Lideré la estrategia GTM para posicionar la startup en el mercado de la IA corporativa, trabajando codo a codo con ingenieros ex-Microsoft para alinear producto y mercado."
+                title={t.aiExperience.projects.kmeleon.title}
+                role={t.aiExperience.projects.kmeleon.role}
+                desc={t.aiExperience.projects.kmeleon.desc}
                 tags={["GTM Strategy", "Enterprise AI", "Deep Tech Narrative"]}
                 icon={<TrendingUp size={24} />}
               />
 
-              {/* 94 Music - Lead Generation Agent */}
               <ProjectRow
-                title="94 Music"
-                role="Lead Generation & Automation"
-                desc="Desarrollo de un agente de prospección automatizado: scraping web para identificar clientes potenciales (wedding planners), extracción automática de datos de contacto, almacenamiento en Excel y envío de secuencias de correo personalizadas. Sistema completo de captación de leads sin intervención manual."
+                title={t.aiExperience.projects.music.title}
+                role={t.aiExperience.projects.music.role}
+                desc={t.aiExperience.projects.music.desc}
                 tags={["Web Scraping", "Email Automation", "Lead Generation", "n8n"]}
                 icon={<Target size={24} />}
               />
@@ -624,96 +511,96 @@ export default function Home() {
             {/* --- DESARROLLOS IA PROPIOS --- */}
             <div className="mt-12 pt-8 border-t border-white/5">
               <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
-                <Zap size={20} /> Desarrollos IA Propios
+                <Zap size={20} /> {t.aiExperience.developmentsTitle}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                {/* Nuria - Voice Agent */}
+                {/* Nuria */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Mic size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Núria - Agente Rostisseria</h4>
-                      <p className="text-xs text-zinc-400">Agente telefónico que gestiona pedidos retail, consulta stock en tiempo real y registra pedidos automáticamente</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.nuria.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.nuria.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Jason ClickUp Manager */}
+                {/* Jason */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <ClipboardList size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Jason ClickUp Manager</h4>
-                      <p className="text-xs text-zinc-400">Agente de productividad que crea tareas en ClickUp por voz/texto, asigna responsables y automatiza proyectos</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.jason.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.jason.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* UGC Avatar Studio */}
+                {/* UGC */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Users size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">UGC Avatar Studio</h4>
-                      <p className="text-xs text-zinc-400">Generador de avatares consistentes fotorrealistas para marcas, thumbnails y creatividades estáticas</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.ugc.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.ugc.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Editor de Fotos IA */}
+                {/* Editor */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Palette size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Editor de Fotos IA</h4>
-                      <p className="text-xs text-zinc-400">Web app de edición: eliminación de objetos/fondos (Inpainting), restauración y mejora de calidad en segundos</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.editor.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.editor.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Gestor de Partículas 3D */}
+                {/* Particles */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Zap size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Gestor de Partículas 3D</h4>
-                      <p className="text-xs text-zinc-400">Control de partículas con las manos (Webcam). Vision Tech en el navegador con experiencia visual reactiva</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.particles.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.particles.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Chleopatra - Historias IA */}
+                {/* Chleopatra */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Brain size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Chleopatra - Historias IA</h4>
-                      <p className="text-xs text-zinc-400">Plataforma EdTech que genera historias visuales educativas con voces clonadas y vídeos sintéticos</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.chleopatra.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.chleopatra.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Aura Tasks AI */}
+                {/* Aura */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <Target size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Aura Tasks AI</h4>
-                      <p className="text-xs text-zinc-400">Super app de productividad con NLP avanzado, CTAs inteligentes y planificación automática por IA</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.aura.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.aura.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -725,21 +612,21 @@ export default function Home() {
                       <Music size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Musikeeo</h4>
-                      <p className="text-xs text-zinc-400">Red social vertical para músicos: marketplace de segunda mano, servicios y pedidos para conciertos</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.musikeeo.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.musikeeo.desc}</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Numa - Suma Salut */}
+                {/* Numa */}
                 <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
                       <MessageSquare size={18} className="text-[#82ff1f]" />
                     </div>
                     <div>
-                      <h4 className="font-bold text-white text-sm mb-1">Numa - Asistente Suma Salut</h4>
-                      <p className="text-xs text-zinc-400">Agente de atención al paciente 24/7: gestión de citas, triaje inteligente y resolución de dudas médicas</p>
+                      <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.numa.title}</h4>
+                      <p className="text-xs text-zinc-400">{t.aiExperience.developments.numa.desc}</p>
                     </div>
                   </div>
                 </div>
@@ -782,71 +669,71 @@ export default function Home() {
         </ExpandableSection >
 
         {/* --- MIS NÚMEROS --- */}
-        < ExpandableSection id="numbers" number="05" title="Mis Números" >
+        < ExpandableSection id="numbers" number="05" title={t.numbers.title} >
           <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+10M" label="Impacto Total" description="Personas alcanzadas." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label="Webs & E-commerce" description="Desarrollados y lanzados." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Lightbulb size={24} />} value="+20" label="Marcas Branding" description="Identidades corporativas creadas." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Brain size={24} />} value="+10" label="Soluciones IA" description="Implementaciones en real." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Briefcase size={24} />} value="10" label="Negocios Impulsados" description="Empresas en las que he trabajado e impulsado su crecimiento." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+40" label="Sistemas" description="Automatizaciones de procesos." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+1M €" label="Presupuesto" description="Gestionado en proyectos." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Database size={24} />} value="3" label="Sistemas Core" description="NetSuite, SAP, ClickUp implementados." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+5M" label={t.numbers.impact} description={t.numbers.impactDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+20" label={t.numbers.webs} description={t.numbers.websDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Lightbulb size={24} />} value="+30" label={t.numbers.brands} description={t.numbers.brandsDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Brain size={24} />} value="+15" label={t.numbers.ai} description={t.numbers.aiDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Briefcase size={24} />} value="+10" label={t.numbers.boosted} description={t.numbers.boostedDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+100" label={t.numbers.systems} description={t.numbers.systemsDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+120k€" label={t.numbers.budget} description={t.numbers.budgetDesc} />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Database size={24} />} value="3" label={t.numbers.core} description={t.numbers.coreDesc} />
           </div>
         </ExpandableSection >
 
         {/* --- FORMACIÓN --- */}
-        < ExpandableSection id="education" number="06" title="Formación & Certificaciones" >
+        < ExpandableSection id="education" number="06" title={t.education.title} >
           <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
 
             {/* Ciclo Superior */}
             <TimelineItem
-              year="2012 - 2014"
-              title="Ciclo Superior de Comercio y Marketing"
-              role="Grado Superior"
-              desc="Formación integral en estrategias de comercialización, investigación de mercados, logística y gestión de puntos de venta. Base académica para el desarrollo de estrategias de negocio."
+              year="2013 - 2015"
+              title={t.education.degree.title}
+              role={t.education.degree.role}
+              desc={t.education.degree.desc}
             />
 
             {/* Certificaciones Técnicas (Bloque Agrupado) */}
             <div className="relative">
               <span className="absolute -left-[41px] top-2 w-3 h-3 rounded-full bg-[#82ff1f] shadow-[0_0_10px_#82ff1f]"></span>
-              <h3 className="text-xl font-bold text-white mb-6">Certificaciones Profesionales</h3>
+              <h3 className="text-xl font-bold text-white mb-6">{t.education.certsTitle}</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                 {/* SAP */}
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-center gap-3 mb-2">
                     <Award size={20} className="text-[#82ff1f]" />
-                    <h4 className="font-bold text-white">Certificación SAP</h4>
+                    <h4 className="font-bold text-white">{t.education.sap.title}</h4>
                   </div>
-                  <p className="text-sm text-zinc-400">Formación oficial impartida directamente por <strong className="text-white">SAP</strong> (3 días intensivos). Especialización en procesos corporativos y módulos logísticos.</p>
+                  <p className="text-sm text-zinc-400">{t.education.sap.desc}</p>
                 </div>
 
                 {/* Oracle NetSuite */}
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-center gap-3 mb-2">
                     <Award size={20} className="text-[#82ff1f]" />
-                    <h4 className="font-bold text-white">Oracle NetSuite Fundamentos</h4>
+                    <h4 className="font-bold text-white">{t.education.netsuite.title}</h4>
                   </div>
-                  <p className="text-sm text-zinc-400">Formación oficial de <strong className="text-white">Oracle</strong> (2 semanas de inmersión total). Administración, configuración y flujos de trabajo en ERP Cloud.</p>
+                  <p className="text-sm text-zinc-400">{t.education.netsuite.desc}</p>
                 </div>
 
                 {/* Google PM */}
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-center gap-3 mb-2">
                     <ShieldCheck size={20} className="text-[#82ff1f]" />
-                    <h4 className="font-bold text-white">Google Project Management</h4>
+                    <h4 className="font-bold text-white">{t.education.googlePm.title}</h4>
                   </div>
-                  <p className="text-sm text-zinc-400">Certificación profesional de Google. Metodologías Ágiles, gestión del cambio y liderazgo de proyectos complejos.</p>
+                  <p className="text-sm text-zinc-400">{t.education.googlePm.desc}</p>
                 </div>
 
                 {/* Google IA */}
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <div className="flex items-center gap-3 mb-2">
                     <Brain size={20} className="text-[#82ff1f]" />
-                    <h4 className="font-bold text-white">Google AI Essentials</h4>
+                    <h4 className="font-bold text-white">{t.education.googleAi.title}</h4>
                   </div>
-                  <p className="text-sm text-zinc-400">Cursos de especialización en IA Generativa, Cloud Computing y nuevas tecnologías del ecosistema Google.</p>
+                  <p className="text-sm text-zinc-400">{t.education.googleAi.desc}</p>
                 </div>
 
               </div>
@@ -856,62 +743,62 @@ export default function Home() {
         </ExpandableSection >
 
         {/* --- FREELANCE & EMPRENDIMIENTO --- */}
-        < ExpandableSection id="freelance" number="07" title="Emprendimiento & Freelance" >
+        < ExpandableSection id="freelance" number="07" title={t.freelance.title} >
           <div className="space-y-12">
 
             {/* Proyectos Propios */}
             <div>
               <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
-                <Target size={20} /> Proyectos Propios & Startups
+                <Target size={20} /> {t.freelance.ownTitle}
               </h3>
               <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 md:pb-0">
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Aether Labs"
+                  title={t.freelance.items.aether.title}
                   role="Founder"
-                  desc="Consultora de Inteligencia Artificial y automatización. Mi vehículo principal para materializar soluciones técnicas: agentes de voz, chatbots y workflows complejos para empresas."
+                  desc={t.freelance.items.aether.desc}
                   tags={["AI Agency", "Automation", "B2B"]}
                   link="https://aetherlabs.es"
                   icon={<Brain size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="94 Music"
+                  title={t.freelance.items.music.title}
                   role="Founder & Community"
-                  desc="Medio digital y agencia. Creación de contenido viral (+5M views, 16k comunidad) y gestión de booking. He organizado y sonorizado más de 100 eventos musicales."
+                  desc={t.freelance.items.music.desc}
                   tags={["Music Agency", "Viral Content", "Events"]}
                   link="https://instagram.com/the94music"
                   icon={<Music size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Condor Music"
+                  title={t.freelance.items.condor.title}
                   role="Founder & Manager"
-                  desc="Agencia 360º en Colombia. Gestioné la carrera de 4 artistas (La Payara, Savahna...), logrando giras de medios en TV/Radio nacional, producción de videoclips y conciertos."
+                  desc={t.freelance.items.condor.desc}
                   tags={["Management", "Colombia", "Production"]}
                   icon={<Mic size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="El Hombre de los Anillos"
+                  title={t.freelance.items.rings.title}
                   role="Founder"
-                  desc="Ecommerce de joyería masculina creado a coste cero. Estrategia de crecimiento orgánico que permitió ventas internacionales en 8 países y sostener el negocio."
+                  desc={t.freelance.items.rings.desc}
                   tags={["Ecommerce", "Bootstrapping", "Sales"]}
                   icon={<ShoppingBag size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Lady Jarana"
+                  title={t.freelance.items.jarana.title}
                   role="Founder & Musician"
-                  desc="Banda de Pop-Rock y Rumba 'Millenial'. Proyecto nacido en 2025: creación de marca, repertorio y cierre de 8 conciertos en los primeros meses de vida."
+                  desc={t.freelance.items.jarana.desc}
                   tags={["Music Band", "Entertainment", "Live"]}
                   icon={<Music size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Cataleya Flamenco"
+                  title={t.freelance.items.cataleya.title}
                   role="Co-Founder"
-                  desc="Fusión flamenco-latina para el sector Premium/Corporativo. Actuaciones en eventos de alto perfil (ej. Boda Andrea Valdiri). Repertorio a medida y elegancia."
+                  desc={t.freelance.items.cataleya.desc}
                   tags={["Events", "Flamenco", "Premium"]}
                   icon={<Music size={24} />}
                 />
@@ -921,38 +808,38 @@ export default function Home() {
             {/* Freelance */}
             <div>
               <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
-                <Briefcase size={20} /> Consultoría & Freelance
+                <Briefcase size={20} /> {t.freelance.consultingTitle}
               </h3>
               <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-1 md:pb-0">
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Konektor"
+                  title={t.freelance.items.konektor.title}
                   role="Growth & AI Partner"
-                  desc="Mano derecha de dirección. Lideré el lanzamiento de 'Futura AI' (agentes de voz): benchmark, producto y funnels. Captación B2B para Metaverso y ventas consultivas."
+                  desc={t.freelance.items.konektor.desc}
                   tags={["Growth Strategy", "AI Sales", "Metaverso"]}
                   icon={<Briefcase size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Soma"
+                  title={t.freelance.items.soma.title}
                   role="Launch Strategist"
-                  desc="Estrategia integral para infoproducto: creación de contenido diario de alta conversión, llenado de eventos presenciales y cierre de ventas High-Ticket."
+                  desc={t.freelance.items.soma.desc}
                   tags={["Launch", "Content", "Sales Closing"]}
                   icon={<Megaphone size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Deodi"
+                  title={t.freelance.items.deodi.title}
                   role="Business Consultant"
-                  desc="Expansión 360º de negocio físico. Creación de ecommerce de cosmética (web+proveedores), rebranding completo del local y estrategia de captación digital."
+                  desc={t.freelance.items.deodi.desc}
                   tags={["Digital Transformation", "Ecommerce", "Branding"]}
                   icon={<Palette size={24} />}
                 />
                 <ProjectRow
                   className="min-w-[85vw] md:min-w-0 snap-center"
-                  title="Suma Salut"
+                  title={t.freelance.items.suma.title}
                   role="Tech & Design"
-                  desc="Modernización operativa. Optimización web, diseño de identidad corporativa y desarrollo de chatbot IA para automatizar citas y atención al paciente."
+                  desc={t.freelance.items.suma.desc}
                   tags={["Web Dev", "AI Chatbot", "Design"]}
                   icon={<Database size={24} />}
                 />
@@ -965,37 +852,37 @@ export default function Home() {
 
 
         {/* --- QUÉ BUSCO --- */}
-        < ExpandableSection id="seeking" number="08" title="Mis Objetivos" >
+        < ExpandableSection id="seeking" number="08" title={t.seeking.title} >
           <div className="max-w-4xl space-y-8 text-lg text-zinc-300 font-light leading-relaxed">
             <p>
-              Llevo mucho tiempo trabajando por mi cuenta. El camino del emprendedor solitario curte, pero también agota. Ahora busco un cambio de etapa: <strong className="text-white">busco hogar</strong>.
+              {t.seeking.intro1}
             </p>
             <p>
-              Quiero una empresa donde <span className="text-[#82ff1f]">estabilizarme a largo plazo</span> (años, no meses). Un lugar donde no me limite a cumplir tickets, sino donde pueda aportar mi visión, tomar la iniciativa y realmente sentir el proyecto como propio.
+              {t.seeking.intro2}
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-4">
               <div className="p-6 rounded-2xl bg-[#white]/5 border border-dashed border-white/10 hover:border-[#82ff1f]/30 transition-all">
                 <h4 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
-                  🚀 Startup
+                  🚀 {t.seeking.startup.title}
                 </h4>
                 <p className="text-sm">
-                  Un proyecto que necesite a alguien todoterreno para <strong>impulsar el crecimiento</strong>, poner orden en el caos inicial y escalar operaciones.
+                  {t.seeking.startup.desc}
                 </p>
               </div>
               <div className="p-6 rounded-2xl bg-[#82ff1f]/5 border border-[#82ff1f]/20 hover:bg-[#82ff1f]/10 transition-all">
                 <h4 className="text-xl font-bold text-white mb-2 flex items-center gap-2">
-                  🏢 Empresa Consolidada
-                  <span className="text-[10px] bg-[#82ff1f] text-black px-2 py-0.5 rounded-full font-bold uppercase">Preferible</span>
+                  🏢 {t.seeking.company.title}
+                  <span className="text-[10px] bg-[#82ff1f] text-black px-2 py-0.5 rounded-full font-bold uppercase">{t.seeking.company.badge}</span>
                 </h4>
                 <p className="text-sm text-white">
-                  Un entorno estable donde pueda encargarme de la <strong>operativa interna</strong>, optimizar procesos y asegurar la eficiencia. Donde se valore la resolución y la autonomía.
+                  {t.seeking.company.desc}
                 </p>
               </div>
             </div>
 
             <p className="italic text-zinc-400 border-l-2 border-[#82ff1f] pl-4">
-              "Busco algo más que un empleo; busco un equipo, una cultura y una 'familia' profesional con la que crecer."
+              {t.seeking.quote}
             </p>
           </div>
         </ExpandableSection >
@@ -1017,14 +904,14 @@ export default function Home() {
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#82ff1f]/10 border border-[#82ff1f]/20 mb-6"
               >
                 <div className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse"></div>
-                <span className="text-[#82ff1f] text-sm font-bold tracking-wider uppercase">Disponible para Nuevos Retos</span>
+                <span className="text-[#82ff1f] text-sm font-bold tracking-wider uppercase">{t.contactSection.badge}</span>
               </motion.div>
 
               <h2 className="text-5xl md:text-6xl font-heading font-light text-white mb-6 tracking-tight">
-                Hablemos de tu proyecto
+                {t.contactSection.title}
               </h2>
               <p className="text-xl text-zinc-400 max-w-2xl mx-auto">
-                ¿Buscas alguien que entienda tanto la estrategia como la ejecución? Conectemos.
+                {t.contactSection.desc}
               </p>
             </div>
 
@@ -1037,7 +924,7 @@ export default function Home() {
                 viewport={{ once: true }}
                 className="p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-white/5 to-transparent border border-white/10"
               >
-                <h3 className="text-2xl font-heading font-medium text-white mb-6">Envíame un mensaje</h3>
+                <h3 className="text-2xl font-heading font-medium text-white mb-6">{t.contactSection.form.title}</h3>
                 <form
                   action="https://formsubmit.co/victortorresa94@gmail.com"
                   method="POST"
@@ -1048,45 +935,45 @@ export default function Home() {
                   <input type="hidden" name="_subject" value="Nuevo contacto desde vtorres.net" />
 
                   <div>
-                    <label className="block text-sm font-medium text-zinc-400 mb-2">Nombre</label>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">{t.contactSection.form.name}</label>
                     <input
                       type="text"
                       name="name"
                       required
                       className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors text-base"
-                      placeholder="Tu nombre"
+                      placeholder={t.contactSection.form.namePlaceholder}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-zinc-400 mb-2">Email</label>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">{t.contactSection.form.email}</label>
                     <input
                       type="email"
                       name="email"
                       required
                       className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors text-base"
-                      placeholder="tu@email.com"
+                      placeholder={t.contactSection.form.emailPlaceholder}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-zinc-400 mb-2">Empresa (opcional)</label>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">{t.contactSection.form.company}</label>
                     <input
                       type="text"
                       name="company"
                       className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors text-base"
-                      placeholder="Tu empresa"
+                      placeholder={t.contactSection.form.companyPlaceholder}
                     />
                   </div>
 
                   <div>
-                    <label className="block text-sm font-medium text-zinc-400 mb-2">Mensaje</label>
+                    <label className="block text-sm font-medium text-zinc-400 mb-2">{t.contactSection.form.message}</label>
                     <textarea
                       name="message"
                       required
                       rows={4}
                       className="w-full px-4 py-4 rounded-xl bg-black/40 border border-white/10 text-white placeholder-zinc-500 focus:border-[#82ff1f]/50 focus:outline-none transition-colors resize-none text-base"
-                      placeholder="Cuéntame en qué puedo ayudarte..."
+                      placeholder={t.contactSection.form.messagePlaceholder}
                     ></textarea>
                   </div>
 
@@ -1095,7 +982,7 @@ export default function Home() {
                     className="w-full px-8 py-5 bg-[#82ff1f] text-black font-bold rounded-xl hover:bg-[#6ed617] transition-all flex items-center justify-center gap-2 shadow-lg shadow-[#82ff1f]/20 text-base"
                   >
                     <Mail size={20} />
-                    Enviar mensaje
+                    {t.contactSection.form.submit}
                   </button>
                 </form>
               </motion.div>
@@ -1115,12 +1002,12 @@ export default function Home() {
                       <Mail size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-heading font-medium text-white mb-2">Email</h4>
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">{t.contactSection.options.email.title}</h4>
                       <a
-                        href="mailto:victortorresa94@gmail.com"
+                        href={`mailto:${t.contactSection.options.email.desc}`}
                         className="text-zinc-400 hover:text-[#82ff1f] transition-colors break-all"
                       >
-                        victortorresa94@gmail.com
+                        {t.contactSection.options.email.desc}
                       </a>
                     </div>
                   </div>
@@ -1133,8 +1020,8 @@ export default function Home() {
                       <MessageSquare size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-heading font-medium text-white mb-2">WhatsApp</h4>
-                      <p className="text-zinc-400 mb-4 text-sm">Escríbeme directamente</p>
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">{t.contactSection.options.whatsapp.title}</h4>
+                      <p className="text-zinc-400 mb-4 text-sm">{t.contactSection.options.whatsapp.desc}</p>
                       <a
                         href="https://wa.me/34627281459?text=Hola%20V%C3%ADctor,%20vengo%20de%20tu%20web%20y%20me%20gustar%C3%ADa%20hablar%20contigo"
                         target="_blank"
@@ -1142,7 +1029,7 @@ export default function Home() {
                         className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all font-medium"
                       >
                         <MessageSquare size={18} />
-                        Abrir WhatsApp
+                        {t.contactSection.options.whatsapp.button}
                       </a>
                     </div>
                   </div>
@@ -1155,14 +1042,14 @@ export default function Home() {
                       <Mic size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-heading font-medium text-white mb-2">Llamada</h4>
-                      <p className="text-zinc-400 mb-4 text-sm">Prefiero hablar por teléfono</p>
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">{t.contactSection.options.call.title}</h4>
+                      <p className="text-zinc-400 mb-4 text-sm">{t.contactSection.options.call.desc}</p>
                       <a
                         href="tel:+34627281459"
                         className="inline-flex items-center gap-2 px-6 py-3 bg-white/5 border border-white/10 rounded-xl text-white hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all font-medium"
                       >
                         <Mic size={18} />
-                        +34 627 28 14 59
+                        {t.contactSection.options.call.button}
                       </a>
                     </div>
                   </div>
@@ -1175,14 +1062,14 @@ export default function Home() {
                       <Linkedin size={24} className="text-[#82ff1f] group-hover:text-black transition-colors" />
                     </div>
                     <div className="flex-1">
-                      <h4 className="text-lg font-heading font-medium text-white mb-2">LinkedIn</h4>
+                      <h4 className="text-lg font-heading font-medium text-white mb-2">{t.contactSection.options.linkedin.title}</h4>
                       <a
                         href="https://www.linkedin.com/in/v%C3%ADctor-torres-arana-54618b99/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-zinc-400 hover:text-[#82ff1f] transition-colors"
                       >
-                        /in/victortorresarana
+                        {t.contactSection.options.linkedin.link}
                       </a>
                     </div>
                   </div>
@@ -1199,13 +1086,13 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <p className="text-zinc-600 text-sm">
-                © 2025 Víctor Torres Arana. Built with Next.js & Tailwind.
+                {t.footer.rights}
               </p>
               <div className="flex items-center gap-6">
-                <a href="#story" className="text-zinc-600 hover:text-white text-sm transition-colors">Inicio</a>
+                <a href="#story" className="text-zinc-600 hover:text-white text-sm transition-colors">{t.footer.home}</a>
                 <a href="/cv.pdf" className="text-zinc-600 hover:text-white text-sm transition-colors flex items-center gap-1">
                   <Download size={14} />
-                  CV PDF
+                  {t.footer.cv}
                 </a>
               </div>
             </div>
