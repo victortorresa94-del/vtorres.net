@@ -989,6 +989,17 @@ export const translations = {
                     desc: "Development of an automated prospecting agent: web scraping to identify potential clients (wedding planners), automatic contact data extraction, Excel storage, and personalized email sequence sending. Complete lead capture system without manual intervention."
                 }
             },
+            sops: {
+                title: "Real Standardization (SOPs)",
+                desc: "Drafting and implementation of more than 30 Standard Operating Procedures (SOPs) to shield delivery quality.",
+                items: [
+                    { title: "Employee Onboarding", desc: "Fast and effective integration of new talents." },
+                    { title: "Corp Web Production", desc: "Step-by-step flow from design to deployment." },
+                    { title: "Social Media Strategy", desc: "Systematization of content creation and publication." },
+                    { title: "Quality Control (QA)", desc: "Checklists to ensure error-free deliveries." },
+                    { title: "Audiovisual Production", desc: "Standardized coordination of filming and editing." }
+                ]
+            },
             developmentsTitle: "Own AI Developments",
             developments: {
                 nuria: {

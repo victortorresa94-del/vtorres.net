@@ -52,6 +52,9 @@ export default function Home() {
               <Link href="/procesos" className="text-zinc-400 hover:text-[#82ff1f] font-medium transition-colors">
                 Consultoria de procesos
               </Link>
+              <Link href="/ai" className="text-zinc-400 hover:text-[#82ff1f] font-medium transition-colors">
+                Adopcion IA
+              </Link>
               <LanguageSwitcher />
               <Link href="#contact" className="px-6 py-2.5 bg-gradient-to-r from-[#82ff1f] to-[#6ed617] rounded-full text-sm font-bold text-black hover:shadow-[0_0_20px_rgba(130,255,31,0.4)] transition-all transform hover:scale-105">
                 {t.hero.contact}
