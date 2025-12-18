@@ -12,11 +12,16 @@ export default function LanguageSwitcher() {
                 <Globe size={16} />
             </div>
             <button
-                onClick={() => setLanguage(language === 'es' ? 'en' : 'es')}
+                onClick={() => {
+                    const next = language === 'es' ? 'ca' : language === 'ca' ? 'en' : 'es';
+                    setLanguage(next);
+                }}
                 className="text-xs font-bold text-white pr-3 pl-1 tracking-tight hover:text-[#82ff1f] transition-colors"
             >
-                {language === 'es' ? 'SPANISH' : 'ENGLISH'}
-                <span className="ml-2 text-zinc-500 group-hover:text-zinc-300">| {language === 'es' ? 'EN' : 'ES'}</span>
+                {language === 'es' ? 'ESPAÑOL' : language === 'ca' ? 'CATALÀ' : 'ENGLISH'}
+                <span className="ml-2 text-zinc-500 group-hover:text-zinc-300">
+                    | {language === 'es' ? 'CA' : language === 'ca' ? 'EN' : 'ES'}
+                </span>
             </button>
         </div>
     );
