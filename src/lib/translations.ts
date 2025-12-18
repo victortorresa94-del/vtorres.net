@@ -105,7 +105,81 @@ export const translations = {
             ]
         },
         achievements: {
-            title: "Hitos & Logros"
+            title: "Hitos & Logros",
+            items: [
+                {
+                    id: 1,
+                    title: "Optimización de Procesos y Proyectos",
+                    role: "Project Manager & Process Architect",
+                    desc: "En una agencia de marketing con 40 personas, creé 30 SOPs desde cero e implementé ClickUp como sistema central. Desmembré y rediseñé procesos completos, reduciendo tiempos de entrega de 3 meses a 1 mes. Liderazgo de +30 proyectos web y app con equipos multidisciplinarios.",
+                    tags: ["SOPs", "ClickUp", "Optimization", "Liderazgo"],
+                    metric: "30% Eficiencia | 3 meses → 1 mes",
+                    image: "/images/achievements/profesor.jpg"
+                },
+                {
+                    id: 2,
+                    title: "Implementación Oracle NetSuite",
+                    role: "Project Manager Lead",
+                    desc: "Liderazgo técnico y operativo en la implementación de ERP Oracle para multinacional logística. Coordinación de equipos internacionales, migración de datos críticos y formación a +50 empleados.",
+                    tags: ["Oracle ERP", "Migración", "Formación"],
+                    metric: "Impacto Global",
+                    image: "/images/achievements/netsuite-new.jpg"
+                },
+                {
+                    id: 3,
+                    title: "Gestión Proyecto 1M€ Mercedes",
+                    role: "Financial & Resource Management",
+                    desc: "Gestión integral de un proyecto de 1.000.000€ para Mercedes en Reauxi. Control financiero milimétrico en Excel complejo. Gestión de compras internacionales y contratación de personal.",
+                    tags: ["Finanzas", "Logística", "Excel"],
+                    metric: "Control Presupuestario Total",
+                    image: "/images/achievements/mercedes.jpg"
+                },
+                {
+                    id: 4,
+                    title: "Lanzamiento Kmeleon",
+                    role: "CMO & GTM Strategy",
+                    desc: "Diseño de narrativa, posicionamiento y estrategia Go-To-Market para startup de IA. Lanzamiento en US y Latam, captación de primeros clientes Enterprise.",
+                    tags: ["AI Startup", "GTM", "Growth"],
+                    metric: "Lanzamiento Global",
+                    image: "/images/achievements/startups-new.jpg"
+                },
+                {
+                    id: 5,
+                    title: "Venta Enterprise SaaS",
+                    role: "Sales Lead & Negotiation",
+                    desc: "Liderazgo en la negociación y cierre de venta de Oracle NetSuite a Bluespace. Gestión del ciclo de venta complejo (6 meses), validación técnica y cierre contractual.",
+                    tags: ["B2B", "Negociación", "ERP"],
+                    metric: "100.000 € Deal",
+                    image: "/images/achievements/proyectos-new.jpg"
+                },
+                {
+                    id: 6,
+                    title: "Marca Emelson",
+                    role: "Brand Creator & Product",
+                    desc: "Creación desde cero, branding y estrategia de lanzamiento de la marca de climatización Emelson. Hoy líder en grandes superficies (Leroy Merlin, Bricomart).",
+                    tags: ["Branding", "Retail", "GTM"],
+                    metric: "Líder de Sector",
+                    image: "/images/achievements/ecommerce.jpg"
+                },
+                {
+                    id: 7,
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Launch Strategist & Sales Closer",
+                    desc: "Estrategia de contenido y automatización (ManyChat) para lanzamiento. Liderazgo en entrevistas con referentes del sector y cierre de ventas High-Ticket mediante llamadas. Meta de 20.000€ facturados en un mes.",
+                    tags: ["Estrategia", "ManyChat", "Ventas", "Música"],
+                    metric: "20.000€ en 1 mes",
+                    image: "/images/achievements/eventos-new.jpg"
+                },
+                {
+                    id: 8,
+                    title: "Gestión Musical & Eventos",
+                    role: "Artist Manager",
+                    desc: "Gestión 360º de carreras artísticas (94 Music, Condor). Booking, producción de eventos en vivo, logística de giras y negociación con salas.",
+                    tags: ["Booking", "Producción", "Management"],
+                    metric: "+100 Eventos",
+                    image: "/images/achievements/eventos.jpg"
+                }
+            ]
         },
         skills: {
             title: "Habilidades (Skills)",
@@ -240,6 +314,11 @@ export const translations = {
                 title: "Ciclo Superior de Comercio y Marketing",
                 role: "Grado Superior",
                 desc: "Formación integral en estrategias de comercialización, investigación de mercados, logística y gestión de puntos de venta. Base académica para el desarrollo de estrategias de negocio."
+            },
+            masterSoma: {
+                title: "Máster de Mezcla con Soma",
+                role: "Audio Hacker Academy (2021)",
+                desc: "Formación avanzada en ingeniería de sonido y producción musical de la mano de uno de los productores de referencia en la industria urbana española (Nach, ZPU, Porta)."
             },
             certsTitle: "Certificaciones Profesionales",
             sap: {
@@ -470,7 +549,81 @@ export const translations = {
             ]
         },
         achievements: {
-            title: "Milestones & Achievements"
+            title: "Milestones & Achievements",
+            items: [
+                {
+                    id: 1,
+                    title: "Process and Project Optimization",
+                    role: "Project Manager & Process Architect",
+                    desc: "In a 40-person marketing agency, I created 30 SOPs from scratch and implemented ClickUp as the central system. Deconstructed and redesigned complete processes, reducing delivery times from 3 months to 1 month.",
+                    tags: ["SOPs", "ClickUp", "Optimization", "Leadership"],
+                    metric: "30% Efficiency | 3 months → 1 month",
+                    image: "/images/achievements/profesor.jpg"
+                },
+                {
+                    id: 2,
+                    title: "Oracle NetSuite Implementation",
+                    role: "Project Manager Lead",
+                    desc: "Technical and operational leadership in the ERP implementation for a multinational logistics company. Coordination of international teams, critical data migration, and training for 50+ employees.",
+                    tags: ["Oracle ERP", "Migration", "Training"],
+                    metric: "Global Impact",
+                    image: "/images/achievements/netsuite-new.jpg"
+                },
+                {
+                    id: 3,
+                    title: "€1M Mercedes Project Management",
+                    role: "Financial & Resource Management",
+                    desc: "Integral management of a €1,000,000 project for Mercedes at Reauxi. Precise financial control in complex Excel. Management of international purchasing and hiring.",
+                    tags: ["Finance", "Logistics", "Excel"],
+                    metric: "Total Budget Control",
+                    image: "/images/achievements/mercedes.jpg"
+                },
+                {
+                    id: 4,
+                    title: "Kmeleon Launch",
+                    role: "CMO & GTM Strategy",
+                    desc: "Narrative design, positioning, and Go-To-Market strategy for an AI startup. Launch in US and Latam, capturing first Enterprise clients.",
+                    tags: ["AI Startup", "GTM", "Growth"],
+                    metric: "Global Launch",
+                    image: "/images/achievements/startups-new.jpg"
+                },
+                {
+                    id: 5,
+                    title: "Enterprise SaaS Sales",
+                    role: "Sales Lead & Negotiation",
+                    desc: "Led negotiation and closing of Oracle NetSuite sale to Bluespace. Managed complex 6-month sales cycle, technical validation, and contractual closing.",
+                    tags: ["B2B", "Negotiation", "ERP"],
+                    metric: "€100,000 Deal",
+                    image: "/images/achievements/proyectos-new.jpg"
+                },
+                {
+                    id: 6,
+                    title: "Emelson Brand",
+                    role: "Brand Creator & Product",
+                    desc: "Creation from scratch, branding, and launch strategy for the Emelson climate brand. Now a leader in major retail stores (Leroy Merlin, Bricomart).",
+                    tags: ["Branding", "Retail", "GTM"],
+                    metric: "Industry Leader",
+                    image: "/images/achievements/ecommerce.jpg"
+                },
+                {
+                    id: 7,
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Launch Strategist & Sales Closer",
+                    desc: "Content strategy and automation (ManyChat) for product launch. Led interviews with sector leaders and closed High-Ticket sales. Achieved €20,000 revenue in a month.",
+                    tags: ["Strategy", "ManyChat", "Sales", "Music"],
+                    metric: "€20,000 in 1 month",
+                    image: "/images/achievements/eventos-new.jpg"
+                },
+                {
+                    id: 8,
+                    title: "Music & Event Management",
+                    role: "Artist Manager",
+                    desc: "360º management of artistic careers (94 Music, Condor). Booking, live event production, tour logistics, and venue negotiation.",
+                    tags: ["Booking", "Production", "Management"],
+                    metric: "+100 Events",
+                    image: "/images/achievements/eventos.jpg"
+                }
+            ]
         },
         skills: {
             title: "Skills",
@@ -605,6 +758,11 @@ export const translations = {
                 title: "Higher Degree in Commerce and Marketing",
                 role: "Higher Degree",
                 desc: "Integral training in marketing strategies, market research, logistics and point of sale management. Academic basis for business strategy development."
+            },
+            masterSoma: {
+                title: "Mixing Master with Soma",
+                role: "Audio Hacker Academy (2021)",
+                desc: "Advanced training in sound engineering and music production with one of the leading producers in the Spanish urban industry (Nach, ZPU, Porta)."
             },
             certsTitle: "Professional Certifications",
             sap: {

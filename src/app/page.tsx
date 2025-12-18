@@ -23,80 +23,7 @@ export default function Home() {
     }
   }, [mobileMenuOpen]);
 
-  const achievements = [
-    {
-      id: 1,
-      title: "Optimización de Procesos y Proyectos",
-      role: "Project Manager & Process Architect",
-      desc: "En una agencia de marketing con 40 personas, creé 30 SOPs desde cero e implementé ClickUp como sistema central. Desmembré y rediseñé procesos completos, reduciendo tiempos de entrega de 3 meses a 1 mes. Liderazgo de +30 proyectos web y app con equipos multidisciplinarios.",
-      tags: ["SOPs", "ClickUp", "Process Optimization", "Team Leadership"],
-      metric: "30% Eficiencia | 3 meses → 1 mes",
-      image: "/images/achievements/sop-optimization.jpg"
-    },
-    {
-      id: 2,
-      title: "Profesor Eme Academy",
-      role: "Formación Interna & Knowledge Management",
-      desc: "Lideré la creación de 'EME Academy', la academia interna de la agencia. Objetivo: unificar conocimiento 360º (que el cámara entienda una landing, que el dev entienda métricas). Creación de temarios, envío de cursos y evaluación de personal.",
-      tags: ["Formación", "Cultura de Empresa", "Mentoring"],
-      metric: "Equipo Multidisciplinar Formado",
-      image: "/images/achievements/eventos-new.jpg"
-    },
-    {
-      id: 3,
-      title: "Gestión Proyecto 1M€ Mercedes",
-      role: "Financial & Resource Management",
-      desc: "Gestión integral de un proyecto de 1.000.000€ para Mercedes en Reauxi. Control financiero milimétrico en Excel complejo (gastos, personal, material). Gestión de compras internacionales y contratación de personal para asegurar la viabilidad económica del proyecto.",
-      tags: ["Gestión Financiera", "Logística Internacional", "Excel Avanzado"],
-      metric: "Control Presupuestario Total",
-      image: "/images/achievements/netsuite-new.jpg"
-    },
-    {
-      id: 4,
-      title: "Implementación Oracle NetSuite",
-      role: "Project Manager Lead",
-      desc: "Liderazgo técnico y operativo en la implementación de ERP Oracle para multinacional logística. Coordinación de equipos internacionales, migración de datos críticos y formación a +50 empleados.",
-      tags: ["Oracle ERP", "Logística", "Liderazgo"],
-      metric: "Impacto Global",
-      image: "/images/achievements/netsuite-new.jpg"
-    },
-    {
-      id: 5,
-      title: "Venta Enterprise SaaS",
-      role: "Sales Lead & Negotiation",
-      desc: "Liderazgo en la negociación y cierre de venta de Oracle NetSuite a Bluespace. Gestión del ciclo de venta complejo (6 meses), validación técnica y cierre contractual.",
-      tags: ["Ventas B2B", "Negociación", "SaaS"],
-      metric: "100.000 € Deal",
-      image: "/images/achievements/proyectos-new.jpg"
-    },
-    {
-      id: 6,
-      title: "Marca Emelson",
-      role: "Brand Creator & Product",
-      desc: "Creación desde cero, branding y estrategia de lanzamiento de la marca de climatización Emelson. Hoy líder en grandes superficies (Leroy Merlin, Bricomart).",
-      tags: ["Branding", "Desarrollo Producto", "Retail"],
-      metric: "Líder de Sector",
-      image: "/images/achievements/ecommerce.jpg"
-    },
-    {
-      id: 7,
-      title: "Lanzamiento Kmeleon",
-      role: "CMO & GTM Strategy",
-      desc: "Diseño de narrativa, posicionamiento y estrategia Go-To-Market para startup de IA. Lanzamiento en US y Latam, captación de primeros clientes Enterprise.",
-      tags: ["Startup IA", "GTM Strategy", "Growth"],
-      metric: "Lanzamiento Global",
-      image: "/images/achievements/startups-new.jpg"
-    },
-    {
-      id: 8,
-      title: "Gestión Musical & Eventos",
-      role: "Artist Manager",
-      desc: "Gestión 360º de carreras artísticas (94 Music, Condor). Booking, producción de eventos en vivo, logística de giras y negociación con salas/promotores.",
-      tags: ["Música", "Producción", "Management"],
-      metric: "+15 Artistas",
-      image: "/images/achievements/eventos-new.jpg"
-    }
-  ];
+  const achievements = t.achievements.items;
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-[#82ff1f] selection:text-black relative font-sans">
@@ -734,6 +661,16 @@ export default function Home() {
                     <h4 className="font-bold text-white">{t.education.googleAi.title}</h4>
                   </div>
                   <p className="text-sm text-zinc-400">{t.education.googleAi.desc}</p>
+                </div>
+
+                {/* Master Soma */}
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Music size={20} className="text-[#82ff1f]" />
+                    <h4 className="font-bold text-white">{t.education.masterSoma.title}</h4>
+                  </div>
+                  <p className="text-sm text-zinc-400">{t.education.masterSoma.desc}</p>
+                  <p className="text-[10px] text-[#82ff1f] font-mono mt-2 uppercase">{t.education.masterSoma.role}</p>
                 </div>
 
               </div>
