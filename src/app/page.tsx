@@ -26,9 +26,9 @@ export default function Home() {
   const achievements = [
     {
       id: 1,
-      title: "Optimización Operativa Global",
+      title: "Optimización de Procesos y Proyectos",
       role: "Project Manager & Process Architect",
-      desc: "Creación de 30 SOPs desde cero, implementación de ClickUp como sistema central, desmembramiento y rediseño de procesos completos. Liderazgo de +30 proyectos web y app, gestión de equipos multidisciplinarios.",
+      desc: "En una agencia de marketing con 40 personas, creé 30 SOPs desde cero e implementé ClickUp como sistema central. Desmembré y rediseñé procesos completos, reduciendo tiempos de entrega de 3 meses a 1 mes. Liderazgo de +30 proyectos web y app con equipos multidisciplinarios.",
       tags: ["SOPs", "ClickUp", "Process Optimization", "Team Leadership"],
       metric: "30% Eficiencia | 3 meses → 1 mes",
       image: "/images/achievements/sop-optimization.jpg"
