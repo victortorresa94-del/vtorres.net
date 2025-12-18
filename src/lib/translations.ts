@@ -107,7 +107,7 @@ export const translations = {
                     role: "Project Manager & Process Architect",
                     desc: "En una agencia de marketing con 40 personas, creé 30 SOPs desde cero e implementé ClickUp como sistema central. Desmembré y rediseñé procesos completos, reduciendo los tiempos de entrega un 30% y aumentando la capacidad operativa.",
                     tags: ["ClickUp", "SOPs", "Operations", "Team Management"],
-                    image: "/images/achievements/processes.jpg",
+                    image: "/images/achievements/sop-optimization.jpg",
                     metric: "+30% Eficiencia Operativa"
                 },
                 {
@@ -125,7 +125,7 @@ export const translations = {
                     role: "Technical Lead & Integrator",
                     desc: "Lideré la migración completa de sistemas legacy a Oracle NetSuite para una empresa de distribución tecnológica. Coordiné equipos técnicos, definí flujos de trabajo financieros y logísticos, logrando una transición sin interrupciones operativas.",
                     tags: ["Oracle NetSuite", "ERP Migration", "Logistics", "Finance"],
-                    image: "/images/achievements/netsuite.jpg",
+                    image: "/images/achievements/netsuite-new.jpg",
                     metric: "100% Migración Exitosa"
                 },
                 {
@@ -555,7 +555,7 @@ export const translations = {
                     role: "Project Manager & Process Architect",
                     desc: "In a 40-person marketing agency, I built 30 SOPs from scratch and implemented ClickUp as the central system. I dismantled and redesigned entire processes, reducing delivery times by 30% and increasing operational capacity.",
                     tags: ["ClickUp", "SOPs", "Operations", "Team Management"],
-                    image: "/images/achievements/processes.jpg",
+                    image: "/images/achievements/sop-optimization.jpg",
                     metric: "+30% Operational Efficiency"
                 },
                 {
@@ -573,7 +573,7 @@ export const translations = {
                     role: "Technical Lead & Integrator",
                     desc: "Led the complete migration of legacy systems to Oracle NetSuite for a tech distribution company. Coordinated technical teams, defined financial and logistics workflows, achieving a seamless operational transition.",
                     tags: ["Oracle NetSuite", "ERP Migration", "Logistics", "Finance"],
-                    image: "/images/achievements/netsuite.jpg",
+                    image: "/images/achievements/netsuite-new.jpg",
                     metric: "100% Successful Migration"
                 },
                 {
