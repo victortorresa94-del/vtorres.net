@@ -26,6 +26,15 @@ export default function Home() {
   const achievements = [
     {
       id: 1,
+      title: "Optimización Operativa Global",
+      role: "Project Manager & Process Architect",
+      desc: "Creación de 30 SOPs desde cero, implementación de ClickUp como sistema central, desmembramiento y rediseño de procesos completos. Liderazgo de +30 proyectos web y app, gestión de equipos multidisciplinarios.",
+      tags: ["SOPs", "ClickUp", "Process Optimization", "Team Leadership"],
+      metric: "30% Eficiencia | 3 meses → 1 mes",
+      image: "/images/achievements/sop-optimization.jpg"
+    },
+    {
+      id: 2,
       title: "Implementación Oracle NetSuite",
       role: "Project Manager Lead",
       desc: "Liderazgo técnico y operativo en la implementación de ERP Oracle para multinacional logística. Coordinación de equipos internacionales, migración de datos críticos y formación a +50 empleados.",
@@ -34,7 +43,7 @@ export default function Home() {
       image: "/images/achievements/netsuite.jpg"
     },
     {
-      id: 2,
+      id: 3,
       title: "Venta Enterprise SaaS",
       role: "Sales Lead & Negotiation",
       desc: "Liderazgo en la negociación y cierre de venta de Oracle NetSuite a Bluespace. Gestión del ciclo de venta complejo (6 meses), validación técnica y cierre contractual.",
@@ -43,7 +52,7 @@ export default function Home() {
       image: "/images/achievements/proyectos.jpg"
     },
     {
-      id: 3,
+      id: 4,
       title: "Marca Emelson",
       role: "Brand Creator & Product",
       desc: "Creación desde cero, branding y estrategia de lanzamiento de la marca de climatización Emelson. Hoy líder en grandes superficies (Leroy Merlin, Bricomart).",
@@ -52,7 +61,7 @@ export default function Home() {
       image: "/images/achievements/ecommerce.jpg"
     },
     {
-      id: 4,
+      id: 5,
       title: "Lanzamiento Kmeleon",
       role: "CMO & GTM Strategy",
       desc: "Diseño de narrativa, posicionamiento y estrategia Go-To-Market para startup de IA. Lanzamiento en US y Latam, captación de primeros clientes Enterprise.",
@@ -61,7 +70,7 @@ export default function Home() {
       image: "/images/achievements/startups.jpg"
     },
     {
-      id: 5,
+      id: 6,
       title: "Gestión Musical & Eventos",
       role: "Artist Manager",
       desc: "Gestión 360º de carreras artísticas (94 Music, Condor). Booking, producción de eventos en vivo, logística de giras y negociación con salas/promotores.",
@@ -351,13 +360,13 @@ export default function Home() {
                 icon={<TrendingUp size={24} />}
               />
 
-              {/* 94 Music - Applied AI at Scale */}
+              {/* 94 Music - Lead Generation Agent */}
               <ProjectRow
-                title="94 Music - AI Content Engine"
-                role="Automation Architect"
-                desc="Implementación de IA para escalar un medio digital con recursos mínimos. Uso de herramientas de 'long-to-short' video (OpusClip), upscaling de vídeo con IA (Topaz) y generación de assets visuales (Midjourney). Logré un sistema de publicación diaria automatizada alcanzando +5M de visualizaciones."
-                tags={["Content Automation", "Video AI", "Viral Growth"]}
-                icon={<Video size={24} />}
+                title="94 Music"
+                role="Lead Generation & Automation"
+                desc="Desarrollo de un agente de prospección automatizado: scraping web para identificar clientes potenciales (wedding planners), extracción automática de datos de contacto, almacenamiento en Excel y envío de secuencias de correo personalizadas. Sistema completo de captación de leads sin intervención manual."
+                tags={["Web Scraping", "Email Automation", "Lead Generation", "n8n"]}
+                icon={<Target size={24} />}
               />
             </div>
 
@@ -486,30 +495,35 @@ export default function Home() {
               </div>
             </div>
 
-            {/* --- CAPACIDADES TÉCNICAS (Learnings) --- */}
+            {/* --- AI SKILLS --- */}
             <div className="bg-[#white]/5 border border-white/10 rounded-2xl p-6 mt-8">
               <h3 className="text-xl font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Brain size={20} /> Stack & Capacidades (Ready to Deploy)
+                <Brain size={20} /> AI Skills
               </h3>
-              <p className="text-zinc-400 mb-6 text-sm">
-                Más allá de los proyectos entregados, mantengo una formación continua y práctica en tecnologías emergentes. Estas son capacidades que he validado en entornos de prueba y estoy listo para implementar:
-              </p>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5">
-                  <h4 className="font-bold text-white mb-1">RAG (Retrieval Augmented Generation)</h4>
-                  <p className="text-xs text-zinc-400">Implementación de bases de conocimiento vectoriales (Pinecone) para que los agentes respondan con datos privados de la empresa sin alucinar.</p>
+                  <h4 className="font-bold text-white mb-1">Prompt Engineering</h4>
+                  <p className="text-xs text-zinc-400">Diseño de prompts complejos para chatbots y agentes de voz. Optimización de contexto y few-shot learning.</p>
                 </div>
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5">
-                  <h4 className="font-bold text-white mb-1">Agentic Workflows</h4>
-                  <p className="text-xs text-zinc-400">Diseño de sistemas donde un LLM "planificador" desglosa tareas complejas y asigna subtareas a agentes especializados (Investigador, Redactor, Revisor).</p>
+                  <h4 className="font-bold text-white mb-1">Voice AI Agents</h4>
+                  <p className="text-xs text-zinc-400">Implementación de agentes telefónicos con Vapi/Retell. Integración con Twilio y manejo de conversaciones naturales.</p>
                 </div>
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5">
-                  <h4 className="font-bold text-white mb-1">Fine-Tuning</h4>
-                  <p className="text-xs text-zinc-400">Entrenamiento ligero de modelos (OpenAI/Replicate) para adaptar el estilo y tono de respuesta a marcas específicas.</p>
+                  <h4 className="font-bold text-white mb-1">Chatbot Development</h4>
+                  <p className="text-xs text-zinc-400">Diseño y despliegue de chatbots con ChatBase y Voiceflow. Integración con WhatsApp Business API.</p>
                 </div>
                 <div className="p-4 bg-black/40 rounded-xl border border-white/5">
-                  <h4 className="font-bold text-white mb-1">Local LLMs & Privacy</h4>
-                  <p className="text-xs text-zinc-400">Despliegue de modelos open-source (Llama 3, Mistral) para entornos donde la privacidad de los datos es crítica.</p>
+                  <h4 className="font-bold text-white mb-1">Workflow Automation</h4>
+                  <p className="text-xs text-zinc-400">Automatización con n8n, Make y Zapier. Conexión de APIs, webhooks y orquestación de procesos empresariales.</p>
+                </div>
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5">
+                  <h4 className="font-bold text-white mb-1">AI Image Generation</h4>
+                  <p className="text-xs text-zinc-400">Generación de assets visuales con Midjourney y Stable Diffusion. Fine-tuning de modelos LoRA para marcas.</p>
+                </div>
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5">
+                  <h4 className="font-bold text-white mb-1">API Integration</h4>
+                  <p className="text-xs text-zinc-400">Integración de LLMs con sistemas externos: CRMs, calendarios, bases de datos. Function calling y webhooks.</p>
                 </div>
               </div>
             </div>
@@ -553,15 +567,15 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Business Development */}
+              {/* 0-to-Market Builder */}
               <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
                 <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
                 <div className="relative z-10">
                   <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
                     <Briefcase size={20} className="text-black" />
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">Business Development</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Identificación de oportunidades, cierre de ventas B2B y construcción de relaciones estratégicas.</p>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">0-to-Market Builder</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Construir negocios desde cero: producto, procesos, visión estratégica y bases operativas para lanzamiento.</p>
                 </div>
               </div>
 
@@ -693,6 +707,102 @@ export default function Home() {
                 </div>
                 <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
                   <p className="text-sm font-medium text-white">Local LLMs</p>
+                </div>
+              </div>
+            </div >
+
+            {/* Marketing Digital & Ads */}
+            < div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <TrendingUp size={16} /> Marketing Digital & Ads
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Campañas de Ads</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Google Ads</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Facebook Ads</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Análisis de Métricas</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Google Analytics</p>
+                </div>
+              </div>
+            </div >
+
+            {/* Contenido & Creatividad */}
+            < div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Palette size={16} /> Contenido & Creatividad
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Edición de Video</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">RRSS Content</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Copywriting</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Diseño Gráfico</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Branding</p>
+                </div>
+              </div>
+            </div >
+
+            {/* Ventas & Negociación */}
+            < div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <ShoppingBag size={16} /> Ventas & Negociación
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Venta B2B</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Venta B2C</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Negociación</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">CRM Management</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Pipeline Management</p>
+                </div>
+              </div>
+            </div >
+
+            {/* Operaciones & Logística */}
+            < div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Briefcase size={16} /> Operaciones & Logística
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Gestión Logística</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Compras</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Gestión de Inventario</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Coordinación de Equipos</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Procesos Administrativos</p>
                 </div>
               </div>
             </div >

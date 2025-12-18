@@ -26,6 +26,15 @@ export default function AchievementsCarousel({ items }: { items: Achievement[] }
         setIndex((prev) => (prev - 1 + items.length) % items.length);
     };
 
+    const handleDragEnd = (event: any, info: any) => {
+        const threshold = 50; // minimum drag distance to trigger slide change
+        if (info.offset.x > threshold) {
+            prevSlide();
+        } else if (info.offset.x < -threshold) {
+            nextSlide();
+        }
+    };
+
     return (
         <div className="relative w-full max-w-6xl mx-auto min-h-[500px] flex items-center justify-center py-10">
 
@@ -92,8 +101,14 @@ export default function AchievementsCarousel({ items }: { items: Achievement[] }
                     </div>
                 </div>
 
-                {/* Right: 3D Stack Images */}
-                <div className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center order-1 md:order-2 perspective-1000">
+                {/* Right: 3D Stack Images - Now draggable */}
+                <motion.div
+                    className="relative h-[400px] md:h-[500px] w-full flex items-center justify-center order-1 md:order-2 perspective-1000 cursor-grab active:cursor-grabbing touch-pan-y"
+                    drag="x"
+                    dragConstraints={{ left: 0, right: 0 }}
+                    dragElastic={0.2}
+                    onDragEnd={handleDragEnd}
+                >
                     {items.map((item, i) => {
                         const isActive = i === index;
                         const offset = i - index;
@@ -131,9 +146,9 @@ export default function AchievementsCarousel({ items }: { items: Achievement[] }
                             </motion.div>
                         )
                     })}
-                </div>
+                </motion.div>
 
             </div>
-        </div>
+        </div >
     );
 }
