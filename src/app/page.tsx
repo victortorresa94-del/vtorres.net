@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone } from "lucide-react";
+import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "../components/AchievementsCarousel";
@@ -35,24 +35,42 @@ export default function Home() {
     },
     {
       id: 2,
+      title: "Profesor Eme Academy",
+      role: "Formación Interna & Knowledge Management",
+      desc: "Lideré la creación de 'EME Academy', la academia interna de la agencia. Objetivo: unificar conocimiento 360º (que el cámara entienda una landing, que el dev entienda métricas). Creación de temarios, envío de cursos y evaluación de personal.",
+      tags: ["Formación", "Cultura de Empresa", "Mentoring"],
+      metric: "Equipo Multidisciplinar Formado",
+      image: "/images/achievements/eventos-new.jpg"
+    },
+    {
+      id: 3,
+      title: "Gestión Proyecto 1M€ Mercedes",
+      role: "Financial & Resource Management",
+      desc: "Gestión integral de un proyecto de 1.000.000€ para Mercedes en Reauxi. Control financiero milimétrico en Excel complejo (gastos, personal, material). Gestión de compras internacionales y contratación de personal para asegurar la viabilidad económica del proyecto.",
+      tags: ["Gestión Financiera", "Logística Internacional", "Excel Avanzado"],
+      metric: "Control Presupuestario Total",
+      image: "/images/achievements/netsuite-new.jpg"
+    },
+    {
+      id: 4,
       title: "Implementación Oracle NetSuite",
       role: "Project Manager Lead",
       desc: "Liderazgo técnico y operativo en la implementación de ERP Oracle para multinacional logística. Coordinación de equipos internacionales, migración de datos críticos y formación a +50 empleados.",
       tags: ["Oracle ERP", "Logística", "Liderazgo"],
       metric: "Impacto Global",
-      image: "/images/achievements/netsuite.jpg"
+      image: "/images/achievements/netsuite-new.jpg"
     },
     {
-      id: 3,
+      id: 5,
       title: "Venta Enterprise SaaS",
       role: "Sales Lead & Negotiation",
       desc: "Liderazgo en la negociación y cierre de venta de Oracle NetSuite a Bluespace. Gestión del ciclo de venta complejo (6 meses), validación técnica y cierre contractual.",
       tags: ["Ventas B2B", "Negociación", "SaaS"],
       metric: "100.000 € Deal",
-      image: "/images/achievements/proyectos.jpg"
+      image: "/images/achievements/proyectos-new.jpg"
     },
     {
-      id: 4,
+      id: 6,
       title: "Marca Emelson",
       role: "Brand Creator & Product",
       desc: "Creación desde cero, branding y estrategia de lanzamiento de la marca de climatización Emelson. Hoy líder en grandes superficies (Leroy Merlin, Bricomart).",
@@ -61,27 +79,29 @@ export default function Home() {
       image: "/images/achievements/ecommerce.jpg"
     },
     {
-      id: 5,
+      id: 7,
       title: "Lanzamiento Kmeleon",
       role: "CMO & GTM Strategy",
       desc: "Diseño de narrativa, posicionamiento y estrategia Go-To-Market para startup de IA. Lanzamiento en US y Latam, captación de primeros clientes Enterprise.",
       tags: ["Startup IA", "GTM Strategy", "Growth"],
       metric: "Lanzamiento Global",
-      image: "/images/achievements/startups.jpg"
+      image: "/images/achievements/startups-new.jpg"
     },
     {
-      id: 6,
+      id: 8,
       title: "Gestión Musical & Eventos",
       role: "Artist Manager",
       desc: "Gestión 360º de carreras artísticas (94 Music, Condor). Booking, producción de eventos en vivo, logística de giras y negociación con salas/promotores.",
       tags: ["Música", "Producción", "Management"],
       metric: "+15 Artistas",
-      image: "/images/achievements/eventos.jpg"
+      image: "/images/achievements/eventos-new.jpg"
     }
   ];
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-[#82ff1f] selection:text-black relative font-sans">
+
+      {/* ... (Header remains mostly same, skipping to save tokens in context if possible, but for replace tool I need safe anchors. I will include header just in case) */}
 
       {/* Background Texture - Minimal & Dark */}
       <div className="fixed inset-0 z-0 print:hidden">
@@ -103,7 +123,7 @@ export default function Home() {
           <nav className="hidden md:flex items-center gap-8">
             <NavLink href="#ia">{t.nav.experience}</NavLink>
             <NavLink href="#freelance">{t.nav.projects}</NavLink>
-            <NavLink href="#stack">{t.nav.stack}</NavLink>
+            <NavLink href="#skills">{t.nav.skills}</NavLink>
             <LanguageSwitcher />
             <Link href="#contact" className="px-5 py-2 bg-white/5 border border-white/10 rounded-full text-sm font-bold text-white hover:bg-white/10 transition-all">
               {t.hero.contact}
@@ -235,90 +255,321 @@ export default function Home() {
           </div>
         </ExpandableSection >
 
-        {/* --- MIS NÚMEROS --- */}
-        < ExpandableSection id="numbers" number="01" title="Mis Números" >
-          <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+10M" label="Impacto Total" description="Personas alcanzadas." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label="Webs & E-commerce" description="Desarrollados y lanzados." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Lightbulb size={24} />} value="+20" label="Marcas Branding" description="Identidades corporativas creadas." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Brain size={24} />} value="+10" label="Soluciones IA" description="Implementaciones en real." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Briefcase size={24} />} value="10" label="Negocios Impulsados" description="Proyectos empresariales lanzados." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+40" label="Sistemas" description="Automatizaciones de procesos." />
-            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+1M €" label="Presupuesto" description="Gestionado en proyectos." />
-          </div>
-        </ExpandableSection >
-
-        {/* --- TRAYECTORIA --- */}
-        < ExpandableSection id="career" number="02" title="Trayectoria Profesional" >
+        {/* --- TRAYECTORIA (ROLE SWAPPED WITH COMPANY) --- */}
+        < ExpandableSection id="career" number="01" title="Trayectoria Profesional" >
           <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
             <TimelineItem
               year="2025 - Present"
-              title="Autónomo"
-              role="Consultor de Negocio & IA"
-              desc="Gestión de eventos de música en vivo, implementación de soluciones de IA para empresas y consultoría estratégica de marketing."
+              title="Consultor de Negocio & IA"
+              role="Autónomo"
+              desc="Implementación de soluciones de IA para empresas, consultoría estratégica de marketing y dirección de proyectos tecnológicos."
             />
             <TimelineItem
               year="2023 - 2025"
-              title="Kmeleon"
-              role="CMO & Marketing AI"
-              desc="• Marketing & Sales (2025): IA, estrategias GTM y automatización. • CMO (2023-24): Estrategia de marca internacional."
-            />
-            <TimelineItem
-              year="2024"
-              title="DisrupTT"
-              role="Netsuite Oracle Project Manager"
-              desc="Oracle Netsuite implementation leadership. Coordinación de equipos y estrategias de marketing."
+              title="Fundador / Director de Eventos"
+              role="94 Music"
+              desc="Liderazgo y ejecución de más de 100 eventos musicales en vivo. Gestión integral: producción, logística, booking y marketing digital."
             />
             <TimelineItem
               year="2023 - 2024"
-              title="Konektor"
-              role="Growth Partner & BizDev"
-              desc="• Growth Partner (2024): Expansión de negocio. • Business Dev (2023): Estrategias de venta consultiva con IA."
+              title="CMO & Marketing AI"
+              role="Kmeleon"
+              desc="Estrategia de marca internacional y Go-to-Market para soluciones de IA. Automatización de procesos de venta y narrativa tecnológica."
+            />
+            <TimelineItem
+              year="2023"
+              title="Netsuite Oracle Project Manager"
+              role="DisrupTT"
+              desc="Liderazgo en la implementación del ERP Oracle Netsuite. Coordinación de equipos técnicos y consultoría de procesos."
             />
             <TimelineItem
               year="2022 - 2023"
-              title="Eme Growth Agency"
-              role="Web / App Project Manager"
-              desc="Liderazgo de equipos multidisciplinarios. Diseño web, automatización y relación con cliente (CSS, UX)."
+              title="Growth Partner & BizDev"
+              role="Konektor"
+              desc="Desarrollo de negocio y expansión estratégica. Implementación de ventas consultivas apoyadas en herramientas de IA."
             />
             <TimelineItem
-              year="2021 - 2022"
-              title="Growbox Digital"
-              role="Marketing Account Manager"
-              desc="Optimización del embudo de conversión, gestión de CRM y marketing automatizado."
+              year="2022"
+              title="PM & Líder de Procesos"
+              role="Eme Growth Agency"
+              desc="Diseño y ejecución de la estructura operativa de la agencia. Liderazgo de equipos multidisciplinares y creación de 'EME Academy'."
             />
             <TimelineItem
-              year="2020 - 2021"
-              title="HTW Spain"
-              role="Responsable de Marketing"
-              desc="Creación de marca Emelson (éxito nacional). Diseño de catálogos y gestión web."
+              year="2021"
+              title="Marketing Account Manager"
+              role="Growbox Digital"
+              desc="Estrategia GTM para 'Totemica' (Skincare Miami). Branding, búsqueda de proveedores internacionales y lanzamiento exitoso al mercado."
             />
             <TimelineItem
-              year="2019 - 2020"
-              title="Denetic"
-              role="Business Manager"
-              desc="Coordinación de equipos, CRM y desarrollo empresarial."
+              year="2019"
+              title="Jefe de Logística"
+              role="Mondo Convenienza"
+              desc="Coordinación y optimización de flujos de trabajo logísticos y liderazgo de equipos operativos."
             />
             <TimelineItem
-              year="2017 - 2019"
-              title="Mondo Convenienza"
-              role="Jefe de logística"
-              desc="Coordinación y liderazgo de equipos de trabajo logístico."
+              year="2018"
+              title="Responsable de Marketing & Compras"
+              role="Reauxi"
+              desc="Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
             />
             <TimelineItem
-              year="2016 - 2017"
-              title="Reauxi"
-              role="Marketing & Compras"
-              desc="Gestión de bases de datos, negociación y atención al cliente."
+              year="2017"
+              title="Business Manager (Operaciones)"
+              role="Denetic"
+              desc="Máster práctico en gestión integral de negocio: logística, compras en China, gestión de almacén, facturación e instalaciones técnicas. Responsable total de la operativa de la empresa (excluyendo ventas)."
+            />
+            <TimelineItem
+              year="2015 - 2017"
+              title="Diseñador Gráfico & Marketing B2B"
+              role="HTW Spain"
+              desc="Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
             />
           </div>
         </ExpandableSection >
 
+        {/* --- HITOS Y LOGROS --- */}
+        < ExpandableSection id="achievements" number="02" title="Hitos & Logros" >
+          <AchievementsCarousel items={achievements} />
+        </ExpandableSection >
+
+        {/* --- SKILLS --- */}
+        < ExpandableSection id="skills" number="03" title="Skills" >
+
+          {/* Core Skills - Destacados */}
+          < div className="mb-12" >
+            <h3 className="text-base sm:text-lg font-bold text-zinc-400 mb-4 sm:mb-6 uppercase tracking-wider">Core Skills</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+
+              {/* Project Management */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Target size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">Project Management</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Visión estratégica para liderar equipos y traducir objetivos de negocio en sistemas funcionales.</p>
+                </div>
+              </div>
+
+              {/* Marketing & Growth */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Megaphone size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">Marketing & Growth</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Estrategias GTM, diseño de funnels de conversión y posicionamiento de marca.</p>
+                </div>
+              </div>
+
+              {/* Client Relationship */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Users size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">Client Relationship</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">Gestión de cuentas (KAM), fidelización y traducción de necesidades técnicas a lenguaje de negocio.</p>
+                </div>
+              </div>
+
+              {/* AI Strategy & Execution */}
+              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                <div className="relative z-10">
+                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                    <Brain size={20} className="text-black" />
+                  </div>
+                  <h4 className="text-xl font-heading font-bold text-white mb-2">AI Strategy & Execution</h4>
+                  <p className="text-xs text-zinc-400 leading-relaxed">De la estrategia a la implementación técnica real. Ciclo completo de proyectos de IA aplicada.</p>
+                </div>
+              </div>
+
+            </div>
+          </div >
+
+          {/* Subcategorías de Skills (Habilidades Conceptuales) */}
+          < div className="space-y-8" >
+
+            {/* Gestión de Proyectos y Metodologías */}
+            < div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <ClipboardList size={16} /> Gestión de Proyectos y Agilismo
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Scrum</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Kanban</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Liderazgo de Equipos</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Gestión de Riesgos</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Planificación Estratégica</p>
+                </div>
+              </div>
+            </div >
+
+            {/* Relación con Cliente (New) */}
+            <div>
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Users size={16} /> Relación con Cliente & Gestión
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Key Account Management</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Atención al Cliente</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Fidelización</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Resolución de Conflictos</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Comunicación Asertiva</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Habilidades de Negocio */}
+            <div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Briefcase size={16} /> Habilidades de Negocio
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Desarrollo de Negocio</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Negociación B2B</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Estrategia GTM</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Visión de Producto</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Gestión de Stakeholders</p>
+                </div>
+              </div>
+            </div >
+
+            {/* Habilidades Técnicas Conceptuales */}
+            < div >
+              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
+                <Code size={16} /> Habilidades Técnicas
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Arquitectura de Soluciones</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Integración de Sistemas</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Automatización de Procesos</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Prompt Engineering</p>
+                </div>
+                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <p className="text-sm font-medium text-white">Cloud Computing Concepts</p>
+                </div>
+              </div>
+            </div >
+          </div >
+
+          {/* --- TECH STACK & HERRAMIENTAS (Bloque Diferenciado) --- */}
+          <div className="mt-12 pt-8 border-t border-white/10">
+            <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
+              <span className="text-[#82ff1f]">#</span> Tech Stack & Herramientas
+            </h3>
+
+            <div className="space-y-8">
+
+              {/* Stack IA & Automatización */}
+              <div>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">IA & Automatización Avanzada</h4>
+                <div className="flex flex-wrap gap-2">
+                  {["n8n", "Make", "Zapier", "Cursor (IDE)", "Antigravity", "ChatBase", "Voiceflow", "Retell AI", "Vapi", "Google Flow", "Midjourney", "Google AI Studio", "OpenAI API", "Hume AI"].map((tool) => (
+                    <span key={tool} className="px-3 py-1.5 rounded-lg bg-[#82ff1f]/10 text-[#82ff1f] text-sm border border-[#82ff1f]/20 font-medium">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Stack Marketing & Ventas */}
+              <div>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Marketing, Ventas & CRM</h4>
+                <div className="flex flex-wrap gap-2">
+                  {["HubSpot CRM", "Salesforce", "Google Ads", "Meta Ads", "YouTube Growth", "Email Automation (ActiveC)", "Pipedrive", "Cold Outbound Tools", "Google Analytics 4"].map((tool) => (
+                    <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Stack Creativo */}
+              <div>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Diseño & Contenido</h4>
+                <div className="flex flex-wrap gap-2">
+                  {["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Premiere Pro", "CapCut", "DaVinci Resolve", "Studio One", "Canva", "OBS Studio"].map((tool) => (
+                    <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Stack Desarrollo & Web */}
+              <div>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Desarrollo Web & Código</h4>
+                <div className="flex flex-wrap gap-2">
+                  {["Next.js", "React", "Node.js", "Tailwind CSS", "TypeScript", "Git/GitHub", "VS Code", "Vercel"].map((tool) => (
+                    <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              {/* Stack Operaciones & ERP */}
+              <div>
+                <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">Operaciones & ERPs</h4>
+                <div className="flex flex-wrap gap-2">
+                  {["Oracle NetSuite", "SAP ERP", "ClickUp", "Notion", "Slack", "Jira", "Monday", "Microsoft Excel (Adv)"].map((tool) => (
+                    <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                      {tool}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </ExpandableSection >
+
+
+
         {/* --- EXPERIENCIA IA --- */}
-        < ExpandableSection id="ia" number="03" title="Experiencia IA" >
+        < ExpandableSection id="ia" number="04" title="Experiencia IA" >
           <div className="space-y-8">
             <p className="text-zinc-300 text-lg font-light leading-relaxed mb-6">
-              Mi enfoque con la IA va más allá del <i>hype</i>. He pasado de diseñar la estrategia de startups deep-tech a "bajar al barro" para programar agentes en n8n. Entiendo el ciclo completo: <strong className="text-white">desde la venta y la estrategia, hasta la implementación técnica y el despliegue.</strong>
+              Mi enfoque en la Inteligencia Artificial combina la <strong className="text-white">visión estratégica con la capacidad de ejecución técnica</strong>. Me especializo en el ciclo completo de vida del proyecto: desde el diseño de la arquitectura de la solución hasta la implementación técnica de agentes y la orquestación de workflows complejos. Actúo como el puente que traduce los objetivos de negocio en sistemas operativos eficientes.
             </p>
 
             <div className="grid grid-cols-1 gap-6">
@@ -530,284 +781,78 @@ export default function Home() {
           </div>
         </ExpandableSection >
 
-        {/* --- HITOS Y LOGROS --- */}
-        < ExpandableSection id="achievements" number="04" title="Hitos & Logros" >
-          <AchievementsCarousel items={achievements} />
+        {/* --- MIS NÚMEROS --- */}
+        < ExpandableSection id="numbers" number="05" title="Mis Números" >
+          <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+10M" label="Impacto Total" description="Personas alcanzadas." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label="Webs & E-commerce" description="Desarrollados y lanzados." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Lightbulb size={24} />} value="+20" label="Marcas Branding" description="Identidades corporativas creadas." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Brain size={24} />} value="+10" label="Soluciones IA" description="Implementaciones en real." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Briefcase size={24} />} value="10" label="Negocios Impulsados" description="Empresas en las que he trabajado e impulsado su crecimiento." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+40" label="Sistemas" description="Automatizaciones de procesos." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+1M €" label="Presupuesto" description="Gestionado en proyectos." />
+            <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Database size={24} />} value="3" label="Sistemas Core" description="NetSuite, SAP, ClickUp implementados." />
+          </div>
         </ExpandableSection >
 
-        {/* --- SKILLS --- */}
-        < ExpandableSection id="skills" number="05" title="Skills" >
+        {/* --- FORMACIÓN --- */}
+        < ExpandableSection id="education" number="06" title="Formación & Certificaciones" >
+          <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
 
-          {/* Core Skills - Destacados */}
-          < div className="mb-12" >
-            <h3 className="text-base sm:text-lg font-bold text-zinc-400 mb-4 sm:mb-6 uppercase tracking-wider">Core Skills</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+            {/* Ciclo Superior */}
+            <TimelineItem
+              year="2012 - 2014"
+              title="Ciclo Superior de Comercio y Marketing"
+              role="Grado Superior"
+              desc="Formación integral en estrategias de comercialización, investigación de mercados, logística y gestión de puntos de venta. Base académica para el desarrollo de estrategias de negocio."
+            />
 
-              {/* Project Management */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                    <Target size={20} className="text-black" />
+            {/* Certificaciones Técnicas (Bloque Agrupado) */}
+            <div className="relative">
+              <span className="absolute -left-[41px] top-2 w-3 h-3 rounded-full bg-[#82ff1f] shadow-[0_0_10px_#82ff1f]"></span>
+              <h3 className="text-xl font-bold text-white mb-6">Certificaciones Profesionales</h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                {/* SAP */}
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Award size={20} className="text-[#82ff1f]" />
+                    <h4 className="font-bold text-white">Certificación SAP</h4>
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">Project Management</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Visión estratégica para liderar equipos y traducir objetivos de negocio en sistemas funcionales.</p>
+                  <p className="text-sm text-zinc-400">Formación oficial impartida directamente por <strong className="text-white">SAP</strong> (3 días intensivos). Especialización en procesos corporativos y módulos logísticos.</p>
                 </div>
-              </div>
 
-              {/* Marketing Strategy */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                    <TrendingUp size={20} className="text-black" />
+                {/* Oracle NetSuite */}
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Award size={20} className="text-[#82ff1f]" />
+                    <h4 className="font-bold text-white">Oracle NetSuite Fundamentos</h4>
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">Marketing Strategy</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Diseño de estrategias Go-to-Market y Growth Hacking para escalar productos digitales.</p>
+                  <p className="text-sm text-zinc-400">Formación oficial de <strong className="text-white">Oracle</strong> (2 semanas de inmersión total). Administración, configuración y flujos de trabajo en ERP Cloud.</p>
                 </div>
-              </div>
 
-              {/* 0-to-Market Builder */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                    <Briefcase size={20} className="text-black" />
+                {/* Google PM */}
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <ShieldCheck size={20} className="text-[#82ff1f]" />
+                    <h4 className="font-bold text-white">Google Project Management</h4>
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">0-to-Market Builder</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">Construir negocios desde cero: producto, procesos, visión estratégica y bases operativas para lanzamiento.</p>
+                  <p className="text-sm text-zinc-400">Certificación profesional de Google. Metodologías Ágiles, gestión del cambio y liderazgo de proyectos complejos.</p>
                 </div>
-              </div>
 
-              {/* AI Strategy & Execution */}
-              <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border-2 border-[#82ff1f]/30 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                <div className="relative z-10">
-                  <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                    <Brain size={20} className="text-black" />
+                {/* Google IA */}
+                <div className="p-4 bg-black/40 rounded-xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Brain size={20} className="text-[#82ff1f]" />
+                    <h4 className="font-bold text-white">Google AI Essentials</h4>
                   </div>
-                  <h4 className="text-xl font-heading font-bold text-white mb-2">AI Strategy & Execution</h4>
-                  <p className="text-xs text-zinc-400 leading-relaxed">De la estrategia a la implementación técnica real. Ciclo completo de proyectos de IA aplicada.</p>
+                  <p className="text-sm text-zinc-400">Cursos de especialización en IA Generativa, Cloud Computing y nuevas tecnologías del ecosistema Google.</p>
                 </div>
-              </div>
 
+              </div>
             </div>
-          </div >
 
-          {/* Subcategorías de Skills */}
-          < div className="space-y-8" >
-
-            {/* Gestión de Proyectos y Metodologías */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <ClipboardList size={16} /> Gestión de Proyectos y Metodologías
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Scrum</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Kanban</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Planificación y seguimiento</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Gestión de riesgos</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Coordinación de equipos</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Cloud & IaC */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Globe size={16} /> Cloud & IaC
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Paradigmas Cloud</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Terraform / IaC</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Despliegue y APIs</p>
-                </div>
-              </div>
-            </div >
-
-            {/* IA Conversacional y Automatización */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <MessageSquare size={16} /> IA Conversacional y Automatización
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">ChatBase</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">ElevenLabs / Retell</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">n8n, Make, Zapier</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Vapi</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Voiceflow</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Desarrollo y Despliegues Operativos */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Code size={16} /> Desarrollo y Despliegues Operativos
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Next.js</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Node.js</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">GitHub</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Integraciones API</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Version Control</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Habilidades IA Avanzadas */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Brain size={16} /> Habilidades IA Avanzadas
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Prompt Engineering</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">RAG & Vector DBs</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Fine-Tuning</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Agentic Workflows</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Local LLMs</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Marketing Digital & Ads */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <TrendingUp size={16} /> Marketing Digital & Ads
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Campañas de Ads</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Google Ads</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Facebook Ads</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Análisis de Métricas</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Google Analytics</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Contenido & Creatividad */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Palette size={16} /> Contenido & Creatividad
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Edición de Video</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">RRSS Content</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Copywriting</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Diseño Gráfico</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Branding</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Ventas & Negociación */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <ShoppingBag size={16} /> Ventas & Negociación
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Venta B2B</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Venta B2C</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Negociación</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">CRM Management</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Pipeline Management</p>
-                </div>
-              </div>
-            </div >
-
-            {/* Operaciones & Logística */}
-            < div >
-              <h3 className="text-sm font-bold text-[#82ff1f] mb-4 flex items-center gap-2">
-                <Briefcase size={16} /> Operaciones & Logística
-              </h3>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Gestión Logística</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Compras</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Gestión de Inventario</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Coordinación de Equipos</p>
-                </div>
-                <div className="px-4 py-3 rounded-xl bg-black/40 border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                  <p className="text-sm font-medium text-white">Procesos Administrativos</p>
-                </div>
-              </div>
-            </div >
-
-          </div >
+          </div>
         </ExpandableSection >
 
         {/* --- FREELANCE & EMPRENDIMIENTO --- */}
@@ -917,86 +962,7 @@ export default function Home() {
           </div>
         </ExpandableSection >
 
-        {/* --- STACK --- */}
-        < ExpandableSection id="stack" number="06" title="Stack Tecnológico" >
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            {/* AI */}
-            <div className="space-y-4">
-              <h3 className="text-sm font-bold text-[#82ff1f] uppercase tracking-widest flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]"></span> AI & Automation
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="n8n" />
-                <TechBadge name="Make" />
-                <TechBadge name="OpenAI API" />
-                <TechBadge name="Anthropic Claude" />
-                <TechBadge name="Voiceflow" />
-                <TechBadge name="Midjourney" />
-                <TechBadge name="Google Vertex AI" />
-                <TechBadge name="Gemini 1.5 Pro" />
-                <TechBadge name="LangChain" />
-              </div>
-            </div>
 
-            {/* PM */}
-            <div className="space-y-4">
-              <h3 className="text-sm font-bold text-[#82ff1f] uppercase tracking-widest flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]"></span> Project Management
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="ClickUp" />
-                <TechBadge name="Notion" />
-                <TechBadge name="Jira" />
-                <TechBadge name="Asana" />
-                <TechBadge name="Linear" />
-                <TechBadge name="Trello" />
-                <TechBadge name="NetSuite" />
-                <TechBadge name="Slack" />
-                <TechBadge name="Zapier" />
-                <TechBadge name="Airtable" />
-              </div>
-            </div>
-
-            {/* Marketing */}
-            <div className="space-y-4">
-              <h3 className="text-sm font-bold text-[#82ff1f] uppercase tracking-widest flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]"></span> Growth & Marketing
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="HubSpot" />
-                <TechBadge name="Salesforce" />
-                <TechBadge name="Google Analytics 4" />
-                <TechBadge name="Semrush" />
-                <TechBadge name="Meta Ads" />
-                <TechBadge name="Google Ads" />
-                <TechBadge name="TikTok Ads" />
-                <TechBadge name="YouTube" />
-                <TechBadge name="LinkedIn Sales Nav" />
-              </div>
-            </div>
-
-            {/* Code */}
-            <div className="space-y-4">
-              <h3 className="text-sm font-bold text-[#82ff1f] uppercase tracking-widest flex items-center gap-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]"></span> Design & Code
-              </h3>
-              <div className="flex flex-wrap gap-2">
-                <TechBadge name="Next.js" />
-                <TechBadge name="React" />
-                <TechBadge name="Tailwind CSS" />
-                <TechBadge name="TypeScript" />
-                <TechBadge name="Node.js" />
-                <TechBadge name="Figma" />
-                <TechBadge name="Webflow" />
-                <TechBadge name="Vercel" />
-                <TechBadge name="Supabase" />
-                <TechBadge name="Framer" />
-                <TechBadge name="Shopify" />
-                <TechBadge name="WordPress" />
-              </div>
-            </div>
-          </div>
-        </ExpandableSection >
 
         {/* --- QUÉ BUSCO --- */}
         < ExpandableSection id="seeking" number="08" title="Mis Objetivos" >
