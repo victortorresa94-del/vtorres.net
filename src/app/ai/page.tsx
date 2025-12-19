@@ -4,6 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { useLanguage } from '@/lib/LanguageContext';
+import { translations } from '@/lib/translations';
 import {
     Shield, Database, UserCheck, FileSearch, EyeOff,
     MessageSquare, Mic, Zap, GitMerge,
@@ -23,7 +24,8 @@ const iconMap: Record<string, any> = {
 export default function AIAdoptionPage() {
     const { t } = useLanguage();
     // Casting to any to access new 'ai' keys safely without strict type checks during dev
-    const content = (t as any).ai;
+    // Fallback to Spanish if current language doesn't have 'ai' section
+    const content = (t as any).ai || translations.es.ai;
     const common = (t as any).procesos; // Reusing logic for consistency if needed
 
 
@@ -74,7 +76,7 @@ export default function AIAdoptionPage() {
                             initial={{ opacity: 0, y: 10 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ delay: 0.2, duration: 0.6 }}
-                            className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-[0.95] text-white"
+                            className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[0.95] text-white"
                         >
                             <span className="block text-white">Adopción</span>
                             <span className="block text-[#82ff1f]">Responsable</span>
@@ -114,10 +116,10 @@ export default function AIAdoptionPage() {
                     >
                         <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/5 bg-zinc-900 shadow-2xl group">
                             <Image
-                                src="/images/profile.jpg"
-                                alt="Víctor Torres"
+                                src="/images/ai-hero-new.jpg"
+                                alt="Víctor Torres - AI Business Consultant"
                                 fill
-                                className="object-cover object-top grayscale hover:grayscale-0 transition-all duration-700"
+                                className="object-cover object-top hover:scale-105 transition-all duration-700"
                                 priority
                             />
                             {/* Inner Glow */}
@@ -152,7 +154,7 @@ export default function AIAdoptionPage() {
 
                     {/* Header */}
                     <div className="space-y-6">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight">
+                        <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight">
                             {content.approach.title}
                             <span className="block text-zinc-600 mt-2">{content.approach.subtitle}</span>
                         </h2>
@@ -196,7 +198,7 @@ export default function AIAdoptionPage() {
             <section className="py-32 px-6 md:px-12 bg-zinc-900/30">
                 <div className="max-w-6xl mx-auto space-y-16">
                     <div className="max-w-3xl">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">{content.governance.title}</h2>
+                        <h2 className="text-3xl md:text-5xl font-medium text-white mb-6">{content.governance.title}</h2>
                         <p className="text-zinc-500 text-lg mb-8">{content.governance.subtitle}</p>
                         <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
                             <p className="text-xl text-white font-light">
@@ -319,68 +321,215 @@ export default function AIAdoptionPage() {
                 }))}
             />
 
-            {/* BLOCK 5: SYSTEM TYPOLOGIES */}
-            <section className="py-32 px-6 md:px-12 bg-[#0B0B0B]">
-                <div className="max-w-6xl mx-auto">
-                    <div className="mb-16">
-                        <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">{content.systems.title}</h2>
-                        <p className="text-zinc-500 text-lg">{content.systems.subtitle}</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {content.systems.items.map((sys: any, i: number) => {
-                            const Icon = iconMap[sys.icon] || Zap;
-                            return (
-                                <div key={i} className="p-6 border border-white/10 rounded-2xl bg-zinc-900/20">
-                                    <div className="mb-4 text-[#82ff1f]"><Icon size={28} /></div>
-                                    <h3 className="text-lg font-bold text-white mb-2">{sys.title}</h3>
-                                    <p className="text-sm text-zinc-500 font-light">{sys.desc}</p>
-                                </div>
-                            );
-                        })}
-                    </div>
-                </div>
-            </section>
+            {/* BLOCK 5: SYSTEMS CATALOGUE */}
+            {content.systems && content.systems.cards && (
+                <section className="py-32 px-6 md:px-12 bg-[#0B0B0B] border-t border-white/5">
+                    <div className="max-w-6xl mx-auto space-y-20">
 
-            {/* BLOCK 6 & 7: CULTURE & METRICS */}
-            <section className="py-32 px-6 md:px-12 bg-zinc-900/30 border-y border-white/5">
-                <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
-
-                    {/* Culture */}
-                    <div className="space-y-10">
-                        <div>
-                            <h2 className="text-3xl font-bold text-white mb-4">{content.culture.title}</h2>
-                            <p className="text-zinc-400 font-light">{content.culture.desc}</p>
+                        {/* Header */}
+                        <div className="max-w-3xl space-y-6">
+                            <span className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest">Sistemas de IA</span>
+                            <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight">
+                                {content.systems.title}
+                                <span className="block text-zinc-500 mt-2 text-2xl md:text-3xl font-light">{content.systems.subtitle}</span>
+                            </h2>
+                            <p className="text-xl text-zinc-400 font-light border-l border-white/10 pl-6">
+                                {content.systems.intro}
+                            </p>
                         </div>
-                        <div className="space-y-6">
-                            {content.culture.steps.map((step: string, i: number) => (
-                                <div key={i} className="flex items-center gap-4">
-                                    <div className="w-8 h-8 rounded-full bg-[#82ff1f]/10 flex items-center justify-center text-[#82ff1f] text-xs font-bold">
+
+                        {/* Cards Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                            {content.systems.cards.map((sys: any, i: number) => (
+                                <motion.div
+                                    key={i}
+                                    whileHover={{ y: -5 }}
+                                    className="p-8 bg-zinc-900/30 border border-white/5 rounded-2xl group hover:border-[#82ff1f]/30 transition-all"
+                                >
+                                    <div className="space-y-6">
+                                        <div>
+                                            <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#82ff1f] transition-colors">{sys.title}</h3>
+                                            <p className="text-sm text-[#82ff1f] font-mono tracking-wide">{sys.subtitle}</p>
+                                        </div>
+                                        <p className="text-zinc-400 font-light leading-relaxed">
+                                            {sys.desc}
+                                        </p>
+                                        <ul className="space-y-2 pt-4 border-t border-white/5">
+                                            {sys.items.map((item: string, idx: number) => (
+                                                <li key={idx} className="flex items-start gap-2 text-sm text-zinc-500">
+                                                    <span className="text-[#82ff1f] mt-1">·</span> {item}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                        <div className="pt-4 mt-4 bg-black/20 p-4 rounded-lg border border-white/5">
+                                            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-1 font-bold">Gobernanza</p>
+                                            <p className="text-sm text-zinc-400 italic">"{sys.governance}"</p>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            ))}
+                        </div>
+
+                        {/* Transversal Governance */}
+                        <div className="p-12 border border-white/5 rounded-3xl bg-zinc-900/20 text-center space-y-8">
+                            <h3 className="text-xl text-white font-light">Principios de Gobernanza Transversal</h3>
+                            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
+                                {content.systems.governance_principles && content.systems.governance_principles.map((p: string, i: number) => (
+                                    <div key={i} className="flex items-center gap-3">
+                                        <div className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]" />
+                                        <span className="text-zinc-300 tracking-wide">{p}</span>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Closing */}
+                        <div className="text-center pt-8">
+                            <p className="text-2xl md:text-3xl text-white font-light max-w-3xl mx-auto leading-tight">
+                                {content.systems.closure}
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+            )}
+
+            {/* BLOCK 6: CULTURE CHANGE */}
+            {content.culture_change && (
+                <section className="py-32 px-6 md:px-12 bg-zinc-900/20">
+                    <div className="max-w-6xl mx-auto space-y-24">
+
+                        {/* Header */}
+                        <div className="space-y-8 text-center max-w-4xl mx-auto">
+                            <h2 className="text-4xl md:text-6xl font-medium text-white tracking-tight mb-4">
+                                {content.culture_change.title}
+                            </h2>
+                            <p className="text-xl md:text-2xl text-zinc-400 font-light">
+                                {content.culture_change.subtitle}
+                            </p>
+                            <div className="inline-block px-6 py-3 border border-[#82ff1f]/30 rounded-full bg-[#82ff1f]/5">
+                                <p className="text-[#82ff1f] font-medium tracking-wide">
+                                    {content.culture_change.anchor}
+                                </p>
+                            </div>
+                        </div>
+
+                        {/* 3 Sequential Blocks */}
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
+                            {/* Connecting Line (Desktop) */}
+                            <div className="hidden md:block absolute top-12 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
+
+                            {content.culture_change.phases.map((phase: any, i: number) => (
+                                <div key={i} className="relative pt-8 space-y-6">
+                                    {/* Number Token */}
+                                    <div className="w-10 h-10 rounded-full bg-[#0B0B0B] border border-white/10 flex items-center justify-center text-white font-bold z-10 relative mx-auto md:mx-0">
                                         {i + 1}
                                     </div>
-                                    <p className="text-lg text-white font-light">{step}</p>
+                                    <div className="space-y-4 text-center md:text-left">
+                                        <h3 className="text-xl font-bold text-white">{phase.title}</h3>
+                                        <p className="text-zinc-400 font-light min-h-[60px]">{phase.desc}</p>
+                                        <ul className="space-y-3 pt-4 border-t border-white/5 inline-block md:block text-left">
+                                            {phase.actions.map((action: string, idx: number) => (
+                                                <li key={idx} className="flex items-start gap-3 text-sm text-zinc-500">
+                                                    <CheckCircle2 size={14} className="mt-1 text-[#82ff1f] shrink-0" />
+                                                    {action}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
                             ))}
                         </div>
-                    </div>
 
-                    {/* Metrics */}
-                    <div className="space-y-10">
-                        <div>
-                            <h2 className="text-3xl font-bold text-white mb-4">{content.metrics.title}</h2>
-                            <p className="text-zinc-400 font-light">{content.metrics.desc}</p>
+                        {/* Resistance Banner */}
+                        <div className="bg-[#0B0B0B] border border-white/5 p-8 md:p-12 rounded-2xl flex flex-col md:flex-row items-center gap-8 md:gap-12">
+                            <div className="shrink-0 p-4 bg-zinc-900 rounded-full text-white">
+                                <Ear size={32} />
+                            </div>
+                            <div className="space-y-2 text-center md:text-left">
+                                <h3 className="text-lg font-bold text-white uppercase tracking-widest">{content.culture_change.resistance.title}</h3>
+                                <p className="text-xl text-zinc-400 font-light italic">"{content.culture_change.resistance.text}"</p>
+                            </div>
                         </div>
-                        <div className="grid grid-cols-2 gap-4">
-                            {content.metrics.items.map((m: any, i: number) => (
-                                <div key={i} className="p-6 bg-[#0B0B0B] border border-white/5 rounded-xl text-center">
-                                    <p className="text-3xl font-bold text-white mb-1">{m.value}</p>
-                                    <p className="text-xs uppercase tracking-widest text-zinc-500">{m.label}</p>
+
+                        {/* Closure */}
+                        <div className="text-center">
+                            <p className="text-2xl text-white font-light tracking-tight">{content.culture_change.closure}</p>
+                        </div>
+
+                    </div>
+                </section>
+            )}
+
+            {/* BLOCK 7: METRICS */}
+            {content.metrics && content.metrics.macro && (
+                <section className="py-32 px-6 md:px-12 bg-[#0B0B0B] border-y border-white/5">
+                    <div className="max-w-6xl mx-auto space-y-20">
+
+                        {/* Header */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
+                            <div>
+                                <h2 className="text-4xl md:text-6xl font-medium text-white tracking-tight mb-6">{content.metrics.title}</h2>
+                                <p className="text-xl text-[#82ff1f] font-mono border-l-2 border-[#82ff1f] pl-6 py-2">
+                                    {content.metrics.subtitle}
+                                </p>
+                            </div>
+                            <p className="text-zinc-400 font-light text-lg pb-4">
+                                {content.metrics.intro}
+                            </p>
+                        </div>
+
+                        {/* Macro Metrics Grid */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                            {content.metrics.macro.map((m: any, i: number) => (
+                                <div key={i} className="p-8 bg-zinc-900/20 border border-white/5 rounded-2xl space-y-4 hover:border-[#82ff1f]/30 transition-all">
+                                    <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest">{m.title}</p>
+                                    <p className="text-white text-lg font-bold italic">"{m.question}"</p>
+                                    <div className="h-px w-full bg-white/5" />
+                                    <p className="text-sm text-zinc-400 leading-relaxed">{m.measure}</p>
                                 </div>
                             ))}
                         </div>
-                    </div>
 
-                </div>
-            </section>
+                        {/* Micro & Change (2 Cols) */}
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                            {/* Micro Control */}
+                            <div className="space-y-8">
+                                <h3 className="text-2xl font-bold text-white">{content.metrics.micro.title}</h3>
+                                <ul className="space-y-0 divide-y divide-white/5 border-y border-white/5">
+                                    {content.metrics.micro.items.map((item: string, i: number) => (
+                                        <li key={i} className="py-4 flex items-start gap-4 text-zinc-400 font-light">
+                                            <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#82ff1f] shrink-0" />
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+
+                            {/* Change Metrics */}
+                            <div className="bg-[#82ff1f] p-10 rounded-3xl text-black flex flex-col justify-center space-y-6">
+                                <h3 className="text-2xl font-bold text-black border-b border-black/10 pb-4">{content.metrics.change.title}</h3>
+                                <ul className="space-y-4">
+                                    {content.metrics.change.items.map((item: string, i: number) => (
+                                        <li key={i} className="flex items-center gap-3 font-medium text-lg">
+                                            <CheckCircle2 size={20} className="text-black/60" />
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+
+                        {/* Final Closure */}
+                        <div className="text-center pt-12 border-t border-white/5">
+                            <p className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight max-w-4xl mx-auto">
+                                {content.metrics.closure}
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+            )}
 
             {/* BLOCK 8 & 9: ROLE & CLOSING */}
             <section className="py-32 px-6 md:px-12 bg-[#0B0B0B]">
@@ -398,7 +547,7 @@ export default function AIAdoptionPage() {
 
                     {/* Closing */}
                     <div className="space-y-8">
-                        <h2 className="text-5xl md:text-7xl font-bold text-white tracking-tighter">
+                        <h2 className="text-5xl md:text-7xl font-medium text-white tracking-tight">
                             {content.closing.title}
                         </h2>
                         <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">
