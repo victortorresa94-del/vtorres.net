@@ -8,29 +8,23 @@ import { translations } from '@/lib/translations';
 import {
     Shield, Database, UserCheck, FileSearch, EyeOff,
     MessageSquare, Mic, Zap, GitMerge,
-    Users, Briefcase, Ear, Repeat, Target,
-    Brain, ArrowRight, CheckCircle2, ChevronDown
+    Brain, ArrowRight, Lightbulb, Users, Target
 } from 'lucide-react';
 import AccordionGroup from '@/components/procesos/AccordionGroup';
+import AutomationBlock from '@/components/ai/AutomationBlock';
+import RoleBlock from '@/components/ai/RoleBlock';
+import ClosingBlock from '@/components/ai/ClosingBlock';
 
-// Map icon strings to components
 const iconMap: Record<string, any> = {
     Shield, Database, UserCheck, FileSearch, EyeOff,
-    MessageSquare, Mic, Zap, GitMerge,
-    Users, Briefcase, Ear, Repeat, Target,
-    Brain
+    MessageSquare, Mic, Zap, GitMerge, Brain,
+    Lightbulb, Users, Target
 };
 
 export default function AIAdoptionPage() {
     const { t } = useLanguage();
-    // Casting to any to access new 'ai' keys safely without strict type checks during dev
-    // Fallback to Spanish if current language doesn't have 'ai' section
     const content = (t as any).ai || translations.es.ai;
-    const common = (t as any).procesos; // Reusing logic for consistency if needed
 
-
-
-    // Safety guard with styling to prevent black screen flash
     if (!content) {
         return (
             <div className="min-h-screen bg-[#0B0B0B] flex items-center justify-center text-zinc-500">
@@ -38,6 +32,237 @@ export default function AIAdoptionPage() {
             </div>
         );
     }
+
+    // Grupo 1: Mi Enfoque
+    const enfoqueItems = [
+        {
+            id: 'approach',
+            title: content.approach.title,
+            subtitle: content.approach.subtitle,
+            icon: Lightbulb,
+            component: (
+                <div className="space-y-12">
+                    <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
+                        <p className="text-xl text-white font-light">{content.approach.manifesto}</p>
+                    </div>
+                    <div className="text-2xl md:text-3xl font-medium text-white">
+                        {content.approach.statement}
+                    </div>
+                    <div className="space-y-8">
+                        {content.approach.steps.map((step: any, i: number) => (
+                            <div key={i} className="flex items-start gap-6 border-b border-white/5 pb-6 last:border-0">
+                                <span className="text-[#82ff1f] font-mono text-sm mt-1">{step.step}</span>
+                                <p className="text-xl text-zinc-300 font-light">{step.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="pt-8 text-center border-t border-white/5">
+                        <p className="text-lg text-zinc-400 font-light">
+                            No implanto features de IA. <span className="text-white font-medium">Implanto nuevas formas de trabajar.</span>
+                        </p>
+                    </div>
+                </div>
+            )
+        },
+        {
+            id: 'governance',
+            title: content.governance.title,
+            subtitle: content.governance.subtitle,
+            icon: Shield,
+            component: (
+                <div className="space-y-12">
+                    <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
+                        <p className="text-xl text-white font-light">{content.governance.definition}</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {content.governance.cards.map((card: any, i: number) => {
+                            const Icon = iconMap[card.icon] || Shield;
+                            return (
+                                <div
+                                    key={i}
+                                    className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl hover:border-[#82ff1f]/30 transition-all"
+                                >
+                                    <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-[#82ff1f] mb-4">
+                                        <Icon size={24} />
+                                    </div>
+                                    <h4 className="text-lg font-medium text-white">{card.title}</h4>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div className="p-8 bg-[#82ff1f] rounded-2xl text-black text-center">
+                        <p className="text-lg font-medium leading-tight">"{content.governance.role}"</p>
+                    </div>
+                </div>
+            )
+        },
+        {
+            id: 'automation',
+            title: content.automation.title,
+            subtitle: content.automation.subtitle,
+            icon: Zap,
+            component: <AutomationBlock content={content.automation} />
+        }
+    ];
+
+    // Grupo 2: Experiencia e Implementación
+    const experienciaItems = [
+        {
+            id: 'experience',
+            title: content.experience.title,
+            subtitle: 'Proyectos reales de adopción de IA',
+            icon: Brain,
+            component: (
+                <div className="space-y-8">
+                    {content.experience.cases.map((c: any) => (
+                        <div key={c.id} className="border border-white/5 rounded-xl p-8 hover:border-white/10 transition-all">
+                            <div className="flex items-start justify-between mb-6">
+                                <div>
+                                    <h4 className="text-2xl font-medium text-white mb-2">{c.title}</h4>
+                                    <p className="text-zinc-500">{c.subtitle}</p>
+                                </div>
+                                <div className="flex gap-2">
+                                    {c.tags.map((tag: string) => (
+                                        <span key={tag} className="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-400">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                                <div className="space-y-3">
+                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase">Contexto</h5>
+                                    <p className="text-zinc-300 leading-relaxed">{c.content.context}</p>
+                                </div>
+                                <div className="space-y-3">
+                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase">Mi Rol</h5>
+                                    <p className="text-zinc-400 font-light">{c.content.role}</p>
+                                    <h5 className="text-white text-sm font-medium mt-4">Proceso</h5>
+                                    <p className="text-zinc-400 font-light">{c.content.process}</p>
+                                </div>
+                                <div className="bg-white/5 p-6 rounded-xl">
+                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase mb-3">Aprendizaje</h5>
+                                    <p className="text-white italic">"{c.content.learning}"</p>
+                                </div>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            )
+        },
+        ...(content.systems && content.systems.cards ? [{
+            id: 'systems',
+            title: content.systems.title,
+            subtitle: content.systems.subtitle,
+            icon: GitMerge,
+            component: (
+                <div className="space-y-12">
+                    <p className="text-xl text-zinc-400 font-light">{content.systems.intro}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {content.systems.cards.map((sys: any, i: number) => (
+                            <div key={i} className="p-8 bg-zinc-900/30 border border-white/5 rounded-2xl hover:border-[#82ff1f]/30 transition-all space-y-6">
+                                <div>
+                                    <h4 className="text-xl font-medium text-white mb-1">{sys.title}</h4>
+                                    <p className="text-sm text-[#82ff1f] font-mono">{sys.subtitle}</p>
+                                </div>
+                                <p className="text-zinc-400 font-light">{sys.desc}</p>
+                                <ul className="space-y-2 border-t border-white/5 pt-4">
+                                    {sys.items.map((item: string, idx: number) => (
+                                        <li key={idx} className="flex items-start gap-2 text-sm text-zinc-500">
+                                            <span className="text-[#82ff1f] mt-1">·</span> {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                                <div className="bg-black/20 p-4 rounded-lg border border-white/5">
+                                    <p className="text-xs text-zinc-500 uppercase font-bold mb-1">Gobernanza</p>
+                                    <p className="text-sm text-zinc-400 italic">"{sys.governance}"</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+            )
+        }] : []),
+        ...(content.culture_change ? [{
+            id: 'culture',
+            title: content.culture_change.title,
+            subtitle: content.culture_change.subtitle,
+            icon: Users,
+            component: (
+                <div className="space-y-16">
+                    <div className="text-center p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
+                        <p className="text-[#82ff1f] font-medium">{content.culture_change.anchor}</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        {content.culture_change.phases.map((phase: any, i: number) => (
+                            <div key={i} className="space-y-6">
+                                <div className="w-10 h-10 rounded-full bg-[#82ff1f] text-black flex items-center justify-center font-bold">
+                                    {i + 1}
+                                </div>
+                                <div>
+                                    <h4 className="text-xl font-medium text-white mb-3">{phase.title}</h4>
+                                    <p className="text-zinc-400 mb-6">{phase.desc}</p>
+                                    <ul className="space-y-3">
+                                        {phase.actions.map((action: string, idx: number) => (
+                                            <li key={idx} className="flex items-start gap-2 text-sm text-zinc-500">
+                                                <span className="text-[#82ff1f] mt-1">✓</span>
+                                                {action}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="border-t border-white/5 pt-12 text-center">
+                        <p className="text-2xl text-white font-light">{content.culture_change.closure}</p>
+                    </div>
+                </div>
+            )
+        }] : []),
+        ...(content.metrics && content.metrics.macro ? [{
+            id: 'metrics',
+            title: content.metrics.title,
+            subtitle: content.metrics.subtitle,
+            icon: Target,
+            component: (
+                <div className="space-y-16">
+                    <p className="text-xl text-zinc-400 font-light text-center">{content.metrics.intro}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {content.metrics.macro.map((m: any, i: number) => (
+                            <div key={i} className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl space-y-4">
+                                <p className="text-xs text-zinc-500 font-bold uppercase">{m.title}</p>
+                                <p className="text-white text-lg font-medium italic">"{m.question}"</p>
+                                <div className="h-px bg-white/5" />
+                                <p className="text-sm text-zinc-400">{m.measure}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="border-t border-white/5 pt-12 text-center">
+                        <p className="text-3xl font-medium text-white max-w-4xl mx-auto">{content.metrics.closure}</p>
+                    </div>
+                </div>
+            )
+        }] : [])
+    ];
+
+    // Grupo 3: Mi Rol y Propuesta
+    const propuestaItems = [
+        {
+            id: 'role',
+            title: content.role.title,
+            subtitle: 'Cómo trabajo dentro de las organizaciones',
+            icon: Users,
+            component: <RoleBlock content={content.role} />
+        },
+        {
+            id: 'closing',
+            title: content.closing.title,
+            subtitle: 'Dónde aporto valor real',
+            icon: Target,
+            component: <ClosingBlock content={content.closing} />
+        }
+    ];
 
     return (
         <main className="min-h-screen bg-[#0B0B0B] text-white selection:bg-[#82ff1f] selection:text-black font-sans overflow-x-hidden">
@@ -54,7 +279,7 @@ export default function AIAdoptionPage() {
                 </div>
             </nav>
 
-            {/* BLOCK 1: HERO (60/40 Split) */}
+            {/* HERO */}
             <section className="relative min-h-screen flex flex-col pt-32 md:pt-0 md:justify-center px-6 md:px-12 overflow-hidden">
                 <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center h-full">
 
@@ -99,7 +324,7 @@ export default function AIAdoptionPage() {
                             transition={{ delay: 0.5, duration: 0.6 }}
                             className="flex flex-wrap gap-3"
                         >
-                            {["Procesos", "Gobernanza", "Cambio Cultural", "Formación"].map((tag, i) => (
+                            {["Procesos", "Gobernanza", "Cambio Cultural", "Formación"].map((tag) => (
                                 <span key={tag} className="px-4 py-2 rounded-full border border-white/10 text-[10px] uppercase tracking-widest text-zinc-400 hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all cursor-default">
                                     {tag}
                                 </span>
@@ -114,7 +339,7 @@ export default function AIAdoptionPage() {
                         transition={{ delay: 0.4, duration: 0.8 }}
                         className="lg:col-span-5 relative h-[50vh] lg:h-[70vh] w-full"
                     >
-                        <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/5 bg-zinc-900 shadow-2xl group">
+                        <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/5 bg-zinc-900 shadow-2xl">
                             <Image
                                 src="/images/ai-hero-new.jpg"
                                 alt="Víctor Torres - AI Business Consultant"
@@ -122,7 +347,6 @@ export default function AIAdoptionPage() {
                                 className="object-cover object-top hover:scale-105 transition-all duration-700"
                                 priority
                             />
-                            {/* Inner Glow */}
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
                         </div>
                     </motion.div>
@@ -132,7 +356,7 @@ export default function AIAdoptionPage() {
                 <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 md:mt-32 pb-20 border-t border-white/5 pt-12">
                     <div className="text-lg md:text-xl text-zinc-300 font-light leading-relaxed">
                         <p className="max-w-xl">
-                            <span className="font-bold text-white block mb-2">{content.hero.desc.split('. ')[0]}.</span>
+                            <span className="font-medium text-white block mb-2">{content.hero.desc.split('. ')[0]}.</span>
                             {content.hero.desc.split('. ').slice(1).join('. ')}
                         </p>
                     </div>
@@ -148,424 +372,23 @@ export default function AIAdoptionPage() {
                 </div>
             </section>
 
-            {/* BLOCK 2: APPROACH (Manifesto) */}
-            <section id="enfoque" className="py-32 px-6 md:px-12 bg-[#0B0B0B] border-t border-white/5">
-                <div className="max-w-4xl mx-auto space-y-24">
-
-                    {/* Header */}
-                    <div className="space-y-6">
-                        <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight">
-                            {content.approach.title}
-                            <span className="block text-zinc-600 mt-2">{content.approach.subtitle}</span>
-                        </h2>
-                        <p className="text-xl md:text-2xl text-zinc-400 font-light border-l-2 border-[#82ff1f] pl-6 py-2">
-                            {content.approach.manifesto}
-                        </p>
-                    </div>
-
-                    {/* Authority Statement */}
-                    <div className="text-2xl md:text-4xl font-bold text-white leading-tight">
-                        {content.approach.statement}
-                    </div>
-
-                    {/* Vertical List */}
-                    <div className="space-y-8">
-                        {content.approach.steps.map((step: any, i: number) => (
-                            <motion.div
-                                key={i}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: i * 0.1 }}
-                                className="flex items-start gap-6 border-b border-white/5 pb-8 last:border-0"
-                            >
-                                <span className="text-[#82ff1f] font-mono text-sm mt-1">{step.step}</span>
-                                <p className="text-xl md:text-2xl text-zinc-300 font-light">{step.text}</p>
-                            </motion.div>
-                        ))}
-                    </div>
-
-                    {/* Closing Impact */}
-                    <div className="pt-12 text-center border-t border-white/5">
-                        <p className="text-lg text-zinc-400 font-light">
-                            No implanto features de IA. <span className="text-white font-medium">Implanto nuevas formas de trabajar.</span>
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            {/* BLOCK 3: GOVERNANCE (Grid) */}
-            <section className="py-32 px-6 md:px-12 bg-zinc-900/30">
-                <div className="max-w-6xl mx-auto space-y-16">
-                    <div className="max-w-3xl">
-                        <h2 className="text-3xl md:text-5xl font-medium text-white mb-6">{content.governance.title}</h2>
-                        <p className="text-zinc-500 text-lg mb-8">{content.governance.subtitle}</p>
-                        <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
-                            <p className="text-xl text-white font-light">
-                                {content.governance.definition}
-                            </p>
-                        </div>
-                    </div>
-
-                    {/* Cards Grid */}
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        {content.governance.cards.map((card: any, i: number) => {
-                            const Icon = iconMap[card.icon] || Shield;
-                            return (
-                                <motion.div
-                                    key={i}
-                                    whileHover={{ y: -5 }}
-                                    className="p-8 bg-[#0B0B0B] border border-white/5 rounded-2xl group hover:border-[#82ff1f]/30 transition-all"
-                                >
-                                    <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-zinc-500 group-hover:text-[#82ff1f] mb-6 transition-colors">
-                                        <Icon size={24} />
-                                    </div>
-                                    <h3 className="text-lg font-bold text-white">{card.title}</h3>
-                                </motion.div>
-                            );
-                        })}
-                        {/* Role Card */}
-                        <div className="md:col-span-2 lg:col-span-1 p-8 bg-[#82ff1f] rounded-2xl flex flex-col justify-center text-black">
-                            <p className="font-bold text-lg leading-tight">
-                                "{content.governance.role}"
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            {/* BLOCK 4: EXPERIENCE (Accordion) */}
+            {/* Grupo 1: Mi Enfoque */}
             <AccordionGroup
-                title={content.experience.title}
-                items={content.experience.cases.map((c: any) => ({
-                    id: c.id,
-                    title: c.title,
-                    subtitle: c.subtitle,
-                    icon: Brain, // Default icon, purely structural
-                    component: c.detailedBlock ? (
-                        <div className="space-y-12">
-                            {/* Context */}
-                            <div className="p-8 bg-zinc-900/50 border border-white/5 rounded-2xl">
-                                <h4 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest mb-4">{c.detailedBlock.context.title}</h4>
-                                <p className="text-xl text-white font-light leading-relaxed">
-                                    {c.detailedBlock.context.text}
-                                </p>
-                            </div>
-
-                            {/* Columns */}
-                            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-16">
-                                <div className="space-y-6">
-                                    <h4 className="text-white text-lg font-bold border-b border-white/10 pb-4">{c.detailedBlock.columns.left.title}</h4>
-                                    <ul className="space-y-4">
-                                        {c.detailedBlock.columns.left.items.map((item: string, idx: number) => (
-                                            <li key={idx} className="flex items-start gap-3 text-zinc-400 font-light">
-                                                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#82ff1f] shrink-0" />
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                                <div className="space-y-6">
-                                    <h4 className="text-white text-lg font-bold border-b border-white/10 pb-4">{c.detailedBlock.columns.right.title}</h4>
-                                    <ul className="space-y-4">
-                                        {c.detailedBlock.columns.right.items.map((item: string, idx: number) => (
-                                            <li key={idx} className="flex items-start gap-3 text-zinc-400 font-light">
-                                                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/20 shrink-0" />
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            </div>
-
-                            {/* Governance */}
-                            <div className="p-8 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-2xl">
-                                <h4 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest mb-4">{c.detailedBlock.governance.title}</h4>
-                                <p className="text-lg text-white font-light">
-                                    {c.detailedBlock.governance.text}
-                                </p>
-                            </div>
-
-                            {/* Learning */}
-                            <div className="border-t border-white/10 pt-8">
-                                <h4 className="text-zinc-500 text-xs font-bold uppercase tracking-widest mb-4">{c.detailedBlock.learning.title}</h4>
-                                <p className="text-2xl text-white italic font-light leading-relaxed">
-                                    "{c.detailedBlock.learning.text}"
-                                </p>
-                            </div>
-                        </div>
-                    ) : (
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 text-zinc-300">
-                            <div className="space-y-6">
-                                <h4 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest">Contexto</h4>
-                                <p className="text-lg font-light leading-relaxed">{c.content.context}</p>
-                                <div className="flex flex-wrap gap-2">
-                                    {c.tags.map((t: string) => (
-                                        <span key={t} className="px-2 py-1 bg-white/5 rounded text-[10px] uppercase text-zinc-500">{t}</span>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className="space-y-6">
-                                <h4 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest">Mi Rol y Proceso</h4>
-                                <div className="space-y-4 font-light">
-                                    <p><strong className="text-white block mb-1">Responsabilidad:</strong> {c.content.role}</p>
-                                    <p><strong className="text-white block mb-1">Ejecución:</strong> {c.content.process}</p>
-                                </div>
-                            </div>
-                            <div className="bg-white/5 p-6 rounded-xl border border-white/5 h-fit">
-                                <h4 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest mb-3">Aprendizaje Clave</h4>
-                                <p className="text-white italic font-medium leading-relaxed">"{c.content.learning}"</p>
-                            </div>
-                        </div>
-                    )
-                }))}
+                title="Mi Enfoque"
+                items={enfoqueItems}
             />
 
-            {/* BLOCK 5: SYSTEMS CATALOGUE */}
-            {content.systems && content.systems.cards && (
-                <section className="py-32 px-6 md:px-12 bg-[#0B0B0B] border-t border-white/5">
-                    <div className="max-w-6xl mx-auto space-y-20">
+            {/* Grupo 2: Experiencia e Implementación */}
+            <AccordionGroup
+                title="Experiencia e Implementación"
+                items={experienciaItems}
+            />
 
-                        {/* Header */}
-                        <div className="max-w-3xl space-y-6">
-                            <span className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest">Sistemas de IA</span>
-                            <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight">
-                                {content.systems.title}
-                                <span className="block text-zinc-500 mt-2 text-2xl md:text-3xl font-light">{content.systems.subtitle}</span>
-                            </h2>
-                            <p className="text-xl text-zinc-400 font-light border-l border-white/10 pl-6">
-                                {content.systems.intro}
-                            </p>
-                        </div>
-
-                        {/* Cards Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            {content.systems.cards.map((sys: any, i: number) => (
-                                <motion.div
-                                    key={i}
-                                    whileHover={{ y: -5 }}
-                                    className="p-8 bg-zinc-900/30 border border-white/5 rounded-2xl group hover:border-[#82ff1f]/30 transition-all"
-                                >
-                                    <div className="space-y-6">
-                                        <div>
-                                            <h3 className="text-xl font-bold text-white mb-1 group-hover:text-[#82ff1f] transition-colors">{sys.title}</h3>
-                                            <p className="text-sm text-[#82ff1f] font-mono tracking-wide">{sys.subtitle}</p>
-                                        </div>
-                                        <p className="text-zinc-400 font-light leading-relaxed">
-                                            {sys.desc}
-                                        </p>
-                                        <ul className="space-y-2 pt-4 border-t border-white/5">
-                                            {sys.items.map((item: string, idx: number) => (
-                                                <li key={idx} className="flex items-start gap-2 text-sm text-zinc-500">
-                                                    <span className="text-[#82ff1f] mt-1">·</span> {item}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                        <div className="pt-4 mt-4 bg-black/20 p-4 rounded-lg border border-white/5">
-                                            <p className="text-xs text-zinc-500 uppercase tracking-widest mb-1 font-bold">Gobernanza</p>
-                                            <p className="text-sm text-zinc-400 italic">"{sys.governance}"</p>
-                                        </div>
-                                    </div>
-                                </motion.div>
-                            ))}
-                        </div>
-
-                        {/* Transversal Governance */}
-                        <div className="p-12 border border-white/5 rounded-3xl bg-zinc-900/20 text-center space-y-8">
-                            <h3 className="text-xl text-white font-light">Principios de Gobernanza Transversal</h3>
-                            <div className="flex flex-wrap justify-center gap-8 md:gap-16">
-                                {content.systems.governance_principles && content.systems.governance_principles.map((p: string, i: number) => (
-                                    <div key={i} className="flex items-center gap-3">
-                                        <div className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]" />
-                                        <span className="text-zinc-300 tracking-wide">{p}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
-
-                        {/* Closing */}
-                        <div className="text-center pt-8">
-                            <p className="text-2xl md:text-3xl text-white font-light max-w-3xl mx-auto leading-tight">
-                                {content.systems.closure}
-                            </p>
-                        </div>
-
-                    </div>
-                </section>
-            )}
-
-            {/* BLOCK 6: CULTURE CHANGE */}
-            {content.culture_change && (
-                <section className="py-32 px-6 md:px-12 bg-zinc-900/20">
-                    <div className="max-w-6xl mx-auto space-y-24">
-
-                        {/* Header */}
-                        <div className="space-y-8 text-center max-w-4xl mx-auto">
-                            <h2 className="text-4xl md:text-6xl font-medium text-white tracking-tight mb-4">
-                                {content.culture_change.title}
-                            </h2>
-                            <p className="text-xl md:text-2xl text-zinc-400 font-light">
-                                {content.culture_change.subtitle}
-                            </p>
-                            <div className="inline-block px-6 py-3 border border-[#82ff1f]/30 rounded-full bg-[#82ff1f]/5">
-                                <p className="text-[#82ff1f] font-medium tracking-wide">
-                                    {content.culture_change.anchor}
-                                </p>
-                            </div>
-                        </div>
-
-                        {/* 3 Sequential Blocks */}
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
-                            {/* Connecting Line (Desktop) */}
-                            <div className="hidden md:block absolute top-12 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-
-                            {content.culture_change.phases.map((phase: any, i: number) => (
-                                <div key={i} className="relative pt-8 space-y-6">
-                                    {/* Number Token */}
-                                    <div className="w-10 h-10 rounded-full bg-[#0B0B0B] border border-white/10 flex items-center justify-center text-white font-bold z-10 relative mx-auto md:mx-0">
-                                        {i + 1}
-                                    </div>
-                                    <div className="space-y-4 text-center md:text-left">
-                                        <h3 className="text-xl font-bold text-white">{phase.title}</h3>
-                                        <p className="text-zinc-400 font-light min-h-[60px]">{phase.desc}</p>
-                                        <ul className="space-y-3 pt-4 border-t border-white/5 inline-block md:block text-left">
-                                            {phase.actions.map((action: string, idx: number) => (
-                                                <li key={idx} className="flex items-start gap-3 text-sm text-zinc-500">
-                                                    <CheckCircle2 size={14} className="mt-1 text-[#82ff1f] shrink-0" />
-                                                    {action}
-                                                </li>
-                                            ))}
-                                        </ul>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Resistance Banner */}
-                        <div className="bg-[#0B0B0B] border border-white/5 p-8 md:p-12 rounded-2xl flex flex-col md:flex-row items-center gap-8 md:gap-12">
-                            <div className="shrink-0 p-4 bg-zinc-900 rounded-full text-white">
-                                <Ear size={32} />
-                            </div>
-                            <div className="space-y-2 text-center md:text-left">
-                                <h3 className="text-lg font-bold text-white uppercase tracking-widest">{content.culture_change.resistance.title}</h3>
-                                <p className="text-xl text-zinc-400 font-light italic">"{content.culture_change.resistance.text}"</p>
-                            </div>
-                        </div>
-
-                        {/* Closure */}
-                        <div className="text-center">
-                            <p className="text-2xl text-white font-light tracking-tight">{content.culture_change.closure}</p>
-                        </div>
-
-                    </div>
-                </section>
-            )}
-
-            {/* BLOCK 7: METRICS */}
-            {content.metrics && content.metrics.macro && (
-                <section className="py-32 px-6 md:px-12 bg-[#0B0B0B] border-y border-white/5">
-                    <div className="max-w-6xl mx-auto space-y-20">
-
-                        {/* Header */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-end">
-                            <div>
-                                <h2 className="text-4xl md:text-6xl font-medium text-white tracking-tight mb-6">{content.metrics.title}</h2>
-                                <p className="text-xl text-[#82ff1f] font-mono border-l-2 border-[#82ff1f] pl-6 py-2">
-                                    {content.metrics.subtitle}
-                                </p>
-                            </div>
-                            <p className="text-zinc-400 font-light text-lg pb-4">
-                                {content.metrics.intro}
-                            </p>
-                        </div>
-
-                        {/* Macro Metrics Grid */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                            {content.metrics.macro.map((m: any, i: number) => (
-                                <div key={i} className="p-8 bg-zinc-900/20 border border-white/5 rounded-2xl space-y-4 hover:border-[#82ff1f]/30 transition-all">
-                                    <p className="text-xs text-zinc-500 font-bold uppercase tracking-widest">{m.title}</p>
-                                    <p className="text-white text-lg font-bold italic">"{m.question}"</p>
-                                    <div className="h-px w-full bg-white/5" />
-                                    <p className="text-sm text-zinc-400 leading-relaxed">{m.measure}</p>
-                                </div>
-                            ))}
-                        </div>
-
-                        {/* Micro & Change (2 Cols) */}
-                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                            {/* Micro Control */}
-                            <div className="space-y-8">
-                                <h3 className="text-2xl font-bold text-white">{content.metrics.micro.title}</h3>
-                                <ul className="space-y-0 divide-y divide-white/5 border-y border-white/5">
-                                    {content.metrics.micro.items.map((item: string, i: number) => (
-                                        <li key={i} className="py-4 flex items-start gap-4 text-zinc-400 font-light">
-                                            <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#82ff1f] shrink-0" />
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-
-                            {/* Change Metrics */}
-                            <div className="bg-[#82ff1f] p-10 rounded-3xl text-black flex flex-col justify-center space-y-6">
-                                <h3 className="text-2xl font-bold text-black border-b border-black/10 pb-4">{content.metrics.change.title}</h3>
-                                <ul className="space-y-4">
-                                    {content.metrics.change.items.map((item: string, i: number) => (
-                                        <li key={i} className="flex items-center gap-3 font-medium text-lg">
-                                            <CheckCircle2 size={20} className="text-black/60" />
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-
-                        {/* Final Closure */}
-                        <div className="text-center pt-12 border-t border-white/5">
-                            <p className="text-3xl md:text-4xl font-bold text-white tracking-tight leading-tight max-w-4xl mx-auto">
-                                {content.metrics.closure}
-                            </p>
-                        </div>
-
-                    </div>
-                </section>
-            )}
-
-            {/* BLOCK 8 & 9: ROLE & CLOSING */}
-            <section className="py-32 px-6 md:px-12 bg-[#0B0B0B]">
-                <div className="max-w-4xl mx-auto text-center space-y-20">
-
-                    {/* Role */}
-                    <div className="space-y-8">
-                        <span className="text-[#82ff1f] text-xs font-bold uppercase tracking-[0.2em]">{content.role.title}</span>
-                        <h3 className="text-3xl md:text-5xl font-light text-white leading-tight">
-                            "{content.role.content}"
-                        </h3>
-                    </div>
-
-                    <div className="w-px h-24 bg-gradient-to-b from-transparent via-white/20 to-transparent mx-auto" />
-
-                    {/* Closing */}
-                    <div className="space-y-8">
-                        <h2 className="text-5xl md:text-7xl font-medium text-white tracking-tight">
-                            {content.closing.title}
-                        </h2>
-                        <p className="text-xl text-zinc-400 font-light max-w-2xl mx-auto">
-                            {content.closing.desc}
-                        </p>
-                        <div className="pt-8">
-                            <a
-                                href="mailto:victortorresa94@gmail.com"
-                                className="inline-flex items-center gap-3 bg-[#82ff1f] text-black px-10 py-5 rounded-full text-sm font-bold hover:shadow-[0_0_30px_rgba(130,255,31,0.4)] hover:scale-105 transition-all uppercase tracking-widest"
-                            >
-                                {content.closing.cta}
-                                <ArrowRight size={18} />
-                            </a>
-                        </div>
-                    </div>
-
-                </div>
-            </section>
+            {/* Grupo 3: Mi Rol y Propuesta */}
+            <AccordionGroup
+                title="Mi Rol y Propuesta de Valor"
+                items={propuestaItems}
+            />
 
             {/* Footer */}
             <footer className="py-12 border-t border-white/5 px-6 md:px-12 text-center">
@@ -575,4 +398,3 @@ export default function AIAdoptionPage() {
         </main>
     );
 }
-
