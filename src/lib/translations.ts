@@ -1813,6 +1813,9 @@ export const translations = {
                     ]
                 }
             },
+            experience: {
+                title: "Transformation Cases"
+            },
             methodology: {
                 title: "Methodological Framework",
                 items: [
