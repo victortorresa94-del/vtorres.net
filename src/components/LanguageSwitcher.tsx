@@ -13,8 +13,8 @@ export default function LanguageSwitcher() {
             </div>
             <button
                 onClick={() => {
-                    const next = language === 'es' ? 'ca' : language === 'ca' ? 'en' : 'es';
-                    setLanguage(next);
+                    const next = language === 'es' ? 'ca' : (language as string) === 'ca' ? 'en' : 'es';
+                    setLanguage(next as any);
                 }}
                 className="text-xs font-bold text-white pr-3 pl-1 tracking-tight hover:text-[#82ff1f] transition-colors"
             >

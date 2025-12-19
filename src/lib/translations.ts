@@ -934,14 +934,169 @@ export const translations = {
                 },
                 closure: "Lo que no se mide, no se mejora. Y lo que no se mejora, no escala."
             },
+            automation: {
+                title: "Automatización como forma de trabajar",
+                subtitle: "(antes y después de la IA)",
+                intro: "La automatización no llegó a mi perfil con la inteligencia artificial. La IA simplemente aceleró algo que ya llevaba años haciendo: detectar repetición, eliminar fricción y convertir tareas en sistemas.",
+                question: "Antes de hablar de herramientas, siempre he trabajado desde una pregunta muy simple: ¿qué parte de este trabajo se repite y no aporta valor humano?",
+                sections: [
+                    {
+                        title: "Automatización antes de la IA: método, no software",
+                        desc: "Mucho antes de trabajar con IA, ya automatizaba procesos desde una perspectiva operativa y metodológica.",
+                        context: "En entornos como Reauxi (compras y facturación) o Denetic (logística y operaciones), diseñé sistemas de trabajo estables para reducir errores, tiempos muertos y dependencia de la memoria individual:",
+                        items: [
+                            "Flujos fijos para gestión de facturas y compras.",
+                            "Secuencias claras de pasos para tareas administrativas repetitivas.",
+                            "Organización física y lógica de almacén, con criterios definidos de ubicación, cantidades y tiempos.",
+                            "Procesos internos creados inicialmente para mí mismo y después replicables."
+                        ],
+                        closure: "No había IA. Había método, prueba-error y estandarización."
+                    },
+                    {
+                        title: "Automatización estructural en equipos (IMI)",
+                        desc: "En IMI di el siguiente salto: automatizar a escala de equipo.",
+                        context: "Allí trabajé en la creación de procesos operativos estandarizados que permitían a la agencia trabajar con menos fricción y mayor previsibilidad:",
+                        items: [
+                            "Automatización pre-IA basada en SOPs, ClickUp y flujos operativos claros.",
+                            "Reducción de errores humanos y dependencias personales.",
+                            "Procesos diseñados para que el sistema funcionara incluso si cambiaban las personas."
+                        ],
+                        highlight: {
+                            title: "Creación del departamento de automatización conversacional (ManyChat)",
+                            desc: "Hace más de cuatro años, lideré:",
+                            items: [
+                                "Definición del servicio y su alcance.",
+                                "Diseño de flujos tipo para captación, cualificación y seguimiento de leads.",
+                                "Creación de SOPs específicos del departamento.",
+                                "Formación del equipo responsable de implementarlos."
+                            ]
+                        },
+                        closure: "Antes de que la IA fuera mainstream, ya estaba trabajando con automatización conversacional en producción."
+                    },
+                    {
+                        title: "De flujos rígidos a sistemas inteligentes",
+                        desc: "La llegada de la IA no cambió mi forma de pensar. La amplió.",
+                        evolution: "El paso fue natural: de automatizaciones rígidas → a sistemas con contexto. De flujos cerrados → a agentes que entienden intención. De 'si pasa A, responde B' → a asistentes que deciden y ejecutan.",
+                        applications: "Desde entonces he diseñado y puesto en marcha:",
+                        items: [
+                            "Automatizaciones conversacionales (chat y voz).",
+                            "Agentes para atención al cliente, soporte y formación.",
+                            "Sistemas híbridos donde la IA propone, el humano valida y el sistema ejecuta.",
+                            "Automatizaciones operativas que eliminan trabajo manual real."
+                        ],
+                        examples: "Ejemplos aplicados en proyectos como 94 Music, chatbots web, agentes de voz y flujos integrados con CRM y herramientas internas."
+                    }
+                ],
+                criteria: {
+                    title: "Automatizar con criterio",
+                    intro: "No automatizo por automatizar.",
+                    negatives: [
+                        "No automatizo procesos mal definidos.",
+                        "No automatizo tareas que requieren criterio humano.",
+                        "No automatizo para impresionar."
+                    ],
+                    conditions: "Automatizo cuando:",
+                    positives: [
+                        "hay repetición,",
+                        "hay fricción,",
+                        "hay errores evitables,",
+                        "hay pérdida de tiempo operativo."
+                    ],
+                    principle: "La herramienta nunca es el centro. El sistema lo es."
+                },
+                closure: "La automatización no empieza con la tecnología. Empieza cuando detectas que algo se repite y no aporta valor humano."
+            },
             role: {
-                title: "Mi Rol Real",
-                content: "No soy el técnico aislado ni el gurú. Soy el perfil que entiende procesos, personas y tecnología, y los conecta sin ruido."
+                title: "Mi Rol Real en una Organización",
+                positioning: {
+                    negation: "No soy el técnico que vive en el código. Tampoco el consultor que solo diseña marcos teóricos.",
+                    affirmation: "Mi rol está en medio: traducir procesos, personas y tecnología en sistemas que funcionan."
+                },
+                definition: "Entro cuando una organización quiere mejorar cómo trabaja, pero no sabe por dónde empezar ni cómo hacerlo sin romperlo todo. Escucho cómo funcionan hoy los equipos, detecto fricciones reales, y diseño sistemas —con o sin IA— que mejoran el trabajo diario sin generar rechazo. Mi trabajo no es imponer tecnología, es conseguir que el cambio se adopte.",
+                responsibilities: [
+                    {
+                        title: "Entender el contexto real",
+                        desc: "Cómo trabaja la gente, qué atajos usa, dónde pierde tiempo y por qué. No 'as-is diagram', sino realidad."
+                    },
+                    {
+                        title: "Traducir problemas en sistemas",
+                        desc: "Convierto necesidades difusas en procesos claros, medibles y sostenibles. Aquí entra: SOPs, automatización, IA cuando tiene sentido."
+                    },
+                    {
+                        title: "Alinear a las personas",
+                        desc: "Formo, acompaño y ajusto hasta que el sistema se usa sin pensar. Esto es change management sin decirlo explícitamente."
+                    },
+                    {
+                        title: "Asegurar impacto y continuidad",
+                        desc: "Mido resultados, corrijo fricciones y dejo sistemas que no dependen de mí."
+                    }
+                ],
+                position: {
+                    title: "Dónde encajo dentro de una organización",
+                    desc: "Trabajo entre dirección, equipos operativos y tecnología. Hablo con negocio sin ruido técnico y con técnicos sin promesas vacías. Mi función es asegurar que las decisiones estratégicas se convierten en cambios reales en el día a día."
+                },
+                problems: {
+                    title: "Qué problemas suelo resolver",
+                    items: [
+                        "Procesos que dependen de una sola persona",
+                        "Equipos saturados por tareas repetitivas",
+                        "Tecnología infrautilizada",
+                        "IA que existe 'sobre el papel' pero no se usa",
+                        "Cambios que generan resistencia en lugar de mejora"
+                    ]
+                },
+                differential: "Mi ventaja no es saber más tecnología. Es haber trabajado en operaciones reales, haber creado procesos desde dentro y ahora aplicar IA y automatización con criterio. Sé cuándo una solución es buena y cuándo solo es ruido.",
+                closure: "No vengo a transformar organizaciones desde el discurso. Vengo a mejorar cómo trabajan de verdad."
             },
             closing: {
-                title: "IA con Propósito Real",
-                desc: "Ayudo a organizaciones a usar IA para escalar con orden, no para jugar a la innovación.",
-                cta: "Hablemos de adopción real"
+                title: "IA aplicada con propósito real",
+                intro: "No trabajo con inteligencia artificial como tendencia. Trabajo con IA como herramienta organizativa para que empresas e instituciones funcionen mejor.",
+                value: "Mi valor no está en saber usar muchas tecnologías, sino en decidir cuándo tiene sentido usarlas, cómo integrarlas y cuándo no hacerlo.",
+                failures: {
+                    intro: "He visto demasiados proyectos de IA fracasar no por la tecnología, sino por:",
+                    reasons: [
+                        "Falta de contexto organizativo",
+                        "Procesos mal definidos",
+                        "Personas no acompañadas",
+                        "Expectativas irreales"
+                    ],
+                    statement: "Mi trabajo empieza justo ahí."
+                },
+                fit: {
+                    title: "Dónde encajo mejor",
+                    intro: "Aporto valor real en organizaciones que:",
+                    conditions: [
+                        "Quieren adoptar IA con criterio, no por moda",
+                        "Necesitan ordenar procesos antes de automatizar",
+                        "Buscan impacto medible, no demos",
+                        "Tienen equipos que deben cambiar su forma de trabajar",
+                        "Operan en entornos donde la gobernanza y la responsabilidad importan"
+                    ],
+                    contexts: "Especialmente en: Transformación organizativa, Consultoría de procesos, Sector público y entornos regulados, Empresas que escalan y empiezan a romper por dentro."
+                },
+                differential: {
+                    title: "Mi aportación diferencial",
+                    not: [
+                        "Un perfil puramente técnico",
+                        "Un vendedor de soluciones mágicas",
+                        "Un consultor que entrega un PowerPoint y desaparece"
+                    ],
+                    am: "Soy el perfil que: Entiende procesos, Entiende personas, Entiende tecnología, Y los conecta sin ruido.",
+                    actions: [
+                        "Diseño sistemas que se usan.",
+                        "Acompaño hasta que el cambio se vuelve hábito.",
+                        "Mido impacto real, no adopción superficial."
+                    ]
+                },
+                aiVision: {
+                    title: "Cómo entiendo la IA hoy",
+                    good: "La IA bien aplicada: No sustituye personas, Les devuelve tiempo, Reduce errores, Simplifica decisiones, Hace escalable lo que hoy es frágil.",
+                    bad: "Mal aplicada, solo añade complejidad.",
+                    mission: "Mi trabajo consiste en evitar lo segundo y maximizar lo primero."
+                },
+                positioning: "Ayudo a organizaciones a adoptar inteligencia artificial con orden, responsabilidad y criterio, transformando procesos y formas de trabajo sin romper la operación ni a las personas.",
+                tagline: "IA con impacto real. Sin ruido. Sin postureo. Sin promesas vacías.",
+                cta: "Hablemos de adopción real de IA"
             }
         }
     },
@@ -1987,23 +2142,178 @@ export const translations = {
                     ]
                 },
                 metrics: {
-                    title: "Métricas que importan",
-                    desc: "No mido uso de IA. Mido impacto organizativo.",
+                    title: "Impact Metrics",
+                    desc: "I don't measure AI usage. I measure organizational impact.",
                     items: [
-                        { label: "Adopción Real", value: "Usage" },
-                        { label: "Reducción Errores", value: "Quality" },
-                        { label: "Tiempo Recuperado", value: "Time" },
+                        { label: "Real Adoption", value: "Usage" },
+                        { label: "Error Reduction", value: "Quality" },
+                        { label: "Time Recovered", value: "Time" },
                         { label: "Feedback", value: "NPS" }
                     ]
                 },
+                automation: {
+                    title: "Automation as a Way of Working",
+                    subtitle: "(before and after AI)",
+                    intro: "Automation didn't arrive in my profile with artificial intelligence. AI simply accelerated something I'd been doing for years: detecting repetition, eliminating friction, and turning tasks into systems.",
+                    question: "Before talking about tools, I've always worked from a very simple question: what part of this work repeats and adds no human value?",
+                    sections: [
+                        {
+                            title: "Automation before AI: method, not software",
+                            desc: "Long before working with AI, I was already automating processes from an operational and methodological perspective.",
+                            context: "In environments like Reauxi (purchasing and billing) or Denetic (logistics and operations), I designed stable work systems to reduce errors, downtime, and dependence on individual memory:",
+                            items: [
+                                "Fixed flows for invoice and purchase management.",
+                                "Clear sequences of steps for repetitive administrative tasks.",
+                                "Physical and logical warehouse organization with defined criteria for location, quantities, and times.",
+                                "Internal processes initially created for myself and later replicable."
+                            ],
+                            closure: "There was no AI. There was method, trial-and-error, and standardization."
+                        },
+                        {
+                            title: "Structural automation in teams (IMI)",
+                            desc: "At IMI I took the next step: automating at team scale.",
+                            context: "There I worked on creating standardized operational processes that allowed the agency to work with less friction and greater predictability:",
+                            items: [
+                                "Pre-AI automation based on SOPs, ClickUp, and clear operational flows.",
+                                "Reduction of human errors and personal dependencies.",
+                                "Processes designed so the system worked even if people changed."
+                            ],
+                            highlight: {
+                                title: "Creation of the conversational automation department (ManyChat)",
+                                desc: "More than four years ago, I led:",
+                                items: [
+                                    "Definition of the service and its scope.",
+                                    "Design of standard flows for lead capture, qualification, and follow-up.",
+                                    "Creation of department-specific SOPs.",
+                                    "Training of the team responsible for implementing them."
+                                ]
+                            },
+                            closure: "Before AI was mainstream, I was already working with conversational automation in production."
+                        },
+                        {
+                            title: "From rigid flows to intelligent systems",
+                            desc: "The arrival of AI didn't change my way of thinking. It amplified it.",
+                            evolution: "The step was natural: from rigid automations → to context-aware systems. From closed flows → to agents that understand intent. From 'if A happens, respond B' → to assistants that decide and execute.",
+                            applications: "Since then I have designed and implemented:",
+                            items: [
+                                "Conversational automations (chat and voice).",
+                                "Agents for customer service, support, and training.",
+                                "Hybrid systems where AI proposes, human validates, and the system executes.",
+                                "Operational automations that eliminate real manual work."
+                            ],
+                            examples: "Examples applied in projects like 94 Music, web chatbots, voice agents, and flows integrated with CRM and internal tools."
+                        }
+                    ],
+                    criteria: {
+                        title: "Automating with criteria",
+                        intro: "I don't automate for the sake of automating.",
+                        negatives: [
+                            "I don't automate poorly defined processes.",
+                            "I don't automate tasks that require human judgment.",
+                            "I don't automate to impress."
+                        ],
+                        conditions: "I automate when:",
+                        positives: [
+                            "there's repetition,",
+                            "there's friction,",
+                            "there are avoidable errors,",
+                            "there's operational time waste."
+                        ],
+                        principle: "The tool is never the center. The system is."
+                    },
+                    closure: "Automation doesn't start with technology. It starts when you detect that something repeats and adds no human value."
+                },
                 role: {
-                    title: "Mi Rol Real",
-                    content: "No soy el técnico aislado ni el gurú. Soy el perfil que entiende procesos, personas y tecnología, y los conecta sin ruido."
+                    title: "My Real Role in an Organization",
+                    positioning: {
+                        negation: "I'm not the technician living in code. Nor the consultant who only designs theoretical frameworks.",
+                        affirmation: "My role is in the middle: translating processes, people, and technology into systems that work."
+                    },
+                    definition: "I enter when an organization wants to improve how it works, but doesn't know where to start or how to do it without breaking everything. I listen to how teams work today, detect real frictions, and design systems —with or without AI— that improve daily work without generating rejection. My job isn't to impose technology, it's to ensure change is adopted.",
+                    responsibilities: [
+                        {
+                            title: "Understand the real context",
+                            desc: "How people work, what shortcuts they use, where they waste time and why. Not 'as-is diagrams', but reality."
+                        },
+                        {
+                            title: "Translate problems into systems",
+                            desc: "I convert diffuse needs into clear, measurable, sustainable processes. This includes: SOPs, automation, AI when it makes sense."
+                        },
+                        {
+                            title: "Align people",
+                            desc: "I train, accompany, and adjust until the system is used without thinking. This is change management without explicitly saying it."
+                        },
+                        {
+                            title: "Ensure impact and continuity",
+                            desc: "I measure results, correct frictions, and leave systems that don't depend on me."
+                        }
+                    ],
+                    position: {
+                        title: "Where I fit within an organization",
+                        desc: "I work between management, operational teams, and technology. I speak with business without technical noise and with technicians without empty promises. My function is to ensure strategic decisions become real changes in day-to-day operations."
+                    },
+                    problems: {
+                        title: "What problems I usually solve",
+                        items: [
+                            "Processes that depend on a single person",
+                            "Teams overwhelmed by repetitive tasks",
+                            "Underutilized technology",
+                            "AI that exists 'on paper' but isn't used",
+                            "Changes that generate resistance instead of improvement"
+                        ]
+                    },
+                    differential: "My advantage isn't knowing more technology. It's having worked in real operations, having created processes from within, and now applying AI and automation with judgment. I know when a solution is good and when it's just noise.",
+                    closure: "I don't come to transform organizations from discourse. I come to improve how they really work."
                 },
                 closing: {
-                    title: "IA con Propósito Real",
-                    desc: "Ayudo a organizaciones a usar IA para escalar con orden, no para jugar a la innovación.",
-                    cta: "Hablemos de adopción real"
+                    title: "AI applied with real purpose",
+                    intro: "I don't work with artificial intelligence as a trend. I work with AI as an organizational tool to help companies and institutions work better.",
+                    value: "My value isn't in knowing how to use many technologies, but in deciding when it makes sense to use them, how to integrate them, and when not to.",
+                    failures: {
+                        intro: "I've seen too many AI projects fail not because of the technology, but because of:",
+                        reasons: [
+                            "Lack of organizational context",
+                            "Poorly defined processes",
+                            "Unaccompanied people",
+                            "Unrealistic expectations"
+                        ],
+                        statement: "My work starts right there."
+                    },
+                    fit: {
+                        title: "Where I fit best",
+                        intro: "I provide real value in organizations that:",
+                        conditions: [
+                            "Want to adopt AI with judgment, not as a trend",
+                            "Need to order processes before automating",
+                            "Seek measurable impact, not demos",
+                            "Have teams that must change their way of working",
+                            "Operate in environments where governance and responsibility matter"
+                        ],
+                        contexts: "Especially in: Organizational transformation, Process consulting, Public sector and regulated environments, Companies that scale and start breaking from within."
+                    },
+                    differential: {
+                        title: "My differential contribution",
+                        not: [
+                            "A purely technical profile",
+                            "A seller of magical solutions",
+                            "A consultant who delivers a PowerPoint and disappears"
+                        ],
+                        am: "I'm the profile that: Understands processes, Understands people, Understands technology, And connects them without noise.",
+                        actions: [
+                            "I design systems that get used.",
+                            "I accompany until change becomes habit.",
+                            "I measure real impact, not superficial adoption."
+                        ]
+                    },
+                    aiVision: {
+                        title: "How I understand AI today",
+                        good: "Well-applied AI: Doesn't replace people, Gives them back time, Reduces errors, Simplifies decisions, Makes what's fragile today scalable.",
+                        bad: "Badly applied, it only adds complexity.",
+                        mission: "My work is to avoid the latter and maximize the former."
+                    },
+                    positioning: "I help organizations adopt artificial intelligence with order, responsibility, and judgment, transforming processes and ways of working without breaking operations or people.",
+                    tagline: "AI with real impact. Without noise. Without posturing. Without empty promises.",
+                    cta: "Let's talk about real AI adoption"
                 }
             }
         },
