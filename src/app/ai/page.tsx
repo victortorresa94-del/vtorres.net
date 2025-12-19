@@ -279,95 +279,139 @@ export default function AIAdoptionPage() {
                 </div>
             </nav>
 
-            {/* HERO */}
-            <section className="relative min-h-screen flex flex-col pt-32 md:pt-0 md:justify-center px-6 md:px-12 overflow-hidden">
-                <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:items-center h-full">
+            <section className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 overflow-hidden py-32 lg:py-0">
+                <div className="max-w-[1600px] mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center">
 
-                    {/* Left: Content (60%) */}
-                    <div className="lg:col-span-7 space-y-10 relative z-10">
-                        <motion.div
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6 }}
-                            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#82ff1f]/5 border border-[#82ff1f]/20"
-                        >
-                            <div className="w-1.5 h-1.5 rounded-full bg-[#82ff1f] animate-pulse" />
-                            <span className="text-[#82ff1f] text-[10px] font-bold tracking-[0.2em] uppercase">
-                                {content.hero.eyebrow}
-                            </span>
-                        </motion.div>
-
-                        <motion.h1
-                            initial={{ opacity: 0, y: 10 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ delay: 0.2, duration: 0.6 }}
-                            className="text-5xl md:text-7xl lg:text-8xl font-medium tracking-tight leading-[0.95] text-white"
-                        >
-                            <span className="block text-white">Adopción</span>
-                            <span className="block text-[#82ff1f]">Responsable</span>
-                            <span className="block text-zinc-500">de IA</span>
-                        </motion.h1>
-
-                        <motion.h2
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.4, duration: 0.6 }}
-                            className="text-xl md:text-2xl text-zinc-400 font-light max-w-2xl leading-relaxed"
-                        >
-                            {content.hero.subtitle}
-                        </motion.h2>
-
-                        {/* Chips */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 0.5, duration: 0.6 }}
-                            className="flex flex-wrap gap-3"
-                        >
-                            {["Procesos", "Gobernanza", "Cambio Cultural", "Formación"].map((tag) => (
-                                <span key={tag} className="px-4 py-2 rounded-full border border-white/10 text-[10px] uppercase tracking-widest text-zinc-400 hover:bg-[#82ff1f] hover:text-black hover:border-[#82ff1f] transition-all cursor-default">
-                                    {tag}
+                    {/* Left: Content (55%) */}
+                    <div className="lg:col-span-7 space-y-12 relative z-10 text-left">
+                        <div className="space-y-6">
+                            <motion.div
+                                initial={{ opacity: 0, x: -20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ duration: 0.6 }}
+                                className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#82ff1f]/5 border border-[#82ff1f]/20"
+                            >
+                                <div className="w-1.5 h-1.5 rounded-full bg-[#82ff1f] animate-pulse" />
+                                <span className="text-[#82ff1f] text-[10px] font-bold tracking-[0.2em] uppercase">
+                                    {content.hero.eyebrow}
                                 </span>
-                            ))}
+                            </motion.div>
+
+                            <motion.h1
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.2, duration: 0.6 }}
+                                className="text-5xl md:text-7xl lg:text-9xl font-medium tracking-tight leading-[0.9] text-white"
+                            >
+                                <span className="block text-white">Adopción</span>
+                                <span className="block text-[#82ff1f]">Responsable</span>
+                                <span className="block text-zinc-600">de IA</span>
+                            </motion.h1>
+
+                            <motion.h2
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.4, duration: 0.6 }}
+                                className="text-xl md:text-3xl text-zinc-300 font-light max-w-2xl leading-relaxed"
+                            >
+                                {content.hero.subtitle}
+                            </motion.h2>
+                        </div>
+
+                        {/* Unified Text Block */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            transition={{ delay: 0.6, duration: 0.6 }}
+                            className="space-y-8 pl-6 border-l-2 border-[#82ff1f]"
+                        >
+                            <p className="text-lg md:text-xl text-zinc-400 font-light leading-relaxed max-w-2xl">
+                                <span className="text-white font-medium block mb-2">{content.hero.desc.split('. ')[0]}.</span>
+                                {content.hero.desc.split('. ').slice(1).join('. ')}
+                            </p>
+
+                            <p className="text-sm text-zinc-500 font-light max-w-md">
+                                He liderado adopciones de IA en entornos donde los datos importan, los errores cuestan dinero y las personas necesitan entender qué está pasando.
+                            </p>
+
+                            <div className="flex flex-wrap items-center gap-8 pt-4">
+                                <Link href="#enfoque" className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#82ff1f] transition-all group">
+                                    {content.hero.cta}
+                                    <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
+                                </Link>
+
+                                <div className="flex gap-3">
+                                    {["Procesos", "Gobernanza", "Cambio"].map((tag) => (
+                                        <span key={tag} className="px-3 py-1 rounded-full border border-white/10 text-[10px] uppercase tracking-widest text-zinc-500 hover:border-[#82ff1f] hover:text-[#82ff1f] transition-colors cursor-default">
+                                            {tag}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
                         </motion.div>
                     </div>
 
-                    {/* Right: Portrait (40%) */}
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0.95 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{ delay: 0.4, duration: 0.8 }}
-                        className="lg:col-span-5 relative h-[50vh] lg:h-[70vh] w-full"
-                    >
-                        <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/5 bg-zinc-900 shadow-2xl">
-                            <Image
-                                src="/images/ai-hero-new.jpg"
-                                alt="Víctor Torres - AI Business Consultant"
-                                fill
-                                className="object-cover object-top hover:scale-105 transition-all duration-700"
-                                priority
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60" />
-                        </div>
-                    </motion.div>
-                </div>
+                    {/* Right: Creative Visual (45%) */}
+                    <div className="lg:col-span-5 relative h-[60vh] lg:h-[85vh] w-full flex items-center justify-center">
+                        {/* Background Shapes */}
+                        <motion.div
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            animate={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 1, delay: 0.2 }}
+                            className="absolute inset-0 z-0"
+                        >
+                            <div className="absolute top-10 right-10 w-64 h-64 bg-[#82ff1f]/10 rounded-full blur-[100px]" />
+                            <div className="absolute bottom-10 left-10 w-64 h-64 bg-blue-500/10 rounded-full blur-[100px]" />
+                        </motion.div>
 
-                {/* Bottom Hero Block */}
-                <div className="max-w-[1400px] mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 md:mt-32 pb-20 border-t border-white/5 pt-12">
-                    <div className="text-lg md:text-xl text-zinc-300 font-light leading-relaxed">
-                        <p className="max-w-xl">
-                            <span className="font-medium text-white block mb-2">{content.hero.desc.split('. ')[0]}.</span>
-                            {content.hero.desc.split('. ').slice(1).join('. ')}
-                        </p>
-                    </div>
-                    <div className="flex flex-col justify-between items-start">
-                        <p className="text-zinc-500 font-light text-sm max-w-sm mb-6">
-                            He liderado adopciones de IA en entornos donde los datos importan, los errores cuestan dinero y las personas necesitan entender qué está pasando.
-                        </p>
-                        <Link href="#enfoque" className="inline-flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-white hover:text-[#82ff1f] group transition-colors">
-                            {content.hero.cta}
-                            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
-                        </Link>
+                        {/* Main Image Container */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 40 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.8, delay: 0.4 }}
+                            className="relative w-full h-full max-h-[800px] z-10"
+                        >
+                            {/* Tech Frame */}
+                            <div className="absolute inset-0 border border-white/10 rounded-3xl" />
+                            <div className="absolute -inset-4 border border-white/5 rounded-[2rem] scale-95" />
+
+                            {/* Image Mask */}
+                            <div className="relative w-full h-full rounded-2xl overflow-hidden group">
+                                <Image
+                                    src="/images/ai-hero-new.jpg"
+                                    alt="Víctor Torres - AI Business Consultant"
+                                    fill
+                                    className="object-cover object-center group-hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
+                                    priority
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80" />
+
+                                {/* Overlay Data Elements */}
+                                <div className="absolute bottom-8 left-8 space-y-2">
+                                    <div className="flex items-center gap-2 text-[#82ff1f] text-xs font-mono">
+                                        <Zap size={14} />
+                                        <span>SYSTEM_ACTIVE</span>
+                                    </div>
+                                    <p className="text-white text-sm font-medium tracking-wide">
+                                        Human-in-the-loop Systems
+                                    </p>
+                                </div>
+                            </div>
+
+                            {/* Floating Card */}
+                            <motion.div
+                                initial={{ opacity: 0, x: 20 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                transition={{ delay: 0.8 }}
+                                className="absolute -bottom-8 -right-8 p-6 bg-black border border-white/10 rounded-xl shadow-2xl backdrop-blur-xl max-w-[200px] hidden md:block"
+                            >
+                                <p className="text-zinc-400 text-xs uppercase tracking-widest mb-2">Impacto Real</p>
+                                <div className="space-y-1">
+                                    <p className="text-2xl text-white font-medium">+40%</p>
+                                    <p className="text-xs text-zinc-500">Eficiencia Operativa en proyectos implementados</p>
+                                </div>
+                            </motion.div>
+                        </motion.div>
                     </div>
                 </div>
             </section>
