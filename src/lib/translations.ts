@@ -787,125 +787,160 @@ export const translations = {
                 ]
             },
             governance: {
-                title: "Gobernanza de IA",
-                subtitle: "Innovar sin control no es innovación, es riesgo.",
-                definition: "Gobernar la IA no es prohibirla. Es permitir que avance sin poner en riesgo a la organización.",
+                title: "Gobernanza de la IA",
+                subtitle: "Cómo escalar sin romper nada",
+                definition: "La gobernanza no es un freno burocrático, es el sistema de frenos que permite ir rápido con seguridad. Sin ella, la IA es un riesgo; con ella, es una ventaja competitiva sostenible.",
+                role: "Diseño la arquitectura de control, privacidad y supervisión que tu empresa necesita para dormir tranquila mientras innova.",
                 cards: [
-                    { title: "Definir qué puede hacer y qué no", icon: "Shield" },
-                    { title: "Establecer fuentes autorizadas", icon: "Database" },
-                    { title: "Diseñar supervisión humana", icon: "UserCheck" },
-                    { title: "Asegurar trazabilidad", icon: "FileSearch" },
-                    { title: "Evitar automatizaciones ciegas", icon: "EyeOff" }
-                ],
-                role: "No actúo como policía de la tecnología, actúo como cinturón de seguridad para que el negocio pueda ir más rápido."
+                    {
+                        title: "Riesgos de no tener gobernanza",
+                        icon: "EyeOff",
+                        items: ["Fugas de datos sensibles a modelos públicos", "Alucinaciones tomadas como verdades", "Shadow AI: empleados usando herramientas sin control", "Costes ocultos disparados"]
+                    },
+                    {
+                        title: "Valor de una buena gobernanza",
+                        icon: "Shield",
+                        items: ["Confianza para desplegar en producción", "Control de costes y ROI claro", "Adopción segura por parte del equipo", "Cumplimiento normativo (GDPR/EU AI Act)"]
+                    },
+                    {
+                        title: "Cómo la implemento",
+                        icon: "Lock",
+                        items: ["Roles y permisos granulares (RBAC)", "Human-in-the-loop por diseño", "Logs de auditoría y trazabilidad", "Sanitización de datos (PII Redaction)"]
+                    }
+                ]
             },
             experience: {
                 title: "Experiencia Real",
                 cases: [
                     {
-                        id: "kmeleon",
-                        title: "Kmeleon",
-                        subtitle: "Startup IA enterprise fundada por ex-Microsoft",
-                        tags: ["Estrategia", "Producto", "Formación"],
+                        id: "sumasalut",
+                        title: "Suma Salut",
+                        subtitle: "Asistente IA en entorno de salud",
+                        tags: ["Salud", "Responsabilidad", "Gobernanza"],
                         content: {
-                            context: "Kmeleon es una startup de IA especializada en soluciones a medida para empresas, fundada por ex-Microsoft. Mi rol no fue 'usar IA', fue definir cómo se vende, se implanta y se gobierna.",
-                            role: "Definición de servicios de IA enterprise y diseño de procesos de adopción responsable.",
-                            process: "Traducción de capacidades técnicas a valor de negocio. Aterrizaje de expectativas: qué es demo y qué es producción.",
-                            learning: "La IA solo entrega ROI cuando el caso de uso está acotado y gobernado desde el inicio."
+                            intro: "Suma Salut es una organización del ámbito de la salud y el bienestar, con atención directa a personas y gestión de información sensible. En este contexto, la adopción de IA no puede improvisarse ni priorizar velocidad sobre seguridad. Mi trabajo no fue 'instalar un bot', sino diseñar un sistema de atención responsable.",
+                            duration: "2023",
+                            challenge: "Resolver un alto volumen de consultas repetitivas que saturaban al equipo humano, pero en un entorno de riesgo cero. El desafío no era técnico, era ético y operativo: evitar diagnósticos médicos, falsas expectativas y respuestas inconsistentes.",
+                            role: "Diseño del sistema y Gobernanza. Definí no solo qué debía responder la IA, sino sobre todo qué NO debía responder.",
+                            process: "Implementé una gobernanza estricta del conocimiento: uso exclusivo de fuentes validadas (nada de 'conocimiento general' del modelo), diseño de flujos de derivación a humano ante la mínima duda y creación de 'Safety Layers' para bloquear consultas médicas.",
+                            result: "Despliegue de un asistente que actúa como apoyo, no como sustituto. La IA solo es viable en entornos sensibles cuando existe gobernanza, límites claros y acompañamiento humano."
                         }
                     },
                     {
-                        id: "sumasalut",
-                        title: "Suma Salut",
-                        subtitle: "IA aplicada a entorno sanitario",
-                        tags: ["Salud", "Riesgo", "Ética"],
+                        id: "eme",
+                        title: "e-me Growth Agency",
+                        subtitle: "Escalado de Operaciones",
+                        tags: ["Escalado", "SOPs", "Operaciones"],
                         content: {
-                            context: "Aquí la IA no puede improvisar. Diseñé un asistente conversacional con foco en uso responsable de datos y respuestas controladas.",
-                            role: "Diseño del marco de uso seguro: qué información puede usar, cómo responder sin inventar y cuándo derivar a humano.",
-                            process: "Definición de límites claros de actuación y registro de interacciones.",
-                            learning: "Un sistema útil, sin riesgo clínico ni legal."
+                            intro: "Entré como PM en una agencia que crecía rápido pero desordenadamente. No había procesos, todo dependía de los fundadores. Mi misión fue 'profesionalizar' la operación. Implementé ClickUp como sistema operativo central, definí SOPs para cada rol y automaticé el funnel de ventas. Resultado: La agencia pudo duplicar clientes sin duplicar equipo, aumentando el margen un 30%.",
+                            duration: "2022",
+                            challenge: "Transformar una agencia de marketing que crecía descontroladamente. Todo el conocimiento estaba en la cabeza de los fundadores, los procesos eran verbales y la calidad dependía de quién hacía el trabajo.",
+                            role: "Head of Operations & Project Manager. 'El que pone orden en el caos'.",
+                            process: "Implementé ClickUp como sistema operativo centralizado de la agencia. Documenté y estandaricé todos los procesos en SOPs (Standard Operating Procedures). Automaticé el flujo de onboarding de clientes y reporting. Establecí rituales de gestión (Dailies, Retrospectivas) para alinear al equipo remoto.",
+                            result: "La agencia duplicó su cartera de clientes sin aumentar proporcionalmente la estructura de costes. El margen operativo mejoró un 30% gracias a la eficiencia ganada."
+                        }
+                    },
+                    {
+                        id: "oracle",
+                        title: "DisrupTT (Oracle Partner)",
+                        subtitle: "Gestión de Migración Crítica",
+                        tags: ["ERP", "NetSuite", "Gestión Crítica"],
+                        content: {
+                            intro: "Liderar la transición crítica del núcleo operativo de una empresa tecnológica hacia Oracle NetSuite. El sistema anterior era un caos de hojas de cálculo y herramientas desconectadas que impedían el escalado. El reto no era solo técnico, sino operativo: cambiar cómo trabajaba cada departamento sin detener la facturación ni un solo día.",
+                            duration: "2023",
+                            challenge: "Liderar la transición del núcleo operativo de una empresa tecnológica hacia Oracle NetSuite. El sistema anterior era un caos de hojas de cálculo desconectadas. El riesgo era máximo: una migración fallida podía paralizar la facturación y la logística.",
+                            role: "Project Manager Técnico. Enlace vital entre la consultora implantadora y el cliente.",
+                            process: "Audité y redefiní todos los procesos de negocio (Compras, Ventas, Inventario) antes de digitalizarlos. Coordiné la limpieza masiva de datos históricos corruptos. Lideré las sesiones de UAT (User Acceptance Testing) asegurando que cada departamento validaba su módulo. Gestioné la tensión entre stakeholders con intereses contrapuestos.",
+                            result: "Migración 100% exitosa con 0 días de parada operativa. Automatización del 40% de la carga administrativa y visibilidad financiera en tiempo real por primera vez."
+                        }
+                    },
+                    {
+                        id: "kmeleon",
+                        title: "Kmeleon",
+                        subtitle: "Startup IA Enterprise",
+                        tags: ["Estrategia", "Producto", "Formación"],
+                        content: {
+                            intro: "Startup super técnica fundada por ex-Microsoft. Tenían una tecnología increíble (Sistemas Multi-Agente) pero nadie entendía qué vendían. Mi rol fue construir la capa de negocio. Traduje 'grafos de ejecución' a 'empleados digitales'. Creé la estrategia de Go-To-Market, los materiales de venta enterprise y formé al equipo comercial. Cerramos los primeros pilotos con corporaciones en LATAM y USA.",
+                            duration: "2023 - 2024",
+                            challenge: "Una startup deep-tech fundada por ex-ingenieros de Microsoft tenía una tecnología revolucionaria (Sistemas Multi-Agente) pero una narrativa de venta incomprensible para el mercado. El reto era traducir 'grafos de ejecución' y 'orquestación' en valor de negocio tangible para CEOs y Directivos.",
+                            role: "CMO & AI Strategist. Responsable de traducir la potencia técnica en ventas enterprise.",
+                            process: "Rediseñé completamente la narrativa del producto, pasando de vender 'tecnología' a vender 'trabajadores digitales'. Creé la estrategia de Go-To-Market para US y LATAM, desarrollé los materiales de formación para el equipo de ventas y lideré las demos institucionales. Actué como puente constante entre el equipo de ingeniería (para pedir features necesarias) y el mercado.",
+                            result: "Lanzamiento global exitoso. Cierre de los primeros contratos Enterprise y validación del Product-Market Fit en sectores no tecnológicos."
                         }
                     },
                     {
                         id: "konektor",
-                        title: "Konektor",
-                        subtitle: "IA + Formación + Cambio Cultural",
+                        title: "Konektor & Futura AI",
+                        subtitle: "Consultora de Innovación",
                         tags: ["Adopción", "Cultura", "Agentes"],
                         content: {
-                            context: "Konektor ayuda a organizaciones tradicionales a adoptar nuevas tecnologías sin caer en el hype. Trabajamos con empresas que tenían interés por la IA pero miedo al descontrol y falta de criterio interno para evaluar herramientas.",
-                            role: "Diseño de productos de IA vendibles y responsables. Investigación y validación de tecnologías (Retell, Voiceflow). Traducción de capacidad técnica a valor de negocio.",
-                            process: "Diseñé agentes de voz y asistentes IA funcionales. Creé el programa formativo para directivos y equipos operativos, enfocado en criterio, no solo en herramientas.",
-                            learning: "La IA no falla por tecnología, falla por mala definición previa. El valor real está en el criterio y el acompañamiento, no en el código."
-                        },
-                        detailedBlock: {
-                            context: {
-                                title: "Contexto",
-                                text: "Konektor es una consultora enfocada en innovación y tecnología para empresas tradicionales. El reto no era técnico, sino estratégico y cultural: las empresas querían IA pero temían perder el control o depender de herramientas que no entendían."
-                            },
-                            columns: {
-                                left: {
-                                    title: "Mi Rol",
-                                    items: [
-                                        "Definición de qué es un 'producto de IA' responsable.",
-                                        "Investigación y validación de soluciones (Retell, Voiceflow, Aircall).",
-                                        "Diseño de la puesta en marcha: qué se implanta, qué no, y por qué.",
-                                        "Liderazgo en la adopción: traducir tecnología a lenguaje de negocio."
-                                    ]
-                                },
-                                right: {
-                                    title: "Qué se implementó",
-                                    items: [
-                                        "Agentes de voz funcionales para atención y captación.",
-                                        "Pruebas de concepto validadas en entorno real.",
-                                        "Estructura comercial y modelo de venta de servicios IA.",
-                                        "Programa formativo corporativo para crear criterio interno."
-                                    ]
-                                }
-                            },
-                            governance: {
-                                title: "Gobernanza aplicada",
-                                text: "No automatizar sin entender el proceso humano. No prometer autonomía total. Definir siempre cuándo actúa el sistema y cuándo la persona. Formar antes de implantar."
-                            },
-                            learning: {
-                                title: "Aprendizaje Clave",
-                                text: "Confirmé que el valor real de la consultoría de IA está en el criterio, el acompañamiento y la claridad, uniendo negocio, procesos y personas."
-                            }
+                            intro: "Consultora donde lancé la división 'Futura AI'. El mercado estaba lleno de ruido sobre ChatGPT. Mi enfoque fue pragmático: 'IA as an Employee'. Diseñé y vendí agentes de voz para Real Estate y Clínicas. Me enfrenté a la realidad de la alucinación de los modelos y aprendí a mitigarla con RAG y frameworks de control. Fue mi escuela de 'Gobernanza por necesidad'.",
+                            duration: "2022 - 2023",
+                            challenge: "En pleno hype inicial de ChatGPT, las empresas querían 'hacer algo con IA' pero no sabían qué. El reto fue canalizar esa ansiedad en proyectos funcionales, enfrentando la enorme resistencia al cambio de equipos que temían ser reemplazados.",
+                            role: "Product Lead & Innovation Manager. Lideré la creación de la división 'Futura AI'.",
+                            process: "Desarrollé la línea de negocio 'IA as a Service', diseñando agentes de voz para Real Estate y Clínicas Dentales. Pero mi mayor foco fue la gestión del cambio: impartí talleres directivos para desmitificar la IA, establecí marcos éticos de uso y diseñé procesos de acompañamiento para que los empleados vieran a la IA como copiloto, no como rival.",
+                            result: "Creación de una nueva línea de ingresos recurrente. Implementación exitosa de agentes de voz que gestionaban +1000 llamadas/mes."
                         }
                     },
                     {
                         id: "aether",
                         title: "Aether Labs",
-                        subtitle: "Laboratorio de validación real",
+                        subtitle: "Laboratorio de I+D y Validación",
                         tags: ["I+D", "Prototipado", "Stress-Testing"],
                         content: {
-                            context: "Aether Labs es mi entorno de stress-testing. Aquí pruebo agentes, descarto lo que no escala y valido flujos antes de producción.",
-                            role: "Investigación, diseño y validación de sistemas de IA.",
-                            process: "Agentes de voz, chat, automatización con n8n y sistemas híbridos humano-IA.",
-                            learning: "Nada se implanta sin haber pasado por aquí."
+                            intro: "Mi laboratorio personal. Aquí es donde rompo cosas para no romperlas en los clientes. Pruebo los 'State of the Art' (SOTA) models el día que salen. He construido desde clones de voz indetectables hasta agentes que navegan la web autónomamente. Este knowledge base me permite decir 'No' a un cliente cuando me pide algo que sé que aún no está maduro para producción.",
+                            duration: "Actualidad",
+                            challenge: "El ritmo de avance de la IA es vertiginoso. Mi reto es separar la señal del ruido: probar las tecnologías emergentes (Voice Agents, Computer Vision, LLMs multimodales) antes de que sean mainstream para entender sus verdaderas limitaciones y casos de uso viables.",
+                            role: "Fundador e Investigador Principal. Aquí es donde 'rompo' la tecnología para entenderla.",
+                            process: "Mantengo un ciclo continuo de prototipado rápido ('Fail Fast'). Pruebo nuevos modelos el mismo día de su lanzamiento (OpenAI, Anthropic, Mistral). Construyo integraciones complejas (vía API, Webhooks) para testear latencia, costes reales y alucinaciones. Desarrollo frameworks propios de evaluación para determinar si una tecnología está lista para producción o es solo demo-ware.",
+                            result: "Más de 50 prototipos desarrollados. Base de conocimiento propietaria que me permite asesorar a clientes con autoridad técnica real, evitando inversiones en tecnologías inmaduras."
                         }
                     }
                 ]
             },
             systems: {
-                title: "Catálogo de Sistemas",
-                subtitle: "Arquitecturas que funcionan",
-                intro: "No todas las IAs son iguales. Selecciono la arquitectura adecuada para cada necesidad de negocio.",
+                title: "Sistemas IA que he creado",
+                subtitle: "Tipologías reales desplegadas en producción",
+                intro: "Más allá de la teoría, estos son los sistemas que he diseñado y puesto en marcha en entornos reales.",
                 cards: [
-                    { title: "Agentes Conversacionales", subtitle: "Chatbots avanzados", desc: "Asistentes 24/7 conectados a tu base de conocimiento. No alucinan, solo responden lo que saben.", items: ["Atención al Cliente", "Soporte Interno", "Onboarding HR"], governance: "Limitados a documentos aprobados.", icon: "MessageSquare" },
-                    { title: "Agentes de Voz", subtitle: "Telefonía IA", desc: "Sistemas capaces de mantener conversaciones fluidas por teléfono para cualificar leads o agendar citas.", items: ["Cualificación de Leads", "Gestión de Citas", "Encuestas"], governance: "Supervisión de grabaciones y derivación a humano.", icon: "Mic" },
-                    { title: "Automatización de Flujos", subtitle: "n8n & Make", desc: "Conexión de sistemas (CRM, ERP, Email) para eliminar tareas repetitivas.", items: ["Reportes Automáticos", "Sincronización de Datos", "Alertas"], governance: "Logs de ejecución y alertas de fallo.", icon: "Zap" },
-                    { title: "Sistemas Híbridos", subtitle: "Human-in-the-loop", desc: "La IA propone, el humano valida, el sistema ejecuta. Lo mejor de ambos mundos.", items: ["Generación de Contratos", "Revisión Legal", "Creación de Contenido"], governance: "Validación humana obligatoria antes de acción final.", icon: "GitMerge" }
-                ],
-                governance_principles: ["Transparencia total", "Supervisión humana", "Datos privados", "Trazabilidad"],
-                closure: "Sistemas diseñados para la eficiencia, gobernados para la seguridad."
+                    {
+                        title: "Agentes Conversacionales",
+                        subtitle: "Atención Cliente / Soporte",
+                        desc: "Sistemas que entienden intención, no palabras clave. Gestionan consultas complejas sin intervención humana.",
+                        items: ["Onboarding de empleados", "Resolución de dudas frecuentes", "Triaje de incidencias"],
+                        governance: "Reglas estrictas de respuesta. Si duda, deriva a humano."
+                    },
+                    {
+                        title: "Agentes de Voz",
+                        subtitle: "Recepción / Pedidos",
+                        desc: "Conversación fluida por teléfono. Capaces de gestionar reservas, tomar pedidos o filtrar llamadas comerciales.",
+                        items: ["Centralitas inteligentes", "Toma de pedidos en hostelería", "Filtrado de llamadas"],
+                        governance: "Identificación clara como IA. Latencia mínima para evitar rechazo."
+                    },
+                    {
+                        title: "Automatización de Procesos",
+                        subtitle: "Operaciones / Admin",
+                        desc: "Sistemas silenciosos que mueven datos entre herramientas. Eliminan el copia-pegado y los errores administrativos.",
+                        items: ["Conciliación de facturas", "Cualificación de leads", "Generación de informes"],
+                        governance: "Logs detallados de cada acción. Alertas en caso de fallo."
+                    },
+                    {
+                        title: "IA Generativa & Contenido",
+                        subtitle: "Creación / Branding",
+                        desc: "Generación de activos visuales y de marca a escala. Desde conceptos creativos hasta producción final de assets.",
+                        items: ["Branding y Logos", "Reels y Vídeos Sintéticos", "Diseño Web (v0, bolt)"],
+                        governance: "Revisión humana de estilo y consistencia de marca."
+                    }
+                ]
             },
             culture_change: {
-                title: "Gestión del Canvi Cultural",
-                subtitle: "La tecnología es el 20%. El 80% es psicología, comunicación y hábitos.",
-                anchor: "Metodología de Adopción",
+                title: "Gestión del Cambio Cultural",
+                subtitle: "La tecnología es fácil. Las personas son el reto.",
+                anchor: "El 80% del éxito es psicología, comunicación y hábitos.",
                 phases: [
                     { title: "Descubrimiento", desc: "Entender los miedos y expectativas del equipo antes de implantar nada.", actions: ["Entrevistas 1:1", "Mapa de Resistencias", "Talleres de Definición"] },
                     { title: "Capacitación", desc: "Formar no es enviar un PDF. Es enseñar a pensar con la nueva herramienta.", actions: ["Formación práctica", "Creación de Champions", "Soporte directo"] },
+                    { title: "Optimización", desc: "Revisión de resultados y feedback. Ajustar el sistema a las personas, no al revés.", actions: ["Análisis de KPIs", "Reuniones de feedback", "Ajustes de prompts/flujos"] },
                     { title: "Escalado", desc: "Convertir la excepción en la norma y el piloto en proceso estándar.", actions: ["KPIs de adopción", "Iteración continua", "Documentación viva"] }
                 ],
                 resistance: {
@@ -953,8 +988,8 @@ export const translations = {
                         closure: "No había IA. Había método, prueba-error y estandarización."
                     },
                     {
-                        title: "Automatización estructural en equipos (IMI)",
-                        desc: "En IMI di el siguiente salto: automatizar a escala de equipo.",
+                        title: "Automatización estructural en equipos (e-me Growth Agency)",
+                        desc: "En e-me Growth Agency di el siguiente salto: automatizar a escala de equipo.",
                         context: "Allí trabajé en la creación de procesos operativos estandarizados que permitían a la agencia trabajar con menos fricción y mayor previsibilidad:",
                         items: [
                             "Automatización pre-IA basada en SOPs, ClickUp y flujos operativos claros.",
@@ -1070,7 +1105,11 @@ export const translations = {
                         "Necesitan ordenar procesos antes de automatizar",
                         "Buscan impacto medible, no demos",
                         "Tienen equipos que deben cambiar su forma de trabajar",
-                        "Operan en entornos donde la gobernanza y la responsabilidad importan"
+                        "Operan en entornos donde la gobernanza y la responsabilidad importan",
+                        "Buscan perfiles 360 que entiendan el negocio global",
+                        "Valoran la visión estratégica sobre la ejecución de código puro",
+                        "Necesitan puentes entre equipos técnicos y operativos",
+                        "Priorizan la utilidad real sobre la complejidad técnica"
                     ],
                     contexts: "Especialmente en: Transformación organizativa, Consultoría de procesos, Sector público y entornos regulados, Empresas que escalan y empiezan a romper por dentro."
                 },

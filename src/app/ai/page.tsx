@@ -36,6 +36,13 @@ export default function AIAdoptionPage() {
     // Grupo 1: Mi Enfoque
     const enfoqueItems = [
         {
+            id: 'automation',
+            title: content.automation.title,
+            subtitle: content.automation.subtitle,
+            icon: Zap,
+            component: <AutomationBlock content={content.automation} />
+        },
+        {
             id: 'approach',
             title: content.approach.title,
             subtitle: content.approach.subtitle,
@@ -58,7 +65,7 @@ export default function AIAdoptionPage() {
                     </div>
                     <div className="pt-8 text-center border-t border-white/5">
                         <p className="text-lg text-zinc-400 font-light">
-                            No implanto features de IA. <span className="text-white font-medium">Implanto nuevas formas de trabajar.</span>
+                            No implanto herramientas de IA. <span className="text-white font-medium">Implanto nuevas formas de trabajar.</span>
                         </p>
                     </div>
                 </div>
@@ -74,18 +81,26 @@ export default function AIAdoptionPage() {
                     <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
                         <p className="text-xl text-white font-light">{content.governance.definition}</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                         {content.governance.cards.map((card: any, i: number) => {
                             const Icon = iconMap[card.icon] || Shield;
                             return (
                                 <div
                                     key={i}
-                                    className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl hover:border-[#82ff1f]/30 transition-all"
+                                    className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl hover:border-[#82ff1f]/30 transition-all space-y-4"
                                 >
-                                    <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-[#82ff1f] mb-4">
+                                    <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-[#82ff1f]">
                                         <Icon size={24} />
                                     </div>
-                                    <h4 className="text-lg font-medium text-white">{card.title}</h4>
+                                    <h4 className="text-xl font-medium text-white">{card.title}</h4>
+                                    <ul className="space-y-2">
+                                        {card.items && card.items.map((item: string, idx: number) => (
+                                            <li key={idx} className="flex items-start gap-2 text-zinc-400 text-sm">
+                                                <span className="text-[#82ff1f] mt-1">•</span>
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
                             );
                         })}
@@ -95,13 +110,6 @@ export default function AIAdoptionPage() {
                     </div>
                 </div>
             )
-        },
-        {
-            id: 'automation',
-            title: content.automation.title,
-            subtitle: content.automation.subtitle,
-            icon: Zap,
-            component: <AutomationBlock content={content.automation} />
         }
     ];
 
@@ -113,37 +121,58 @@ export default function AIAdoptionPage() {
             subtitle: 'Proyectos reales de adopción de IA',
             icon: Brain,
             component: (
-                <div className="space-y-8">
+                <div className="space-y-12">
                     {content.experience.cases.map((c: any) => (
-                        <div key={c.id} className="border border-white/5 rounded-xl p-8 hover:border-white/10 transition-all">
-                            <div className="flex items-start justify-between mb-6">
+                        <div key={c.id} className="border border-white/5 rounded-2xl p-8 bg-zinc-900/20 hover:bg-zinc-900/40 transition-all group">
+                            {/* Header */}
+                            <div className="flex flex-col md:flex-row md:items-start justify-between mb-8 gap-4">
                                 <div>
-                                    <h4 className="text-2xl font-medium text-white mb-2">{c.title}</h4>
-                                    <p className="text-zinc-500">{c.subtitle}</p>
+                                    <div className="flex items-center gap-3 mb-2">
+                                        <h4 className="text-2xl md:text-3xl font-medium text-white">{c.title}</h4>
+                                        <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-zinc-400 font-mono">
+                                            {c.content.duration}
+                                        </span>
+                                    </div>
+                                    <p className="text-zinc-500 text-lg">{c.subtitle}</p>
                                 </div>
-                                <div className="flex gap-2">
+                                <div className="flex flex-wrap gap-2">
                                     {c.tags.map((tag: string) => (
-                                        <span key={tag} className="px-3 py-1 bg-white/5 rounded-full text-xs text-zinc-400">
+                                        <span key={tag} className="px-3 py-1 bg-zinc-900 border border-white/10 rounded-full text-xs text-zinc-400 group-hover:border-[#82ff1f]/30 group-hover:text-[#82ff1f] transition-colors">
                                             {tag}
                                         </span>
                                     ))}
                                 </div>
                             </div>
-                            <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+                            {/* Intro Full Width */}
+                            <div className="mb-10 pb-10 border-b border-white/5">
+                                <p className="text-zinc-300 text-lg leading-relaxed max-w-5xl">
+                                    {c.content.intro}
+                                </p>
+                            </div>
+
+                            {/* 3-Col Grid: Challenge, Role, Process */}
+                            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
                                 <div className="space-y-3">
-                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase">Contexto</h5>
-                                    <p className="text-zinc-300 leading-relaxed">{c.content.context}</p>
+                                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest border-l-2 border-zinc-700 pl-3">El Reto</h5>
+                                    <p className="text-zinc-400 text-sm leading-relaxed">{c.content.challenge}</p>
                                 </div>
                                 <div className="space-y-3">
-                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase">Mi Rol</h5>
-                                    <p className="text-zinc-400 font-light">{c.content.role}</p>
-                                    <h5 className="text-white text-sm font-medium mt-4">Proceso</h5>
-                                    <p className="text-zinc-400 font-light">{c.content.process}</p>
+                                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest border-l-2 border-zinc-700 pl-3">Mi Rol</h5>
+                                    <p className="text-zinc-400 text-sm leading-relaxed">{c.content.role}</p>
                                 </div>
-                                <div className="bg-white/5 p-6 rounded-xl">
-                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase mb-3">Aprendizaje</h5>
-                                    <p className="text-white italic">"{c.content.learning}"</p>
+                                <div className="space-y-3">
+                                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest border-l-2 border-zinc-700 pl-3">Proceso</h5>
+                                    <p className="text-zinc-400 text-sm leading-relaxed">{c.content.process}</p>
                                 </div>
+                            </div>
+
+                            {/* Result Area */}
+                            <div className="bg-[#82ff1f]/5 border border-[#82ff1f]/10 p-6 md:p-8 rounded-xl">
+                                <h5 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest mb-3">Resultado / Impacto</h5>
+                                <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
+                                    {c.content.result}
+                                </p>
                             </div>
                         </div>
                     ))}
@@ -183,6 +212,30 @@ export default function AIAdoptionPage() {
                 </div>
             )
         }] : []),
+        ...(content.metrics && content.metrics.macro ? [{
+            id: 'metrics',
+            title: content.metrics.title,
+            subtitle: content.metrics.subtitle,
+            icon: Target,
+            component: (
+                <div className="space-y-16">
+                    <p className="text-xl text-zinc-400 font-light text-center">{content.metrics.intro}</p>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                        {content.metrics.macro.map((m: any, i: number) => (
+                            <div key={i} className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl space-y-4">
+                                <p className="text-xs text-zinc-500 font-bold uppercase">{m.title}</p>
+                                <p className="text-white text-lg font-medium italic">"{m.question}"</p>
+                                <div className="h-px bg-white/5" />
+                                <p className="text-sm text-zinc-400">{m.measure}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="border-t border-white/5 pt-12 text-center">
+                        <p className="text-3xl font-medium text-white max-w-4xl mx-auto">{content.metrics.closure}</p>
+                    </div>
+                </div>
+            )
+        }] : []),
         ...(content.culture_change ? [{
             id: 'culture',
             title: content.culture_change.title,
@@ -193,7 +246,7 @@ export default function AIAdoptionPage() {
                     <div className="text-center p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
                         <p className="text-[#82ff1f] font-medium">{content.culture_change.anchor}</p>
                     </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {content.culture_change.phases.map((phase: any, i: number) => (
                             <div key={i} className="space-y-6">
                                 <div className="w-10 h-10 rounded-full bg-[#82ff1f] text-black flex items-center justify-center font-bold">
@@ -219,48 +272,24 @@ export default function AIAdoptionPage() {
                     </div>
                 </div>
             )
-        }] : []),
-        ...(content.metrics && content.metrics.macro ? [{
-            id: 'metrics',
-            title: content.metrics.title,
-            subtitle: content.metrics.subtitle,
-            icon: Target,
-            component: (
-                <div className="space-y-16">
-                    <p className="text-xl text-zinc-400 font-light text-center">{content.metrics.intro}</p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {content.metrics.macro.map((m: any, i: number) => (
-                            <div key={i} className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl space-y-4">
-                                <p className="text-xs text-zinc-500 font-bold uppercase">{m.title}</p>
-                                <p className="text-white text-lg font-medium italic">"{m.question}"</p>
-                                <div className="h-px bg-white/5" />
-                                <p className="text-sm text-zinc-400">{m.measure}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="border-t border-white/5 pt-12 text-center">
-                        <p className="text-3xl font-medium text-white max-w-4xl mx-auto">{content.metrics.closure}</p>
-                    </div>
-                </div>
-            )
         }] : [])
     ];
 
-    // Grupo 3: Mi Rol y Propuesta
+    // Grupo 3: Mi Propuesta de Valor
     const propuestaItems = [
-        {
-            id: 'role',
-            title: content.role.title,
-            subtitle: 'Cómo trabajo dentro de las organizaciones',
-            icon: Users,
-            component: <RoleBlock content={content.role} />
-        },
         {
             id: 'closing',
             title: content.closing.title,
             subtitle: 'Dónde aporto valor real',
             icon: Target,
             component: <ClosingBlock content={content.closing} />
+        },
+        {
+            id: 'role',
+            title: content.role.title,
+            subtitle: 'Cómo trabajo dentro de las organizaciones',
+            icon: Users,
+            component: <RoleBlock content={content.role} />
         }
     ];
 
@@ -334,7 +363,7 @@ export default function AIAdoptionPage() {
                                 He liderado adopciones de IA en entornos donde los datos importan, los errores cuestan dinero y las personas necesitan entender qué está pasando.
                             </p>
 
-                            <div className="flex flex-wrap items-center gap-8 pt-4">
+                            <div className="flex flex-wrap items-center gap-8 pt-12 pb-24 md:pb-0">
                                 <Link href="#enfoque" className="inline-flex items-center gap-3 bg-white text-black px-8 py-4 rounded-full text-sm font-bold uppercase tracking-widest hover:bg-[#82ff1f] transition-all group">
                                     {content.hero.cta}
                                     <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
@@ -378,7 +407,7 @@ export default function AIAdoptionPage() {
                             {/* Image Mask */}
                             <div className="relative w-full h-full rounded-2xl overflow-hidden group">
                                 <Image
-                                    src="/images/ai-hero-new.jpg"
+                                    src="/images/procesos-hero-new.jpg"
                                     alt="Víctor Torres - AI Business Consultant"
                                     fill
                                     className="object-cover object-center group-hover:scale-105 transition-transform duration-700 grayscale hover:grayscale-0"
@@ -430,7 +459,7 @@ export default function AIAdoptionPage() {
 
             {/* Grupo 3: Mi Rol y Propuesta */}
             <AccordionGroup
-                title="Mi Rol y Propuesta de Valor"
+                title="Mi Propuesta de Valor"
                 items={propuestaItems}
             />
 

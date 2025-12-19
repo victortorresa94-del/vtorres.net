@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, Bot, Phone, GitMerge, Zap, ArrowRight, LayoutDashboard, Brain } from 'lucide-react';
 
 interface AutomationBlockProps {
     content: any;
@@ -8,126 +8,193 @@ interface AutomationBlockProps {
 
 export default function AutomationBlock({ content }: AutomationBlockProps) {
     return (
-        <div className="space-y-16">
-            {/* Intro */}
-            <div className="max-w-4xl mx-auto text-center space-y-6">
-                <p className="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
-                    {content.intro}
-                </p>
-                <p className="text-lg text-[#82ff1f] italic border-l-2 border-[#82ff1f] pl-6 py-2 text-left inline-block">
-                    {content.question}
-                </p>
-            </div>
+        <div className="space-y-24">
+            {/* Intro Hero */}
+            <div className="relative p-8 md:p-12 bg-zinc-900/40 border border-white/5 rounded-3xl overflow-hidden">
+                <div className="absolute top-0 right-0 w-64 h-64 bg-[#82ff1f]/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2" />
 
-            {/* Sections */}
-            <div className="space-y-16">
-                {content.sections.map((section: any, i: number) => (
+                <div className="relative z-10 max-w-4xl mx-auto text-center space-y-8">
                     <motion.div
-                        key={i}
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
-                        transition={{ delay: i * 0.1 }}
-                        className="border-l-2 border-white/10 pl-8 space-y-6"
+                        className="space-y-4"
                     >
-                        <div>
-                            <h3 className="text-2xl md:text-3xl font-medium text-white mb-2">{section.title}</h3>
-                            <p className="text-zinc-400 text-lg font-light">{section.desc}</p>
-                        </div>
-
-                        {section.context && (
-                            <p className="text-zinc-300 leading-relaxed">{section.context}</p>
-                        )}
-
-                        <ul className="space-y-3">
-                            {section.items.map((item: string, idx: number) => (
-                                <li key={idx} className="flex items-start gap-3 text-zinc-400">
-                                    <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#82ff1f] shrink-0" />
-                                    {item}
-                                </li>
-                            ))}
-                        </ul>
-
-                        {section.highlight && (
-                            <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl space-y-4">
-                                <h4 className="text-white font-medium text-lg">{section.highlight.title}</h4>
-                                <p className="text-zinc-300">{section.highlight.desc}</p>
-                                <ul className="space-y-2">
-                                    {section.highlight.items.map((item: string, idx: number) => (
-                                        <li key={idx} className="flex items-start gap-2 text-sm text-zinc-400">
-                                            <CheckCircle2 size={16} className="mt-0.5 text-[#82ff1f] shrink-0" />
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
-
-                        {section.evolution && (
-                            <p className="text-zinc-300 leading-relaxed text-lg">{section.evolution}</p>
-                        )}
-
-                        {section.applications && (
-                            <div className="space-y-3">
-                                <p className="text-white font-medium">{section.applications}</p>
-                                <ul className="space-y-2">
-                                    {section.items && section.items.map((item: string, idx: number) => (
-                                        <li key={idx} className="flex items-start gap-3 text-zinc-400">
-                                            <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-white/20 shrink-0" />
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        )}
-
-                        {section.examples && (
-                            <p className="text-sm text-zinc-500 italic">{section.examples}</p>
-                        )}
-
-                        {section.closure && (
-                            <p className="text-white font-medium italic border-t border-white/10 pt-4">
-                                "{section.closure}"
-                            </p>
-                        )}
+                        <h2 className="text-3xl md:text-4xl font-medium text-white">
+                            {content.title} <span className="text-zinc-500 text-lg md:text-2xl block mt-2 font-normal">{content.subtitle}</span>
+                        </h2>
                     </motion.div>
-                ))}
-            </div>
 
-            {/* Criteria */}
-            <div className="bg-zinc-900/30 border border-white/5 rounded-2xl p-8 md:p-12 space-y-8">
-                <h3 className="text-2xl md:text-3xl font-medium text-white text-center">{content.criteria.title}</h3>
-                <p className="text-lg text-zinc-400 text-center">{content.criteria.intro}</p>
+                    <p className="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
+                        {content.intro}
+                    </p>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                        {content.criteria.negatives.map((item: string, i: number) => (
-                            <p key={i} className="text-zinc-500 flex items-start gap-2">
-                                <span className="text-red-500 mt-1">×</span>
-                                {item}
-                            </p>
-                        ))}
-                    </div>
-                    <div className="space-y-4">
-                        <p className="text-white font-medium">{content.criteria.conditions}</p>
-                        {content.criteria.positives.map((item: string, i: number) => (
-                            <p key={i} className="text-[#82ff1f] flex items-start gap-2">
-                                <span className="mt-1">✓</span>
-                                {item}
-                            </p>
-                        ))}
+                    <div className="inline-flex items-center gap-3 bg-[#82ff1f]/10 border border-[#82ff1f]/20 rounded-full px-6 py-3">
+                        <span className="w-2 h-2 rounded-full bg-[#82ff1f] animate-pulse" />
+                        <p className="text-[#82ff1f] font-mono text-sm">
+                            {content.question}
+                        </p>
                     </div>
                 </div>
-
-                <p className="text-center text-xl text-white font-light italic border-t border-white/10 pt-8">
-                    {content.criteria.principle}
-                </p>
             </div>
 
-            {/* Closure */}
-            <p className="text-2xl md:text-3xl text-white font-light text-center max-w-3xl mx-auto leading-tight">
-                {content.closure}
-            </p>
+            {/* Timeline Sections */}
+            <div className="relative border-l border-white/10 ml-4 md:ml-12 space-y-20 py-8">
+                {content.sections.map((section: any, i: number) => {
+                    const isLast = i === content.sections.length - 1;
+
+                    return (
+                        <motion.div
+                            key={i}
+                            initial={{ opacity: 0, x: -20 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true, margin: "-100px" }}
+                            transition={{ delay: i * 0.1 }}
+                            className="relative pl-8 md:pl-16"
+                        >
+                            {/* Timeline Node */}
+                            <div className="absolute -left-[5px] top-0 w-2.5 h-2.5 rounded-full bg-[#82ff1f] ring-4 ring-black" />
+
+                            <div className="space-y-8">
+                                <div className="space-y-4">
+                                    <h3 className="text-2xl md:text-3xl font-medium text-white">{section.title}</h3>
+                                    <p className="text-xl text-zinc-400 font-light max-w-3xl">{section.desc}</p>
+                                </div>
+
+                                {section.context && (
+                                    <div className="bg-white/5 border border-white/5 p-6 rounded-xl text-zinc-300">
+                                        {section.context}
+                                    </div>
+                                )}
+
+                                {/* Special Layout for Section 3 (AI Systems) */}
+                                {section.applications ? (
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                                        <div className="col-span-full mb-4">
+                                            <p className="text-white text-lg font-medium flex items-center gap-2">
+                                                <Brain className="text-[#82ff1f]" size={20} />
+                                                {section.applications}
+                                            </p>
+                                        </div>
+
+                                        {section.items && section.items.map((item: string, idx: number) => {
+                                            const icons = [Phone, Bot, GitMerge, LayoutDashboard];
+                                            const Icon = icons[idx % icons.length];
+
+                                            return (
+                                                <div key={idx} className="group p-6 bg-zinc-900 border border-white/10 rounded-xl hover:border-[#82ff1f]/50 transition-all hover:bg-[#82ff1f]/5">
+                                                    <div className="flex items-start gap-4">
+                                                        <div className="p-3 bg-white/5 rounded-lg text-zinc-400 group-hover:text-[#82ff1f] group-hover:bg-[#82ff1f]/10 transition-colors">
+                                                            <Icon size={24} />
+                                                        </div>
+                                                        <p className="text-zinc-200 font-medium pt-1">{item}</p>
+                                                    </div>
+                                                </div>
+                                            );
+                                        })}
+
+                                        {section.examples && (
+                                            <div className="col-span-full mt-4 p-4 bg-[#82ff1f]/5 border border-[#82ff1f]/10 rounded-lg flex items-center gap-3">
+                                                <div className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]" />
+                                                <p className="text-sm text-zinc-400">
+                                                    <span className="text-[#82ff1f] font-mono uppercase text-xs mr-2">Casos Reales</span>
+                                                    {section.examples}
+                                                </p>
+                                            </div>
+                                        )}
+                                    </div>
+                                ) : (
+                                    /* Standard List Layout for other sections */
+                                    <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-4">
+                                        {section.items.map((item: string, idx: number) => (
+                                            <li key={idx} className="flex items-start gap-3 p-4 bg-zinc-900/50 border border-white/5 rounded-lg hover:border-white/10 transition-colors">
+                                                <div className="mt-1.5 w-1.5 h-1.5 rounded-full bg-[#82ff1f] shrink-0" />
+                                                <span className="text-zinc-400 text-sm">{item}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+
+                                {section.highlight && (
+                                    <div className="relative overflow-hidden p-8 bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 rounded-2xl group">
+                                        <div className="absolute top-0 right-0 p-32 bg-[#82ff1f]/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2" />
+
+                                        <div className="relative z-10 space-y-6">
+                                            <div className="space-y-2">
+                                                <h4 className="text-white font-medium text-xl flex items-center gap-3">
+                                                    <Zap className="text-[#82ff1f]" />
+                                                    {section.highlight.title}
+                                                </h4>
+                                                <p className="text-zinc-400 max-w-2xl">{section.highlight.desc}</p>
+                                            </div>
+
+                                            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                                {section.highlight.items.map((item: string, idx: number) => (
+                                                    <div key={idx} className="flex items-center gap-3 bg-black/20 p-3 rounded-lg border border-white/5">
+                                                        <CheckCircle2 size={16} className="text-[#82ff1f] shrink-0" />
+                                                        <span className="text-zinc-300 text-sm">{item}</span>
+                                                    </div>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    </div>
+                                )}
+
+                                {section.closure && (
+                                    <p className="text-white/80 font-medium italic border-l-2 border-[#82ff1f] pl-4 py-2">
+                                        "{section.closure}"
+                                    </p>
+                                )}
+                            </div>
+                        </motion.div>
+                    );
+                })}
+            </div>
+
+            {/* Criteria Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
+                {/* Intro Card */}
+                <div className="md:col-span-4 bg-zinc-900 border border-white/10 p-8 rounded-2xl flex flex-col justify-center space-y-4">
+                    <h3 className="text-2xl font-medium text-white">{content.criteria.title}</h3>
+                    <p className="text-zinc-400">{content.criteria.intro}</p>
+                    <div className="w-12 h-1 bg-[#82ff1f] rounded-full" />
+                </div>
+
+                {/* Negatives */}
+                <div className="md:col-span-4 bg-red-500/5 border border-red-500/10 p-8 rounded-2xl space-y-4">
+                    <p className="text-red-400 font-mono text-sm uppercase tracking-wider mb-4">No automatizo si...</p>
+                    <ul className="space-y-3">
+                        {content.criteria.negatives.map((item: string, i: number) => (
+                            <li key={i} className="flex items-start gap-3 text-zinc-400 text-sm">
+                                <span className="text-red-500 text-lg leading-none">×</span>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+
+                {/* Positives */}
+                <div className="md:col-span-4 bg-[#82ff1f]/5 border border-[#82ff1f]/10 p-8 rounded-2xl space-y-4">
+                    <p className="text-[#82ff1f] font-mono text-sm uppercase tracking-wider mb-4">{content.criteria.conditions}</p>
+                    <ul className="space-y-3">
+                        {content.criteria.positives.map((item: string, i: number) => (
+                            <li key={i} className="flex items-start gap-3 text-zinc-300 text-sm">
+                                <CheckCircle2 size={16} className="text-[#82ff1f] mt-0.5" />
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </div>
+
+            {/* Principle Quote */}
+            <div className="text-center py-12 border-t border-white/5">
+                <p className="text-2xl md:text-3xl text-white font-light italic max-w-3xl mx-auto">
+                    "{content.criteria.principle}"
+                </p>
+                <p className="mt-4 text-zinc-500 text-sm tracking-widest uppercase">
+                    Principior Fundamental
+                </p>
+            </div>
         </div>
     );
 }

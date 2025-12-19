@@ -10,27 +10,37 @@ interface ClosingBlockProps {
 export default function ClosingBlock({ content }: ClosingBlockProps) {
     return (
         <div className="space-y-24">
-            {/* Intro */}
-            <div className="max-w-4xl mx-auto text-center space-y-8">
-                <p className="text-2xl md:text-3xl text-white font-light leading-relaxed">
-                    {content.intro}
-                </p>
-                <p className="text-xl text-zinc-400 font-light">
-                    {content.value}
-                </p>
+            {/* Intro Headline */}
+            <div className="relative py-12 px-6 md:px-12 bg-gradient-to-b from-zinc-900/50 to-transparent border border-white/5 rounded-3xl overflow-hidden text-center space-y-8">
+                <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent" />
+
+                <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight leading-tight max-w-4xl mx-auto">
+                    {content.title}
+                </h2>
+
+                <div className="space-y-6 max-w-3xl mx-auto">
+                    <p className="text-xl md:text-2xl text-zinc-300 font-light leading-relaxed">
+                        {content.intro}
+                    </p>
+                    <p className="text-lg md:text-xl text-zinc-400 leading-relaxed border-t border-white/5 pt-6">
+                        {content.value}
+                    </p>
+                </div>
             </div>
 
-            {/* Failures */}
+            {/* Failures Grid */}
             <div className="max-w-4xl mx-auto space-y-8">
-                <p className="text-lg text-zinc-300 text-center">{content.failures.intro}</p>
+                <p className="text-lg text-zinc-300 text-center font-medium">
+                    {content.failures.intro}
+                </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {content.failures.reasons.map((reason: string, i: number) => (
                         <div
                             key={i}
-                            className="flex items-start gap-3 p-4 bg-red-500/5 border border-red-500/20 rounded-lg"
+                            className="flex items-center gap-3 p-4 bg-red-500/5 border border-red-500/10 rounded-xl hover:bg-red-500/10 transition-colors"
                         >
-                            <XCircle size={20} className="text-red-500 mt-1 shrink-0" />
-                            <p className="text-zinc-400">{reason}</p>
+                            <XCircle size={20} className="text-red-500 shrink-0" />
+                            <p className="text-zinc-300 font-light">{reason}</p>
                         </div>
                     ))}
                 </div>
