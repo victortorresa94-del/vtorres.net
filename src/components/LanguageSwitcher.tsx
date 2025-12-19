@@ -13,14 +13,16 @@ export default function LanguageSwitcher() {
             </div>
             <button
                 onClick={() => {
-                    const next = language === 'es' ? 'ca' : (language as string) === 'ca' ? 'en' : 'es';
-                    setLanguage(next as any);
+                    const current = language as string;
+                    if (current === 'es') setLanguage('ca' as any);
+                    else if (current === 'ca') setLanguage('en');
+                    else setLanguage('es');
                 }}
                 className="text-xs font-bold text-white pr-3 pl-1 tracking-tight hover:text-[#82ff1f] transition-colors"
             >
-                {language === 'es' ? 'ESPAÑOL' : language === 'ca' ? 'CATALÀ' : 'ENGLISH'}
+                {(language as string) === 'es' ? 'ESPAÑOL' : (language as string) === 'ca' ? 'CATALÀ' : 'ENGLISH'}
                 <span className="ml-2 text-zinc-500 group-hover:text-zinc-300">
-                    | {language === 'es' ? 'CA' : language === 'ca' ? 'EN' : 'ES'}
+                    | {(language as string) === 'es' ? 'CA' : (language as string) === 'ca' ? 'EN' : 'ES'}
                 </span>
             </button>
         </div>
