@@ -71,7 +71,7 @@ export default function HeroSection() {
                     className="absolute inset-0"
                 >
                     <Image
-                        src="/images/hero-consulting.jpg"
+                        src="/images/procesos-hero-new.jpg"
                         alt="Víctor Torres Arana - Process Consultant"
                         fill
                         className="object-cover object-center transition-all duration-700 ease-in-out"

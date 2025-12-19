@@ -622,30 +622,51 @@ export const translations = {
                 closing: "No transformo empresas. Ayudo a las personas a trabajar mejor."
             },
             oracleExperience: {
-                title: "Oracle NetSuite: Transformación Operativa a Gran Escala",
-                subtitle: "De procesos legacy a un ERP estandarizado en un entorno logístico internacional en hipercrecimiento.",
+                title: "Oracle NetSuite Transformation",
+                // Header / Context data
                 role: "Project Manager & Process Consultant",
                 company: "DisrupTT (Partner) / CulturA (Cliente Final)",
+
                 context: {
-                    intro: "CulturA es un operador logístico internacional especializado en transporte marítimo de materias primas a granel (yeso, piedra caliza, clínker). Una operación end-to-end crítica que conecta Malta, España, Luxemburgo, Dubái y Turquía.",
+                    intro: "CulturA es un operador logístico internacional especializado en transporte marítimo de materias primas a granel (yeso, piedra caliza, clínker), con operaciones end-to-end críticas entre Malta, España, Luxemburgo, Dubái y Turquía. Una organización con crecimiento acelerado, alta complejidad operativa y múltiples sistemas heredados que requería una transformación estructural profunda para poder escalar.",
                     metrics: [
-                        { label: "Volumen 2023", value: "+3M Toneladas" },
-                        { label: "Crecimiento", value: "x30 en 6 años" },
-                        { label: "Alcance", value: "5 Países" }
+                        { value: "+3M", label: "Toneladas / Año" },
+                        { value: "x30", label: "Crecimiento en 6 años" },
+                        { value: "5", label: "Países Operativos" },
+                        { value: "9 Meses", label: "Proyecto Continuo" }
                     ]
                 },
-                challenge: "Hipercrecimiento insostenible con sistemas legacy. La empresa necesitaba migrar de una operativa basada en conocimiento tribal y hojas de cálculo a un ERP Enterprise (Oracle NetSuite) sin detener la operación.",
-                methodology: {
-                    title: "BDR: Business Design Requirements",
-                    desc: "El BDR es el estándar metodológico para traducir realidad operativa a sistema. Mi responsabilidad fue liderar este análisis funcional, no como técnico, sino como consultor de negocio.",
-                    steps: [
-                        { title: "Mapeo Forensic", desc: "Levantamiento de procesos 'As-Is'. No documenté ideales, documenté la realidad operativa con todas sus excepciones." },
-                        { title: "Traducción", desc: "Convertir lenguaje logístico de buques, fletes y graneles a lenguaje ERP de órdenes, inventarios y flujos financieros." },
-                        { title: "Diseño Futuro", desc: "Definición de workflows 'To-Be' estandarizados listos para escalar." }
+                projectType: {
+                    title: "Oracle NetSuite Transformation — ERP Core Migration",
+                    desc: "Migración completa del sistema operativo y financiero a Oracle NetSuite, afectando a todos los departamentos y operaciones internacionales."
+                },
+                bdr: {
+                    title: "BDR — Business Design Requirements",
+                    cards: [
+                        { title: "Mapeo Forense (As-Is real)", desc: "Levantamiento de cientos de procesos reales, con excepciones, atajos y dependencias humanas." },
+                        { title: "Traducción Negocio → Sistema", desc: "Conversión del lenguaje operativo (logística, fletes, contratos) en flujos ERP estructurados." },
+                        { title: "Diseño To-Be Escalable", desc: "Definición de workflows estandarizados listos para operar a escala internacional." }
                     ]
                 },
-                impact: "Sentamos las bases operativas para soportar el objetivo de 5M de toneladas. Migramos de la intuición al dato, alineando operaciones internacionales bajo una única fuente de verdad.",
-                closing: "Un ERP no ordena una empresa. Un buen mapeo de procesos, sí."
+                impact: {
+                    title: "Project Impact",
+                    items: [
+                        "Base operativa para escalar hasta +5M toneladas",
+                        "Unificación de operaciones bajo una única fuente de verdad",
+                        "Reducción de riesgo operativo en entorno internacional"
+                    ],
+                    closing: "Un ERP no ordena una empresa. Un buen mapeo de procesos, sí."
+                },
+                scope: {
+                    title: "Alcance del Proyecto",
+                    items: [
+                        "+100 procesos mapeados",
+                        "Todos los departamentos implicados",
+                        "9 meses de trabajo continuo",
+                        "Coordinación entre NetSuite, Salesforce y McKinsey",
+                        "Operación multi-país"
+                    ]
+                }
             },
             experience: {
                 title: "Experiencia Aplicada",
@@ -742,6 +763,167 @@ export const translations = {
                 title: "¿Hablamos de Procesos?",
                 text: "Perfil Senior disponible para consultoría y dirección de proyectos.",
                 button: "Contactar Ahora"
+            },
+            ai: {
+                hero: {
+                    eyebrow: "AI BUSINESS CONSULTANT",
+                    title: "Adopción Responsable de IA",
+                    subtitle: "Transformación real de procesos, personas y decisiones.",
+                    desc: "No trabajo la IA como tecnología. La trabajo como una capa de inteligencia para ordenar, estandarizar y escalar organizaciones sin aumentar el riesgo.",
+                    badge: "AI BUSINESS CONSULTANT",
+                    cta: "Ver cómo trabajo la adopción real"
+                },
+                approach: {
+                    title: "Mi enfoque: IA como sistema organizativo",
+                    subtitle: "No como herramienta.",
+                    manifesto: "La mayoría de iniciativas de IA fallan porque empiezan por la herramienta y no por la organización. Mi trabajo empieza antes de escribir una línea de código.",
+                    statement: "No implanto 'features de IA'. Implanto nuevas formas de trabajar con menos fricción y más criterio.",
+                    steps: [
+                        { step: "01", text: "Entiendo cómo trabaja hoy la organización" },
+                        { step: "02", text: "Detecto dónde la IA puede ayudar y dónde NO" },
+                        { step: "03", text: "Diseño sistemas con límites claros" },
+                        { step: "04", text: "Acompaño a las personas hasta que el cambio se vuelve hábito" }
+                    ]
+                },
+                governance: {
+                    title: "Gobernanza de IA",
+                    subtitle: "Innovar sin control no es innovación, es riesgo.",
+                    definition: "Gobernar la IA no es prohibirla. Es permitir que avance sin poner en riesgo a la organización.",
+                    cards: [
+                        { title: "Definir qué puede hacer y qué no", icon: "Shield" },
+                        { title: "Establecer fuentes autorizadas", icon: "Database" },
+                        { title: "Diseñar supervisión humana", icon: "UserCheck" },
+                        { title: "Asegurar trazabilidad", icon: "FileSearch" },
+                        { title: "Evitar automatizaciones ciegas", icon: "EyeOff" }
+                    ],
+                    role: "No actúo como policía de la tecnología, actúo como cinturón de seguridad para que el negocio pueda ir más rápido."
+                },
+                experience: {
+                    title: "Experiencia Real",
+                    cases: [
+                        {
+                            id: "kmeleon",
+                            title: "Kmeleon",
+                            subtitle: "Startup IA enterprise fundada por ex-Microsoft",
+                            tags: ["Estrategia", "Producto", "Formación"],
+                            content: {
+                                context: "Kmeleon es una startup de IA especializada en soluciones a medida para empresas, fundada por ex-Microsoft. Mi rol no fue 'usar IA', fue definir cómo se vende, se implanta y se gobierna.",
+                                role: "Definición de servicios de IA enterprise y diseño de procesos de adopción responsable.",
+                                process: "Traducción de capacidades técnicas a valor de negocio. Aterrizaje de expectativas: qué es demo y qué es producción.",
+                                learning: "La IA solo entrega ROI cuando el caso de uso está acotado y gobernado desde el inicio."
+                            }
+                        },
+                        {
+                            id: "sumasalut",
+                            title: "Suma Salut",
+                            subtitle: "IA aplicada a entorno sanitario",
+                            tags: ["Salud", "Riesgo", "Ética"],
+                            content: {
+                                context: "Aquí la IA no puede improvisar. Diseñé un asistente conversacional con foco en uso responsable de datos y respuestas controladas.",
+                                role: "Diseño del marco de uso seguro: qué información puede usar, cómo responder sin inventar y cuándo derivar a humano.",
+                                process: "Definición de límites claros de actuación y registro de interacciones.",
+                                learning: "Un sistema útil, sin riesgo clínico ni legal."
+                            }
+                        },
+                        {
+                            id: "konektor",
+                            title: "Konektor",
+                            subtitle: "IA + Formación + Cambio Cultural",
+                            tags: ["Adopción", "Cultura", "Agentes"],
+                            content: {
+                                context: "Konektor ayuda a organizaciones tradicionales a adoptar nuevas tecnologías sin caer en el hype. Trabajamos con empresas que tenían interés por la IA pero miedo al descontrol y falta de criterio interno para evaluar herramientas.",
+                                role: "Diseño de productos de IA vendibles y responsables. Investigación y validación de tecnologías (Retell, Voiceflow). Traducción de capacidad técnica a valor de negocio.",
+                                process: "Diseñé agentes de voz y asistentes IA funcionales. Creé el programa formativo para directivos y equipos operativos, enfocado en criterio, no solo en herramientas.",
+                                learning: "La IA no falla por tecnología, falla por mala definición previa. El valor real está en el criterio y el acompañamiento, no en el código."
+                            },
+                            detailedBlock: {
+                                context: {
+                                    title: "Contexto",
+                                    text: "Konektor es una consultora enfocada en innovación y tecnología para empresas tradicionales. El reto no era técnico, sino estratégico y cultural: las empresas querían IA pero temían perder el control o depender de herramientas que no entendían."
+                                },
+                                columns: {
+                                    left: {
+                                        title: "Mi Rol",
+                                        items: [
+                                            "Definición de qué es un 'producto de IA' responsable.",
+                                            "Investigación y validación de soluciones (Retell, Voiceflow, Aircall).",
+                                            "Diseño de la puesta en marcha: qué se implanta, qué no, y por qué.",
+                                            "Liderazgo en la adopción: traducir tecnología a lenguaje de negocio."
+                                        ]
+                                    },
+                                    right: {
+                                        title: "Qué se implementó",
+                                        items: [
+                                            "Agentes de voz funcionales para atención y captación.",
+                                            "Pruebas de concepto validadas en entorno real.",
+                                            "Estructura comercial y modelo de venta de servicios IA.",
+                                            "Programa formativo corporativo para crear criterio interno."
+                                        ]
+                                    }
+                                },
+                                governance: {
+                                    title: "Gobernanza aplicada",
+                                    text: "No automatizar sin entender el proceso humano. No prometer autonomía total. Definir siempre cuándo actúa el sistema y cuándo la persona. Formar antes de implantar."
+                                },
+                                learning: {
+                                    title: "Aprendizaje Clave",
+                                    text: "Confirmé que el valor real de la consultoría de IA está en el criterio, el acompañamiento y la claridad, uniendo negocio, procesos y personas."
+                                }
+                            }
+                        },
+                        {
+                            id: "aether",
+                            title: "Aether Labs",
+                            subtitle: "Laboratorio de validación real",
+                            tags: ["I+D", "Prototipado", "Stress-Testing"],
+                            content: {
+                                context: "Aether Labs es mi entorno de stress-testing. Aquí pruebo agentes, descarto lo que no escala y valido flujos antes de producción.",
+                                role: "Investigación, diseño y validación de sistemas de IA.",
+                                process: "Agentes de voz, chat, automatización con n8n y sistemas híbridos humano-IA.",
+                                learning: "Nada se implanta sin haber pasado por aquí."
+                            }
+                        }
+                    ]
+                },
+                systems: {
+                    title: "Tipologías Reales",
+                    subtitle: "No hablo de posibilidades infinitas. Hablo de sistemas que ya he diseñado.",
+                    items: [
+                        { title: "Agentes Conversacionales", desc: "Atención, soporte interno, onboarding", icon: "MessageSquare" },
+                        { title: "Agentes de Voz", desc: "Recepción de llamadas, toma de pedidos", icon: "Mic" },
+                        { title: "Automatizaciones con IA", desc: "Procesos administrativos, soporte a equipos", icon: "Zap" },
+                        { title: "Sistemas Híbridos", desc: "IA propone, humano valida, sistema ejecuta", icon: "GitMerge" }
+                    ]
+                },
+                culture: {
+                    title: "Gestión del Canvi Cultural",
+                    desc: "La tecnología es el 20%. El 80% es psicología, comunicación y hábitos.",
+                    steps: [
+                        "Escucho resistencias antes de imponer",
+                        "Traduzco IA a lenguaje de negocio",
+                        "Formo desde el uso real",
+                        "Acompaño hasta que el cambio es irreversible"
+                    ]
+                },
+                metrics: {
+                    title: "Métricas que importan",
+                    desc: "No mido uso de IA. Mido impacto organizativo.",
+                    items: [
+                        { label: "Adopción Real", value: "Usage" },
+                        { label: "Reducción Errores", value: "Quality" },
+                        { label: "Tiempo Recuperado", value: "Time" },
+                        { label: "Feedback", value: "NPS" }
+                    ]
+                },
+                role: {
+                    title: "Mi Rol Real",
+                    content: "No soy el técnico aislado ni el gurú. Soy el perfil que entiende procesos, personas y tecnología, y los conecta sin ruido."
+                },
+                closing: {
+                    title: "IA con Propósito Real",
+                    desc: "Ayudo a organizaciones a usar IA para escalar con orden, no para jugar a la innovación.",
+                    cta: "Hablemos de adopción real"
+                }
             }
         }
     },
@@ -1376,30 +1558,51 @@ export const translations = {
                 closing: "I don't transform companies. I help people work better."
             },
             oracleExperience: {
-                title: "Oracle NetSuite: Large Scale Operational Transformation",
-                subtitle: "From legacy processes to a standardized ERP in a hyper-growth international logistics environment.",
+                title: "Oracle NetSuite Transformation",
+                // Header / Context data
                 role: "Project Manager & Process Consultant",
                 company: "DisrupTT (Partner) / CulturA (End Client)",
+
                 context: {
-                    intro: "CulturA is an international logistics operator specialized in maritime transport of bulk raw materials (gypsum, limestone, clinker). A critical end-to-end operation connecting Malta, Spain, Luxembourg, Dubai, and Turkey.",
+                    intro: "CulturA is an international logistics operator specialized in maritime transport of bulk raw materials (gypsum, limestone, clinker), with critical end-to-end operations between Malta, Spain, Luxembourg, Dubai, and Turkey. An organization with accelerated growth, high operational complexity, and multiple legacy systems that required deep structural transformation to scale.",
                     metrics: [
-                        { label: "Volume 2023", value: "+3M Tonnes" },
-                        { label: "Growth", value: "x30 in 6 years" },
-                        { label: "Reach", value: "5 Countries" }
+                        { value: "+3M", label: "Tonnes / Year" },
+                        { value: "x30", label: "Growth in 6 years" },
+                        { value: "5", label: "Operational Countries" },
+                        { value: "9 Months", label: "Continuous Project" }
                     ]
                 },
-                challenge: "Unsustainable hyper-growth with legacy systems. The company needed to migrate from tribal knowledge and spreadsheets to an Enterprise ERP (Oracle NetSuite) without stopping operations.",
-                methodology: {
-                    title: "BDR: Business Design Requirements",
-                    desc: "The BDR is the methodological standard for translating operational reality into a system. My responsibility was to lead this functional analysis, not as a technician, but as a business consultant.",
-                    steps: [
-                        { title: "Forensic Mapping", desc: "Mapping of 'As-Is' processes. I didn't document ideals, I documented operational reality with all its exceptions." },
-                        { title: "Translation", desc: "Converting logistic language of vessels, freights, and bulk to ERP language of orders, inventory, and financial flows." },
-                        { title: "Future Design", desc: "Definition of standardized 'To-Be' workflows ready to scale." }
+                projectType: {
+                    title: "Oracle NetSuite Transformation — ERP Core Migration",
+                    desc: "Complete migration of the operating and financial system to Oracle NetSuite, affecting all departments and international operations."
+                },
+                bdr: {
+                    title: "BDR — Business Design Requirements",
+                    cards: [
+                        { title: "Forensic Mapping (Real As-Is)", desc: "Lifting of hundreds of real processes, with exceptions, shortcuts, and human dependencies." },
+                        { title: "Business → System Translation", desc: "Conversion of operational language (logistics, freights, contracts) into structured ERP flows." },
+                        { title: "Scalable To-Be Design", desc: "Definition of standardized workflows ready to operate at international scale." }
                     ]
                 },
-                impact: "We laid the operational foundations to support the 5M tonnes target. We migrated from intuition to data, aligning international operations under a single source of truth.",
-                closing: "An ERP does not organize a company. A good process mapping does."
+                impact: {
+                    title: "Project Impact",
+                    items: [
+                        "Operational base to scale up to +5M tonnes",
+                        "Unification of operations under a single source of truth",
+                        "Reduction of operational risk in international environment"
+                    ],
+                    closing: "An ERP does not organize a company. A good process mapping does."
+                },
+                scope: {
+                    title: "Project Scope",
+                    items: [
+                        "+100 processes mapped",
+                        "All departments involved",
+                        "9 months of continuous work",
+                        "Coordination with NetSuite, Salesforce & strategic consulting",
+                        "Multi-country operation"
+                    ]
+                }
             },
             experience: {
                 title: "Applied Experience",
@@ -1496,6 +1699,133 @@ export const translations = {
                 title: "Let's Talk Processes?",
                 text: "Senior Profile available for consulting and project management.",
                 button: "Contact Now"
+            },
+            ai: {
+                hero: {
+                    eyebrow: "AI BUSINESS CONSULTANT",
+                    title: "Adopción Responsable de IA",
+                    subtitle: "Transformación real de procesos, personas y decisiones.",
+                    desc: "No trabajo la IA como tecnología. La trabajo como una capa de inteligencia para ordenar, estandarizar y escalar organizaciones sin aumentar el riesgo.",
+                    badge: "AI BUSINESS CONSULTANT",
+                    cta: "Ver cómo trabajo la adopción real"
+                },
+                approach: {
+                    title: "Mi enfoque: IA como sistema organizativo",
+                    subtitle: "No como herramienta.",
+                    manifesto: "La mayoría de iniciativas de IA fallan porque empiezan por la herramienta y no por la organización. Mi trabajo empieza antes de escribir una línea de código.",
+                    statement: "No implanto 'features de IA'. Implanto nuevas formas de trabajar con menos fricción y más criterio.",
+                    steps: [
+                        { step: "01", text: "Entiendo cómo trabaja hoy la organización" },
+                        { step: "02", text: "Detecto dónde la IA puede ayudar y dónde NO" },
+                        { step: "03", text: "Diseño sistemas con límites claros" },
+                        { step: "04", text: "Acompaño a las personas hasta que el cambio se vuelve hábito" }
+                    ]
+                },
+                governance: {
+                    title: "Gobernanza de IA",
+                    subtitle: "Innovar sin control no es innovación, es riesgo.",
+                    definition: "Gobernar la IA no es prohibirla. Es permitir que avance sin poner en riesgo a la organización.",
+                    cards: [
+                        { title: "Definir qué puede hacer y qué no", icon: "Shield" },
+                        { title: "Establecer fuentes autorizadas", icon: "Database" },
+                        { title: "Diseñar supervisión humana", icon: "UserCheck" },
+                        { title: "Asegurar trazabilidad", icon: "FileSearch" },
+                        { title: "Evitar automatizaciones ciegas", icon: "EyeOff" }
+                    ],
+                    role: "No actúo como policía de la tecnología, actúo como cinturón de seguridad para que el negocio pueda ir más rápido."
+                },
+                experience: {
+                    title: "Experiencia Real",
+                    cases: [
+                        {
+                            id: "kmeleon",
+                            title: "Kmeleon",
+                            subtitle: "Startup IA enterprise fundada por ex-Microsoft",
+                            tags: ["Estrategia", "Producto", "Formación"],
+                            content: {
+                                context: "Kmeleon es una startup de IA especializada en soluciones a medida para empresas, fundada por ex-Microsoft. Mi rol no fue 'usar IA', fue definir cómo se vende, se implanta y se gobierna.",
+                                role: "Definición de servicios de IA enterprise y diseño de procesos de adopción responsable.",
+                                process: "Traducción de capacidades técnicas a valor de negocio. Aterrizaje de expectativas: qué es demo y qué es producción.",
+                                learning: "La IA solo entrega ROI cuando el caso de uso está acotado y gobernado desde el inicio."
+                            }
+                        },
+                        {
+                            id: "sumasalut",
+                            title: "Suma Salut",
+                            subtitle: "IA aplicada a entorno sanitario",
+                            tags: ["Salud", "Riesgo", "Ética"],
+                            content: {
+                                context: "Aquí la IA no puede improvisar. Diseñé un asistente conversacional con foco en uso responsable de datos y respuestas controladas.",
+                                role: "Diseño del marco de uso seguro: qué información puede usar, cómo responder sin inventar y cuándo derivar a humano.",
+                                process: "Definición de límites claros de actuación y registro de interacciones.",
+                                learning: "Un sistema útil, sin riesgo clínico ni legal."
+                            }
+                        },
+                        {
+                            id: "konektor",
+                            title: "Konektor",
+                            subtitle: "IA + Formación + Cambio Cultural",
+                            tags: ["Adopción", "Cultura", "Agentes"],
+                            content: {
+                                context: "No solo implementé soluciones de IA. Formé al equipo para que las entendiera y las usara.",
+                                role: "Diseño de agentes y automatizaciones internas. Formación práctica en IA aplicada a negocio.",
+                                process: "Acompañamiento en adopción real.",
+                                learning: "La formación es parte de la gobernanza."
+                            }
+                        },
+                        {
+                            id: "aether",
+                            title: "Aether Labs",
+                            subtitle: "Laboratorio de validación real",
+                            tags: ["I+D", "Prototipado", "Stress-Testing"],
+                            content: {
+                                context: "Aether Labs es mi entorno de stress-testing. Aquí pruebo agentes, descarto lo que no escala y valido flujos antes de producción.",
+                                role: "Investigación, diseño y validación de sistemas de IA.",
+                                process: "Agentes de voz, chat, automatización con n8n y sistemas híbridos humano-IA.",
+                                learning: "Nada se implanta sin haber pasado por aquí."
+                            }
+                        }
+                    ]
+                },
+                systems: {
+                    title: "Tipologías Reales",
+                    subtitle: "No hablo de posibilidades infinitas. Hablo de sistemas que ya he diseñado.",
+                    items: [
+                        { title: "Agentes Conversacionales", desc: "Atención, soporte interno, onboarding", icon: "MessageSquare" },
+                        { title: "Agentes de Voz", desc: "Recepción de llamadas, toma de pedidos", icon: "Mic" },
+                        { title: "Automatizaciones con IA", desc: "Procesos administrativos, soporte a equipos", icon: "Zap" },
+                        { title: "Sistemas Híbridos", desc: "IA propone, humano valida, sistema ejecuta", icon: "GitMerge" }
+                    ]
+                },
+                culture: {
+                    title: "Gestión del Canvi Cultural",
+                    desc: "La tecnología es el 20%. El 80% es psicología, comunicación y hábitos.",
+                    steps: [
+                        "Escucho resistencias antes de imponer",
+                        "Traduzco IA a lenguaje de negocio",
+                        "Formo desde el uso real",
+                        "Acompaño hasta que el cambio es irreversible"
+                    ]
+                },
+                metrics: {
+                    title: "Métricas que importan",
+                    desc: "No mido uso de IA. Mido impacto organizativo.",
+                    items: [
+                        { label: "Adopción Real", value: "Usage" },
+                        { label: "Reducción Errores", value: "Quality" },
+                        { label: "Tiempo Recuperado", value: "Time" },
+                        { label: "Feedback", value: "NPS" }
+                    ]
+                },
+                role: {
+                    title: "Mi Rol Real",
+                    content: "No soy el técnico aislado ni el gurú. Soy el perfil que entiende procesos, personas y tecnología, y los conecta sin ruido."
+                },
+                closing: {
+                    title: "IA con Propósito Real",
+                    desc: "Ayudo a organizaciones a usar IA para escalar con orden, no para jugar a la innovación.",
+                    cta: "Hablemos de adopción real"
+                }
             }
         }
     },
@@ -2119,30 +2449,51 @@ export const translations = {
                 closing: "No transformo empreses. Ajudo a les persones a treballar millor."
             },
             oracleExperience: {
-                title: "Oracle NetSuite: Transformació Operativa a Gran Escala",
-                subtitle: "De processos legacy a un ERP estandarditzat en un entorn logístic internacional en hipercreixement.",
+                title: "Oracle NetSuite Transformation",
+                // Header / Context data
                 role: "Project Manager & Process Consultant",
                 company: "DisrupTT (Partner) / CulturA (Client Final)",
+
                 context: {
-                    intro: "CulturA és un operador logístic internacional especialitzat en transport marítim de matèries primeres a granel (guix, pedra calcària, clínquer). Una operació end-to-end crítica que connecta Malta, Espanya, Luxemburg, Dubai i Turquia.",
+                    intro: "CulturA és un operador logístic internacional especialitzat en transport marítim de matèries primeres a granel (guix, pedra calcària, clínquer), amb operacions end-to-end crítiques entre Malta, Espanya, Luxemburg, Dubai i Turquia. Una organització amb creixement accelerat, alta complexitat operativa i múltiples sistemes heretats que requeria una transformació estructural profunda per poder escalar.",
                     metrics: [
-                        { label: "Volum 2023", value: "+3M Tones" },
-                        { label: "Creixement", value: "x30 en 6 anys" },
-                        { label: "Abast", value: "5 Països" }
+                        { value: "+3M", label: "Tones / Any" },
+                        { value: "x30", label: "Creixement en 6 anys" },
+                        { value: "5", label: "Països Operatius" },
+                        { value: "9 Mesos", label: "Projecte Continu" }
                     ]
                 },
-                challenge: "Hipercreixement insostenible amb sistemes legacy. L'empresa necessitava migrar d'una operativa basada en coneixement tribal i fulls de càlcul a un ERP Enterprise (Oracle NetSuite) sense aturar l'operació.",
-                methodology: {
-                    title: "BDR: Business Design Requirements",
-                    desc: "El BDR és l'estàndard metodològic per traduir realitat operativa a sistema. La meva responsabilitat va ser liderar aquesta anàlisi funcional, no com a tècnic, sinó com a consultor de negoci.",
-                    steps: [
-                        { title: "Mapeig Forensic", desc: "Aixecament de processos 'As-Is'. No vaig documentar ideals, vaig documentar la realitat operativa amb totes les seves excepcions." },
-                        { title: "Traducció", desc: "Convertir llenguatge logístic de vaixells, nolis i granels a llenguatge ERP d'ordres, inventaris i fluxos financers." },
-                        { title: "Disseny Futur", desc: "Definició de workflows 'To-Be' estandarditzats llestos per escalar." }
+                projectType: {
+                    title: "Oracle NetSuite Transformation — ERP Core Migration",
+                    desc: "Migració completa del sistema operatiu i financer a Oracle NetSuite, afectant a tots els departaments i operacions internacionals."
+                },
+                bdr: {
+                    title: "BDR — Business Design Requirements",
+                    cards: [
+                        { title: "Mapeig Forense (As-Is real)", desc: "Aixecament de centenars de processos reals, amb excepcions, dreceres i dependències humanes." },
+                        { title: "Traducció Negoci → Sistema", desc: "Conversió del llenguatge operatiu (logística, nolis, contractes) en fluxos ERP estructurats." },
+                        { title: "Disseny To-Be Escalable", desc: "Definició de workflows estandarditzats llestos per operar a escala internacional." }
                     ]
                 },
-                impact: "Vam establir les bases operatives per suportar l'objectiu de 5M de tones. Vam migrar de la intuïció a la dada, alineant operacions internacionals sota una única font de veritat.",
-                closing: "Un ERP no ordena una empresa. Un bon mapeig de processos, sí."
+                impact: {
+                    title: "Impacte del Projecte",
+                    items: [
+                        "Base operativa per escalar fins a +5M tones",
+                        "Unificació d'operacions sota una única font de veritat",
+                        "Reducció de risc operatiu en entorn internacional"
+                    ],
+                    closing: "Un ERP no ordena una empresa. Un bon mapeig de processos, sí."
+                },
+                scope: {
+                    title: "Abast del Projecte",
+                    items: [
+                        "+100 processos mapejats",
+                        "Tots els departaments implicats",
+                        "9 mesos de treball continu",
+                        "Coordinació entre NetSuite, Salesforce i McKinsey",
+                        "Operació multipaís"
+                    ]
+                }
             },
             experience: {
                 title: "Experiència Aplicada",
@@ -2239,6 +2590,133 @@ export const translations = {
                 title: "Parlem de Processos?",
                 text: "Perfil Senior disponible per a consultoria i direcció de projectes.",
                 button: "Contactar Ara"
+            },
+            ai: {
+                hero: {
+                    eyebrow: "AI BUSINESS CONSULTANT",
+                    title: "Adopción Responsable de IA",
+                    subtitle: "Transformación real de procesos, personas y decisiones.",
+                    desc: "No trabajo la IA como tecnología. La trabajo como una capa de inteligencia para ordenar, estandarizar y escalar organizaciones sin aumentar el riesgo.",
+                    badge: "AI BUSINESS CONSULTANT",
+                    cta: "Ver cómo trabajo la adopción real"
+                },
+                approach: {
+                    title: "Mi enfoque: IA como sistema organizativo",
+                    subtitle: "No como herramienta.",
+                    manifesto: "La mayoría de iniciativas de IA fallan porque empiezan por la herramienta y no por la organización. Mi trabajo empieza antes de escribir una línea de código.",
+                    statement: "No implanto 'features de IA'. Implanto nuevas formas de trabajar con menos fricción y más criterio.",
+                    steps: [
+                        { step: "01", text: "Entiendo cómo trabaja hoy la organización" },
+                        { step: "02", text: "Detecto dónde la IA puede ayudar y dónde NO" },
+                        { step: "03", text: "Diseño sistemas con límites claros" },
+                        { step: "04", text: "Acompaño a las personas hasta que el cambio se vuelve hábito" }
+                    ]
+                },
+                governance: {
+                    title: "Gobernanza de IA",
+                    subtitle: "Innovar sin control no es innovación, es riesgo.",
+                    definition: "Gobernar la IA no es prohibirla. Es permitir que avance sin poner en riesgo a la organización.",
+                    cards: [
+                        { title: "Definir qué puede hacer y qué no", icon: "Shield" },
+                        { title: "Establecer fuentes autorizadas", icon: "Database" },
+                        { title: "Diseñar supervisión humana", icon: "UserCheck" },
+                        { title: "Asegurar trazabilidad", icon: "FileSearch" },
+                        { title: "Evitar automatizaciones ciegas", icon: "EyeOff" }
+                    ],
+                    role: "No actúo como policía de la tecnología, actúo como cinturón de seguridad para que el negocio pueda ir más rápido."
+                },
+                experience: {
+                    title: "Experiencia Real",
+                    cases: [
+                        {
+                            id: "kmeleon",
+                            title: "Kmeleon",
+                            subtitle: "Startup IA enterprise fundada por ex-Microsoft",
+                            tags: ["Estrategia", "Producto", "Formación"],
+                            content: {
+                                context: "Kmeleon es una startup de IA especializada en soluciones a medida para empresas, fundada por ex-Microsoft. Mi rol no fue 'usar IA', fue definir cómo se vende, se implanta y se gobierna.",
+                                role: "Definición de servicios de IA enterprise y diseño de procesos de adopción responsable.",
+                                process: "Traducción de capacidades técnicas a valor de negocio. Aterrizaje de expectativas: qué es demo y qué es producción.",
+                                learning: "La IA solo entrega ROI cuando el caso de uso está acotado y gobernado desde el inicio."
+                            }
+                        },
+                        {
+                            id: "sumasalut",
+                            title: "Suma Salut",
+                            subtitle: "IA aplicada a entorno sanitario",
+                            tags: ["Salud", "Riesgo", "Ética"],
+                            content: {
+                                context: "Aquí la IA no puede improvisar. Diseñé un asistente conversacional con foco en uso responsable de datos y respuestas controladas.",
+                                role: "Diseño del marco de uso seguro: qué información puede usar, cómo responder sin inventar y cuándo derivar a humano.",
+                                process: "Definición de límites claros de actuación y registro de interacciones.",
+                                learning: "Un sistema útil, sin riesgo clínico ni legal."
+                            }
+                        },
+                        {
+                            id: "konektor",
+                            title: "Konektor",
+                            subtitle: "IA + Formación + Cambio Cultural",
+                            tags: ["Adopción", "Cultura", "Agentes"],
+                            content: {
+                                context: "No solo implementé soluciones de IA. Formé al equipo para que las entendiera y las usara.",
+                                role: "Diseño de agentes y automatizaciones internas. Formación práctica en IA aplicada a negocio.",
+                                process: "Acompañamiento en adopción real.",
+                                learning: "La formación es parte de la gobernanza."
+                            }
+                        },
+                        {
+                            id: "aether",
+                            title: "Aether Labs",
+                            subtitle: "Laboratorio de validación real",
+                            tags: ["I+D", "Prototipado", "Stress-Testing"],
+                            content: {
+                                context: "Aether Labs es mi entorno de stress-testing. Aquí pruebo agentes, descarto lo que no escala y valido flujos antes de producción.",
+                                role: "Investigación, diseño y validación de sistemas de IA.",
+                                process: "Agentes de voz, chat, automatización con n8n y sistemas híbridos humano-IA.",
+                                learning: "Nada se implanta sin haber pasado por aquí."
+                            }
+                        }
+                    ]
+                },
+                systems: {
+                    title: "Tipologías Reales",
+                    subtitle: "No hablo de posibilidades infinitas. Hablo de sistemas que ya he diseñado.",
+                    items: [
+                        { title: "Agentes Conversacionales", desc: "Atención, soporte interno, onboarding", icon: "MessageSquare" },
+                        { title: "Agentes de Voz", desc: "Recepción de llamadas, toma de pedidos", icon: "Mic" },
+                        { title: "Automatizaciones con IA", desc: "Procesos administrativos, soporte a equipos", icon: "Zap" },
+                        { title: "Sistemas Híbridos", desc: "IA propone, humano valida, sistema ejecuta", icon: "GitMerge" }
+                    ]
+                },
+                culture: {
+                    title: "Gestión del Canvi Cultural",
+                    desc: "La tecnología es el 20%. El 80% es psicología, comunicación y hábitos.",
+                    steps: [
+                        "Escucho resistencias antes de imponer",
+                        "Traduzco IA a lenguaje de negocio",
+                        "Formo desde el uso real",
+                        "Acompaño hasta que el cambio es irreversible"
+                    ]
+                },
+                metrics: {
+                    title: "Métricas que importan",
+                    desc: "No mido uso de IA. Mido impacto organizativo.",
+                    items: [
+                        { label: "Adopción Real", value: "Usage" },
+                        { label: "Reducción Errores", value: "Quality" },
+                        { label: "Tiempo Recuperado", value: "Time" },
+                        { label: "Feedback", value: "NPS" }
+                    ]
+                },
+                role: {
+                    title: "Mi Rol Real",
+                    content: "No soy el técnico aislado ni el gurú. Soy el perfil que entiende procesos, personas y tecnología, y los conecta sin ruido."
+                },
+                closing: {
+                    title: "IA con Propósito Real",
+                    desc: "Ayudo a organizaciones a usar IA para escalar con orden, no para jugar a la innovación.",
+                    cta: "Hablemos de adopción real"
+                }
             }
         }
     }

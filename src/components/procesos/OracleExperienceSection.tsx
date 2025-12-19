@@ -2,7 +2,7 @@
 
 import { useLanguage } from '@/lib/LanguageContext';
 import { motion } from 'framer-motion';
-import { Ship, Anchor, Globe, Database, FileSearch, ArrowRight } from 'lucide-react';
+import { Ship, Globe, Database, Search, ArrowRightLeft, Layers, CheckCircle2, Map, Users, Calendar, Building2, CircuitBoard } from 'lucide-react';
 
 export default function OracleExperienceSection({ isEmbedded = false }: { isEmbedded?: boolean }) {
     const { t } = useLanguage();
@@ -13,136 +13,136 @@ export default function OracleExperienceSection({ isEmbedded = false }: { isEmbe
     return (
         <section className={`${isEmbedded ? 'py-0 px-0 border-0 bg-transparent' : 'py-24 px-6 md:px-20 bg-zinc-950 border-t border-zinc-900'} overflow-hidden relative`}>
 
-            {/* Background Map/Globe Effect (Subtle) - Only if not embedded or maybe simpler? Keep it. */}
             {!isEmbedded && (
                 <div className="absolute inset-0 opacity-10 pointer-events-none">
                     <Globe className="absolute -right-20 top-20 w-[600px] h-[600px] text-zinc-800" strokeWidth={0.5} />
                 </div>
             )}
 
-            <div className={`${isEmbedded ? '' : 'max-w-7xl mx-auto'} relative z-10`}>
+            <div className={`${isEmbedded ? '' : 'max-w-7xl mx-auto'} relative z-10 space-y-16`}>
 
-                {/* Header Block - Hide if embedded because title is in Accordion Header */}
-                {!isEmbedded ? (
-                    <div className="mb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                        <div>
-                            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#fa2828]/10 text-[#fa2828] text-xs font-mono uppercase tracking-widest mb-6">
-                                <Database size={14} />
-                                <span>Oracle NetSuite ERP Transformation</span>
-                            </div>
-                            <h2 className="text-3xl md:text-5xl font-medium text-white mb-6 leading-tight">
-                                {content.title}
-                            </h2>
-                            <h3 className="text-xl md:text-2xl text-zinc-400 font-light mb-8 max-w-xl">
-                                {content.subtitle}
-                            </h3>
-
-                            <div className="flex flex-col gap-2 border-l-2 border-zinc-800 pl-6">
-                                <p className="text-zinc-500 text-sm uppercase tracking-wider font-bold">Role</p>
-                                <p className="text-white text-lg">{content.role}</p>
-                                <p className="text-zinc-500 text-sm uppercase tracking-wider font-bold mt-2">Environment</p>
-                                <p className="text-white text-lg">{content.company}</p>
-                            </div>
+                {/* 1. CONTEXT BLOCK - Left Text / Right Metrics */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                    {/* Left: Context Narrative */}
+                    <div>
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 text-xs font-mono uppercase tracking-widest mb-6">
+                            <Ship size={14} />
+                            <span>Operational Context</span>
                         </div>
-
-                        {/* Context & Metrics Card */}
-                        <div className="bg-zinc-900/40 backdrop-blur-sm border border-zinc-800 p-8 rounded-2xl">
-                            <h4 className="text-lg font-medium text-white mb-4 flex items-center gap-2">
-                                <Ship size={20} className="text-[#82ff1f]" />
-                                Operational Context
-                            </h4>
-                            <p className="text-zinc-400 text-sm leading-relaxed mb-8">
-                                {content.context.intro}
-                            </p>
-
-                            <div className="grid grid-cols-3 gap-4">
-                                {content.context.metrics.map((metric: any, i: number) => (
-                                    <div key={i} className="bg-black/30 p-4 rounded-lg border border-white/5">
-                                        <span className="block text-2xl md:text-3xl font-bold text-white mb-1">{metric.value}</span>
-                                        <span className="block text-[10px] md:text-xs text-zinc-500 uppercase tracking-widest">{metric.label}</span>
-                                    </div>
-                                ))}
-                            </div>
-                        </div>
+                        <h3 className="text-2xl font-medium text-white mb-6">
+                            {content.company}
+                        </h3>
+                        <p className="text-zinc-400 leading-relaxed text-sm md:text-base">
+                            {content.context.intro}
+                        </p>
                     </div>
-                ) : (
-                    /* Embedded version: Just show context/metrics and body */
-                    <div className="mb-12">
-                        <div className="bg-zinc-900/40 border border-zinc-800 p-6 md:p-8 rounded-2xl mb-12">
-                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                                <div>
-                                    <h4 className="text-lg font-medium text-white mb-4 flex items-center gap-2">
-                                        <Ship size={20} className="text-[#82ff1f]" />
-                                        Operational Context
-                                    </h4>
-                                    <p className="text-zinc-400 text-sm leading-relaxed">
-                                        {content.context.intro}
-                                    </p>
-                                </div>
-                                <div className="grid grid-cols-3 gap-4">
-                                    {content.context.metrics.map((metric: any, i: number) => (
-                                        <div key={i} className="bg-black/30 p-4 rounded-lg border border-white/5">
-                                            <span className="block text-xl md:text-2xl font-bold text-white mb-1">{metric.value}</span>
-                                            <span className="block text-[10px] text-zinc-500 uppercase tracking-widest">{metric.label}</span>
-                                        </div>
-                                    ))}
-                                </div>
+
+                    {/* Right: Metrics Cards */}
+                    <div className="grid grid-cols-2 gap-4">
+                        {content.context.metrics.map((metric: any, i: number) => (
+                            <div key={i} className="bg-zinc-900/50 border border-zinc-800 p-5 rounded-xl">
+                                <span className="block text-2xl md:text-3xl font-bold text-white mb-1">{metric.value}</span>
+                                <span className="block text-[10px] md:text-xs text-zinc-500 uppercase tracking-widest leading-tight">{metric.label}</span>
                             </div>
-                        </div>
+                        ))}
                     </div>
-                )}
+                </div>
 
-                {/* Challenge & Methodology Split */}
-                <div className={`grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 ${isEmbedded ? '' : 'mb-20'}`}>
+                {/* 2. PROJECT TYPE BANNER */}
+                <div className="bg-zinc-900/40 border-y border-zinc-800 py-12 px-4 md:px-12 -mx-4 md:-mx-12 rounded-3xl">
+                    <div className="max-w-4xl mx-auto text-center space-y-4">
+                        <div className="inline-flex items-center gap-2 text-[#fa2828] mb-2">
+                            <Database size={20} />
+                            <span className="font-mono uppercase tracking-widest text-sm">ERP CORE MIGRATION</span>
+                        </div>
+                        <h2 className="text-3xl md:text-4xl font-medium text-white">
+                            {content.projectType.title}
+                        </h2>
+                        <p className="text-zinc-400 text-lg max-w-2xl mx-auto">
+                            {content.projectType.desc}
+                        </p>
+                    </div>
+                </div>
 
-                    {/* Methodology (Left - Larger) */}
-                    <div className="lg:col-span-8 space-y-8">
-                        <div>
-                            <h4 className="text-2xl font-medium text-white mb-4">
-                                {content.methodology.title}
+                {/* 3. CORE BLOCK - BDR (Left) vs IMPACT (Right) */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-16">
+
+                    {/* Left: MY WORK (BDR) - 7 Columns */}
+                    <div className="lg:col-span-7 space-y-8">
+                        <div className="flex items-center gap-3 mb-8">
+                            <div className="p-2 bg-blue-500/10 rounded-lg text-blue-400">
+                                <CircuitBoard size={24} />
+                            </div>
+                            <h4 className="text-xl font-medium text-white">
+                                {content.bdr.title}
                             </h4>
-                            <p className="text-zinc-400 text-lg leading-relaxed max-w-3xl mb-8">
-                                {content.methodology.desc}
-                            </p>
                         </div>
 
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                            {content.methodology.steps.map((step: any, i: number) => (
-                                <div key={i} className="bg-zinc-900/20 border border-zinc-800 p-6 rounded-xl hover:border-[#82ff1f]/30 transition-colors group">
-                                    <div className="w-10 h-10 rounded-lg bg-zinc-900 flex items-center justify-center text-zinc-500 mb-4 group-hover:text-[#82ff1f] transition-colors">
-                                        {i === 0 && <FileSearch size={20} />}
-                                        {i === 1 && <Database size={20} />}
-                                        {i === 2 && <Anchor size={20} />}
+                        <div className="space-y-4">
+                            {content.bdr.cards.map((card: any, i: number) => (
+                                <div key={i} className="bg-zinc-900/20 border border-zinc-800/50 p-6 rounded-xl hover:bg-zinc-900/40 transition-colors flex gap-5">
+                                    <div className="mt-1 text-zinc-500 shrink-0">
+                                        {i === 0 && <Search size={20} />}
+                                        {i === 1 && <ArrowRightLeft size={20} />}
+                                        {i === 2 && <Layers size={20} />}
                                     </div>
-                                    <h5 className="text-white font-medium mb-3">{step.title}</h5>
-                                    <p className="text-zinc-500 text-sm leading-relaxed">
-                                        {step.desc}
-                                    </p>
+                                    <div>
+                                        <h5 className="text-white font-medium mb-2">{card.title}</h5>
+                                        <p className="text-zinc-400 text-sm">{card.desc}</p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     </div>
 
-                    {/* Impact (Right - Smaller/Highlight) */}
-                    <div className="lg:col-span-4 flex flex-col justify-center">
-                        <div className="bg-[#82ff1f]/5 border border-[#82ff1f]/20 p-8 rounded-2xl relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
-
-                            <h4 className="text-lg font-bold text-[#82ff1f] uppercase tracking-widest mb-6">
-                                Project Impact
+                    {/* Right: IMPACT - 5 Columns */}
+                    <div className="lg:col-span-5 flex flex-col">
+                        <div className="bg-[#82ff1f]/5 border border-[#82ff1f]/20 p-8 rounded-2xl h-full flex flex-col">
+                            <h4 className="text-lg font-bold text-[#82ff1f] uppercase tracking-widest mb-8 flex items-center gap-2">
+                                <CheckCircle2 size={18} />
+                                {content.impact.title}
                             </h4>
-                            <p className="text-white text-lg leading-relaxed mb-8">
-                                {content.impact}
-                            </p>
 
-                            <div className="h-px w-full bg-[#82ff1f]/20 mb-8"></div>
+                            <ul className="space-y-6 mb-12 flex-grow">
+                                {content.impact.items.map((item: string, i: number) => (
+                                    <li key={i} className="flex items-start gap-3">
+                                        <div className="w-1.5 h-1.5 mt-2 rounded-full bg-[#82ff1f] shrink-0" />
+                                        <span className="text-white text-base leading-relaxed">{item}</span>
+                                    </li>
+                                ))}
+                            </ul>
 
-                            <p className="text-zinc-300 italic font-light text-xl">
-                                "{content.closing}"
-                            </p>
+                            <div className="border-t border-[#82ff1f]/20 pt-8">
+                                <p className="text-zinc-300 italic font-light text-lg">
+                                    "{content.impact.closing}"
+                                </p>
+                            </div>
                         </div>
                     </div>
+                </div>
 
+                {/* 4. SCOPE - Bottom Grid */}
+                <div className="pt-8 border-t border-zinc-900">
+                    <h4 className="text-zinc-500 text-sm font-bold uppercase tracking-widest mb-8 text-center md:text-left">
+                        {content.scope.title}
+                    </h4>
+
+                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                        {content.scope.items.map((item: string, i: number) => (
+                            <div key={i} className="bg-zinc-950 border border-zinc-900 p-4 rounded-lg flex flex-col items-center text-center md:items-start md:text-left hover:border-zinc-800 transition-colors group">
+                                <div className="mb-3 text-[#82ff1f] group-hover:text-white transition-colors">
+                                    {i === 0 && <Map size={18} />}
+                                    {i === 1 && <Building2 size={18} />}
+                                    {i === 2 && <Calendar size={18} />}
+                                    {i === 3 && <Users size={18} />}
+                                    {i === 4 && <Globe size={18} />}
+                                </div>
+                                <span className="text-xs text-zinc-400 font-medium leading-tight">
+                                    {item}
+                                </span>
+                            </div>
+                        ))}
+                    </div>
                 </div>
 
             </div>
