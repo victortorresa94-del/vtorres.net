@@ -14,6 +14,9 @@ import AccordionGroup from '@/components/procesos/AccordionGroup';
 import AutomationBlock from '@/components/ai/AutomationBlock';
 import RoleBlock from '@/components/ai/RoleBlock';
 import ClosingBlock from '@/components/ai/ClosingBlock';
+import OrganizationalSystemBlock from '@/components/ai/OrganizationalSystemBlock';
+import GovernanceBlock from '@/components/ai/GovernanceBlock';
+import NestedAccordion from '@/components/ai/NestedAccordion';
 
 const iconMap: Record<string, any> = {
     Shield, Database, UserCheck, FileSearch, EyeOff,
@@ -33,85 +36,6 @@ export default function AIAdoptionPage() {
         );
     }
 
-    // Grupo 1: Mi Enfoque
-    const enfoqueItems = [
-        {
-            id: 'automation',
-            title: content.automation.title,
-            subtitle: content.automation.subtitle,
-            icon: Zap,
-            component: <AutomationBlock content={content.automation} />
-        },
-        {
-            id: 'approach',
-            title: content.approach.title,
-            subtitle: content.approach.subtitle,
-            icon: Lightbulb,
-            component: (
-                <div className="space-y-12">
-                    <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
-                        <p className="text-xl text-white font-light">{content.approach.manifesto}</p>
-                    </div>
-                    <div className="text-2xl md:text-3xl font-medium text-white">
-                        {content.approach.statement}
-                    </div>
-                    <div className="space-y-8">
-                        {content.approach.steps.map((step: any, i: number) => (
-                            <div key={i} className="flex items-start gap-6 border-b border-white/5 pb-6 last:border-0">
-                                <span className="text-[#82ff1f] font-mono text-sm mt-1">{step.step}</span>
-                                <p className="text-xl text-zinc-300 font-light">{step.text}</p>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="pt-8 text-center border-t border-white/5">
-                        <p className="text-lg text-zinc-400 font-light">
-                            No implanto herramientas de IA. <span className="text-white font-medium">Implanto nuevas formas de trabajar.</span>
-                        </p>
-                    </div>
-                </div>
-            )
-        },
-        {
-            id: 'governance',
-            title: content.governance.title,
-            subtitle: content.governance.subtitle,
-            icon: Shield,
-            component: (
-                <div className="space-y-12">
-                    <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
-                        <p className="text-xl text-white font-light">{content.governance.definition}</p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        {content.governance.cards.map((card: any, i: number) => {
-                            const Icon = iconMap[card.icon] || Shield;
-                            return (
-                                <div
-                                    key={i}
-                                    className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl hover:border-[#82ff1f]/30 transition-all space-y-4"
-                                >
-                                    <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-[#82ff1f]">
-                                        <Icon size={24} />
-                                    </div>
-                                    <h4 className="text-xl font-medium text-white">{card.title}</h4>
-                                    <ul className="space-y-2">
-                                        {card.items && card.items.map((item: string, idx: number) => (
-                                            <li key={idx} className="flex items-start gap-2 text-zinc-400 text-sm">
-                                                <span className="text-[#82ff1f] mt-1">•</span>
-                                                {item}
-                                            </li>
-                                        ))}
-                                    </ul>
-                                </div>
-                            );
-                        })}
-                    </div>
-                    <div className="p-8 bg-[#82ff1f] rounded-2xl text-black text-center">
-                        <p className="text-lg font-medium leading-tight">"{content.governance.role}"</p>
-                    </div>
-                </div>
-            )
-        }
-    ];
 
     // Grupo 2: Experiencia e Implementación
     const experienciaItems = [
@@ -121,64 +45,73 @@ export default function AIAdoptionPage() {
             subtitle: 'Proyectos reales de adopción de IA',
             icon: Brain,
             component: (
-                <div className="space-y-12">
-                    {content.experience.cases.map((c: any) => (
-                        <div key={c.id} className="border border-white/5 rounded-2xl p-8 bg-zinc-900/20 hover:bg-zinc-900/40 transition-all group">
-                            {/* Header */}
-                            <div className="flex flex-col md:flex-row md:items-start justify-between mb-8 gap-4">
-                                <div>
-                                    <div className="flex items-center gap-3 mb-2">
-                                        <h4 className="text-2xl md:text-3xl font-medium text-white">{c.title}</h4>
+                <NestedAccordion
+                    items={content.experience.cases.map((c: any) => ({
+                        id: c.id,
+                        title: c.title,
+                        subtitle: c.subtitle,
+                        content: (
+                            <div className="space-y-10">
+                                {/* Header Info */}
+                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-white/5 pb-8">
+                                    <div className="flex flex-wrap gap-2">
                                         <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-xs text-zinc-400 font-mono">
                                             {c.content.duration}
                                         </span>
+                                        {c.tags.map((tag: string) => (
+                                            <span key={tag} className="px-3 py-1 bg-zinc-900 border border-white/10 rounded-full text-xs text-zinc-400 hover:border-[#82ff1f]/30 hover:text-[#82ff1f] transition-colors cursor-default">
+                                                {tag}
+                                            </span>
+                                        ))}
                                     </div>
-                                    <p className="text-zinc-500 text-lg">{c.subtitle}</p>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                    {c.tags.map((tag: string) => (
-                                        <span key={tag} className="px-3 py-1 bg-zinc-900 border border-white/10 rounded-full text-xs text-zinc-400 group-hover:border-[#82ff1f]/30 group-hover:text-[#82ff1f] transition-colors">
-                                            {tag}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
 
-                            {/* Intro Full Width */}
-                            <div className="mb-10 pb-10 border-b border-white/5">
-                                <p className="text-zinc-300 text-lg leading-relaxed max-w-5xl">
-                                    {c.content.intro}
-                                </p>
-                            </div>
+                                {/* Intro */}
+                                <div>
+                                    <p className="text-xl text-zinc-300 font-light leading-relaxed max-w-4xl">
+                                        {c.content.intro}
+                                    </p>
+                                </div>
 
-                            {/* 3-Col Grid: Challenge, Role, Process */}
-                            <div className="grid grid-cols-1 md:grid-cols-3 gap-12 mb-10">
-                                <div className="space-y-3">
-                                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest border-l-2 border-zinc-700 pl-3">El Reto</h5>
-                                    <p className="text-zinc-400 text-sm leading-relaxed">{c.content.challenge}</p>
+                                {/* 3-Col Grid */}
+                                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 pt-4">
+                                    <div className="space-y-4">
+                                        <h5 className="flex items-center gap-2 text-zinc-500 text-xs font-bold uppercase tracking-widest">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-red-500/50" />
+                                            El Reto
+                                        </h5>
+                                        <p className="text-zinc-400 text-sm leading-relaxed">{c.content.challenge}</p>
+                                    </div>
+                                    <div className="space-y-4">
+                                        <h5 className="flex items-center gap-2 text-zinc-500 text-xs font-bold uppercase tracking-widest">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-blue-500/50" />
+                                            Mi Rol
+                                        </h5>
+                                        <p className="text-zinc-400 text-sm leading-relaxed">{c.content.role}</p>
+                                    </div>
+                                    <div className="space-y-4">
+                                        <h5 className="flex items-center gap-2 text-zinc-500 text-xs font-bold uppercase tracking-widest">
+                                            <div className="w-1.5 h-1.5 rounded-full bg-yellow-500/50" />
+                                            Proceso
+                                        </h5>
+                                        <p className="text-zinc-400 text-sm leading-relaxed">{c.content.process}</p>
+                                    </div>
                                 </div>
-                                <div className="space-y-3">
-                                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest border-l-2 border-zinc-700 pl-3">Mi Rol</h5>
-                                    <p className="text-zinc-400 text-sm leading-relaxed">{c.content.role}</p>
-                                </div>
-                                <div className="space-y-3">
-                                    <h5 className="text-zinc-600 text-xs font-bold uppercase tracking-widest border-l-2 border-zinc-700 pl-3">Proceso</h5>
-                                    <p className="text-zinc-400 text-sm leading-relaxed">{c.content.process}</p>
-                                </div>
-                            </div>
 
-                            {/* Result Area */}
-                            <div className="bg-[#82ff1f]/5 border border-[#82ff1f]/10 p-6 md:p-8 rounded-xl">
-                                <h5 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest mb-3">Resultado / Impacto</h5>
-                                <p className="text-white text-lg md:text-xl font-medium leading-relaxed">
-                                    {c.content.result}
-                                </p>
+                                {/* Result Area */}
+                                <div className="bg-[#82ff1f]/5 border border-[#82ff1f]/10 p-6 md:p-8 rounded-xl mt-8">
+                                    <h5 className="text-[#82ff1f] text-xs font-bold uppercase tracking-widest mb-3">Resultado / Impacto</h5>
+                                    <p className="text-white text-lg font-medium leading-relaxed">
+                                        {c.content.result}
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                    ))}
-                </div>
+                        )
+                    }))}
+                />
             )
         },
+
         ...(content.systems && content.systems.cards ? [{
             id: 'systems',
             title: content.systems.title,
@@ -445,11 +378,13 @@ export default function AIAdoptionPage() {
                 </div>
             </section>
 
-            {/* Grupo 1: Mi Enfoque */}
-            <AccordionGroup
-                title="Mi Enfoque"
-                items={enfoqueItems}
-            />
+            {/* New Block: IA como sistema organizativo */}
+            <OrganizationalSystemBlock content={content.organizationalSystem || translations.es.ai.organizationalSystem} />
+
+            {/* New Block: Gobernanza */}
+            <GovernanceBlock content={content.governanceBlock || translations.es.ai.governanceBlock} />
+
+
 
             {/* Grupo 2: Experiencia e Implementación */}
             <AccordionGroup
@@ -468,6 +403,6 @@ export default function AIAdoptionPage() {
                 <p className="text-zinc-600 text-[10px] font-bold tracking-[0.3em] uppercase">© 2025 VÍCTOR TORRES — AI STRATEGIST</p>
             </footer>
 
-        </main>
+        </main >
     );
 }

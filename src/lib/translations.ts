@@ -110,15 +110,7 @@ export const translations = {
                     image: "/images/achievements/sop-optimization.jpg",
                     metric: "+30% Eficiencia Operativa"
                 },
-                {
-                    id: 2,
-                    title: "Audio Hackers Academy (Soma)",
-                    role: "Music Production & Sound Engineering",
-                    desc: "Seleccionado entre miles de candidatos para el programa intensivo con Soma (productor top de España). Formación de élite en ingeniería de sonido, mezcla y producción musical profesional al más alto nivel técnico.",
-                    tags: ["Pro Tools", "Sound Engineering", "Music Production", "Mixing"],
-                    image: "/images/achievements/soma-real.jpg",
-                    metric: "Top 1% Seleccionado"
-                },
+
                 {
                     id: 3,
                     title: "Implementación ERP Oracle NetSuite",
@@ -165,8 +157,17 @@ export const translations = {
                     image: "/images/achievements/mercedes.jpg"
                 },
                 {
+                    id: 2,
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Estrategia de Contenido & Ventas",
+                    desc: "Lideré la creación de contenido y colaboré en la optimización del funnel. Cerré ventas directas logrando 20.000€ facturados en una sola semana.",
+                    tags: ["Ventas", "Contenido", "Funnel", "Lanzamiento"],
+                    image: "/images/achievements/soma-real.jpg",
+                    metric: "20.000€ / 1 Semana"
+                },
+                {
                     id: 8,
-                    title: "Gestión Musical & Eventos",
+                    title: "Management Artístico",
                     role: "Artist Manager",
                     desc: "Gestión 360º de carreras artísticas (94 Music, Condor). Booking, producción de eventos en vivo, logística de giras y negociación con salas.",
                     tags: ["Booking", "Producción", "Management"],
@@ -774,6 +775,70 @@ export const translations = {
                 badge: "AI BUSINESS CONSULTANT",
                 cta: "Ver cómo trabajo la adopción real"
             },
+            organizationalSystem: {
+                title: "IA como sistema organizativo",
+                subtitle: "No como herramienta",
+                intro: "La mayoría de iniciativas de inteligencia artificial fracasan aunque la tecnología funcione.\n\nFracasan porque se introducen modelos, agentes o automatizaciones sin haber entendido antes cómo trabaja la organización, cómo se toman las decisiones y qué fricciones reales existen en el día a día.\n\nLa IA no falla por falta de capacidad. Falla por falta de contexto organizativo.",
+                development: {
+                    title: "Mi enfoque",
+                    text: "Mi enfoque parte de una premisa clara: la IA no es un producto que se “instala”, es una capa de decisión que altera cómo trabajan las personas.\n\nPor eso, antes de hablar de tecnología: observo cómo fluye el trabajo real (no el ideal), identifico dependencias invisibles entre personas y tareas, detecto procesos que sobreviven por intuición o memoria individual, y separo lo que necesita criterio humano de lo que solo consume tiempo.\n\nSolo después decido si la IA tiene sentido y en qué forma."
+                },
+                anchor: "No implanto funcionalidades de IA.\nImplanto nuevas formas de trabajar con menos fricción y más criterio.",
+                steps: [
+                    "Entender la realidad operativa actual",
+                    "Decidir dónde la IA aporta valor (y dónde no)",
+                    "Diseñar sistemas con límites claros",
+                    "Acompañar hasta que el cambio se vuelve hábito"
+                ],
+                transition: "Así es como abordo cualquier adopción de IA, independientemente de la tecnología."
+            },
+            governanceBlock: {
+                title: "Gobernanza de IA: control, criterio y responsabilidad",
+                subtitle: "No se trata de usar más IA, sino de usarla bien.",
+                definition: {
+                    intro: "Gobernanza de IA, para mí, es asegurar que la inteligencia artificial:",
+                    items: [
+                        "se usa con un propósito claro",
+                        "tiene límites definidos",
+                        "no genera dependencia ciega",
+                        "puede ser entendida, supervisada y corregida por las personas"
+                    ],
+                    closure: "No se trata de controlar la IA.\nSe trata de controlar cómo la organización la usa."
+                },
+                context: {
+                    without: {
+                        label: "Sin Gobernanza",
+                        items: [
+                            "Cada equipo usa IA por su cuenta.",
+                            "Decisiones 'caja negra' sin origen claro.",
+                            "Automatizaciones huérfanas sin responsable.",
+                            "Errores silenciosos y difíciles de trazar."
+                        ]
+                    },
+                    with: {
+                        label: "Con Gobernanza",
+                        items: [
+                            "Propósito unificado y estratégico.",
+                            "Trazabilidad y transparencia total.",
+                            "Responsables humanos definidos.",
+                            "Supervisión y corrección garantizada."
+                        ]
+                    },
+                    intro: "Sin gobernanza, el resultado no es innovación. Es ruido, riesgo y pérdida de confianza.",
+                    critical: "Especialmente crítico en sector público, organizaciones grandes y entornos regulados."
+                },
+                principles: [
+                    { title: "Claridad\nde propósito", desc: "Cada sistema responde a una necesidad. Si no hay problema claro, no hay IA." },
+                    { title: "Límites\nDefinidos", desc: "La IA sabe qué puede hacer, qué no, y cuándo escalar a una persona." },
+                    { title: "Responsabilidad\nHumana", desc: "Siempre hay un responsable. La IA propone, la persona dispone." },
+                    { title: "Transparencia\nOperativa", desc: "El equipo entiende qué hace la IA, por qué lo hace y qué esperar." }
+                ],
+                notBureaucracy: {
+                    quote: "La buena gobernanza acelera, no ralentiza.",
+                    desc: "No añado burocracia ni comités infinitos. Añado seguridad. Reducir la incertidumbre y el miedo al error permite a los equipos innovar más rápido."
+                },
+                bridge: "La gobernanza solo funciona cuando las personas confían en el sistema. Por eso, para mí, gobernanza y cambio cultural van siempre juntos."
+            },
             approach: {
                 title: "Mi enfoque: IA como sistema organizativo",
                 subtitle: "No como herramienta.",
@@ -888,7 +953,7 @@ export const translations = {
                         subtitle: "Laboratorio de I+D y Validación",
                         tags: ["I+D", "Prototipado", "Stress-Testing"],
                         content: {
-                            intro: "Mi laboratorio personal. Aquí es donde rompo cosas para no romperlas en los clientes. Pruebo los 'State of the Art' (SOTA) models el día que salen. He construido desde clones de voz indetectables hasta agentes que navegan la web autónomamente. Este knowledge base me permite decir 'No' a un cliente cuando me pide algo que sé que aún no está maduro para producción.",
+                            intro: "Mi centro de I+D y excelencia técnica. Aquí concentro y valido mi conocimiento más avanzado en IA. Diseño arquitecturas de agentes, llevo al límite los nuevos modelos SOTA el día de su lanzamiento y construyo soluciones complejas (desde clonación de voz hasta navegación web autónoma) para entender sus límites reales. Este laboratorio garantiza que mis propuestas no se basan en la especulación, sino en una capacidad técnica probada y lista para producción.",
                             duration: "Actualidad",
                             challenge: "El ritmo de avance de la IA es vertiginoso. Mi reto es separar la señal del ruido: probar las tecnologías emergentes (Voice Agents, Computer Vision, LLMs multimodales) antes de que sean mainstream para entender sus verdaderas limitaciones y casos de uso viables.",
                             role: "Fundador e Investigador Principal. Aquí es donde 'rompo' la tecnología para entenderla.",
@@ -970,76 +1035,56 @@ export const translations = {
                 closure: "Lo que no se mide, no se mejora. Y lo que no se mejora, no escala."
             },
             automation: {
-                title: "Automatización como forma de trabajar",
-                subtitle: "(antes y después de la IA)",
-                intro: "La automatización no llegó a mi perfil con la inteligencia artificial. La IA simplemente aceleró algo que ya llevaba años haciendo: detectar repetición, eliminar fricción y convertir tareas en sistemas.",
-                question: "Antes de hablar de herramientas, siempre he trabajado desde una pregunta muy simple: ¿qué parte de este trabajo se repite y no aporta valor humano?",
+                title: "Cómo inicié con la automatización",
+
+                intro: "La automatización llegó a mí mucho antes de la llegada de la inteligencia artificial. La IA simplemente aceleró algo que ya llevaba años haciendo: detectar repetición, eliminar partes que no aportan valor y convertir tareas en sistemas.",
+
                 sections: [
                     {
-                        title: "Automatización antes de la IA: método, no software",
-                        desc: "Mucho antes de trabajar con IA, ya automatizaba procesos desde una perspectiva operativa y metodológica.",
-                        context: "En entornos como Reauxi (compras y facturación) o Denetic (logística y operaciones), diseñé sistemas de trabajo estables para reducir errores, tiempos muertos y dependencia de la memoria individual:",
+                        title: "Automatización antes de la IA",
+
+                        context: "Mucho antes de trabajar con algoritmos, ya optimizaba flujos operativos en entornos analógicos. Mi obsesión siempre ha sido la misma: ¿cómo podemos hacer esto mejor, más rápido y con menos fricción?",
                         items: [
-                            "Flujos fijos para gestión de facturas y compras.",
-                            "Secuencias claras de pasos para tareas administrativas repetitivas.",
-                            "Organización física y lógica de almacén, con criterios definidos de ubicación, cantidades y tiempos.",
-                            "Procesos internos creados inicialmente para mí mismo y después replicables."
+                            { title: "Gestión de Compras (Reauxi)", desc: "Como responsable de compras, diseñé un 'método' de control de stock y facturación que redujo las horas administrativas a la mitad, permitiéndome dedicar tiempo a negociación con proveedores." },
+                            { title: "Logística y Almacén (Denetic)", desc: "Reorganicé todo el almacén logístico, estableciendo días fijos de pedido y protocolos de ubicación que eliminaron los tiempos muertos buscando material." },
+                            { title: "Sistemas Operativos Propios", desc: "Diseñé mis propios sistemas de gestión del tiempo y tareas para optimizar mi rendimiento individual cuando no existían herramientas corporativas para ello." }
                         ],
-                        closure: "No había IA. Había método, prueba-error y estandarización."
+                        closure: "No había IA. Había método, análisis de procesos y estandarización."
                     },
                     {
                         title: "Automatización estructural en equipos (e-me Growth Agency)",
-                        desc: "En e-me Growth Agency di el siguiente salto: automatizar a escala de equipo.",
-                        context: "Allí trabajé en la creación de procesos operativos estandarizados que permitían a la agencia trabajar con menos fricción y mayor previsibilidad:",
+                        desc: "En e-me Growth Agency (2022) viví mi primera experiencia de optimización a gran escala, gestionando el cambio en una agencia en rápido crecimiento.",
+                        context: "La agencia crecía pero el caos también. Mi intervención se centró en construir la infraestructura operativa que permitiera escalar:",
                         items: [
-                            "Automatización pre-IA basada en SOPs, ClickUp y flujos operativos claros.",
-                            "Reducción de errores humanos y dependencias personales.",
-                            "Procesos diseñados para que el sistema funcionara incluso si cambiaban las personas."
+                            { title: "Creación de 30+ SOPs", desc: "Estandaricé todos los procesos internos, desde el onboarding de un empleado hasta la entrega final al cliente." },
+                            { title: "Implementación de ClickUp", desc: "Digitalicé toda la operación, pasando de la gestión verbal/email a un sistema centralizado con trazabilidad total." },
+                            { title: "Informes de Rendimiento", desc: "Diseñé dashboards semanales para medir la eficiencia por trabajador, detectando cuellos de botella en tiempo real." },
+                            { title: "Automatización Web (Make + WP)", desc: "Mi primera automatización 'técnica': al entrar un cliente nuevo, se creaba su entorno WordPress y carpetas de Drive automáticamente." },
+                            { title: "Aumento de Eficiencia", desc: "Logramos aumentar la eficiencia global un 30%, permitiendo asumir más clientes con el mismo equipo." }
                         ],
                         highlight: {
-                            title: "Creación del departamento de automatización conversacional (ManyChat)",
-                            desc: "Hace más de cuatro años, lideré:",
+                            title: "Departamento de Automatización Conversacional",
+                            desc: "En 2022 lideré la creación del departamento de ManyChat, ofreciendo un servicio totalmente nuevo:",
                             items: [
-                                "Definición del servicio y su alcance.",
-                                "Diseño de flujos tipo para captación, cualificación y seguimiento de leads.",
-                                "Creación de SOPs específicos del departamento.",
-                                "Formación del equipo responsable de implementarlos."
+                                "Diseño de la oferta comercial y el alcance del servicio.",
+                                "Creación de los flujos de trabajo y estándares de calidad.",
+                                "Formación técnica del equipo encargado de la implementación.",
+                                "Venta y gestión de los primeros clientes de automatización."
                             ]
-                        },
-                        closure: "Antes de que la IA fuera mainstream, ya estaba trabajando con automatización conversacional en producción."
+                        }
                     },
                     {
-                        title: "De flujos rígidos a sistemas inteligentes",
-                        desc: "La llegada de la IA no cambió mi forma de pensar. La amplió.",
-                        evolution: "El paso fue natural: de automatizaciones rígidas → a sistemas con contexto. De flujos cerrados → a agentes que entienden intención. De 'si pasa A, responde B' → a asistentes que deciden y ejecutan.",
-                        applications: "Desde entonces he diseñado y puesto en marcha:",
+                        title: "La IA no me hizo automatizar, me hizo hacerlo mejor",
+                        desc: "Cuando llegó la IA generativa, no tuve que aprender a automatizar. Solo tuve que aplicar mi mindset a herramientas infinitamente más potentes.",
+                        cardLayout: true,
                         items: [
-                            "Automatizaciones conversacionales (chat y voz).",
-                            "Agentes para atención al cliente, soporte y formación.",
-                            "Sistemas híbridos donde la IA propone, el humano valida y el sistema ejecuta.",
-                            "Automatizaciones operativas que eliminan trabajo manual real."
-                        ],
-                        examples: "Ejemplos aplicados en proyectos como 94 Music, chatbots web, agentes de voz y flujos integrados con CRM y herramientas internas."
+                            { title: "Automatizaciones Conversacionales", desc: "Chatbots para soporte 24/7 en Web, WhatsApp e Instagram que resuelven dudas complejas." },
+                            { title: "Agentes de Voz Inteligentes", desc: "Sistemas capaces de mantener conversaciones telefónicas fluidas para cualificación o agenda." },
+                            { title: "Procesos Híbridos (Human-in-the-loop)", desc: "Automatizaciones que preparan el trabajo y solicitan validación humana solo cuando es necesario." },
+                            { title: "Automatización de Back-Office", desc: "Conexión de herramientas (CRM, ERP, Email) para eliminar la introducción manual de datos." }
+                        ]
                     }
-                ],
-                criteria: {
-                    title: "Automatizar con criterio",
-                    intro: "No automatizo por automatizar.",
-                    negatives: [
-                        "No automatizo procesos mal definidos.",
-                        "No automatizo tareas que requieren criterio humano.",
-                        "No automatizo para impresionar."
-                    ],
-                    conditions: "Automatizo cuando:",
-                    positives: [
-                        "hay repetición,",
-                        "hay fricción,",
-                        "hay errores evitables,",
-                        "hay pérdida de tiempo operativo."
-                    ],
-                    principle: "La herramienta nunca es el centro. El sistema lo es."
-                },
-                closure: "La automatización no empieza con la tecnología. Empieza cuando detectas que algo se repite y no aporta valor humano."
+                ]
             },
             role: {
                 title: "Mi Rol Real en una Organización",
@@ -1250,15 +1295,7 @@ export const translations = {
                     image: "/images/achievements/sop-optimization.jpg",
                     metric: "+30% Operational Efficiency"
                 },
-                {
-                    id: 2,
-                    title: "Audio Hackers Academy (Soma)",
-                    role: "Music Production & Sound Engineering",
-                    desc: "Selected among thousands of candidates for an intensive program with Soma (top producer in Spain). Elite training in sound engineering, mixing, and professional music production at the highest technical level.",
-                    tags: ["Pro Tools", "Sound Engineering", "Music Production", "Mixing"],
-                    image: "/images/achievements/soma-real.jpg",
-                    metric: "Top 1% Selected"
-                },
+
                 {
                     id: 3,
                     title: "Oracle NetSuite ERP Implementation",
@@ -1305,8 +1342,17 @@ export const translations = {
                     image: "/images/achievements/mercedes.jpg"
                 },
                 {
+                    id: 2,
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Content Strategy & Sales",
+                    desc: "Led content creation and collaborated on funnel optimization. Closed direct sales achieving €20,000 revenue in a single week.",
+                    tags: ["Sales", "Content", "Funnel", "Launch"],
+                    image: "/images/achievements/soma-real.jpg",
+                    metric: "€20k in 1 Week"
+                },
+                {
                     id: 8,
-                    title: "Music & Event Management",
+                    title: "Artistic Management",
                     role: "Artist Manager",
                     desc: "360º management of artistic careers (94 Music, Condor). Booking, live event production, tour logistics, and venue negotiation.",
                     tags: ["Booking", "Production", "Management"],
