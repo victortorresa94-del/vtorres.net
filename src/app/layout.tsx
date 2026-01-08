@@ -14,10 +14,10 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Víctor Torres Arana | AI Project Manager & Automation Lead",
+  title: "Víctor Torres Arana | Project Manager / AI Builder & Business Accelerator",
   description: "CV de Víctor Torres Arana. Convertir caos en sistemas. Project Manager de IA, Automation PM y AI Delivery Manager.",
   icons: {
-    icon: "/images/profile.jpg",
+    icon: "/images/favicon.png",
   },
 };
 

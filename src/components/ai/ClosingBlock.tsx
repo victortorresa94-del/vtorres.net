@@ -14,7 +14,7 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
             <div className="relative py-12 px-6 md:px-12 bg-gradient-to-b from-zinc-900/50 to-transparent border border-white/5 rounded-3xl overflow-hidden text-center space-y-8">
                 <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent" />
 
-                <h2 className="text-3xl md:text-5xl font-medium text-white tracking-tight leading-tight max-w-4xl mx-auto">
+                <h2 className="text-3xl md:text-5xl font-heading font-light text-white tracking-tight leading-tight max-w-4xl mx-auto">
                     {content.title}
                 </h2>
 
@@ -30,7 +30,7 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
 
             {/* Failures Grid */}
             <div className="max-w-4xl mx-auto space-y-8">
-                <p className="text-lg text-zinc-300 text-center font-medium">
+                <p className="text-lg text-zinc-300 text-center font-heading font-bold">
                     {content.failures.intro}
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -44,14 +44,14 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
                         </div>
                     ))}
                 </div>
-                <p className="text-xl text-white font-medium text-center italic mt-8">
+                <p className="text-xl text-white font-heading font-bold text-center italic mt-8">
                     {content.failures.statement}
                 </p>
             </div>
 
             {/* Fit */}
             <div className="bg-zinc-900/30 border border-white/5 rounded-2xl p-8 md:p-12 space-y-8">
-                <h3 className="text-2xl md:text-3xl font-medium text-white text-center">{content.fit.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-heading font-bold text-white text-center">{content.fit.title}</h3>
                 <p className="text-lg text-zinc-400 text-center">{content.fit.intro}</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
                     {content.fit.conditions.map((condition: string, i: number) => (
@@ -73,7 +73,7 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
             <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
                 {/* Not */}
                 <div className="space-y-6">
-                    <h4 className="text-xl font-medium text-zinc-500 text-center">No soy:</h4>
+                    <h4 className="text-xl font-heading font-bold text-zinc-500 text-center">No soy:</h4>
                     <div className="space-y-4">
                         {content.differential.not.map((item: string, i: number) => (
                             <div key={i} className="p-4 bg-zinc-900/50 border border-white/5 rounded-lg">
@@ -85,7 +85,7 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
 
                 {/* Am */}
                 <div className="space-y-6">
-                    <h4 className="text-xl font-medium text-[#82ff1f] text-center">Soy:</h4>
+                    <h4 className="text-xl font-heading font-bold text-[#82ff1f] text-center">Soy:</h4>
                     <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-lg">
                         <p className="text-white text-lg leading-relaxed whitespace-pre-line text-center">
                             {content.differential.am}
@@ -104,7 +104,7 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
 
             {/* AI Vision */}
             <div className="max-w-4xl mx-auto space-y-8 text-center">
-                <h3 className="text-2xl md:text-3xl font-medium text-white">{content.aiVision.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-heading font-bold text-white">{content.aiVision.title}</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
                         <p className="text-zinc-200 leading-relaxed whitespace-pre-line">
@@ -115,17 +115,17 @@ export default function ClosingBlock({ content }: ClosingBlockProps) {
                         <p className="text-zinc-300">{content.aiVision.bad}</p>
                     </div>
                 </div>
-                <p className="text-xl text-white font-medium italic">
+                <p className="text-xl text-white font-heading font-bold italic">
                     {content.aiVision.mission}
                 </p>
             </div>
 
             {/* Positioning */}
             <div className="max-w-5xl mx-auto text-center space-y-12">
-                <p className="text-2xl md:text-4xl text-white font-medium leading-tight">
+                <p className="text-2xl md:text-4xl text-white font-heading font-bold leading-tight">
                     {content.positioning}
                 </p>
-                <p className="text-xl md:text-2xl text-[#82ff1f] font-medium tracking-wide">
+                <p className="text-xl md:text-2xl text-[#82ff1f] font-heading font-bold tracking-wide">
                     {content.tagline}
                 </p>
             </div>

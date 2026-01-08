@@ -23,7 +23,7 @@ const GovernanceBlock: React.FC<GovernanceBlockProps> = ({ content }) => {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="text-4xl md:text-5xl lg:text-7xl font-medium text-white tracking-tight leading-none"
+                        className="text-4xl md:text-5xl lg:text-7xl font-heading font-light text-white tracking-tight leading-none"
                     >
                         {content.title}
                     </motion.h2>
@@ -65,7 +65,7 @@ const GovernanceBlock: React.FC<GovernanceBlockProps> = ({ content }) => {
                                     className="flex items-center gap-4 group"
                                 >
                                     <div className="w-10 h-px bg-zinc-700 group-hover:bg-[#82ff1f] transition-colors duration-500" />
-                                    <p className="text-2xl md:text-3xl text-white font-medium tracking-tight">
+                                    <p className="text-2xl md:text-3xl text-white font-heading font-bold tracking-tight">
                                         {item}
                                     </p>
                                 </motion.div>
@@ -126,7 +126,7 @@ const GovernanceBlock: React.FC<GovernanceBlockProps> = ({ content }) => {
                         </div>
                         <ul className="space-y-6">
                             {content.context.with.items.map((item: string, i: number) => (
-                                <li key={i} className="text-white font-medium text-lg">
+                                <li key={i} className="text-white font-heading font-bold text-lg">
                                     {item}
                                 </li>
                             ))}
@@ -153,7 +153,7 @@ const GovernanceBlock: React.FC<GovernanceBlockProps> = ({ content }) => {
                                 <div className="mb-6 text-zinc-600 group-hover:text-[#82ff1f] transition-colors">
                                     <Icon size={28} strokeWidth={1.5} />
                                 </div>
-                                <h4 className="text-xl font-medium text-white mb-3 whitespace-pre-line">{p.title}</h4>
+                                <h4 className="text-xl font-heading font-bold text-white mb-3 whitespace-pre-line">{p.title}</h4>
                                 <p className="text-zinc-400 font-light leading-relaxed">{p.desc}</p>
                             </motion.div>
                         );
@@ -169,7 +169,7 @@ const GovernanceBlock: React.FC<GovernanceBlockProps> = ({ content }) => {
                     className="relative p-10 md:p-16 rounded-3xl bg-[#82ff1f]/5 border border-[#82ff1f]/10 text-center overflow-hidden"
                 >
                     <div className="relative z-10">
-                        <p className="text-2xl md:text-4xl font-medium text-white mb-6">
+                        <p className="text-2xl md:text-4xl font-heading font-bold text-white mb-6">
                             "{content.notBureaucracy.quote}"
                         </p>
                         <p className="text-zinc-400 text-lg md:text-xl font-light max-w-2xl mx-auto">

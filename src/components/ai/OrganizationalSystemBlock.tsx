@@ -29,7 +29,7 @@ const OrganizationalSystemBlock: React.FC<OrganizationalSystemBlockProps> = ({ c
                             <span className="text-[#82ff1f] font-mono text-sm tracking-[0.2em] uppercase mb-4 block">
                                 {content.subtitle}
                             </span>
-                            <h2 className="text-5xl md:text-7xl lg:text-8xl font-medium text-white tracking-tight leading-[0.9]">
+                            <h2 className="text-5xl md:text-7xl lg:text-8xl font-heading font-light text-white tracking-tight leading-[0.9]">
                                 {content.title}
                             </h2>
                         </motion.div>
@@ -69,7 +69,7 @@ const OrganizationalSystemBlock: React.FC<OrganizationalSystemBlockProps> = ({ c
                             <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#82ff1f]/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
                             <div className="absolute bottom-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
 
-                            <p className="relative z-10 text-3xl md:text-5xl lg:text-6xl text-white font-medium leading-tight tracking-tight">
+                            <p className="relative z-10 text-3xl md:text-5xl lg:text-6xl text-white font-heading font-bold leading-tight tracking-tight">
                                 {content.anchor.split('\n')[0]}
                                 <span className="block mt-4 text-[#82ff1f] drop-shadow-[0_0_15px_rgba(130,255,31,0.2)]">
                                     {content.anchor.split('\n')[1]}

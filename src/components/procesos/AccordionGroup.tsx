@@ -30,7 +30,7 @@ export default function AccordionGroup({ title, items }: AccordionGroupProps) {
                     viewport={{ once: true }}
                     className="mb-16"
                 >
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                    <h2 className="text-3xl md:text-5xl font-heading font-light text-white mb-6">
                         {title}
                     </h2>
                     <div className="h-1 w-20 bg-[#82ff1f] rounded-full"></div>
@@ -55,7 +55,7 @@ export default function AccordionGroup({ title, items }: AccordionGroupProps) {
                                         <item.icon size={24} />
                                     </div>
                                     <div>
-                                        <h3 className={`text-xl md:text-2xl font-medium transition-colors ${expandedIndex === index ? 'text-white' : 'text-zinc-300 group-hover:text-white'}`}>
+                                        <h3 className={`text-xl md:text-2xl font-heading font-bold transition-colors ${expandedIndex === index ? 'text-white' : 'text-zinc-300 group-hover:text-white'}`}>
                                             {item.title}
                                         </h3>
                                         {item.subtitle && (

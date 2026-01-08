@@ -28,7 +28,7 @@ const NestedAccordion: React.FC<NestedAccordionProps> = ({ items }) => {
                         className="w-full flex items-center justify-between p-6 hover:bg-white/5 transition-colors text-left"
                     >
                         <div>
-                            <h4 className={`text-lg transition-colors font-medium ${openId === item.id ? 'text-[#82ff1f]' : 'text-zinc-200'}`}>
+                            <h4 className={`text-lg transition-colors font-heading font-bold ${openId === item.id ? 'text-[#82ff1f]' : 'text-zinc-200'}`}>
                                 {item.title}
                             </h4>
                             {item.subtitle && (

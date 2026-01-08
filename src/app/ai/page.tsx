@@ -18,6 +18,8 @@ import OrganizationalSystemBlock from '@/components/ai/OrganizationalSystemBlock
 import GovernanceBlock from '@/components/ai/GovernanceBlock';
 import NestedAccordion from '@/components/ai/NestedAccordion';
 
+
+
 const iconMap: Record<string, any> = {
     Shield, Database, UserCheck, FileSearch, EyeOff,
     MessageSquare, Mic, Zap, GitMerge, Brain,
@@ -26,7 +28,7 @@ const iconMap: Record<string, any> = {
 
 export default function AIAdoptionPage() {
     const { t } = useLanguage();
-    const content = (t as any).ai || translations.es.ai;
+    const content = (t as unknown as any).ai || translations.es.ai;
 
     if (!content) {
         return (
@@ -36,6 +38,87 @@ export default function AIAdoptionPage() {
         );
     }
 
+
+
+    // Grupo 1: Mi Enfoque (Restored)
+    const enfoqueItems = [
+        {
+            id: 'automation',
+            title: content.automation.title,
+            subtitle: content.automation.subtitle,
+            icon: Zap,
+            component: <AutomationBlock content={content.automation} />
+        },
+        {
+            id: 'approach',
+            title: content.approach.title,
+            subtitle: content.approach.subtitle,
+            icon: Lightbulb,
+            component: (
+                <div className="space-y-12">
+                    <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
+                        <p className="text-xl text-white font-light">{content.approach.manifesto}</p>
+                    </div>
+                    <div className="text-2xl md:text-3xl font-heading font-bold text-white">
+                        {content.approach.statement}
+                    </div>
+                    <div className="space-y-8">
+                        {content.approach.steps.map((step: any, i: number) => (
+                            <div key={i} className="flex items-start gap-6 border-b border-white/5 pb-6 last:border-0">
+                                <span className="text-[#82ff1f] font-mono text-sm mt-1">{step.step}</span>
+                                <p className="text-xl text-zinc-300 font-light">{step.text}</p>
+                            </div>
+                        ))}
+                    </div>
+                    <div className="pt-8 text-center border-t border-white/5">
+                        <p className="text-lg text-zinc-400 font-light">
+                            No implanto herramientas de IA. <span className="text-white font-heading font-bold">Implanto nuevas formas de trabajar.</span>
+                        </p>
+                    </div>
+                </div>
+            )
+        },
+        {
+            id: 'governance',
+            title: content.governance.title,
+            subtitle: content.governance.subtitle,
+            icon: Shield,
+            component: (
+                <div className="space-y-12">
+                    <div className="p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
+                        <p className="text-xl text-white font-light">{content.governance.definition}</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        {content.governance.cards.map((card: any, i: number) => {
+                            const Icon = iconMap[card.icon] || Shield;
+                            return (
+                                <div
+                                    key={i}
+                                    className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl hover:border-[#82ff1f]/30 transition-all space-y-4"
+                                >
+                                    <div className="w-12 h-12 bg-zinc-900 rounded-lg flex items-center justify-center text-[#82ff1f]">
+                                        <Icon size={24} />
+                                    </div>
+                                    <h4 className="text-xl font-heading font-bold text-white">{card.title}</h4>
+                                    <ul className="space-y-2">
+                                        {card.items && card.items.map((item: string, idx: number) => (
+                                            <li key={idx} className="flex items-start gap-2 text-zinc-400 text-sm">
+                                                <span className="text-[#82ff1f] mt-1">•</span>
+                                                {item}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            );
+                        })}
+                    </div>
+                    <div className="p-8 bg-[#82ff1f] rounded-2xl text-black text-center">
+                        <p className="text-lg font-heading font-bold leading-tight">"{content.governance.role}"</p>
+                    </div>
+                </div>
+            )
+        }
+    ];
 
     // Grupo 2: Experiencia e Implementación
     const experienciaItems = [
@@ -68,7 +151,7 @@ export default function AIAdoptionPage() {
 
                                 {/* Intro */}
                                 <div>
-                                    <p className="text-xl text-zinc-300 font-light leading-relaxed max-w-4xl">
+                                    <p className="text-xl text-zinc-300 font-heading font-light leading-relaxed max-w-4xl">
                                         {c.content.intro}
                                     </p>
                                 </div>
@@ -124,7 +207,7 @@ export default function AIAdoptionPage() {
                         {content.systems.cards.map((sys: any, i: number) => (
                             <div key={i} className="p-8 bg-zinc-900/30 border border-white/5 rounded-2xl hover:border-[#82ff1f]/30 transition-all space-y-6">
                                 <div>
-                                    <h4 className="text-xl font-medium text-white mb-1">{sys.title}</h4>
+                                    <h4 className="text-xl font-heading font-bold text-white mb-1">{sys.title}</h4>
                                     <p className="text-sm text-[#82ff1f] font-mono">{sys.subtitle}</p>
                                 </div>
                                 <p className="text-zinc-400 font-light">{sys.desc}</p>
@@ -157,14 +240,14 @@ export default function AIAdoptionPage() {
                         {content.metrics.macro.map((m: any, i: number) => (
                             <div key={i} className="p-6 bg-zinc-900/30 border border-white/5 rounded-xl space-y-4">
                                 <p className="text-xs text-zinc-500 font-bold uppercase">{m.title}</p>
-                                <p className="text-white text-lg font-medium italic">"{m.question}"</p>
+                                <p className="text-white text-lg font-heading font-bold italic">"{m.question}"</p>
                                 <div className="h-px bg-white/5" />
                                 <p className="text-sm text-zinc-400">{m.measure}</p>
                             </div>
                         ))}
                     </div>
                     <div className="border-t border-white/5 pt-12 text-center">
-                        <p className="text-3xl font-medium text-white max-w-4xl mx-auto">{content.metrics.closure}</p>
+                        <p className="text-3xl font-heading font-light text-white max-w-4xl mx-auto">{content.metrics.closure}</p>
                     </div>
                 </div>
             )
@@ -177,7 +260,7 @@ export default function AIAdoptionPage() {
             component: (
                 <div className="space-y-16">
                     <div className="text-center p-6 bg-[#82ff1f]/5 border border-[#82ff1f]/20 rounded-xl">
-                        <p className="text-[#82ff1f] font-medium">{content.culture_change.anchor}</p>
+                        <p className="text-[#82ff1f] font-heading font-bold">{content.culture_change.anchor}</p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
                         {content.culture_change.phases.map((phase: any, i: number) => (
@@ -186,7 +269,7 @@ export default function AIAdoptionPage() {
                                     {i + 1}
                                 </div>
                                 <div>
-                                    <h4 className="text-xl font-medium text-white mb-3">{phase.title}</h4>
+                                    <h4 className="text-xl font-heading font-bold text-white mb-3">{phase.title}</h4>
                                     <p className="text-zinc-400 mb-6">{phase.desc}</p>
                                     <ul className="space-y-3">
                                         {phase.actions.map((action: string, idx: number) => (
@@ -254,7 +337,7 @@ export default function AIAdoptionPage() {
                                 className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#82ff1f]/5 border border-[#82ff1f]/20"
                             >
                                 <div className="w-1.5 h-1.5 rounded-full bg-[#82ff1f] animate-pulse" />
-                                <span className="text-[#82ff1f] text-[10px] font-bold tracking-[0.2em] uppercase">
+                                <span className="text-[#82ff1f] text-[10px] font-heading font-bold tracking-[0.2em] uppercase">
                                     {content.hero.eyebrow}
                                 </span>
                             </motion.div>
@@ -263,7 +346,7 @@ export default function AIAdoptionPage() {
                                 initial={{ opacity: 0, y: 20 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ delay: 0.2, duration: 0.6 }}
-                                className="text-5xl md:text-7xl lg:text-9xl font-medium tracking-tight leading-[0.9] text-white"
+                                className="text-5xl md:text-7xl lg:text-9xl font-heading font-light tracking-tighter leading-[0.9] text-white"
                             >
                                 <span className="block text-white">Adopción</span>
                                 <span className="block text-[#82ff1f]">Responsable</span>
@@ -287,12 +370,12 @@ export default function AIAdoptionPage() {
                             transition={{ delay: 0.6, duration: 0.6 }}
                             className="space-y-8 pl-6 border-l-2 border-[#82ff1f]"
                         >
-                            <p className="text-lg md:text-xl text-zinc-400 font-light leading-relaxed max-w-2xl">
-                                <span className="text-white font-medium block mb-2">{content.hero.desc.split('. ')[0]}.</span>
+                            <p className="text-lg md:text-xl text-zinc-400 font-heading font-light leading-relaxed max-w-2xl">
+                                <span className="text-white font-heading font-bold block mb-2">{content.hero.desc.split('. ')[0]}.</span>
                                 {content.hero.desc.split('. ').slice(1).join('. ')}
                             </p>
 
-                            <p className="text-sm text-zinc-500 font-light max-w-md">
+                            <p className="text-sm text-zinc-500 font-heading font-light max-w-md">
                                 He liderado adopciones de IA en entornos donde los datos importan, los errores cuestan dinero y las personas necesitan entender qué está pasando.
                             </p>
 
@@ -354,7 +437,7 @@ export default function AIAdoptionPage() {
                                         <Zap size={14} />
                                         <span>SYSTEM_ACTIVE</span>
                                     </div>
-                                    <p className="text-white text-sm font-medium tracking-wide">
+                                    <p className="text-white text-sm font-heading font-bold tracking-wide">
                                         Human-in-the-loop Systems
                                     </p>
                                 </div>
@@ -369,7 +452,7 @@ export default function AIAdoptionPage() {
                             >
                                 <p className="text-zinc-400 text-xs uppercase tracking-widest mb-2">Impacto Real</p>
                                 <div className="space-y-1">
-                                    <p className="text-2xl text-white font-medium">+40%</p>
+                                    <p className="text-2xl text-white font-heading font-bold">+40%</p>
                                     <p className="text-xs text-zinc-500">Eficiencia Operativa en proyectos implementados</p>
                                 </div>
                             </motion.div>
@@ -378,11 +461,16 @@ export default function AIAdoptionPage() {
                 </div>
             </section>
 
-            {/* New Block: IA como sistema organizativo */}
-            <OrganizationalSystemBlock content={content.organizationalSystem || translations.es.ai.organizationalSystem} />
+            {/* New Block: IA como sistema organizativo - REMOVED per user request to revert to "version 2.0 with accordions" logic for first sections, or kept if hybrid? User said "deja los desplegables". I will keep them but render the AccordionGroup too. Actually "volvamos a la version 2.0" implies removing these new blocks if they replaced the accordions. I will comment them out for safety or remove them from view to strictly follow "back to version 2.0". */}
+            {/* <OrganizationalSystemBlock content={content.organizationalSystem || translations.es.ai.organizationalSystem} /> */}
 
-            {/* New Block: Gobernanza */}
-            <GovernanceBlock content={content.governanceBlock || translations.es.ai.governanceBlock} />
+            {/* <GovernanceBlock content={content.governanceBlock || translations.es.ai.governanceBlock} /> */}
+
+            {/* Grupo 1: Mi Enfoque */}
+            <AccordionGroup
+                title="Mi Enfoque"
+                items={enfoqueItems}
+            />
 
 
 

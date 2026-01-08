@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck } from "lucide-react";
+import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
@@ -125,7 +125,7 @@ export default function Home() {
                 </h1>
 
                 <h2 className="text-2xl md:text-3xl text-zinc-400 font-light">
-                  AI Project Manager & <span className="text-white font-bold border-b-4 border-[#82ff1f]">Business Builder</span>
+                  Project Manager / AI Builder & <span className="text-white font-bold border-b-4 border-[#82ff1f]">Business Accelerator</span>
                 </h2>
 
                 <p className="text-lg text-zinc-500 max-w-xl mx-auto md:mx-0 leading-relaxed">
@@ -160,7 +160,7 @@ export default function Home() {
           </section>
 
           {/* --- MI HISTORIA --- */}
-          < ExpandableSection id="story" number="00" title={t.story.title} >
+          < ExpandableSection id="story" icon={<User size={32} />} title={t.story.title} >
             <div className="space-y-6 text-lg text-zinc-300 font-light leading-relaxed">
               <p className="font-medium text-white text-xl">{t.story.intro}</p>
               <p>{t.story.p1}</p>
@@ -175,225 +175,138 @@ export default function Home() {
             </div>
           </ExpandableSection >
 
-          < ExpandableSection id="career" number="01" title={t.career.title} >
-            <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
-              {t.career.items.map((item, index) => (
-                <TimelineItem
-                  key={index}
-                  year={item.year}
-                  title={item.title}
-                  role={item.role}
-                  desc={item.desc}
-                />
+          < ExpandableSection id="career" icon={<Briefcase size={32} />} title={t.career.title} >
+            <div className="space-y-16">
+              {t.career.sections?.map((section: any, sectionIndex: number) => (
+                <div key={sectionIndex}>
+                  <h3 className="text-xl font-bold text-[#82ff1f] mb-8 pl-3 flex items-center gap-2">
+                    <Globe size={20} /> {section.title}
+                  </h3>
+                  <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
+                    {section.items.map((item: any, itemIndex: number) => (
+                      <TimelineItem
+                        key={itemIndex}
+                        year={item.year}
+                        title={item.title}
+                        role={item.role}
+                        desc={item.desc}
+                      />
+                    ))}
+                  </div>
+                </div>
               ))}
             </div>
           </ExpandableSection >
 
-          {/* --- HITOS Y LOGROS --- */}
-          < ExpandableSection id="achievements" number="02" title={t.achievements.title} >
-            <AchievementsCarousel items={achievements} />
-          </ExpandableSection >
+          {/* --- FREELANCE & EMPRENDIMIENTO --- */}
+          <ExpandableSection id="freelance" icon={<Rocket size={32} />} title={t.freelance.title} >
+            <div className="space-y-12">
 
-          {/* --- SKILLS --- */}
-          < ExpandableSection id="skills" number="03" title={t.skills.title} >
-
-            {/* Core Skills - Destacados */}
-            < div className="mb-12" >
-              <h3 className="text-base sm:text-lg font-bold text-white mb-4 sm:mb-6 uppercase tracking-[0.2em]">Core Skills</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-
-                {/* Project Management */}
-                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                  <div className="relative z-10">
-                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                      <Target size={20} className="text-black" />
-                    </div>
-                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.pm.title}</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.pm.desc}</p>
-                  </div>
-                </div>
-
-                {/* Marketing & Growth */}
-                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                  <div className="relative z-10">
-                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                      <Megaphone size={20} className="text-black" />
-                    </div>
-                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.marketing.title}</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.marketing.desc}</p>
-                  </div>
-                </div>
-
-                {/* Client Relationship */}
-                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                  <div className="relative z-10">
-                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                      <Users size={20} className="text-black" />
-                    </div>
-                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.client.title}</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.client.desc}</p>
-                  </div>
-                </div>
-
-                {/* AI Strategy & Execution */}
-                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
-                  <div className="relative z-10">
-                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
-                      <Brain size={20} className="text-black" />
-                    </div>
-                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.ai.title}</h4>
-                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.ai.desc}</p>
-                  </div>
-                </div>
-
-              </div>
-            </div >
-
-            {/* Subcategorías de Skills (Habilidades Conceptuales) */}
-            < div className="space-y-8" >
-
-              {/* PM */}
-              < div >
-                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
-                  <ClipboardList size={16} className="text-[#82ff1f]" /> {t.skills.categories.pm}
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.pm.items.map((skill) => (
-                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
-                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
-                    </div>
-                  ))}
-                </div>
-              </div >
-
-              {/* Client Relationship */}
+              {/* Proyectos Propios */}
               <div>
-                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
-                  <Users size={16} className="text-[#82ff1f]" /> {t.skills.categories.client}
+                <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
+                  <Target size={20} /> {t.freelance.ownTitle}
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.client.items.map((skill) => (
-                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
-                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
-                    </div>
-                  ))}
+                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 md:pb-0">
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.aether.title}
+                    role="Founder"
+                    desc={t.freelance.items.aether.desc}
+                    tags={["AI Agency", "Automation", "B2B"]}
+                    link="https://aetherlabs.es"
+                    icon={<Brain size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.music.title}
+                    role="Founder & Community"
+                    desc={t.freelance.items.music.desc}
+                    tags={["Music Agency", "Viral Content", "Events"]}
+                    link="https://instagram.com/the94music"
+                    icon={<Music size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.condor.title}
+                    role="Founder & Manager"
+                    desc={t.freelance.items.condor.desc}
+                    tags={["Management", "Colombia", "Production"]}
+                    icon={<Mic size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.rings.title}
+                    role="Founder"
+                    desc={t.freelance.items.rings.desc}
+                    tags={["Ecommerce", "Bootstrapping", "Sales"]}
+                    icon={<ShoppingBag size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.jarana.title}
+                    role="Founder & Musician"
+                    desc={t.freelance.items.jarana.desc}
+                    tags={["Music Band", "Entertainment", "Live"]}
+                    icon={<Music size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.cataleya.title}
+                    role="Co-Founder"
+                    desc={t.freelance.items.cataleya.desc}
+                    tags={["Events", "Flamenco", "Premium"]}
+                    icon={<Music size={24} />}
+                  />
                 </div>
               </div>
 
-              {/* Habilidades de Negocio */}
-              <div >
-                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
-                  <Briefcase size={16} className="text-[#82ff1f]" /> {t.skills.categories.business}
+              {/* Freelance */}
+              <div>
+                <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
+                  <Briefcase size={20} /> {t.freelance.consultingTitle}
                 </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.categories.businessItems.map((skill) => (
-                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
-                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
-                    </div>
-                  ))}
+                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-1 md:pb-0">
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.konektor.title}
+                    role="Growth & AI Partner"
+                    desc={t.freelance.items.konektor.desc}
+                    tags={["Growth Strategy", "AI Sales", "Metaverso"]}
+                    icon={<Briefcase size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.soma.title}
+                    role="Launch Strategist"
+                    desc={t.freelance.items.soma.desc}
+                    tags={["Launch", "Content", "Sales Closing"]}
+                    icon={<Megaphone size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.deodi.title}
+                    role="Business Consultant"
+                    desc={t.freelance.items.deodi.desc}
+                    tags={["Digital Transformation", "Ecommerce", "Branding"]}
+                    icon={<Palette size={24} />}
+                  />
+                  <ProjectRow
+                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    title={t.freelance.items.suma.title}
+                    role="Tech & Design"
+                    desc={t.freelance.items.suma.desc}
+                    tags={["Web Dev", "AI Chatbot", "Design"]}
+                    icon={<Database size={24} />}
+                  />
                 </div>
-              </div >
-
-              {/* Habilidades Técnicas Conceptuales */}
-              < div >
-                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
-                  <Code size={16} className="text-[#82ff1f]" /> {t.skills.categories.tech}
-                </h3>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.categories.techItems.map((skill) => (
-                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
-                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
-                    </div>
-                  ))}
-                </div>
-              </div >
-            </div >
-
-            {/* --- TECH STACK & HERRAMIENTAS (Bloque Diferenciado) --- */}
-            <div id="stack" className="mt-12 pt-8 border-t border-white/10">
-              <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
-                <span className="text-[#82ff1f]">#</span> {t.skills.categories.stack}
-              </h3>
-
-              <div className="space-y-8">
-
-                {/* Stack IA & Automatización */}
-                <div>
-                  <h4 className="text-xs font-bold text-white/40 mb-3 uppercase tracking-[0.2em]">{t.skills.stack.ai}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "n8n", "Make", "Zapier", "Cursor (IDE)", "OpenAI (GPT-4o)", "Claude 3.5 Sonnet", "Gemini 1.5 Pro",
-                      "ElevenLabs", "HeyGen", "Vapi / Retell AI", "Voiceflow", "ChatBase", "Midjourney", "DALL-E 3",
-                      "Pika Labs", "Runway Gen-3", "Luma Dream Machine", "Udio / Suno", "Leonardo AI", "Freepik Spaces",
-                      "Highfield", "HuggingFace", "Phind / Perplexity"
-                    ].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-[#82ff1f]/5 text-[#82ff1f] text-sm border border-[#82ff1f]/10 font-medium hover:bg-[#82ff1f]/10 transition-all">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Marketing & Ventas */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.marketing}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["HubSpot CRM", "Salesforce", "Google Ads", "Meta Ads", "YouTube Growth", "Email Automation (ActiveC)", "Pipedrive", "Cold Outbound Tools", "Google Analytics 4"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Creativo */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.creative}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Premiere Pro", "CapCut", "DaVinci Resolve", "Studio One", "Canva", "OBS Studio"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Desarrollo & Web */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.dev}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Next.js", "React", "Node.js", "Tailwind CSS", "TypeScript", "Git/GitHub", "VS Code", "Vercel"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Operaciones & ERP */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.ops}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Oracle NetSuite", "SAP ERP", "ClickUp", "Notion", "Slack", "Jira", "Monday", "Microsoft Excel (Adv)"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
               </div>
+
             </div>
           </ExpandableSection >
 
-
-
           {/* --- EXPERIENCIA IA --- */}
-          < ExpandableSection id="ia" number="04" title={t.aiExperience.title} >
+          < ExpandableSection id="ia" icon={<Brain size={32} />} title={t.aiExperience.title} >
             <div className="space-y-8">
               <p className="text-zinc-300 text-lg font-light leading-relaxed mb-6">
                 {t.aiExperience.intro}
@@ -608,8 +521,220 @@ export default function Home() {
             </div>
           </ExpandableSection >
 
+
+          {/* --- SEPARATOR --- */}
+          <div className="py-24 max-w-6xl mx-auto px-6">
+            <div className="h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent mb-12" />
+            <div className="text-center space-y-4">
+              <h2 className="text-4xl md:text-5xl font-heading font-light text-white tracking-tight">
+                {t.capabilities?.title || "Capabilities & Results"}
+              </h2>
+              <p className="text-zinc-400 max-w-2xl mx-auto text-lg font-light leading-relaxed">
+                {t.capabilities?.desc || "Beyond experience, here I detail my technical skills, quantifiable achievements, and academic background."}
+              </p>
+            </div>
+            <div className="h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent mt-12" />
+          </div>
+
+          <div className="my-16 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent max-w-6xl mx-auto hidden" />
+
+          {/* --- HITOS Y LOGROS --- */}
+          < ExpandableSection id="achievements" icon={<Award size={32} />} title={t.achievements.title} >
+            <AchievementsCarousel items={achievements} />
+          </ExpandableSection >
+
+          {/* --- SKILLS --- */}
+          < ExpandableSection id="skills" icon={<Cpu size={32} />} title={t.skills.title} >
+
+            {/* Core Skills - Destacados */}
+            < div className="mb-12" >
+              <h3 className="text-base sm:text-lg font-bold text-white mb-4 sm:mb-6 uppercase tracking-[0.2em]">Core Skills</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
+
+                {/* Project Management */}
+                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                  <div className="relative z-10">
+                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                      <Target size={20} className="text-black" />
+                    </div>
+                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.pm.title}</h4>
+                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.pm.desc}</p>
+                  </div>
+                </div>
+
+                {/* Marketing & Growth */}
+                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                  <div className="relative z-10">
+                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                      <Megaphone size={20} className="text-black" />
+                    </div>
+                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.marketing.title}</h4>
+                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.marketing.desc}</p>
+                  </div>
+                </div>
+
+                {/* Client Relationship */}
+                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                  <div className="relative z-10">
+                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                      <Users size={20} className="text-black" />
+                    </div>
+                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.client.title}</h4>
+                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.client.desc}</p>
+                  </div>
+                </div>
+
+                {/* AI Strategy & Execution */}
+                <div className="p-6 rounded-2xl bg-gradient-to-br from-[#82ff1f]/10 to-transparent border border-[#82ff1f]/20 relative overflow-hidden group hover:border-[#82ff1f]/50 transition-all">
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-[#82ff1f]/10 blur-[40px] rounded-full"></div>
+                  <div className="relative z-10">
+                    <div className="w-10 h-10 bg-[#82ff1f] rounded-lg flex items-center justify-center mb-4 shadow-lg shadow-[#82ff1f]/20">
+                      <Brain size={20} className="text-black" />
+                    </div>
+                    <h4 className="text-xl font-heading font-bold text-white mb-2">{t.skills.ai.title}</h4>
+                    <p className="text-xs text-zinc-400 leading-relaxed">{t.skills.ai.desc}</p>
+                  </div>
+                </div>
+
+              </div>
+            </div >
+
+            {/* Subcategorías de Skills (Habilidades Conceptuales) */}
+            < div className="space-y-8" >
+
+              {/* PM */}
+              < div >
+                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
+                  <ClipboardList size={16} className="text-[#82ff1f]" /> {t.skills.categories.pm}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {t.skills.pm.items.map((skill) => (
+                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
+                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </div >
+
+              {/* Client Relationship */}
+              <div>
+                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
+                  <Users size={16} className="text-[#82ff1f]" /> {t.skills.categories.client}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {t.skills.client.items.map((skill) => (
+                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
+                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Habilidades de Negocio */}
+              <div >
+                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
+                  <Briefcase size={16} className="text-[#82ff1f]" /> {t.skills.categories.business}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {t.skills.categories.businessItems.map((skill) => (
+                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
+                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </div >
+
+              {/* Habilidades Técnicas Conceptuales */}
+              < div >
+                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
+                  <Code size={16} className="text-[#82ff1f]" /> {t.skills.categories.tech}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {t.skills.categories.techItems.map((skill) => (
+                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
+                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </div >
+            </div >
+
+            {/* --- TECH STACK & HERRAMIENTAS (Bloque Diferenciado) --- */}
+            <div id="stack" className="mt-12 pt-8 border-t border-white/10">
+              <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
+                <span className="text-[#82ff1f]">#</span> {t.skills.categories.stack}
+              </h3>
+
+              <div className="space-y-8">
+
+                {/* Dynamic Stack Accordion */}
+                <div className="grid grid-cols-1 gap-4">
+                  {t.stack?.map((section: any, index: number) => (
+                    <StackCategory key={index} title={section.title} groups={section.groups} />
+                  ))}
+                </div>
+
+                {/* Stack Marketing & Ventas */}
+                <div>
+                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.marketing}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {["HubSpot CRM", "Salesforce", "Google Ads", "Meta Ads", "YouTube Growth", "Email Automation (ActiveC)", "Pipedrive", "Cold Outbound Tools", "Google Analytics 4"].map((tool) => (
+                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Stack Creativo */}
+                <div>
+                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.creative}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Premiere Pro", "CapCut", "DaVinci Resolve", "Studio One", "Canva", "OBS Studio"].map((tool) => (
+                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Stack Desarrollo & Web */}
+                <div>
+                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.dev}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {["Next.js", "React", "Node.js", "Tailwind CSS", "TypeScript", "Git/GitHub", "VS Code", "Vercel"].map((tool) => (
+                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                {/* Stack Operaciones & ERP */}
+                <div>
+                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.ops}</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {["Oracle NetSuite", "SAP ERP", "ClickUp", "Notion", "Slack", "Jira", "Monday", "Microsoft Excel (Adv)"].map((tool) => (
+                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </ExpandableSection >
+
+
+
+
+
           {/* --- MIS NÚMEROS --- */}
-          < ExpandableSection id="numbers" number="05" title={t.numbers.title} >
+          < ExpandableSection id="numbers" icon={<TrendingUp size={32} />} title={t.numbers.title} >
             <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
               <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+10M" label={t.numbers.impact} description={t.numbers.impactDesc} />
               <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label={t.numbers.webs} description={t.numbers.websDesc} />
@@ -624,7 +749,7 @@ export default function Home() {
 
           {/* --- FREELANCE & EMPRENDIMIENTO --- */}
           {/* --- FORMACIÓN --- */}
-          <ExpandableSection id="education" number="06" title={t.education.title}>
+          <ExpandableSection id="education" icon={<GraduationCap size={32} />} title={t.education.title}>
             <div className="relative border-l border-white/10 ml-3 space-y-8 pl-8">
               {t.education.items?.map((item, index) => (
                 <div key={index} className="relative group">
@@ -641,117 +766,12 @@ export default function Home() {
             </div>
           </ExpandableSection>
 
-          {/* --- FREELANCE & EMPRENDIMIENTO --- */}
-          < ExpandableSection id="freelance" number="07" title={t.freelance.title} >
-            <div className="space-y-12">
 
-              {/* Proyectos Propios */}
-              <div>
-                <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
-                  <Target size={20} /> {t.freelance.ownTitle}
-                </h3>
-                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 md:pb-0">
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.aether.title}
-                    role="Founder"
-                    desc={t.freelance.items.aether.desc}
-                    tags={["AI Agency", "Automation", "B2B"]}
-                    link="https://aetherlabs.es"
-                    icon={<Brain size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.music.title}
-                    role="Founder & Community"
-                    desc={t.freelance.items.music.desc}
-                    tags={["Music Agency", "Viral Content", "Events"]}
-                    link="https://instagram.com/the94music"
-                    icon={<Music size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.condor.title}
-                    role="Founder & Manager"
-                    desc={t.freelance.items.condor.desc}
-                    tags={["Management", "Colombia", "Production"]}
-                    icon={<Mic size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.rings.title}
-                    role="Founder"
-                    desc={t.freelance.items.rings.desc}
-                    tags={["Ecommerce", "Bootstrapping", "Sales"]}
-                    icon={<ShoppingBag size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.jarana.title}
-                    role="Founder & Musician"
-                    desc={t.freelance.items.jarana.desc}
-                    tags={["Music Band", "Entertainment", "Live"]}
-                    icon={<Music size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.cataleya.title}
-                    role="Co-Founder"
-                    desc={t.freelance.items.cataleya.desc}
-                    tags={["Events", "Flamenco", "Premium"]}
-                    icon={<Music size={24} />}
-                  />
-                </div>
-              </div>
-
-              {/* Freelance */}
-              <div>
-                <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
-                  <Briefcase size={20} /> {t.freelance.consultingTitle}
-                </h3>
-                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-1 md:pb-0">
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.konektor.title}
-                    role="Growth & AI Partner"
-                    desc={t.freelance.items.konektor.desc}
-                    tags={["Growth Strategy", "AI Sales", "Metaverso"]}
-                    icon={<Briefcase size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.soma.title}
-                    role="Launch Strategist"
-                    desc={t.freelance.items.soma.desc}
-                    tags={["Launch", "Content", "Sales Closing"]}
-                    icon={<Megaphone size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.deodi.title}
-                    role="Business Consultant"
-                    desc={t.freelance.items.deodi.desc}
-                    tags={["Digital Transformation", "Ecommerce", "Branding"]}
-                    icon={<Palette size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.suma.title}
-                    role="Tech & Design"
-                    desc={t.freelance.items.suma.desc}
-                    tags={["Web Dev", "AI Chatbot", "Design"]}
-                    icon={<Database size={24} />}
-                  />
-                </div>
-              </div>
-
-            </div>
-          </ExpandableSection >
 
 
 
           {/* --- QUÉ BUSCO --- */}
-          < ExpandableSection id="seeking" number="07" title={t.seeking.title} >
+          < ExpandableSection id="seeking" icon={<Search size={32} />} title={t.seeking.title} >
             <div className="max-w-4xl space-y-8 text-lg text-zinc-300 font-light leading-relaxed">
               <p>
                 {t.seeking.intro1}
@@ -1218,6 +1238,47 @@ function SkillCard({ icon, title, desc, className }: { icon: React.ReactNode; ti
   );
 }
 
+function StackCategory({ title, groups }: { title: string, groups: { title: string, tools: string[] }[] }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border border-white/10 rounded-xl overflow-hidden bg-white/5 hover:border-[#82ff1f]/30 transition-colors">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full flex items-center justify-between p-4 text-left group"
+      >
+        <h4 className="text-base font-bold text-zinc-100 group-hover:text-[#82ff1f] transition-colors">{title}</h4>
+        <ChevronDown size={20} className={`text-zinc-500 transition-transform duration-300 group-hover:text-[#82ff1f] ${isOpen ? 'rotate-180' : ''}`} />
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3, ease: "easeInOut" }}
+          >
+            <div className="px-4 pb-6 pt-0 space-y-6 border-t border-white/5 mt-2">
+              {groups.map((group, idx) => (
+                <div key={idx} className="pt-4">
+                  <h5 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-3 pl-1">{group.title}</h5>
+                  <div className="flex flex-wrap gap-2">
+                    {group.tools.map((tool) => (
+                      <span key={tool} className="text-xs px-2.5 py-1 rounded bg-black/20 text-zinc-300 border border-white/5 hover:bg-[#82ff1f]/10 hover:text-[#82ff1f] hover:border-[#82ff1f]/20 transition-all cursor-default">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
+
 function TechBadge({ name }: { name: string }) {
   return (
     <span className="px-5 py-2.5 rounded-xl bg-white/5 border border-white/5 text-zinc-300 text-sm font-medium hover:text-black hover:bg-[#82ff1f] hover:border-[#82ff1f] transition-all cursor-default shadow-sm hover:shadow-[0_0_15px_rgba(130,255,31,0.3)]">
@@ -1226,9 +1287,7 @@ function TechBadge({ name }: { name: string }) {
   );
 }
 
-
-
-function ExpandableSection({ id, title, number, children, className }: { id?: string, title: string, number: string, children: React.ReactNode, className?: string }) {
+function ExpandableSection({ id, title, number, icon, children, className }: { id?: string, title: string, number?: string, icon?: React.ReactNode, children: React.ReactNode, className?: string }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -1238,7 +1297,12 @@ function ExpandableSection({ id, title, number, children, className }: { id?: st
         className="group flex items-center justify-between w-full pb-4 hover:border-[#82ff1f] transition-all duration-300 text-left"
       >
         <h2 className="font-heading text-3xl font-light text-white flex items-center gap-3">
-          <span className="text-[#82ff1f]">{number}.</span> {title}
+          {icon ? (
+            <span className="text-[#82ff1f] flex items-center justify-center">{icon}</span>
+          ) : (
+            <span className="text-[#82ff1f]">{number}.</span>
+          )}
+          {title}
         </h2>
         <motion.div
           animate={{ rotate: isOpen ? 180 : 0 }}
