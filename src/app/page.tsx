@@ -1044,7 +1044,7 @@ export default function Home() {
         <div className="mb-8">
           <h3 className="text-lg font-bold uppercase tracking-wider mb-6 border-b border-zinc-200 pb-2 text-black">{t.career.title}</h3>
           <div className="space-y-6">
-            {t.career.items?.map((item, index) => (
+            {t.career.sections?.flatMap((section: any) => section.items).map((item: any, index: number) => (
               <div key={index} className="grid grid-cols-[100px_1fr] gap-6 break-inside-avoid">
                 <div className="text-xs font-bold text-zinc-500 pt-1 text-right">{item.year}</div>
                 <div>
