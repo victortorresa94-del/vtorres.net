@@ -165,7 +165,7 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              <div className="relative mx-auto md:mr-0 order-1 md:order-2 h-[500px] w-full max-w-[320px] flex justify-center">
+              <div className="relative mx-auto md:mr-0 order-1 md:order-2 aspect-[9/16] h-auto w-full max-w-[320px] flex justify-center">
                 <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-[#82ff1f]/10 bg-black/40 backdrop-blur-sm">
                   <GumletVideo
                     videoId="6960362fac93fe08564ff67d"

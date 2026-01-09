@@ -67,7 +67,7 @@ export const translations = {
                 },
                 {
                     title: "Colombia",
-                    videoUrl: "https://play.gumlet.io/embed/6960362f195f98d9e1518779",
+                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
                     items: [
                         {
                             year: "2022",
@@ -85,7 +85,7 @@ export const translations = {
                 },
                 {
                     title: "España 1.0",
-                    videoUrl: "https://play.gumlet.io/embed/6960362fac93fe08564ff67f",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
                     items: [
                         {
                             year: "2018 - 2019",
@@ -1663,7 +1663,7 @@ export const translations = {
                 },
                 {
                     title: "Spain 1.0",
-                    videoUrl: "https://play.gumlet.io/embed/6960362fac93fe08564ff67f",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
                     items: [
                         {
                             year: "2018 - 2019",
@@ -2838,7 +2838,7 @@ export const translations = {
                 },
                 {
                     title: "Colòmbia",
-                    videoUrl: "https://play.gumlet.io/embed/6960362f195f98d9e1518779",
+                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
                     items: [
                         {
                             year: "2022",
@@ -2856,7 +2856,7 @@ export const translations = {
                 },
                 {
                     title: "Espanya 1.0",
-                    videoUrl: "https://play.gumlet.io/embed/6960362fac93fe08564ff67f",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
                     items: [
                         {
                             year: "2018 - 2019",
