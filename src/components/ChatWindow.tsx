@@ -414,8 +414,8 @@ export default function ChatWindow() {
                     {/* Text Input */}
                     <input
                         className={`flex-1 rounded-xl border bg-black/40 px-4 py-2.5 text-white placeholder-white/40 focus:outline-none transition-all ${isListening
-                                ? 'border-red-500 focus:border-red-500 focus:ring-1 focus:ring-red-500/50'
-                                : 'border-white/10 focus:border-[#82ff1f]/50 focus:ring-1 focus:ring-[#82ff1f]/50'
+                            ? 'border-red-500 focus:border-red-500 focus:ring-1 focus:ring-red-500/50'
+                            : 'border-white/10 focus:border-[#82ff1f]/50 focus:ring-1 focus:ring-[#82ff1f]/50'
                             }`}
                         value={input}
                         onChange={handleInputChange}
