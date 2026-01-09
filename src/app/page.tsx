@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket } from "lucide-react";
+import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
@@ -165,13 +165,16 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              <div className="relative mx-auto md:mr-0 order-1 md:order-2 aspect-[9/16] h-auto w-full max-w-[320px] flex justify-center">
-                <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-[#82ff1f]/10 bg-black/40 backdrop-blur-sm">
+              <div className="relative mx-auto md:mr-0 order-1 md:order-2 w-full max-w-[320px] flex flex-col items-center gap-3">
+                <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-[#82ff1f]/10 bg-black/40 backdrop-blur-sm">
                   <GumletVideo
                     videoId="6960362fac93fe08564ff67d"
                     title="Hero Video"
                   />
                 </div>
+                <p className="flex items-center gap-1.5 text-xs text-zinc-500 font-medium">
+                  {t.hero.videoHint} <Settings size={14} className="text-zinc-400" />
+                </p>
               </div>
 
             </div>
@@ -193,7 +196,7 @@ export default function Home() {
                 <p>{t.story.p1}</p>
                 <p>{t.story.p2}</p>
                 <p>{t.story.p3}</p>
-                <p>{t.story.p4}</p>
+                <p className="font-bold text-white">{t.story.p4}</p>
                 <p>{t.story.p5}</p>
                 <p>{t.story.p5_5}</p>
                 <p className="border-l-2 border-[#82ff1f] pl-4 italic text-zinc-400">
@@ -251,18 +254,74 @@ export default function Home() {
             </div>
           </ExpandableSection >
 
+
+
           {/* --- FREELANCE & EMPRENDIMIENTO --- */}
           <ExpandableSection id="freelance" icon={<Rocket size={32} />} title={t.freelance.title} >
             <div className="space-y-12">
 
-              {/* Proyectos Propios */}
+              {/* Top Section: Video + Consulting Grid */}
+              <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8">
+                {/* Left: Video */}
+                <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg bg-black/50 sticky top-4 h-fit">
+                  {t.freelance.videoUrl && (
+                    <GumletVideo
+                      videoId={getGumletVideoId(t.freelance.videoUrl)}
+                      title="Freelance Video"
+                    />
+                  )}
+                </div>
+
+                {/* Right: Consulting Projects (Small Grid) */}
+                <div>
+                  <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
+                    <Briefcase size={20} /> {t.freelance.consultingTitle}
+                  </h3>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <ProjectRow
+                      title={t.freelance.items.konektor.title}
+                      role="Growth & AI Partner"
+                      desc={t.freelance.items.konektor.desc}
+                      tags={["Growth Strategy", "AI Sales", "Metaverso"]}
+                      icon={<Briefcase size={24} />}
+                      className="h-full"
+                    />
+                    <ProjectRow
+                      title={t.freelance.items.soma.title}
+                      role="Launch Strategist"
+                      desc={t.freelance.items.soma.desc}
+                      tags={["Launch", "Content", "Sales Closing"]}
+                      icon={<Megaphone size={24} />}
+                      className="h-full"
+                    />
+                    <ProjectRow
+                      title={t.freelance.items.deodi.title}
+                      role="Business Consultant"
+                      desc={t.freelance.items.deodi.desc}
+                      tags={["Digital Transformation", "Ecommerce", "Branding"]}
+                      icon={<Palette size={24} />}
+                      className="h-full"
+                    />
+                    <ProjectRow
+                      title={t.freelance.items.suma.title}
+                      role="Tech & Design"
+                      desc={t.freelance.items.suma.desc}
+                      tags={["Web Dev", "AI Chatbot", "Design"]}
+                      icon={<Database size={24} />}
+                      className="h-full"
+                    />
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Section: Own Projects */}
               <div>
                 <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
                   <Target size={20} /> {t.freelance.ownTitle}
                 </h3>
-                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 md:pb-0">
+                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 md:pb-0">
                   <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    className="min-w-[85vw] md:min-w-0 snap-center h-full"
                     title={t.freelance.items.aether.title}
                     role="Founder"
                     desc={t.freelance.items.aether.desc}
@@ -271,7 +330,7 @@ export default function Home() {
                     icon={<Brain size={24} />}
                   />
                   <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    className="min-w-[85vw] md:min-w-0 snap-center h-full"
                     title={t.freelance.items.music.title}
                     role="Founder & Community"
                     desc={t.freelance.items.music.desc}
@@ -280,7 +339,7 @@ export default function Home() {
                     icon={<Music size={24} />}
                   />
                   <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    className="min-w-[85vw] md:min-w-0 snap-center h-full"
                     title={t.freelance.items.condor.title}
                     role="Founder & Manager"
                     desc={t.freelance.items.condor.desc}
@@ -288,7 +347,7 @@ export default function Home() {
                     icon={<Mic size={24} />}
                   />
                   <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    className="min-w-[85vw] md:min-w-0 snap-center h-full"
                     title={t.freelance.items.rings.title}
                     role="Founder"
                     desc={t.freelance.items.rings.desc}
@@ -296,7 +355,7 @@ export default function Home() {
                     icon={<ShoppingBag size={24} />}
                   />
                   <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    className="min-w-[85vw] md:min-w-0 snap-center h-full"
                     title={t.freelance.items.jarana.title}
                     role="Founder & Musician"
                     desc={t.freelance.items.jarana.desc}
@@ -304,53 +363,12 @@ export default function Home() {
                     icon={<Music size={24} />}
                   />
                   <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
+                    className="min-w-[85vw] md:min-w-0 snap-center h-full"
                     title={t.freelance.items.cataleya.title}
                     role="Co-Founder"
                     desc={t.freelance.items.cataleya.desc}
                     tags={["Events", "Flamenco", "Premium"]}
                     icon={<Music size={24} />}
-                  />
-                </div>
-              </div>
-
-              {/* Freelance */}
-              <div>
-                <h3 className="text-xl font-bold text-[#82ff1f] mb-6 flex items-center gap-2">
-                  <Briefcase size={20} /> {t.freelance.consultingTitle}
-                </h3>
-                <div className="flex overflow-x-auto pb-6 gap-4 snap-x snap-mandatory md:grid md:grid-cols-1 md:pb-0">
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.konektor.title}
-                    role="Growth & AI Partner"
-                    desc={t.freelance.items.konektor.desc}
-                    tags={["Growth Strategy", "AI Sales", "Metaverso"]}
-                    icon={<Briefcase size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.soma.title}
-                    role="Launch Strategist"
-                    desc={t.freelance.items.soma.desc}
-                    tags={["Launch", "Content", "Sales Closing"]}
-                    icon={<Megaphone size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.deodi.title}
-                    role="Business Consultant"
-                    desc={t.freelance.items.deodi.desc}
-                    tags={["Digital Transformation", "Ecommerce", "Branding"]}
-                    icon={<Palette size={24} />}
-                  />
-                  <ProjectRow
-                    className="min-w-[85vw] md:min-w-0 snap-center"
-                    title={t.freelance.items.suma.title}
-                    role="Tech & Design"
-                    desc={t.freelance.items.suma.desc}
-                    tags={["Web Dev", "AI Chatbot", "Design"]}
-                    icon={<Database size={24} />}
                   />
                 </div>
               </div>
@@ -575,21 +593,28 @@ export default function Home() {
           </ExpandableSection >
 
 
-          {/* --- SEPARATOR --- */}
-          <div className="py-24 max-w-6xl mx-auto px-6">
-            <div className="h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent mb-12" />
-            <div className="text-center space-y-4">
-              <h2 className="text-4xl md:text-5xl font-heading font-light text-white tracking-tight">
-                {t.capabilities?.title || "Capabilities & Results"}
-              </h2>
-              <p className="text-zinc-400 max-w-2xl mx-auto text-lg font-light leading-relaxed">
-                {t.capabilities?.desc || "Beyond experience, here I detail my technical skills, quantifiable achievements, and academic background."}
-              </p>
+          {/* --- MIS NÚMEROS --- */}
+          <section id="numbers" className="py-16 max-w-6xl mx-auto px-6">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <NumberCard icon={<TrendingUp size={24} />} value="12" label="Años" description="En el mercado laboral, acumulando experiencia en entornos muy diversos." />
+              <NumberCard icon={<Megaphone size={24} />} value="8" label="Años Marketing" description="En marketing digital, ventas y estrategia de crecimiento." />
+              <NumberCard icon={<Target size={24} />} value="5" label="Años PM" description="Gestionando proyectos, equipos y procesos bajo metodologías ágiles." />
+              <NumberCard icon={<Brain size={24} />} value="3" label="Años IA" description="Trabajando con IA aplicada, automatización y agentes conversacionales." />
+              <NumberCard icon={<Users size={24} />} value="+50" label="Personas" description="Lideradas en equipos multidisciplinares de marketing, tech y operaciones." />
+              <NumberCard icon={<Briefcase size={24} />} value="+30" label="Proyectos" description="Gestionados con éxito como PM, desde webs hasta ERPs enterprise." />
+              <NumberCard icon={<ClipboardList size={24} />} value="30" label="SOPs" description="Procedimientos Operativos Estándar creados para blindar calidad y escalar equipos." />
+              <NumberCard icon={<Globe size={24} />} value="+20" label="Webs" description="Desarrolladas y lanzadas para clientes y proyectos propios." />
+              <NumberCard icon={<Palette size={24} />} value="20" label="Marcas" description="Identidades corporativas creadas desde cero." />
+              <NumberCard icon={<Cpu size={24} />} value="10" label="Soluciones IA" description="Chatbots, agentes de voz y automatizaciones desarrolladas." />
+              <NumberCard icon={<TrendingUp size={24} />} value="1.5M€" label="Presupuesto" description="Gestionado en proyectos de alto valor." />
+              <NumberCard icon={<Rocket size={24} />} value="30k€" label="Freelance" description="Facturados como consultor independiente." />
+              <NumberCard icon={<Database size={24} />} value="3" label="ERPs" description="NetSuite, SAP y ClickUp implementados a nivel enterprise." />
+              <NumberCard icon={<User size={24} />} value="10M" label="Alcance" description="Personas alcanzadas en redes sociales con alcance orgánico." />
+              <NumberCard icon={<Zap size={24} />} value="15" label="Negocios" description="Empresas impulsadas y aceleradas en su crecimiento." />
             </div>
-            <div className="h-px bg-gradient-to-r from-transparent via-[#82ff1f]/30 to-transparent mt-12" />
-          </div>
+          </section>
 
-          <div className="my-16 h-px bg-gradient-to-r from-transparent via-white/10 to-transparent max-w-6xl mx-auto hidden" />
+
 
           {/* --- HITOS Y LOGROS --- */}
           < ExpandableSection id="achievements" icon={<Award size={32} />} title={t.achievements.title} >
@@ -818,6 +843,7 @@ export default function Home() {
               ))}
             </div>
           </ExpandableSection>
+
 
 
 
@@ -1083,14 +1109,8 @@ export default function Home() {
           <div className="flex justify-center gap-6 text-sm text-zinc-600 font-medium">
             <span>victortorresa94@gmail.com</span>
             <span>+34 627 28 14 59</span>
-            <span>linkedin.com/in/víctor-torres-arana</span>
+            <a href="https://vtorres.net" className="text-zinc-600 hover:text-black underline">vtorres.net</a>
           </div>
-        </div>
-
-        {/* Profile */}
-        <div className="mb-8 pl-4 border-l-4 border-[#82ff1f]">
-          <h3 className="text-sm font-bold uppercase tracking-widest mb-2 text-zinc-400">Perfil</h3>
-          <p className="text-sm text-black leading-relaxed text-justify font-medium">{t.hero.description}</p>
         </div>
 
         {/* Experience */}
@@ -1128,7 +1148,7 @@ export default function Home() {
         </div>
 
         {/* Skills */}
-        <div className="mb-8 break-before-auto">
+        <div className="mb-8 break-before-page">
           <h3 className="text-lg font-bold uppercase tracking-wider mb-6 border-b border-zinc-200 pb-2 text-black">{t.skills.title}</h3>
           <div className="grid grid-cols-2 gap-x-12 gap-y-6">
             <div>
@@ -1203,32 +1223,41 @@ function MobileNavLink({ href, onClick, children }: { href: string; onClick: () 
 
 
 
-function ProjectRow({ title, role, desc, tags, link, icon, className }: { title: string; role: string; desc: string; tags: string[]; link?: string; icon?: React.ReactNode; className?: string }) {
+function ProjectRow({ title, role, desc, tags, link, icon, image, className }: { title: string; role: string; desc: string; tags: string[]; link?: string; icon?: React.ReactNode; image?: string; className?: string }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
-      className={`group relative p-8 rounded-3xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/30 hover:bg-white/[0.07] transition-all hover:shadow-[0_0_30px_-10px_rgba(130,255,31,0.1)] ${className}`}
+      className={`group relative rounded-3xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/30 hover:bg-white/[0.07] transition-all hover:shadow-[0_0_30px_-10px_rgba(130,255,31,0.1)] overflow-hidden flex flex-col ${className}`}
     >
-      <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
-        <div>
-          <h3 className="text-2xl font-heading font-medium text-white flex items-center gap-3 group-hover:text-[#82ff1f] transition-colors">
-            {icon && <span className="text-[#82ff1f] opacity-80 group-hover:opacity-100">{icon}</span>}
-            {title}
-            {link && <Code size={20} className="text-[#82ff1f] opacity-50 group-hover:opacity-100 transition-opacity ml-1" />}
-          </h3>
-          <span className="text-sm text-[#82ff1f] font-mono tracking-wider pl-1">{role}</span>
+      {image && (
+        <div className="w-full h-48 relative overflow-hidden">
+          <img src={image} alt={title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60" />
         </div>
-        <div className="flex gap-2 flex-wrap">
-          {tags.map(tag => (
-            <span key={tag} className="text-xs px-3 py-1 bg-black/40 rounded-full border border-white/10 text-zinc-400 group-hover:border-[#82ff1f]/20 transition-colors">
-              {tag}
-            </span>
-          ))}
+      )}
+
+      <div className="p-8 flex flex-col flex-grow">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+          <div>
+            <h3 className="text-2xl font-heading font-medium text-white flex items-center gap-3 group-hover:text-[#82ff1f] transition-colors">
+              {icon && !image && <span className="text-[#82ff1f] opacity-80 group-hover:opacity-100">{icon}</span>}
+              {title}
+              {link && <Code size={20} className="text-[#82ff1f] opacity-50 group-hover:opacity-100 transition-opacity ml-1" />}
+            </h3>
+            <span className="text-sm text-[#82ff1f] font-mono tracking-wider pl-1">{role}</span>
+          </div>
+          <div className="flex gap-2 flex-wrap">
+            {tags.map(tag => (
+              <span key={tag} className="text-xs px-3 py-1 bg-black/40 rounded-full border border-white/10 text-zinc-400 group-hover:border-[#82ff1f]/20 transition-colors">
+                {tag}
+              </span>
+            ))}
+          </div>
         </div>
+        <p className="text-zinc-400 text-base leading-relaxed max-w-3xl font-light">{desc}</p>
       </div>
-      <p className="text-zinc-400 text-base leading-relaxed max-w-3xl font-light">{desc}</p>
 
       {link && (
         <a href={link} target="_blank" rel="noopener noreferrer" className="absolute inset-0 z-10" aria-label={`Ver proyecto ${title}`} />

@@ -17,10 +17,11 @@ export const translations = {
             openToWork: "Open to Work",
             name: "Víctor Torres Arana",
             title: "Project Manager / AI Builder & Business Accelerator",
-            description: "Impulso negocios desde cero y transformo ideas en productos digitales rentables. Especializado en organizar equipos, optimizar procesos, generar ventas y automatizar operaciones para escalar empresas de forma eficiente.",
+            description: "",
             contact: "CONTACTO",
             linkedin: "LINKEDIN",
-            cv: "CV .PDF"
+            cv: "CV .PDF",
+            videoHint: "Puedes acelerar el video haciendo click en"
         },
         story: {
             title: "Mi Historia",
@@ -28,7 +29,7 @@ export const translations = {
             p1: "Me considero un perfil 360. A lo largo de mi trayectoria he trabajado en prácticamente todos los departamentos de una empresa —ventas, compras, contabilidad, logística, marketing y gerencia—, lo que me ha permitido desarrollar una visión global y muy práctica de cómo funcionan realmente las organizaciones y cuáles son sus necesidades operativas reales.",
             p2: "Durante más de ocho años trabajé en marketing digital y ventas. En 2022 di un paso clave al asumir mi primer rol como Project Manager y líder de procesos en una agencia de marketing, donde diseñé desde cero la estructura operativa, logrando mejorar la eficiencia global en torno a un 30%.",
             p3: "Tras la pandemia me trasladé a Colombia sin un plan definido. Allí creé y gestioné múltiples emprendimientos propios que se convirtieron en un auténtico máster práctico en negocio y ejecución bajo presión.",
-            p4: "Descubrí que mi fortaleza es la capacidad para organizar el caos y mejorar sistemas. La irrupción de ChatGPT me llevó a especializarme en Inteligencia Artificial aplicada, integrándola de forma práctica en proyectos reales.",
+            p4: "Descubrí que mi fortaleza es la capacidad para organizar el caos y mejorar sistemas.",
             p5: "De vuelta en España lideré la implementación de un ERP de Oracle y la estrategia GTM de una startup de IA. No soy un perfil puramente técnico, pero tampoco exclusivamente estratégico. Me sitúo en un punto intermedio que me permite traducir necesidades de negocio en sistemas funcionales.",
             p5_5: "Suelo ser la mano derecha de la persona que lidera el negocio.",
             p6: "Actualmente busco incorporarme en una compañía donde pueda aportar esta experiencia híbrida y seguir creciendo en un entorno estable."
@@ -41,16 +42,10 @@ export const translations = {
                     videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
                     items: [
                         {
-                            year: "2018 - 2019",
-                            title: "Business Manager (Operaciones)",
-                            role: "Denetic",
-                            desc: "Responsable total de la operativa de la empresa. Gestión integral de compras internacionales (China), logística, almacén, facturación y coordinación de instalaciones técnicas."
-                        },
-                        {
-                            year: "2017",
-                            title: "Responsable de Marketing & Compras",
-                            role: "Reauxi",
-                            desc: "Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
+                            year: "2014 - 2016",
+                            title: "Diseñador Gráfico & Marketing B2B",
+                            role: "HTW Spain",
+                            desc: "Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
                         },
                         {
                             year: "2016 - 2018",
@@ -59,10 +54,16 @@ export const translations = {
                             desc: "Gestión eficiente de inventario, optimización de flujos de carga y descarga, y coordinación logística para garantizar SLA de entrega."
                         },
                         {
-                            year: "2014 - 2016",
-                            title: "Diseñador Gráfico & Marketing B2B",
-                            role: "HTW Spain",
-                            desc: "Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
+                            year: "2017",
+                            title: "Responsable de Marketing & Compras",
+                            role: "Reauxi",
+                            desc: "Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
+                        },
+                        {
+                            year: "2018 - 2019",
+                            title: "Business Manager (Operaciones)",
+                            role: "Denetic",
+                            desc: "Responsable total de la operativa de la empresa. Gestión integral de compras internacionales (China), logística, almacén, facturación y coordinación de instalaciones técnicas."
                         }
                     ]
                 },
@@ -71,10 +72,10 @@ export const translations = {
                     videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
                     items: [
                         {
-                            year: "2022 - 2023",
-                            title: "PM & Líder de Procesos",
-                            role: "Eme Growth Agency",
-                            desc: "Implementación de nuevo software de gestión de proyectos (Clickup) en un equipo de +30 personas, creando +30 nuevos SOPs y optimizando la agencia un 30%. Liderazgo de proyectos web y app como project manager posteriormente."
+                            year: "2021",
+                            title: "Customer Service & Sales",
+                            role: "AT&T (USA)",
+                            desc: "Soporte telefónico diario para clientes en EE.UU. Resolución de incidencias técnicas y venta cruzada de nuevos productos y servicios."
                         },
                         {
                             year: "2022",
@@ -83,47 +84,63 @@ export const translations = {
                             desc: "Estrategia GTM para 'Totemica' (Skincare Miami). Branding, búsqueda de proveedores internacionales y lanzamiento exitoso al mercado."
                         },
                         {
-                            year: "2021",
-                            title: "Customer Service & Sales (Bilingüe)",
-                            role: "AT&T (USA)",
-                            desc: "Soporte telefónico diario para clientes en EE.UU. Resolución de incidencias técnicas y venta cruzada de nuevos productos y servicios."
+                            year: "2022 - 2023",
+                            title: "PM & Líder de Procesos",
+                            role: "Eme Growth Agency",
+                            desc: "Implementación de nuevo software de gestión de proyectos (Clickup) en un equipo de +30 personas, creando +30 nuevos SOPs y optimizando la agencia un 30%. Toda la gestión se realizó bajo metodología Scrum. Liderazgo de proyectos web y app como project manager posteriormente."
                         }
                     ]
                 },
                 {
                     title: "España 2.0",
+                    videoUrl: "https://gumlet.tv/watch/6961272a6a1e75f7abb7e7c1/",
                     items: [
+                        {
+                            year: "2023",
+                            title: "Marketing & Business Development",
+                            role: "Konektor",
+                            desc: "Lideré el lanzamiento del producto de agentes de voz IA, implementé un sistema de captación de leads con IA, senté las bases de marketing digital y participé activamente en labores comerciales y de prospección B2B."
+                        },
+                        {
+                            year: "2023 - 2024",
+                            title: "Project Manager - Netsuite Oracle",
+                            role: "DisrupTT",
+                            desc: "Liderazgo en la implementación del ERP Oracle Netsuite. Coordinación de equipos técnicos y consultoría de procesos."
+                        },
+                        {
+                            year: "2024 - 2025",
+                            title: "CMO",
+                            role: "Kmeleon",
+                            desc: "Estrategia de marca internacional y Go-to-Market para soluciones de IA. Automatización de procesos de venta y narrativa tecnológica."
+                        },
                         {
                             year: "2025 - Present",
                             title: "Consultor de Negocio & IA",
                             role: "Autónomo",
                             desc: "Implementación de soluciones de IA para empresas, consultoría estratégica de marketing y dirección de proyectos tecnológicos."
-                        },
-                        {
-                            year: "2023 - 2024",
-                            title: "CMO & Marketing AI",
-                            role: "Kmeleon",
-                            desc: "Estrategia de marca internacional y Go-to-Market para soluciones de IA. Automatización de procesos de venta y narrativa tecnológica."
-                        },
-                        {
-                            year: "2023",
-                            title: "Netsuite Oracle Project Manager",
-                            role: "DisrupTT",
-                            desc: "Liderazgo en la implementación del ERP Oracle Netsuite. Coordinación de equipos técnicos y consultoría de procesos."
-                        },
-                        {
-                            year: "2022 - 2023",
-                            title: "Growth Partner & BizDev",
-                            role: "Konektor",
-                            desc: "Desarrollo de negocio and expansión estratégica. Implementación de ventas consultivas apoyadas en herramientas de IA."
                         }
                     ]
                 }
             ]
         },
-        capabilities: {
-            title: "Capacidades & Resultados",
-            desc: "Más allá de la experiencia, aquí detallo mis habilidades técnicas, logros cuantificables y formación académica."
+        numbers: {
+            title: "Mis Números",
+            items: [
+                { value: "12", label: "Años", desc: "en el mercado laboral, acumulando experiencia en entornos muy diversos", icon: "Calendar" },
+                { value: "8", label: "Años Marketing", desc: "en marketing digital, ventas y estrategia de crecimiento", icon: "Megaphone" },
+                { value: "3", label: "Años IA", desc: "trabajando con IA aplicada, automatización y agentes conversacionales", icon: "Brain" },
+                { value: "+50", label: "Personas Lideradas", desc: "en equipos multidisciplinares de marketing, tech y operaciones", icon: "Users" },
+                { value: "+30", label: "Proyectos", desc: "gestionados con éxito como PM, desde webs hasta ERPs enterprise", icon: "Briefcase" },
+                { value: "30", label: "SOPs", desc: "Procedimientos Operativos Estándar creados para blindar calidad y escalar equipos", icon: "ClipboardList" },
+                { value: "6", label: "Departamentos", desc: "Ventas, Marketing, Logística, Compras, Finanzas y Gerencia", icon: "Building" },
+                { value: "+10", label: "Webs & E-commerce", desc: "desarrollados y lanzados para clientes y proyectos propios", icon: "Globe" },
+                { value: "5", label: "Marcas Branding", desc: "identidades corporativas creadas desde cero", icon: "Palette" },
+                { value: "+15", label: "Soluciones IA", desc: "chatbots, agentes de voz y automatizaciones desarrolladas", icon: "Cpu" },
+                { value: "+1M€", label: "Presupuesto", desc: "gestionado en proyectos de alto valor", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "facturados como consultor independiente", icon: "Wallet" },
+                { value: "3", label: "ERPs Implementados", desc: "NetSuite, SAP y ClickUp a nivel enterprise", icon: "Database" },
+                { value: "+8", label: "Negocios Impulsados", desc: "empresas en las que he trabajado e impulsado su crecimiento", icon: "Rocket" }
+            ]
         },
         achievements: {
             title: "Hitos & Logros",
@@ -363,25 +380,6 @@ export const translations = {
                 }
             }
         },
-        numbers: {
-            title: "Mis Números",
-            impact: "Impacto Total",
-            impactDesc: "Personas alcanzadas.",
-            webs: "Webs & E-commerce",
-            websDesc: "Desarrollados y lanzados.",
-            brands: "Marcas Branding",
-            brandsDesc: "Identidades corporativas.",
-            ai: "Soluciones IA",
-            aiDesc: "Desarrolladas con código propio.",
-            systems: "SOPs",
-            systemsDesc: "Procesos optimizados.",
-            budget: "Presupuesto",
-            budgetDesc: "Gestionados en proyectos.",
-            core: "Sistemas Core",
-            coreDesc: "NetSuite, SAP, ClickUp implementados.",
-            boosted: "Negocios Impulsados",
-            boostedDesc: "Empresas en las que he trabajado e impulsado su crecimiento."
-        },
         education: {
             title: "Formación & Certificaciones",
             items: [
@@ -424,6 +422,7 @@ export const translations = {
         },
         freelance: {
             title: "Emprendimiento & Freelance",
+            videoUrl: "https://gumlet.tv/watch/696123146a1e75f7abb79eab/",
             ownTitle: "Proyectos Propios & Startups",
             consultingTitle: "Consultoría & Freelance",
             items: {
@@ -468,6 +467,60 @@ export const translations = {
                     desc: "Modernización operativa. Optimización web, diseño de identidad corporativa y desarrollo de chatbot IA para automatizar citas y atención al paciente."
                 }
             }
+        },
+        portfolio: {
+            title: "Referencias",
+            intro: "Más allá de las palabras, los hechos. Proyectos reales, webs activas y cuentas de redes que demuestran la experiencia.",
+            items: [
+                {
+                    title: "94 Music - 16k Followers",
+                    role: "Growth & Community",
+                    desc: "Crecimiento 100% orgánico de 0 a 16.000 seguidores en Instagram. Estrategia de contenido viral, Reels y fidelización de comunidad sin inversión publicitaria.",
+                    tags: ["Instagram Growth", "Social Media", "Viral Content"],
+                    link: "https://www.instagram.com/the94music/",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Aether Labs",
+                    role: "Web & AI Brand",
+                    desc: "Diseño y desarrollo completo de la web corporativa para la agencia de IA. Estética futurista, optimización SEO y conversión B2B.",
+                    tags: ["Web Design", "Next.js", "Branding"],
+                    link: "https://aetherlabs.es",
+                    image: "/images/ai-hero-new.jpg"
+                },
+                {
+                    title: "Puerta de Oro - Álbum",
+                    role: "Creative Direction & Launch",
+                    desc: "Participación integral en el lanzamiento del disco. Producción de videoclips, estrategia de redes sociales y coordinación de campaña de marketing visual.",
+                    tags: ["Music Launch", "Video Production", "Creative Direction"],
+                    link: "https://open.spotify.com/intl-es/album/00fk8QWotfjQgfiLPV6rb3?si=W61mfdd1TKuZZuxiwek6Og",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Soma Indomable",
+                    role: "Campaign Management",
+                    desc: "Gestión estratégica de Instagram para campaña de lanzamiento. Maximización del alcance y conversión mediante narrativa visual y storytelling.",
+                    tags: ["Campaign Strategy", "Instagram", "Copywriting"],
+                    link: "https://www.instagram.com/soma_indomable",
+                    image: "/images/branding.png"
+                },
+                {
+                    title: "La Payara",
+                    role: "Artist Digital Mgmt",
+                    desc: "Gestión digital y estrategia de contenidos para proyecto musical internacional. Coordinación de lanzamientos y presencia digital.",
+                    tags: ["Artist Management", "Social Media", "Strategy"],
+                    link: "https://www.instagram.com/lapayara",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Web Eme",
+                    role: "Web Development",
+                    desc: "Desarrollo web para agencia. Enfoque en velocidad de carga, usabilidad y presentación de servicios de alto valor.",
+                    tags: ["Web Dev", "UX/UI", "Optimization"],
+                    link: "#",
+                    image: "/images/startup.png"
+                }
+            ]
         },
         seeking: {
             title: "Mis Objetivos",
@@ -1601,10 +1654,11 @@ export const translations = {
             openToWork: "Open to Work",
             name: "Víctor Torres Arana",
             title: "Project Manager / AI Builder & Business Accelerator",
-            description: "I boost businesses from scratch and transform ideas into profitable digital products. Specialized in organizing teams, optimizing processes, generating sales, and automating operations to scale companies efficiently.",
+            description: "",
             contact: "CONTACT",
             linkedin: "LINKEDIN",
-            cv: "CV .PDF"
+            cv: "CV .PDF",
+            videoHint: "You can speed up the video by clicking"
         },
         story: {
             title: "My Story",
@@ -1612,7 +1666,7 @@ export const translations = {
             p1: "I consider myself a 360 profile. Throughout my career, I've worked in virtually every department of a company—sales, purchasing, accounting, logistics, marketing, and management—which has allowed me to develop a global and very practical vision of how organizations really work and what their actual operational needs are.",
             p2: "For over eight years I worked in digital marketing and sales. In 2022 I took a key step by assuming my first role as Project Manager and process leader in a marketing agency, where I designed the operational structure from scratch, achieving a global efficiency improvement of around 30%.",
             p3: "After the pandemic I moved to Colombia without a defined plan. There I created and managed multiple own ventures that became an authentic practical master's degree in business and execution under pressure.",
-            p4: "I discovered that my strength is the ability to organize chaos and improve systems. The emergence of ChatGPT led me to specialize in applied Artificial Intelligence, integrating it practically into real projects.",
+            p4: "I discovered that my strength is the ability to organize chaos and improve systems.",
             p5: "Back in Spain I led the implementation of an Oracle ERP and the GTM strategy of an AI startup. I'm not a purely technical profile, but not exclusively strategic either. I sit at an intermediate point that allows me to translate business needs into functional systems.",
             p5_5: "I am usually the right-hand person of the business leader.",
             p6: "Currently I seek to join a company where I can contribute this hybrid experience and continue growing in a stable environment."
@@ -1625,16 +1679,10 @@ export const translations = {
                     videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
                     items: [
                         {
-                            year: "2018 - 2019",
-                            title: "Business Manager (Operations)",
-                            role: "Denetic",
-                            desc: "Total responsibility for company operations. Integral management of international purchasing (China), logistics, warehouse management, invoicing, and coordination of technical installations."
-                        },
-                        {
-                            year: "2017",
-                            title: "Marketing & Purchasing Lead",
-                            role: "Reauxi",
-                            desc: "Management of critical project for Mercedes (€1M). Responsible for international purchases, invoicing, and ERP registration."
+                            year: "2014 - 2016",
+                            title: "Graphic Designer & B2B Marketing",
+                            role: "HTW Spain",
+                            desc: "First professional stage. Brand identity creation, technical catalog design, and industrial marketing support."
                         },
                         {
                             year: "2016 - 2018",
@@ -1643,10 +1691,16 @@ export const translations = {
                             desc: "Efficient inventory management, loading/unloading flow optimization, and logistics coordination to ensure delivery SLAs."
                         },
                         {
-                            year: "2014 - 2016",
-                            title: "Graphic Designer & B2B Marketing",
-                            role: "HTW Spain",
-                            desc: "First professional stage. Brand identity creation, technical catalog design, and industrial marketing support."
+                            year: "2017",
+                            title: "Marketing & Purchasing Lead",
+                            role: "Reauxi",
+                            desc: "Management of critical project for Mercedes (€1M). Responsible for international purchases, invoicing, and ERP registration."
+                        },
+                        {
+                            year: "2018 - 2019",
+                            title: "Business Manager (Operations)",
+                            role: "Denetic",
+                            desc: "Total responsibility for company operations. Integral management of international purchasing (China), logistics, warehouse management, invoicing, and coordination of technical installations."
                         }
                     ]
                 },
@@ -1655,10 +1709,10 @@ export const translations = {
                     videoUrl: "https://play.gumlet.io/embed/6960362f195f98d9e1518779",
                     items: [
                         {
-                            year: "2022 - 2023",
-                            title: "PM & Process Leader",
-                            role: "Eme Growth Agency",
-                            desc: "Design and execution of the agency's operational structure. Leadership of multidisciplinary teams and creation of 'EME Academy'."
+                            year: "2021",
+                            title: "Customer Service & Sales",
+                            role: "AT&T (USA)",
+                            desc: "Daily phone support for US customers. Troubleshooting and cross-selling of new products and services."
                         },
                         {
                             year: "2022",
@@ -1667,47 +1721,63 @@ export const translations = {
                             desc: "GTM strategy for 'Totemica' (Skincare Miami). Branding, international vendor search, and successful market launch."
                         },
                         {
-                            year: "2021",
-                            title: "Customer Service & Sales (Bilingual)",
-                            role: "AT&T (USA)",
-                            desc: "Daily phone support for US customers. Troubleshooting and cross-selling of new products and services."
+                            year: "2022 - 2023",
+                            title: "PM & Process Leader",
+                            role: "Eme Growth Agency",
+                            desc: "Implementation of new project management software (ClickUp) in a +30 person team, creating +30 new SOPs and optimizing the agency by 30%. All management was done under Scrum methodology. Leadership of web and app projects as project manager."
                         }
                     ]
                 },
                 {
                     title: "Spain 2.0",
+                    videoUrl: "https://gumlet.tv/watch/6961272a6a1e75f7abb7e7c1/",
                     items: [
+                        {
+                            year: "2023",
+                            title: "Marketing & Business Development",
+                            role: "Konektor",
+                            desc: "Led the launch of AI voice agents product, implemented an AI-powered lead capture system, established digital marketing foundations, and actively participated in B2B sales and prospecting."
+                        },
+                        {
+                            year: "2023 - 2024",
+                            title: "Project Manager - Netsuite Oracle",
+                            role: "DisrupTT",
+                            desc: "Leadership in the implementation of the Oracle Netsuite ERP. Coordination of technical teams and process consulting."
+                        },
+                        {
+                            year: "2024 - 2025",
+                            title: "CMO",
+                            role: "Kmeleon",
+                            desc: "International brand strategy and Go-to-Market for AI solutions. Automation of sales processes and technological narrative."
+                        },
                         {
                             year: "2025 - Present",
                             title: "Business & AI Consultant",
                             role: "Freelance",
                             desc: "Implementation of AI solutions for companies, strategic marketing consulting, and technology project management."
-                        },
-                        {
-                            year: "2023 - 2024",
-                            title: "CMO & Marketing AI",
-                            role: "Kmeleon",
-                            desc: "International brand strategy and Go-to-Market for AI solutions. Automation of sales processes and technological narrative."
-                        },
-                        {
-                            year: "2023",
-                            title: "Netsuite Oracle Project Manager",
-                            role: "DisrupTT",
-                            desc: "Leadership in the implementation of the Oracle Netsuite ERP. Coordination of technical teams and process consulting."
-                        },
-                        {
-                            year: "2022 - 2023",
-                            title: "Growth Partner & BizDev",
-                            role: "Konektor",
-                            desc: "Business development and strategic expansion. Implementation of consultative sales supported by AI tools."
                         }
                     ]
                 }
             ]
         },
-        capabilities: {
-            title: "Capabilities & Results",
-            desc: "Beyond experience, here I detail my technical skills, quantifiable achievements, and academic background."
+        numbers: {
+            title: "My Numbers",
+            items: [
+                { value: "12", label: "Years", desc: "in the workforce, accumulating experience in very diverse environments", icon: "Calendar" },
+                { value: "8", label: "Years Marketing", desc: "in digital marketing, sales and growth strategy", icon: "Megaphone" },
+                { value: "3", label: "Years AI", desc: "working with applied AI, automation and conversational agents", icon: "Brain" },
+                { value: "+50", label: "People Led", desc: "in multidisciplinary teams across marketing, tech and operations", icon: "Users" },
+                { value: "+30", label: "Projects", desc: "successfully managed as PM, from websites to enterprise ERPs", icon: "Briefcase" },
+                { value: "30", label: "SOPs", desc: "Standard Operating Procedures created to ensure quality and scale teams", icon: "ClipboardList" },
+                { value: "6", label: "Departments", desc: "Sales, Marketing, Logistics, Purchasing, Finance and Management", icon: "Building" },
+                { value: "+10", label: "Webs & E-commerce", desc: "developed and launched for clients and own projects", icon: "Globe" },
+                { value: "5", label: "Branding Projects", desc: "corporate identities created from scratch", icon: "Palette" },
+                { value: "+15", label: "AI Solutions", desc: "chatbots, voice agents and automations developed", icon: "Cpu" },
+                { value: "+1M€", label: "Budget", desc: "managed in high-value projects", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "billed as independent consultant", icon: "Wallet" },
+                { value: "3", label: "ERPs Implemented", desc: "NetSuite, SAP and ClickUp at enterprise level", icon: "Database" },
+                { value: "+8", label: "Businesses Boosted", desc: "companies where I've worked and driven growth", icon: "Rocket" }
+            ]
         },
         achievements: {
             title: "Milestones & Achievements",
@@ -1959,25 +2029,6 @@ export const translations = {
                 }
             }
         },
-        numbers: {
-            title: "My Numbers",
-            impact: "Total Impact",
-            impactDesc: "People reached.",
-            webs: "Webs & E-commerce",
-            websDesc: "Developed and launched.",
-            brands: "Branding Marks",
-            brandsDesc: "Corporate identities.",
-            ai: "AI Solutions",
-            aiDesc: "Developed with own code.",
-            systems: "SOPs",
-            systemsDesc: "Optimized processes.",
-            budget: "Budget",
-            budgetDesc: "Managed in projects.",
-            core: "Core Systems",
-            coreDesc: "NetSuite, SAP, ClickUp implemented.",
-            boosted: "Boosted Businesses",
-            boostedDesc: "Companies in which I have worked and driven their growth."
-        },
         education: {
             title: "Education & Certifications",
             items: [
@@ -2020,6 +2071,7 @@ export const translations = {
         },
         freelance: {
             title: "Entrepreneurship & Freelance",
+            videoUrl: "https://gumlet.tv/watch/696123146a1e75f7abb79eab/",
             ownTitle: "Own Projects & Startups",
             consultingTitle: "Consulting & Freelance",
             items: {
@@ -2800,10 +2852,11 @@ export const translations = {
             openToWork: "Open to Work",
             name: "Víctor Torres Arana",
             title: "Project Manager / AI Builder & Business Accelerator",
-            description: "Impulso negocis des de zero i transformo idees en productes digitals rendibles. Especialitzat en organitzar equips, optimitzar processos, generar vendes i automatitzar operacions per escalar empreses de forma eficient.",
+            description: "",
             contact: "CONTACTE",
             linkedin: "LINKEDIN",
-            cv: "CV .PDF"
+            cv: "CV .PDF",
+            videoHint: "Pots accelerar el vídeo fent clic a"
         },
         story: {
             title: "La Meva Història",
@@ -2811,7 +2864,7 @@ export const translations = {
             p1: "Em considero un perfil 360. Al llarg de la meva trajectòria he treballat en pràcticament tots els departaments d'una empresa —vendes, compres, comptabilitat, logística, màrqueting i gerència—, la qual cosa m'ha permès desenvolupar una visió global i molt pràctica de com funcionen realment les organitzacions i quines són les seves necessitats operatives reals.",
             p2: "Durant més de vuit anys vaig treballar en màrqueting digital i vendes. El 2022 vaig fer un pas clau en assumir el meu primer rol com a Project Manager i líder de processos en una agència de màrqueting, on vaig dissenyar des de zero l'estructura operativa, aconseguint millorar l'eficiència global al voltant d'un 30%.",
             p3: "Després de la pandèmia em vaig traslladar a Colòmbia sense un pla definit. Allà vaig crear i gestionar múltiples emprenedories pròpies que es van convertir en un autèntic màster pràctic en negoci i execució sota pressió.",
-            p4: "Vaig descobrir que la meva fortalesa és la capacitat per organitzar el caos i millorar sistemes. La irrupció de ChatGPT em va portar a especialitzar-me en Intel·ligència Artificial aplicada, integrant-la de forma pràctica en projectes reals.",
+            p4: "Vaig descobrir que la meva fortalesa és la capacitat per organitzar el caos i millorar sistemes.",
             p5: "De tornada a Espanya vaig liderar la implementació d'un ERP d'Oracle i l'estratègia GTM d'una startup d'IA. No soc un perfil purament tècnic, però tampoc exclusivament estratègic. Em situo en un punt intermedi que em permet traduir necessitats de negoci en sistemes funcionals.",
             p5_5: "Acostumo a ser la mà dreta de la persona que lidera el negoci.",
             p6: "Actualment busco incorporar-me en una companyia on pugui aportar aquesta experiència híbrida i seguir creixent en un entorn estable."
@@ -2857,7 +2910,7 @@ export const translations = {
                             year: "2022 - 2023",
                             title: "PM & Líder de Processos",
                             role: "Eme Growth Agency",
-                            desc: "Disseny i execució de l'estructura operativa de l'agència. Lideratge d'equips multidisciplinaris i creació de 'EME Academy'."
+                            desc: "Implementació de nou software de gestió de projectes (ClickUp) en un equip de +30 persones, creant +30 nous SOPs i optimitzant l'agència un 30%. Tota la gestió es va realitzar sota metodologia Scrum. Lideratge de projectes web i app com a project manager."
                         },
                         {
                             year: "2022",
@@ -2867,7 +2920,7 @@ export const translations = {
                         },
                         {
                             year: "2021",
-                            title: "Customer Service & Sales (Bilingüe)",
+                            title: "Customer Service & Sales",
                             role: "AT&T (USA)",
                             desc: "Suport telefònic diari per a clients dels EUA. Resolució d'incidències tècniques i venda creuada de nous productes i serveis."
                         }
@@ -2875,38 +2928,54 @@ export const translations = {
                 },
                 {
                     title: "Espanya 2.0",
+                    videoUrl: "https://gumlet.tv/watch/6961272a6a1e75f7abb7e7c1/",
                     items: [
+                        {
+                            year: "2023",
+                            title: "Marketing & Business Development",
+                            role: "Konektor",
+                            desc: "Vaig liderar el llançament del producte d'agents de veu IA, vaig implementar un sistema de captació de leads amb IA, vaig establir les bases de màrqueting digital i vaig participar activament en tasques comercials i de prospecció B2B."
+                        },
+                        {
+                            year: "2023 - 2024",
+                            title: "Project Manager - Netsuite Oracle",
+                            role: "DisrupTT",
+                            desc: "Lideratge en la implementació de l'ERP Oracle Netsuite. Coordinació d'equips tècnics i consultoria de processos."
+                        },
+                        {
+                            year: "2024 - 2025",
+                            title: "CMO",
+                            role: "Kmeleon",
+                            desc: "Estratègia de marca internacional i Go-to-Market per a solucions d'IA. Automatització de processos de venda i narrativa tecnològica."
+                        },
                         {
                             year: "2025 - Present",
                             title: "Consultor de Negoci & IA",
                             role: "Autònom",
                             desc: "Implementació de solucions d'IA per a empreses, consultoria estratègica de màrqueting i direcció de projectes tecnològics."
-                        },
-                        {
-                            year: "2023 - 2024",
-                            title: "CMO & Marketing AI",
-                            role: "Kmeleon",
-                            desc: "Estratègia de marca internacional i Go-to-Market per a solucions d'IA. Automatització de processos de venda i narrativa tecnològica."
-                        },
-                        {
-                            year: "2023",
-                            title: "Netsuite Oracle Project Manager",
-                            role: "DisrupTT",
-                            desc: "Lideratge en la implementació de l'ERP Oracle Netsuite. Coordinació d'equips tècnics i consultoria de processos."
-                        },
-                        {
-                            year: "2022 - 2023",
-                            title: "Growth Partner & BizDev",
-                            role: "Konektor",
-                            desc: "Desenvolupament de negoci i expansió estratègica. Implementació de vendes consultives recolzades en eines d'IA."
                         }
                     ]
                 }
             ]
         },
-        capabilities: {
-            title: "Capacitats & Resultats",
-            desc: "Més enllà de l'experiència, aquí detallo les meves habilitats tècniques, èxits quantificables i formació acadèmica."
+        numbers: {
+            title: "Els Meus Números",
+            items: [
+                { value: "12", label: "Anys", desc: "al mercat laboral, acumulant experiència en entorns molt diversos", icon: "Calendar" },
+                { value: "8", label: "Anys Màrqueting", desc: "en màrqueting digital, vendes i estratègia de creixement", icon: "Megaphone" },
+                { value: "3", label: "Anys IA", desc: "treballant amb IA aplicada, automatització i agents conversacionals", icon: "Brain" },
+                { value: "+50", label: "Persones Liderades", desc: "en equips multidisciplinars de màrqueting, tech i operacions", icon: "Users" },
+                { value: "+30", label: "Projectes", desc: "gestionats amb èxit com a PM, des de webs fins a ERPs enterprise", icon: "Briefcase" },
+                { value: "30", label: "SOPs", desc: "Procediments Operatius Estàndard creats per blindar qualitat i escalar equips", icon: "ClipboardList" },
+                { value: "6", label: "Departaments", desc: "Vendes, Màrqueting, Logística, Compres, Finances i Gerència", icon: "Building" },
+                { value: "+10", label: "Webs & E-commerce", desc: "desenvolupats i llançats per a clients i projectes propis", icon: "Globe" },
+                { value: "5", label: "Projectes Branding", desc: "identitats corporatives creades des de zero", icon: "Palette" },
+                { value: "+15", label: "Solucions IA", desc: "chatbots, agents de veu i automatitzacions desenvolupades", icon: "Cpu" },
+                { value: "+1M€", label: "Pressupost", desc: "gestionat en projectes d'alt valor", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "facturats com a consultor independent", icon: "Wallet" },
+                { value: "3", label: "ERPs Implementats", desc: "NetSuite, SAP i ClickUp a nivell enterprise", icon: "Database" },
+                { value: "+8", label: "Negocis Impulsats", desc: "empreses on he treballat i impulsat el creixement", icon: "Rocket" }
+            ]
         },
         achievements: {
             title: "Fites & Èxits",
@@ -3205,12 +3274,12 @@ export const translations = {
         },
         freelance: {
             title: "Emprenedoria & Freelance",
+            videoUrl: "https://gumlet.tv/watch/696123146a1e75f7abb79eab/",
             ownTitle: "Projectes Propis & Startups",
             consultingTitle: "Consultoria & Freelance",
             items: {
                 aether: {
                     title: "Aether Labs",
-                    desc: "Consultora d'Intel·ligència Artificial i automatització. El meu vehicle principal per materialitzar solucions tècniques: agents de veu, chatbots i workflows complexos per a empreses."
                 },
                 music: {
                     title: "94 Music",
@@ -3249,6 +3318,60 @@ export const translations = {
                     desc: "Modernització operativa. Optimització web, disseny d'identitat corporativa i desenvolupament de chatbot IA per automatitzar cites i atenció al pacient."
                 }
             }
+        },
+        portfolio: {
+            title: "Referencias",
+            intro: "Més enllà de les paraules, els fets. Projectes reals, webs actives i comptes socials que demostren l'experiència.",
+            items: [
+                {
+                    title: "94 Music - 16k Community",
+                    role: "Growth & Community",
+                    desc: "Crecimiento 100% orgánico de 0 a 16.000 seguidores. Estrategia de contenido viral y fidelización.",
+                    tags: ["Instagram", "Growth", "Viral"],
+                    link: "https://www.instagram.com/the94music/",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Aether Labs",
+                    role: "Web & AI Brand",
+                    desc: "Web corporativa para agencia de IA. Estética futurista, SEO y conversión B2B.",
+                    tags: ["Web Design", "Next.js", "Branding"],
+                    link: "https://aetherlabs.es",
+                    image: "/images/ai-hero-new.jpg"
+                },
+                {
+                    title: "Puerta de Oro",
+                    role: "Album Launch",
+                    desc: "Lanzamiento de disco, producción de videoclips y estrategia visual en redes.",
+                    tags: ["Spotify", "Video", "Creative"],
+                    link: "https://open.spotify.com/intl-es/album/00fk8QWotfjQgfiLPV6rb3?si=W61mfdd1TKuZZuxiwek6Og",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Soma Indomable",
+                    role: "Campaign Strategy",
+                    desc: "Gestión estratégica de campaña. Narrativa visual y storytelling para maximizar alcance.",
+                    tags: ["Instagram", "Storytelling", "Copy"],
+                    link: "https://www.instagram.com/soma_indomable",
+                    image: "/images/branding.png"
+                },
+                {
+                    title: "La Payara",
+                    role: "Artist Management",
+                    desc: "Gestión digital y estrategia de contenidos para proyecto musical internacional.",
+                    tags: ["Music Mgmt", "Social Media", "Strategy"],
+                    link: "https://www.instagram.com/lapayara",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Web Eme",
+                    role: "Web Development",
+                    desc: "Desarrollo web enfocado en velocidad, usabilidad y presentación de servicios high-ticket.",
+                    tags: ["Web Dev", "UX/UI", "Optimization"],
+                    link: "#",
+                    image: "/images/startup.png"
+                }
+            ]
         },
         seeking: {
             title: "Els Meus Objectius",

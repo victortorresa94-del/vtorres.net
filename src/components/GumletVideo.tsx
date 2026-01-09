@@ -14,7 +14,7 @@ export default function GumletVideo({ videoId, title = "Video", className = "" }
     return (
         <div className={`relative w-full h-full overflow-hidden rounded-2xl ${className}`}>
             <iframe
-                src={`${embedUrl}?autoplay=0&loop=1&muted=0&preload=auto`}
+                src={`${embedUrl}?autoplay=0&loop=1&muted=0&preload=auto&captions=0&text_track=none`}
                 className="w-full h-full"
                 allow="autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowFullScreen
