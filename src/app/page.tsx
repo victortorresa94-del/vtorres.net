@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import GumletVideo from "@/components/GumletVideo";
 import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Home() {
@@ -24,6 +25,22 @@ export default function Home() {
   }, [mobileMenuOpen]);
 
   const achievements = t.achievements.items as any;
+
+  // Helper to extract Gumlet video ID from URL
+  const getGumletVideoId = (url: string) => {
+    try {
+      const urlObj = new URL(url);
+      // Assuming the video ID is the first path segment after the domain
+      // e.g., https://play.gumlet.io/VIDEO_ID or https://v.gumlet.io/VIDEO_ID/...
+      const pathSegments = urlObj.pathname.split('/').filter(segment => segment !== '');
+      if (pathSegments.length > 0) {
+        return pathSegments[pathSegments.length - 1];
+      }
+    } catch (error) {
+      console.error("Invalid URL for Gumlet video:", url, error);
+    }
+    return ''; // Return empty string or handle error appropriately
+  };
 
   return (
     <main className="min-h-screen bg-[#050505] text-white selection:bg-[#82ff1f] selection:text-black relative font-sans">
@@ -148,11 +165,12 @@ export default function Home() {
                 </div>
               </motion.div>
 
-              <div className="relative mx-auto md:mr-0 order-1 md:order-2">
-                <div className="w-64 h-64 md:w-80 md:h-80 rounded-full p-2 relative z-10">
-                  <div className="w-full h-full rounded-full overflow-hidden relative transition-all duration-500">
-                    <Image src="/images/profile.jpg" alt="Víctor Torres" fill className="object-cover" priority />
-                  </div>
+              <div className="relative mx-auto md:mr-0 order-1 md:order-2 h-[500px] w-full max-w-[320px] flex justify-center">
+                <div className="relative w-full h-full rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-[#82ff1f]/10 bg-black/40 backdrop-blur-sm">
+                  <GumletVideo
+                    videoId="6960362fac93fe08564ff67d"
+                    title="Hero Video"
+                  />
                 </div>
               </div>
 
@@ -161,17 +179,27 @@ export default function Home() {
 
           {/* --- MI HISTORIA --- */}
           < ExpandableSection id="story" icon={<User size={32} />} title={t.story.title} >
-            <div className="space-y-6 text-lg text-zinc-300 font-light leading-relaxed">
-              <p className="font-medium text-white text-xl">{t.story.intro}</p>
-              <p>{t.story.p1}</p>
-              <p>{t.story.p2}</p>
-              <p>{t.story.p3}</p>
-              <p>{t.story.p4}</p>
-              <p>{t.story.p5}</p>
-              <p>{t.story.p5_5}</p>
-              <p className="border-l-2 border-[#82ff1f] pl-4 italic text-zinc-400">
-                {t.story.p6}
-              </p>
+            <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-12 items-start">
+              {/* Video Column */}
+              <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-black/50 sticky top-24 h-fit">
+                <GumletVideo
+                  videoId="6960362f525cbb3556159f9e"
+                  title="Story Video"
+                />
+              </div>
+              {/* Text Column */}
+              <div className="space-y-6 text-lg text-zinc-300 font-light leading-relaxed">
+                <p className="font-medium text-white text-xl">{t.story.intro}</p>
+                <p>{t.story.p1}</p>
+                <p>{t.story.p2}</p>
+                <p>{t.story.p3}</p>
+                <p>{t.story.p4}</p>
+                <p>{t.story.p5}</p>
+                <p>{t.story.p5_5}</p>
+                <p className="border-l-2 border-[#82ff1f] pl-4 italic text-zinc-400">
+                  {t.story.p6}
+                </p>
+              </div>
             </div>
           </ExpandableSection >
 
@@ -182,17 +210,42 @@ export default function Home() {
                   <h3 className="text-xl font-bold text-[#82ff1f] mb-8 pl-3 flex items-center gap-2">
                     <Globe size={20} /> {section.title}
                   </h3>
-                  <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
-                    {section.items.map((item: any, itemIndex: number) => (
-                      <TimelineItem
-                        key={itemIndex}
-                        year={item.year}
-                        title={item.title}
-                        role={item.role}
-                        desc={item.desc}
-                      />
-                    ))}
-                  </div>
+                  {/* Layout condition based on video presence */}
+                  {section.videoUrl ? (
+                    <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8">
+                      {/* Video Column */}
+                      <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-black/50 h-fit">
+                        <GumletVideo
+                          videoId={getGumletVideoId(section.videoUrl)}
+                          title={`${section.title} Video`}
+                        />
+                      </div>
+                      {/* Timeline Column */}
+                      <div className="relative border-l border-white/10 ml-0 space-y-12 pl-8">
+                        {section.items.map((item: any, itemIndex: number) => (
+                          <TimelineItem
+                            key={itemIndex}
+                            year={item.year}
+                            title={item.title}
+                            role={item.role}
+                            desc={item.desc}
+                          />
+                        ))}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="relative border-l border-white/10 ml-3 space-y-12 pl-8">
+                      {section.items.map((item: any, itemIndex: number) => (
+                        <TimelineItem
+                          key={itemIndex}
+                          year={item.year}
+                          title={item.title}
+                          role={item.role}
+                          desc={item.desc}
+                        />
+                      ))}
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

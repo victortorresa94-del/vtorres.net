@@ -6,9 +6,12 @@ import { FileText, Package, Music, ArrowRight, BrainCircuit } from 'lucide-react
 
 export default function NaturalStandardizationSection({ isEmbedded = false }: { isEmbedded?: boolean }) {
     const { t } = useLanguage();
-    const content = (t.procesos.naturalStandardization as any);
+    const automation = (t.procesos.automation as any);
 
-    if (!content) return null;
+    if (!automation) return null;
+
+    // Extract cases from the first section of automation (Pre-AI)
+    const cases = automation.sections?.[0]?.items || [];
 
     const icons = {
         "FileText": FileText,
@@ -28,56 +31,56 @@ export default function NaturalStandardizationSection({ isEmbedded = false }: { 
                             <span>Natural Skillset</span>
                         </div>
                         <h2 className="text-3xl md:text-5xl font-medium text-white mb-6 tracking-tight">
-                            {content.title}
+                            {automation.title}
                         </h2>
                         <h3 className="text-xl md:text-2xl text-zinc-400 font-light mb-8">
-                            {content.subtitle}
+                            {automation.subtitle}
                         </h3>
                         <p className="text-zinc-500 text-lg leading-relaxed max-w-2xl">
-                            {content.intro}
+                            {automation.intro}
                         </p>
                     </div>
                 ) : (
                     /* Embedded Header */
                     <div className="mb-12">
                         <p className="text-zinc-400 text-lg leading-relaxed max-w-3xl">
-                            {content.intro}
+                            {automation.intro}
                         </p>
                     </div>
                 )}
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-                    {content.cases.map((item: any, index: number) => {
-                        // Dynamic icon component
-                        const IconComponent = icons[item.icon as keyof typeof icons] || FileText;
-
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
+                    {cases.map((item: any, index: number) => {
                         return (
                             <div
                                 key={index}
                                 className={`bg-zinc-900/30 border border-zinc-800 p-8 rounded-2xl group flex flex-col ${isEmbedded ? '' : 'hover:bg-zinc-900/50 transition-colors'}`}
                             >
-                                <div className="mb-6 w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center text-zinc-500 group-hover:text-[#82ff1f] group-hover:bg-[#82ff1f]/10 transition-all">
-                                    <IconComponent size={24} />
-                                </div>
-
-                                <div className="mb-6">
-                                    <span className="text-xs font-mono text-[#82ff1f] uppercase tracking-wider mb-2 block">
-                                        {item.context}
+                                <div className="mb-6 flex items-center justify-between">
+                                    <div className="w-12 h-12 rounded-xl bg-zinc-900 flex items-center justify-center text-zinc-500 group-hover:text-[#82ff1f] group-hover:bg-[#82ff1f]/10 transition-all">
+                                        <FileText size={24} />
+                                    </div>
+                                    <span className="text-xs font-mono text-[#82ff1f] uppercase tracking-wider">
+                                        {item.role}
                                     </span>
-                                    <h4 className="text-xl font-medium text-white">
-                                        {item.company}
-                                    </h4>
                                 </div>
 
-                                <div className="space-y-4 mb-8 flex-grow">
-                                    <div>
-                                        <p className="text-xs text-zinc-600 uppercase font-bold mb-1">Problem</p>
-                                        <p className="text-zinc-400 text-sm leading-relaxed">{item.problem}</p>
-                                    </div>
-                                    <div>
-                                        <p className="text-xs text-zinc-600 uppercase font-bold mb-1">Solution</p>
-                                        <p className="text-zinc-300 text-sm leading-relaxed">{item.solution}</p>
-                                    </div>
+                                <h4 className="text-xl font-medium text-white mb-4">
+                                    {item.company}
+                                </h4>
+
+                                <div className="space-y-4 mb-6 flex-grow">
+                                    <p className="text-zinc-400 text-sm leading-relaxed">
+                                        {item.text}
+                                    </p>
+                                </div>
+
+                                <div className="flex gap-2 flex-wrap">
+                                    {item.tags?.map((tag: string, tIndex: number) => (
+                                        <span key={tIndex} className="text-xs text-zinc-600 bg-zinc-900 px-2 py-1 rounded border border-zinc-800">
+                                            {tag}
+                                        </span>
+                                    ))}
                                 </div>
                             </div>
                         );
@@ -86,7 +89,7 @@ export default function NaturalStandardizationSection({ isEmbedded = false }: { 
 
                 <div className="text-center max-w-2xl mx-auto border-t border-zinc-900 pt-12">
                     <p className="text-xl md:text-2xl text-white font-medium italic">
-                        "{content.closing}"
+                        "{automation.question}"
                     </p>
                 </div>
 

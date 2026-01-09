@@ -43,7 +43,7 @@ export default function ExperienceSection() {
         },
         {
             id: 'natural',
-            title: t.procesos.naturalStandardization?.title || "Natural Standardization",
+            title: t.procesos.automation?.title || "Natural Standardization",
             subtitle: "Origin & Natural Skillset",
             icon: BrainCircuit,
             component: <NaturalStandardizationSection isEmbedded={true} />
