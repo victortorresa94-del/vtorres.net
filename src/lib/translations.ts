@@ -37,6 +37,60 @@ export const translations = {
             title: "Trayectoria Profesional",
             sections: [
                 {
+                    title: "España 1.0",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
+                    items: [
+                        {
+                            year: "2018 - 2019",
+                            title: "Business Manager (Operaciones)",
+                            role: "Denetic",
+                            desc: "Responsable total de la operativa de la empresa. Gestión integral de compras internacionales (China), logística, almacén, facturación y coordinación de instalaciones técnicas."
+                        },
+                        {
+                            year: "2017",
+                            title: "Responsable de Marketing & Compras",
+                            role: "Reauxi",
+                            desc: "Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
+                        },
+                        {
+                            year: "2016 - 2018",
+                            title: "Trabajos Logísticos",
+                            role: "Mozo de Almacén",
+                            desc: "Gestión eficiente de inventario, optimización de flujos de carga y descarga, y coordinación logística para garantizar SLA de entrega."
+                        },
+                        {
+                            year: "2014 - 2016",
+                            title: "Diseñador Gráfico & Marketing B2B",
+                            role: "HTW Spain",
+                            desc: "Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
+                        }
+                    ]
+                },
+                {
+                    title: "Colombia",
+                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
+                    items: [
+                        {
+                            year: "2022 - 2023",
+                            title: "PM & Líder de Procesos",
+                            role: "Eme Growth Agency",
+                            desc: "Implementación de nuevo software de gestión de proyectos (Clickup) en un equipo de +30 personas, creando +30 nuevos SOPs y optimizando la agencia un 30%. Liderazgo de proyectos web y app como project manager posteriormente."
+                        },
+                        {
+                            year: "2022",
+                            title: "Marketing Account Manager",
+                            role: "Growbox Digital",
+                            desc: "Estrategia GTM para 'Totemica' (Skincare Miami). Branding, búsqueda de proveedores internacionales y lanzamiento exitoso al mercado."
+                        },
+                        {
+                            year: "2021",
+                            title: "Customer Service & Sales (Bilingüe)",
+                            role: "AT&T (USA)",
+                            desc: "Soporte telefónico diario para clientes en EE.UU. Resolución de incidencias técnicas y venta cruzada de nuevos productos y servicios."
+                        }
+                    ]
+                },
+                {
                     title: "España 2.0",
                     items: [
                         {
@@ -62,54 +116,6 @@ export const translations = {
                             title: "Growth Partner & BizDev",
                             role: "Konektor",
                             desc: "Desarrollo de negocio and expansión estratégica. Implementación de ventas consultivas apoyadas en herramientas de IA."
-                        }
-                    ]
-                },
-                {
-                    title: "Colombia",
-                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
-                    items: [
-                        {
-                            year: "2022",
-                            title: "PM & Líder de Procesos",
-                            role: "Eme Growth Agency",
-                            desc: "Implementación de nuevo software de gestión de proyectos (Clickup) en un equipo de +30 personas, creando +30 nuevos SOPs y optimizando la agencia un 30%. Liderazgo de proyectos web y app como project manager posteriormente."
-                        },
-                        {
-                            year: "2021",
-                            title: "Marketing Account Manager",
-                            role: "Growbox Digital",
-                            desc: "Estrategia GTM para 'Totemica' (Skincare Miami). Branding, búsqueda de proveedores internacionales y lanzamiento exitoso al mercado."
-                        }
-                    ]
-                },
-                {
-                    title: "España 1.0",
-                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
-                    items: [
-                        {
-                            year: "2018 - 2019",
-                            title: "Business Manager (Operaciones)",
-                            role: "Denetic",
-                            desc: "Responsable total de la operativa de la empresa. Gestión integral de compras internacionales (China), logística, almacén, facturación y coordinación de instalaciones técnicas."
-                        },
-                        {
-                            year: "2017 - 2018",
-                            title: "Responsable de Marketing & Compras",
-                            role: "Reauxi",
-                            desc: "Gestión de proyecto crítico para Mercedes (1M€). Responsable de compras internacionales, facturación y registro en ERP."
-                        },
-                        {
-                            year: "2016 - 2017",
-                            title: "Trabajos Logísticos",
-                            role: "Mozo de Almacén",
-                            desc: "Gestión eficiente de inventario, optimización de flujos de carga y descarga, y coordinación logística para garantizar SLA de entrega."
-                        },
-                        {
-                            year: "2014 - 2016",
-                            title: "Diseñador Gráfico & Marketing B2B",
-                            role: "HTW Spain",
-                            desc: "Primera etapa profesional. Creación de identidad de marca, diseño de catálogos técnicos y soporte en marketing industrial."
                         }
                     ]
                 }
@@ -1615,6 +1621,60 @@ export const translations = {
             title: "Professional Career",
             sections: [
                 {
+                    title: "Spain 1.0",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
+                    items: [
+                        {
+                            year: "2018 - 2019",
+                            title: "Business Manager (Operations)",
+                            role: "Denetic",
+                            desc: "Total responsibility for company operations. Integral management of international purchasing (China), logistics, warehouse management, invoicing, and coordination of technical installations."
+                        },
+                        {
+                            year: "2017",
+                            title: "Marketing & Purchasing Lead",
+                            role: "Reauxi",
+                            desc: "Management of critical project for Mercedes (€1M). Responsible for international purchases, invoicing, and ERP registration."
+                        },
+                        {
+                            year: "2016 - 2018",
+                            title: "Logistics Operations",
+                            role: "Warehouse Assistant",
+                            desc: "Efficient inventory management, loading/unloading flow optimization, and logistics coordination to ensure delivery SLAs."
+                        },
+                        {
+                            year: "2014 - 2016",
+                            title: "Graphic Designer & B2B Marketing",
+                            role: "HTW Spain",
+                            desc: "First professional stage. Brand identity creation, technical catalog design, and industrial marketing support."
+                        }
+                    ]
+                },
+                {
+                    title: "Colombia",
+                    videoUrl: "https://play.gumlet.io/embed/6960362f195f98d9e1518779",
+                    items: [
+                        {
+                            year: "2022 - 2023",
+                            title: "PM & Process Leader",
+                            role: "Eme Growth Agency",
+                            desc: "Design and execution of the agency's operational structure. Leadership of multidisciplinary teams and creation of 'EME Academy'."
+                        },
+                        {
+                            year: "2022",
+                            title: "Marketing Account Manager",
+                            role: "Growbox Digital",
+                            desc: "GTM strategy for 'Totemica' (Skincare Miami). Branding, international vendor search, and successful market launch."
+                        },
+                        {
+                            year: "2021",
+                            title: "Customer Service & Sales (Bilingual)",
+                            role: "AT&T (USA)",
+                            desc: "Daily phone support for US customers. Troubleshooting and cross-selling of new products and services."
+                        }
+                    ]
+                },
+                {
                     title: "Spain 2.0",
                     items: [
                         {
@@ -1640,54 +1700,6 @@ export const translations = {
                             title: "Growth Partner & BizDev",
                             role: "Konektor",
                             desc: "Business development and strategic expansion. Implementation of consultative sales supported by AI tools."
-                        }
-                    ]
-                },
-                {
-                    title: "Colombia",
-                    videoUrl: "https://play.gumlet.io/embed/6960362f195f98d9e1518779",
-                    items: [
-                        {
-                            year: "2022",
-                            title: "PM & Process Leader",
-                            role: "Eme Growth Agency",
-                            desc: "Design and execution of the agency's operational structure. Leadership of multidisciplinary teams and creation of 'EME Academy'."
-                        },
-                        {
-                            year: "2021",
-                            title: "Marketing Account Manager",
-                            role: "Growbox Digital",
-                            desc: "GTM strategy for 'Totemica' (Skincare Miami). Branding, international vendor search, and successful market launch."
-                        }
-                    ]
-                },
-                {
-                    title: "Spain 1.0",
-                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
-                    items: [
-                        {
-                            year: "2018 - 2019",
-                            title: "Business Manager (Operations)",
-                            role: "Denetic",
-                            desc: "Total responsibility for company operations. Integral management of international purchasing (China), logistics, warehouse management, invoicing, and coordination of technical installations."
-                        },
-                        {
-                            year: "2017 - 2018",
-                            title: "Marketing & Purchasing Lead",
-                            role: "Reauxi",
-                            desc: "Management of critical project for Mercedes (€1M). Responsible for international purchases, invoicing, and ERP registration."
-                        },
-                        {
-                            year: "2016 - 2017",
-                            title: "Logistics Operations",
-                            role: "Warehouse Assistant",
-                            desc: "Efficient inventory management, loading/unloading flow optimization, and logistics coordination to ensure delivery SLAs."
-                        },
-                        {
-                            year: "2014 - 2016",
-                            title: "Graphic Designer & B2B Marketing",
-                            role: "HTW Spain",
-                            desc: "First professional stage. Brand identity creation, technical catalog design, and industrial marketing support."
                         }
                     ]
                 }
@@ -2808,6 +2820,60 @@ export const translations = {
             title: "Trajectòria Professional",
             sections: [
                 {
+                    title: "Espanya 1.0",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
+                    items: [
+                        {
+                            year: "2018 - 2019",
+                            title: "Business Manager (Operacions)",
+                            role: "Denetic",
+                            desc: "Responsable total de l'operativa de l'empresa. Gestió integral de compres internacionals (Xina), logística, magatzem, facturació i coordinació d'instal·lacions tècniques."
+                        },
+                        {
+                            year: "2017",
+                            title: "Responsable de Màrqueting & Compres",
+                            role: "Reauxi",
+                            desc: "Gestió de projecte crític per a Mercedes (1M€). Responsable de compres internacionals, facturació i registre en ERP."
+                        },
+                        {
+                            year: "2016 - 2018",
+                            title: "Treballs Logístics",
+                            role: "Mosso de Magatzem",
+                            desc: "Gestió eficient d'inventari, optimització de fluxos de càrrega i descàrrega, i coordinació logística per garantir SLA de lliurament."
+                        },
+                        {
+                            year: "2014 - 2016",
+                            title: "Dissenyador Gràfic & Màrqueting B2B",
+                            role: "HTW Spain",
+                            desc: "Primera etapa professional. Creació d'identitat de marca, disseny de catálegs tècnics i suport en màrqueting industrial."
+                        }
+                    ]
+                },
+                {
+                    title: "Colòmbia",
+                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
+                    items: [
+                        {
+                            year: "2022 - 2023",
+                            title: "PM & Líder de Processos",
+                            role: "Eme Growth Agency",
+                            desc: "Disseny i execució de l'estructura operativa de l'agència. Lideratge d'equips multidisciplinaris i creació de 'EME Academy'."
+                        },
+                        {
+                            year: "2022",
+                            title: "Marketing Account Manager",
+                            role: "Growbox Digital",
+                            desc: "Estratègia GTM per a 'Totemica' (Skincare Miami). Branding, recerca de proveïdors internacionals i llançament exitós al mercat."
+                        },
+                        {
+                            year: "2021",
+                            title: "Customer Service & Sales (Bilingüe)",
+                            role: "AT&T (USA)",
+                            desc: "Suport telefònic diari per a clients dels EUA. Resolució d'incidències tècniques i venda creuada de nous productes i serveis."
+                        }
+                    ]
+                },
+                {
                     title: "Espanya 2.0",
                     items: [
                         {
@@ -2833,54 +2899,6 @@ export const translations = {
                             title: "Growth Partner & BizDev",
                             role: "Konektor",
                             desc: "Desenvolupament de negoci i expansió estratègica. Implementació de vendes consultives recolzades en eines d'IA."
-                        }
-                    ]
-                },
-                {
-                    title: "Colòmbia",
-                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
-                    items: [
-                        {
-                            year: "2022",
-                            title: "PM & Líder de Processos",
-                            role: "Eme Growth Agency",
-                            desc: "Disseny i execució de l'estructura operativa de l'agència. Lideratge d'equips multidisciplinaris i creació de 'EME Academy'."
-                        },
-                        {
-                            year: "2021",
-                            title: "Marketing Account Manager",
-                            role: "Growbox Digital",
-                            desc: "Estratègia GTM per a 'Totemica' (Skincare Miami). Branding, recerca de proveïdors internacionals i llançament exitós al mercat."
-                        }
-                    ]
-                },
-                {
-                    title: "Espanya 1.0",
-                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
-                    items: [
-                        {
-                            year: "2018 - 2019",
-                            title: "Business Manager (Operacions)",
-                            role: "Denetic",
-                            desc: "Responsable total de l'operativa de l'empresa. Gestió integral de compres internacionals (Xina), logística, magatzem, facturació i coordinació d'instal·lacions tècniques."
-                        },
-                        {
-                            year: "2017 - 2018",
-                            title: "Responsable de Màrqueting & Compres",
-                            role: "Reauxi",
-                            desc: "Gestió de projecte crític per a Mercedes (1M€). Responsable de compres internacionals, facturació i registre en ERP."
-                        },
-                        {
-                            year: "2016 - 2017",
-                            title: "Treballs Logístics",
-                            role: "Mosso de Magatzem",
-                            desc: "Gestió eficient d'inventari, optimització de fluxos de càrrega i descàrrega, i coordinació logística per garantir SLA de lliurament."
-                        },
-                        {
-                            year: "2014 - 2016",
-                            title: "Dissenyador Gràfic & Màrqueting B2B",
-                            role: "HTW Spain",
-                            desc: "Primera etapa professional. Creació d'identitat de marca, disseny de catálegs tècnics i suport en màrqueting industrial."
                         }
                     ]
                 }
