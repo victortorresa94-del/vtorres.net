@@ -3792,3 +3792,4 @@ export const translations = {
 export type Language = 'es' | 'en' | 'ca';
 export type TranslationKey = typeof translations[Language];
 
+// trigger build update
