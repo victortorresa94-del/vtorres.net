@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings } from "lucide-react";
+import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings, Calendar, Building, Wallet } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
@@ -13,6 +13,23 @@ import { useLanguage } from "@/lib/LanguageContext";
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const { t } = useLanguage();
+
+  const iconMap: Record<string, any> = {
+    Calendar: Calendar,
+    Megaphone: Megaphone,
+    Brain: Brain,
+    Users: Users,
+    Briefcase: Briefcase,
+    ClipboardList: ClipboardList,
+    Building: Building,
+    Globe: Globe,
+    Palette: Palette,
+    Cpu: Cpu,
+    TrendingUp: TrendingUp,
+    Wallet: Wallet,
+    Database: Database,
+    Rocket: Rocket
+  };
 
 
   // Lock body scroll when mobile menu is open
@@ -814,14 +831,19 @@ export default function Home() {
           {/* --- MIS NÚMEROS --- */}
           < ExpandableSection id="numbers" icon={<TrendingUp size={32} />} title={t.numbers.title} >
             <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<TrendingUp size={24} />} value="+10M" label={t.numbers.impact} description={t.numbers.impactDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Code size={24} />} value="+30" label={t.numbers.webs} description={t.numbers.websDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Lightbulb size={24} />} value="+30" label={t.numbers.brands} description={t.numbers.brandsDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Brain size={24} />} value="+10" label={t.numbers.ai} description={t.numbers.aiDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Briefcase size={24} />} value="10" label={t.numbers.boosted} description={t.numbers.boostedDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Workflow size={24} />} value="+25" label={t.numbers.systems} description={t.numbers.systemsDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Target size={24} />} value="+1.5M€" label={t.numbers.budget} description={t.numbers.budgetDesc} />
-              <NumberCard className="min-w-[280px] md:min-w-0 snap-center" icon={<Database size={24} />} value="3" label={t.numbers.core} description={t.numbers.coreDesc} />
+              {(t.numbers.items || []).map((item: any, index: number) => {
+                const IconComponent = iconMap[item.icon] || TrendingUp;
+                return (
+                  <NumberCard
+                    key={index}
+                    className="min-w-[280px] md:min-w-0 snap-center"
+                    icon={<IconComponent size={24} />}
+                    value={item.value}
+                    label={item.label}
+                    description={item.desc}
+                  />
+                );
+              })}
             </div>
           </ExpandableSection >
 
