@@ -828,24 +828,7 @@ export default function Home() {
 
 
 
-          {/* --- MIS NÚMEROS --- */}
-          < ExpandableSection id="numbers" icon={<TrendingUp size={32} />} title={t.numbers.title} >
-            <div className="flex overflow-x-auto pb-6 gap-6 snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-4 md:pb-0">
-              {(t.numbers.items || []).map((item: any, index: number) => {
-                const IconComponent = iconMap[item.icon] || TrendingUp;
-                return (
-                  <NumberCard
-                    key={index}
-                    className="min-w-[280px] md:min-w-0 snap-center"
-                    icon={<IconComponent size={24} />}
-                    value={item.value}
-                    label={item.label}
-                    description={item.desc}
-                  />
-                );
-              })}
-            </div>
-          </ExpandableSection >
+
 
           {/* --- FREELANCE & EMPRENDIMIENTO --- */}
           {/* --- FORMACIÓN --- */}
