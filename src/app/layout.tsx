@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/lib/LanguageContext";
@@ -35,6 +36,7 @@ export default function RootLayout({
         <LanguageProvider>
           {children}
           <ChatWidget />
+          <Analytics />
         </LanguageProvider>
       </body>
     </html>

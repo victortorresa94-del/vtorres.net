@@ -459,7 +459,7 @@ export const translations = {
         },
         freelance: {
             title: "Emprendimiento & Freelance",
-            videoUrl: "https://gumlet.tv/watch/696123146a1e75f7abb79eab/",
+            videoUrl: "https://gumlet.tv/watch/696276126a1e75f7abcf59fe/",
             ownTitle: "Proyectos Propios & Startups",
             consultingTitle: "Consultoría & Freelance",
             items: {
@@ -2145,7 +2145,7 @@ export const translations = {
         },
         freelance: {
             title: "Entrepreneurship & Freelance",
-            videoUrl: "https://gumlet.tv/watch/696123146a1e75f7abb79eab/",
+            videoUrl: "https://gumlet.tv/watch/696276126a1e75f7abcf59fe/",
             ownTitle: "Own Projects & Startups",
             consultingTitle: "Consulting & Freelance",
             items: {
@@ -3367,7 +3367,7 @@ export const translations = {
         },
         freelance: {
             title: "Emprenedoria & Freelance",
-            videoUrl: "https://gumlet.tv/watch/696123146a1e75f7abb79eab/",
+            videoUrl: "https://gumlet.tv/watch/696276126a1e75f7abcf59fe/",
             ownTitle: "Projectes Propis & Startups",
             consultingTitle: "Consultoria & Freelance",
             items: {
