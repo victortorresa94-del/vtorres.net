@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings, Calendar, Building, Wallet } from "lucide-react";
+import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings, Calendar, Building, Wallet, ExternalLink, Activity, FileText } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
@@ -452,122 +452,41 @@ export default function Home() {
                   {t.aiExperience.developmentsTitle}
                 </h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {/* Nuria */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Mic size={18} className="text-[#82ff1f]" />
+                  {Object.entries(t.aiExperience.developments).map(([key, item]: [string, any]) => (
+                    <div key={key} className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all flex flex-col h-full">
+                      <div className="flex items-start gap-3 mb-3 flex-1">
+                        <div className="p-2 bg-[#82ff1f]/10 rounded-lg shrink-0">
+                          {key === 'aura' ? <Target size={18} className="text-[#82ff1f]" /> :
+                            key === 'aetherWeb' ? <Globe size={18} className="text-[#82ff1f]" /> :
+                              key === 'agon' ? <Activity size={18} className="text-[#82ff1f]" /> :
+                                key === 'jason' ? <ClipboardList size={18} className="text-[#82ff1f]" /> :
+                                  key === 'nuria' ? <Mic size={18} className="text-[#82ff1f]" /> :
+                                    key === 'ugc' ? <Users size={18} className="text-[#82ff1f]" /> :
+                                      key === 'chleopatra' ? <Palette size={18} className="text-[#82ff1f]" /> :
+                                        key === 'numa' ? <MessageSquare size={18} className="text-[#82ff1f]" /> :
+                                          key === 'cv' ? <FileText size={18} className="text-[#82ff1f]" /> :
+                                            <Zap size={18} className="text-[#82ff1f]" />
+                          }
+                        </div>
+                        <div>
+                          <h4 className="font-bold text-white text-sm mb-1">{item.title}</h4>
+                          <p className="text-xs text-zinc-400">{item.desc}</p>
+                        </div>
                       </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.nuria.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.nuria.desc}</p>
-                      </div>
+                      {item.link && (
+                        <div className="mt-2 pl-[46px]">
+                          <a
+                            href={item.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-[10px] font-bold text-[#82ff1f] hover:text-white transition-colors bg-[#82ff1f]/10 hover:bg-[#82ff1f]/20 px-2 py-1 rounded border border-[#82ff1f]/20 uppercase tracking-wider"
+                          >
+                            {item.linkText || "Ver Proyecto"} <ExternalLink size={10} />
+                          </a>
+                        </div>
+                      )}
                     </div>
-                  </div>
-
-                  {/* Jason */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <ClipboardList size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.jason.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.jason.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* UGC */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Users size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.ugc.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.ugc.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Editor */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Palette size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.editor.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.editor.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Particles */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Zap size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.particles.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.particles.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Chleopatra */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Brain size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.chleopatra.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.chleopatra.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Aura */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Target size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.aura.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.aura.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Musikeeo */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <Music size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.musikeeo.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.musikeeo.desc}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Numa */}
-                  <div className="p-5 bg-black/40 rounded-2xl border border-white/5 hover:border-[#82ff1f]/20 transition-all">
-                    <div className="flex items-start gap-3 mb-3">
-                      <div className="p-2 bg-[#82ff1f]/10 rounded-lg">
-                        <MessageSquare size={18} className="text-[#82ff1f]" />
-                      </div>
-                      <div>
-                        <h4 className="font-bold text-white text-sm mb-1">{t.aiExperience.developments.numa.title}</h4>
-                        <p className="text-xs text-zinc-400">{t.aiExperience.developments.numa.desc}</p>
-                      </div>
-                    </div>
-                  </div>
+                  ))}
                 </div>
               </div>
 
