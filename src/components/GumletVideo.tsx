@@ -19,7 +19,7 @@ export default function GumletVideo({ videoId, title = "Video", className = "" }
                 allow="autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"
                 allowFullScreen
                 title={title}
-                style={{ border: "none" }}
+                style={{ border: "none", backgroundColor: "black" }}
             />
         </div>
     );

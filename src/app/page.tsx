@@ -183,7 +183,7 @@ export default function Home() {
               </motion.div>
 
               <div className="relative mx-auto md:mr-0 order-1 md:order-2 w-full max-w-[320px] flex flex-col items-center gap-3">
-                <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-[#82ff1f]/10 bg-black/40 backdrop-blur-sm">
+                <div className="relative w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-2xl shadow-[#82ff1f]/10 bg-[#000000]">
                   <GumletVideo
                     videoId="6960362fac93fe08564ff67d"
                     title="Hero Video"
@@ -201,7 +201,7 @@ export default function Home() {
           < ExpandableSection id="story" icon={<User size={32} />} title={t.story.title} >
             <div className="grid grid-cols-1 lg:grid-cols-[400px_1fr] gap-12 items-start">
               {/* Video Column */}
-              <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-black/50 sticky top-24 h-fit">
+              <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-[#000000] sticky top-24 h-fit">
                 <GumletVideo
                   videoId="6960362f525cbb3556159f9e"
                   title="Story Video"
@@ -234,7 +234,7 @@ export default function Home() {
                   {section.videoUrl ? (
                     <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-8">
                       {/* Video Column */}
-                      <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-black/50 h-fit">
+                      <div className="w-full aspect-[9/16] rounded-2xl overflow-hidden border border-white/10 shadow-lg relative bg-[#000000] h-fit">
                         <GumletVideo
                           videoId={getGumletVideoId(section.videoUrl)}
                           title={`${section.title} Video`}
