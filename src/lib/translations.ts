@@ -246,9 +246,11 @@ export const translations = {
                 client: "Relación con Cliente & Gestión",
                 business: "Habilidades de Negocio",
                 tech: "Habilidades Técnicas",
+                ai: "IA Generativa & Agentes",
                 stack: "Tech Stack & Herramientas",
                 businessItems: ["Desarrollo de Negocio", "Negociación B2B", "Estrategia GTM", "Visión de Producto", "Gestión de Stakeholders"],
-                techItems: ["Arquitectura de Soluciones", "Integración de Sistemas", "Automatización de Procesos", "Prompt Engineering", "Cloud Computing Concepts"]
+                techItems: ["Arquitectura de Soluciones", "Integración de Sistemas", "Automatización de Procesos", "Prompt Engineering", "Cloud Computing Concepts"],
+                aiItems: ["Vibe Coding (Cursor/Replit)", "Producción de Video IA", "Sistemas Multi-Agente", "Clonación de Voz & TTS"]
             },
             techItems: ["Arquitectura de Soluciones", "Integración de Sistemas", "Automatización de Procesos", "Prompt Engineering", "Cloud Computing Concepts"],
             stack: {
@@ -334,57 +336,80 @@ export const translations = {
                     role: "CMO & AI Strategist",
                     desc: "Traducción de capacidades técnicas complejas (Sistemas Multi-Agente) a una narrativa de negocio comprensible para clientes Enterprise. Lideré la estrategia GTM para posicionar la startup en el mercado de la IA corporativa, trabajando codo a codo con ingenieros ex-Microsoft para alinear producto y mercado."
                 },
-                music: {
-                    title: "94 Music",
-                    role: "Lead Generation & Automation",
-                    desc: "Desarrollo de un agente de prospección automatizado: scraping web para identificar clientes potenciales (wedding planners), extracción automática de datos de contacto, almacenamiento en Excel y envío de secuencias de correo personalizadas. Sistema completo de captación de leads sin intervención manual."
-                }
+
             },
             developmentsTitle: "Mis Experimentos IA",
             developments: {
                 aura: {
                     title: "Aura Tasks AI",
+                    tagline: "AI Task Management Software",
                     desc: "Super app de productividad con NLP avanzado, desarrollada con Vite + React 19 + TypeScript. Gestión optimista y diseño premium.",
                     link: "https://aura-tasks-es.vercel.app/",
                     linkText: "Probar Beta Gratuita"
                 },
-                aetherWeb: {
-                    title: "Aether Labs Web",
-                    desc: "Sitio web corporativo desarrollado con IA en Node.js utilizando Antavitary (Google).",
-                    link: "https://www.aetherlabs.es",
-                    linkText: "Ver Web"
-                },
                 agon: {
                     title: "AGON - Sports AI",
+                    tagline: "SaaS Deportivo",
                     desc: "Software integral para equipos de fútbol: gestión de entrenamientos, predicción de lesiones y análisis automatizado de rivales."
-                },
-                jason: {
-                    title: "Jason ClickUp Manager",
-                    desc: "Agente de productividad que crea tareas en ClickUp por voz/texto, asigna responsables y automatiza proyectos."
-                },
-                nuria: {
-                    title: "Laura - Agente Rostisseria",
-                    desc: "Chat de voz para gestión de pedidos retail con consulta de stock en tiempo real."
-                },
-                ugc: {
-                    title: "UGC Avatar Studio",
-                    desc: "Generador de avatares consistentes fotorrealistas para marcas y creatividades estáticas."
-                },
-                chleopatra: {
-                    title: "Chleopatra - Historias IA",
-                    desc: "Plataforma EdTech que genera historias visuales educativas con voces clonadas y vídeos sintéticos."
-                },
-                numa: {
-                    title: "Numa - Asistente Suma Salut",
-                    desc: "Agente de atención al paciente 24/7: gestión de citas y triaje inteligente."
-                },
-                cv: {
-                    title: "Este CV Interactivo",
-                    desc: "Desarrollado con Next.js, Tailwind y Framer Motion con asistencia de IA."
                 },
                 saasBot: {
                     title: "SaaS Chatbot (WIP)",
+                    tagline: "Asistente Embebido",
                     desc: "Asistente a medida para incrustar en plataformas SaaS. (En construcción)"
+                },
+                aetherWeb: {
+                    title: "Aether Labs Web",
+                    tagline: "Página Web con IA",
+                    desc: "Sitio web corporativo desarrollado con IA en Node.js utilizando Antigravity (Google).",
+                    link: "https://www.aetherlabs.es",
+                    linkText: "Ver Web"
+                },
+                jason: {
+                    title: "Jason ClickUp Manager",
+                    tagline: "AI n8n Agent",
+                    desc: "Agente de productividad que crea tareas en ClickUp por voz/texto, asigna responsables y automatiza proyectos.",
+                    link: "https://www.aetherlabs.es/experimentos/jason-clickup"
+                },
+                nuria: {
+                    title: "Laura - Agente Rostisseria",
+                    tagline: "Agente de Voz Retail",
+                    desc: "Chat de voz para gestión de pedidos retail con consulta de stock en tiempo real.",
+                    link: "https://www.aetherlabs.es/experimentos/nuria-rostisseria"
+                },
+                ugc: {
+                    title: "UGC Avatar Studio",
+                    tagline: "Generador de Avatares",
+                    desc: "Generador de avatares consistentes fotorrealistas para marcas y creatividades estáticas.",
+                    link: "https://www.aetherlabs.es/experimentos/ugc-avatar-studio"
+                },
+                editor: {
+                    title: "Editor de Fotos IA",
+                    tagline: "Web App Edición",
+                    desc: "Eliminación de objetos/fondos (Inpainting), restauración y mejora de calidad en segundos.",
+                    link: "https://www.aetherlabs.es/experimentos/editor-fotos-ia"
+                },
+                chleopatra: {
+                    title: "Chleopatra - Historias IA",
+                    tagline: "Plataforma EdTech",
+                    desc: "Plataforma EdTech que genera historias visuales educativas con voces clonadas y vídeos sintéticos.",
+                    link: "https://www.aetherlabs.es/experimentos/chleopatra-historias"
+                },
+                musicBot: {
+                    title: "94 Music Agent",
+                    tagline: "Agente de Ventas",
+                    desc: "Prospección automatizada: scraping web de wedding planners, extracción de datos y envío de emails personalizados.",
+                    link: "https://www.aetherlabs.es/experimentos/94music-bot"
+                },
+                numa: {
+                    title: "Numa - Asistente Suma Salut",
+                    tagline: "Asistente Sanitario",
+                    desc: "Agente de atención al paciente 24/7: gestión de citas y triaje inteligente.",
+                    link: "https://www.aetherlabs.es/proyectos/suma-salut"
+                },
+                cv: {
+                    title: "Este CV Interactivo",
+                    tagline: "Web App Next.js",
+                    desc: "Desarrollado con Next.js, Tailwind y Framer Motion con asistencia de IA."
                 }
             }
         },
@@ -1892,9 +1917,11 @@ export const translations = {
                 client: "Client Relationship & Management",
                 business: "Business Skills",
                 tech: "Technical Skills",
+                ai: "Generative AI & Agents",
                 stack: "Tech Stack & Tools",
                 businessItems: ["Business Development", "B2B Negotiation", "GTM Strategy", "Product Vision", "Stakeholder Management"],
-                techItems: ["Solution Architecture", "Systems Integration", "Process Automation", "Prompt Engineering", "Cloud Computing Concepts"]
+                techItems: ["Solution Architecture", "Systems Integration", "Process Automation", "Prompt Engineering", "Cloud Computing Concepts"],
+                aiItems: ["Vibe Coding (Cursor/Replit)", "AI Video Production", "Multi-Agent Systems", "Voice Cloning & TTS"]
             },
             techItems: ["Solution Architecture", "Systems Integration", "Process Automation", "Prompt Engineering", "Cloud Computing Concepts"],
             stack: {
@@ -1980,11 +2007,7 @@ export const translations = {
                     role: "CMO & AI Strategist",
                     desc: "Translation of complex technical capabilities (Multi-Agent Systems) into a comprehensible business narrative for Enterprise clients. I led the GTM strategy to position the startup in the corporate AI market, working side by side with ex-Microsoft engineers to align product and market."
                 },
-                music: {
-                    title: "94 Music",
-                    role: "Lead Generation & Automation",
-                    desc: "Development of an automated prospecting agent: web scraping to identify potential clients (wedding planners), automatic contact data extraction, Excel storage, and personalized email sequence sending. Complete lead capture system without manual intervention."
-                }
+
             },
             sops: {
                 title: "Real Standardization (SOPs)",
@@ -2001,47 +2024,74 @@ export const translations = {
             developments: {
                 aura: {
                     title: "Aura Tasks AI",
+                    tagline: "AI Task Management Software",
                     desc: "Super productivity app with advanced NLP, built with Vite + React 19 + TypeScript. Optimistic management and premium design.",
                     link: "https://aura-tasks-es.vercel.app/",
                     linkText: "Try Free Beta"
                 },
+                agon: {
+                    title: "AGON - Sports AI",
+                    tagline: "Sports SaaS",
+                    desc: "Integral software for football teams: training management, injury prediction, and automated rival analysis."
+                },
+                saasBot: {
+                    title: "SaaS Chatbot (WIP)",
+                    tagline: "Embedded Assistant",
+                    desc: "Custom assistant to embed in SaaS platforms. (Under construction)"
+                },
                 aetherWeb: {
                     title: "Aether Labs Web",
+                    tagline: "AI Website",
                     desc: "Experimental corporate website developed entirely with AI using Node.js and Antigravity.",
                     link: "https://www.aetherlabs.es",
                     linkText: "Visit Web"
                 },
-                agon: {
-                    title: "AGON - Sports AI",
-                    desc: "Integral software for football teams: training management, injury prediction, and automated rival analysis."
-                },
                 jason: {
                     title: "Jason ClickUp Manager",
-                    desc: "Productivity agent that creates tasks in ClickUp by voice/text, assigns responsible parties and automates projects."
+                    tagline: "AI n8n Agent",
+                    desc: "Productivity agent that creates tasks in ClickUp by voice/text, assigns responsible parties and automates projects.",
+                    link: "https://www.aetherlabs.es/experimentos/jason-clickup"
                 },
                 nuria: {
                     title: "Laura - Rotisserie Agent",
-                    desc: "Voice chat for retail order management with real-time stock consultation."
+                    tagline: "Retail Voice Agent",
+                    desc: "Voice chat for retail order management with real-time stock consultation.",
+                    link: "https://www.aetherlabs.es/experimentos/nuria-rostisseria"
                 },
                 ugc: {
                     title: "UGC Avatar Studio",
-                    desc: "Consistent photorealistic avatar generator for brands and static creatives."
+                    tagline: "Avatar Generator",
+                    desc: "Consistent photorealistic avatar generator for brands and static creatives.",
+                    link: "https://www.aetherlabs.es/experimentos/ugc-avatar-studio"
+                },
+                editor: {
+                    title: "AI Photo Editor",
+                    tagline: "Editing Web App",
+                    desc: "Object/background removal (Inpainting), restoration, and quality enhancement in milliseconds.",
+                    link: "https://www.aetherlabs.es/experimentos/editor-fotos-ia"
                 },
                 chleopatra: {
                     title: "Chleopatra - AI Stories",
-                    desc: "EdTech platform that generates educational visual stories with cloned voices and synthetic videos."
+                    tagline: "EdTech Platform",
+                    desc: "EdTech platform that generates educational visual stories with cloned voices and synthetic videos.",
+                    link: "https://www.aetherlabs.es/experimentos/chleopatra-historias"
+                },
+                musicBot: {
+                    title: "94 Music Agent",
+                    tagline: "Sales Agent",
+                    desc: "Automated prospecting: web scraping for wedding planners, data extraction, and personalized email outreach.",
+                    link: "https://www.aetherlabs.es/experimentos/94music-bot"
                 },
                 numa: {
-                    title: "Numa - Suma Salut Assistant",
-                    desc: "24/7 patient care agent: appointment management and intelligent triage."
+                    title: "Numa - Suma Salut",
+                    tagline: "Healthcare Assistant",
+                    desc: "24/7 patient care agent: appointment management and intelligent triage.",
+                    link: "https://www.aetherlabs.es/proyectos/suma-salut"
                 },
                 cv: {
                     title: "This Interactive CV",
+                    tagline: "Next.js Web App",
                     desc: "Developed with Next.js, Tailwind, and Framer Motion with AI assistance."
-                },
-                saasBot: {
-                    title: "SaaS Chatbot (WIP)",
-                    desc: "Custom assistant to embed in SaaS platforms. (Under construction)"
                 }
             }
         },
@@ -3096,9 +3146,11 @@ export const translations = {
                 client: "Relació amb Client & Gestió",
                 business: "Habilitats de Negoci",
                 tech: "Habilitats Tècniques",
+                ai: "IA Generativa & Agents",
                 stack: "Tech Stack & Eines",
                 businessItems: ["Desenvolupament de Negoci", "Negociació B2B", "Estratègia GTM", "Visió de Producte", "Gestió de Stakeholders"],
-                techItems: ["Arquitectura de Solucions", "Integració de Sistemes", "Automatització de Processos", "Prompt Engineering", "Cloud Computing Concepts"]
+                techItems: ["Arquitectura de Solucions", "Integració de Sistemes", "Automatització de Processos", "Prompt Engineering", "Cloud Computing Concepts"],
+                aiItems: ["Vibe Coding (Cursor/Replit)", "Producció de Vídeo IA", "Sistemes Multi-Agent", "Clonació de Veu & TTS"]
             },
             stack: {
                 ai: "IA & Automatització Avançada",
@@ -3183,57 +3235,80 @@ export const translations = {
                     role: "CMO & AI Strategist",
                     desc: "Traducció de capacitats tècniques complexes (Sistemes Multi-Agent) a una narrativa de negoci comprensible per a clients Enterprise. Vaig liderar l'estratègia GTM per posicionar la startup al mercat de la IA corporativa, treballant colze a colze amb enginyers ex-Microsoft per alinear producte i mercat."
                 },
-                music: {
-                    title: "94 Music",
-                    role: "Lead Generation & Automation",
-                    desc: "Desenvolupament d'un agent de prospecció automatitzat: scraping web per identificar clients potencials (wedding planners), extracció automàtica de dades de contacte, emmagatzematge en Excel i enviament de seqüències de correu personalitzades. Sistema complet de captació de leads sense intervenció manual."
-                }
+
             },
             developmentsTitle: "Els meus Experiments IA",
             developments: {
                 aura: {
                     title: "Aura Tasks AI",
+                    tagline: "AI Task Management Software",
                     desc: "Super app de productivitat amb NLP avançat, desenvolupada amb Vite + React 19 + TypeScript. Gestió optimista i disseny premium.",
                     link: "https://aura-tasks-es.vercel.app/",
                     linkText: "Provar Beta Gratuïta"
                 },
-                aetherWeb: {
-                    title: "Aether Labs Web",
-                    desc: "Lloc web corporatiu desenvolupat amb IA en Node.js utilitzant Antavitary (Google).",
-                    link: "https://www.aetherlabs.es",
-                    linkText: "Veure Web"
-                },
                 agon: {
                     title: "AGON - Sports AI",
+                    tagline: "SaaS Esportiu",
                     desc: "Software integral per a equips de futbol: gestió d'entrenaments, predicció de lesions i anàlisi automatitzat de rivals."
-                },
-                jason: {
-                    title: "Jason ClickUp Manager",
-                    desc: "Agent de productivitat que crea tasques a ClickUp per veu/text, assigna responsables i automatitza projectes."
-                },
-                nuria: {
-                    title: "Laura - Agent Rostisseria",
-                    desc: "Xat de veu per a gestió de comandes retail amb consulta d'estoc en temps real."
-                },
-                ugc: {
-                    title: "UGC Avatar Studio",
-                    desc: "Generador d'avatars consistents fotorealistes per a marques i creativitats estàtiques."
-                },
-                chleopatra: {
-                    title: "Chleopatra - Històries IA",
-                    desc: "Plataforma EdTech que genera històries visuals educatives amb veus clonades i vídeos sintètics."
-                },
-                numa: {
-                    title: "Numa - Assistent Suma Salut",
-                    desc: "Agent d'atenció al pacient 24/7: gestió de cites i triatge intel·ligent."
-                },
-                cv: {
-                    title: "Aquest CV Interactiu",
-                    desc: "Desenvolupat amb Next.js, Tailwind i Framer Motion amb assistència d'IA."
                 },
                 saasBot: {
                     title: "SaaS Chatbot (WIP)",
+                    tagline: "Assistent Encrustat",
                     desc: "Assistent a mida per incrustar en plataformes SaaS. (En construcció)"
+                },
+                aetherWeb: {
+                    title: "Aether Labs Web",
+                    tagline: "Pàgina Web amb IA",
+                    desc: "Lloc web corporatiu desenvolupat amb IA en Node.js utilitzant Antigravity (Google).",
+                    link: "https://www.aetherlabs.es",
+                    linkText: "Veure Web"
+                },
+                jason: {
+                    title: "Jason ClickUp Manager",
+                    tagline: "AI n8n Agent",
+                    desc: "Agent de productivitat que crea tasques a ClickUp per veu/text, assigna responsables i automatitza projectes.",
+                    link: "https://www.aetherlabs.es/experimentos/jason-clickup"
+                },
+                nuria: {
+                    title: "Laura - Agent Rostisseria",
+                    tagline: "Agent de Veu Retail",
+                    desc: "Xat de veu per a gestió de comandes retail amb consulta d'estoc en temps real.",
+                    link: "https://www.aetherlabs.es/experimentos/nuria-rostisseria"
+                },
+                ugc: {
+                    title: "UGC Avatar Studio",
+                    tagline: "Generador d'Avatars",
+                    desc: "Generador d'avatars consistents fotorealistes per a marques i creativitats estàtiques.",
+                    link: "https://www.aetherlabs.es/experimentos/ugc-avatar-studio"
+                },
+                editor: {
+                    title: "Editor de Fotos IA",
+                    tagline: "Web App d'Edició",
+                    desc: "Eliminació d'objectes/fons (Inpainting), restauració i millora de qualitat en segons.",
+                    link: "https://www.aetherlabs.es/experimentos/editor-fotos-ia"
+                },
+                chleopatra: {
+                    title: "Chleopatra - Històries IA",
+                    tagline: "Plataforma EdTech",
+                    desc: "Plataforma EdTech que genera històries visuals educatives amb veus clonades i vídeos sintètics.",
+                    link: "https://www.aetherlabs.es/experimentos/chleopatra-historias"
+                },
+                musicBot: {
+                    title: "94 Music Agent",
+                    tagline: "Agent de Vendes",
+                    desc: "Prospecció automatitzada: scraping web de wedding planners, extracció de dades i enviament d'emails personalitzats.",
+                    link: "https://www.aetherlabs.es/experimentos/94music-bot"
+                },
+                numa: {
+                    title: "Numa - Suma Salut",
+                    tagline: "Assistent Sanitari",
+                    desc: "Agent d'atenció al pacient 24/7: gestió de cites i triatge intel·ligent.",
+                    link: "https://www.aetherlabs.es/proyectos/suma-salut"
+                },
+                cv: {
+                    title: "Aquest CV Interactiu",
+                    tagline: "Web App Next.js",
+                    desc: "Desenvolupat amb Next.js, Tailwind i Framer Motion amb assistència d'IA."
                 }
             }
         },

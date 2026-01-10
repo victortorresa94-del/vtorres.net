@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings, Calendar, Building, Wallet, ExternalLink, Activity, FileText } from "lucide-react";
+import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings, Calendar, Building, Wallet, ExternalLink, Activity, FileText, Image as ImageIcon } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
@@ -434,13 +434,7 @@ export default function Home() {
                   icon={<TrendingUp size={24} />}
                 />
 
-                <ProjectRow
-                  title={t.aiExperience.projects.music.title}
-                  role={t.aiExperience.projects.music.role}
-                  desc={t.aiExperience.projects.music.desc}
-                  tags={["Web Scraping", "Email Automation", "Lead Generation", "n8n"]}
-                  icon={<Target size={24} />}
-                />
+
               </div>
 
               {/* --- DESARROLLOS IA PROPIOS --- */}
@@ -465,12 +459,17 @@ export default function Home() {
                                       key === 'chleopatra' ? <Palette size={18} className="text-[#82ff1f]" /> :
                                         key === 'numa' ? <MessageSquare size={18} className="text-[#82ff1f]" /> :
                                           key === 'cv' ? <FileText size={18} className="text-[#82ff1f]" /> :
-                                            <Zap size={18} className="text-[#82ff1f]" />
+                                            key === 'musicBot' ? <Music size={18} className="text-[#82ff1f]" /> :
+                                              key === 'editor' ? <ImageIcon size={18} className="text-[#82ff1f]" /> :
+                                                <Zap size={18} className="text-[#82ff1f]" />
                           }
                         </div>
                         <div>
-                          <h4 className="font-bold text-white text-sm mb-1">{item.title}</h4>
-                          <p className="text-xs text-zinc-400">{item.desc}</p>
+                          <h4 className="font-bold text-white text-base mb-0.5">{item.title}</h4>
+                          {item.tagline && (
+                            <p className="text-xs font-bold text-[#82ff1f] uppercase tracking-wider mb-2">{item.tagline}</p>
+                          )}
+                          <p className="text-sm text-zinc-400 leading-relaxed">{item.desc}</p>
                         </div>
                       </div>
                       {item.link && (
@@ -522,6 +521,18 @@ export default function Home() {
                   <div className="p-4 bg-black/40 rounded-xl border border-white/5">
                     <h4 className="font-bold text-white mb-1">API Integration</h4>
                     <p className="text-xs text-zinc-400">Integración de LLMs con sistemas externos: CRMs, calendarios, bases de datos. Function calling y webhooks.</p>
+                  </div>
+                  <div className="p-4 bg-black/40 rounded-xl border border-white/5">
+                    <h4 className="font-bold text-white mb-1">Vibe Coding</h4>
+                    <p className="text-xs text-zinc-400">Prototipado rápido con Cursor y Replit. Desarrollo asistido por IA para acelerar el ciclo de implementación.</p>
+                  </div>
+                  <div className="p-4 bg-black/40 rounded-xl border border-white/5">
+                    <h4 className="font-bold text-white mb-1">AI Video Production</h4>
+                    <p className="text-xs text-zinc-400">Producción de video sintético con Runway y Luma. Avatares consistentes con HeyGen y sincronización labial.</p>
+                  </div>
+                  <div className="p-4 bg-black/40 rounded-xl border border-white/5">
+                    <h4 className="font-bold text-white mb-1">Multi-Agent Systems</h4>
+                    <p className="text-xs text-zinc-400">Diseño de arquitecturas donde múltiples agentes colaboran y razonan para resolver tareas complejas de forma autónoma.</p>
                   </div>
                 </div>
               </div>
@@ -668,6 +679,19 @@ export default function Home() {
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
                   {t.skills.categories.techItems.map((skill) => (
+                    <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
+                      <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
+                    </div>
+                  ))}
+                </div>
+              </div >
+              {/* AI Generativa & Agentes */}
+              < div >
+                <h3 className="text-sm font-bold text-white/50 mb-4 flex items-center gap-2 uppercase tracking-widest">
+                  <Brain size={16} className="text-[#82ff1f]" /> {t.skills.categories.ai}
+                </h3>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+                  {t.skills.categories.aiItems?.map((skill) => (
                     <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
                       <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
                     </div>
