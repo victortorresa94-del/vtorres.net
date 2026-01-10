@@ -3280,6 +3280,7 @@ export const translations = {
             items: {
                 aether: {
                     title: "Aether Labs",
+                    desc: "Consultoria d'Intel·ligència Artificial i automatització. El meu vehicle principal per materialitzar solucions tècniques: agents de veu, chatbots i workflows complexos per a empreses."
                 },
                 music: {
                     title: "94 Music",
