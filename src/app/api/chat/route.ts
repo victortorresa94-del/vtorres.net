@@ -12,12 +12,13 @@ export async function POST(req: Request) {
         const { messages } = await req.json();
 
         // Optimize context: Only select relevant sections to save tokens and reduce noise
-        const { story, career, capabilities, hero } = translations.es;
+        const { story, career, skills, numbers, hero } = translations.es;
         const cvContext = {
             profile: hero,
             bio: story,
             experience: career,
-            skills: capabilities
+            skills: skills,
+            metrics: numbers
         };
 
         const systemPrompt = `
