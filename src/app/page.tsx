@@ -542,22 +542,47 @@ export default function Home() {
 
           {/* --- MIS NÚMEROS --- */}
           <section id="numbers" className="py-16 max-w-6xl mx-auto px-6">
+
+            {/* Soft Skills - Premium Design */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              {t.numbers.softSkills?.map((skill: any) => (
+                <div key={skill.title} className="p-6 rounded-2xl bg-gradient-to-br from-[#121212] to-black border border-white/10 flex flex-col justify-between group hover:border-[#82ff1f]/30 transition-all duration-300 shadow-lg relative overflow-hidden">
+                  {/* Background Glow */}
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#82ff1f]/5 rounded-full blur-3xl -mr-10 -mt-10 pointer-events-none group-hover:bg-[#82ff1f]/10 transition-all duration-500"></div>
+
+                  <div className="relative z-10">
+                    <h4 className="text-zinc-400 font-medium text-xs uppercase tracking-[0.15em] mb-4">{skill.title}</h4>
+                    <div className="flex items-baseline gap-1 mb-4">
+                      <span className="text-5xl font-heading font-medium text-white group-hover:text-[#82ff1f] transition-colors duration-300">{skill.rating}</span>
+                      <span className="text-sm text-zinc-600 font-light">/ {skill.max}</span>
+                    </div>
+                  </div>
+
+                  <div className="w-full h-1 bg-white/5 rounded-full overflow-hidden relative z-10">
+                    <div className="h-full bg-[#82ff1f] shadow-[0_0_10px_rgba(130,255,31,0.5)] transform origin-left transition-transform duration-1000 ease-out" style={{ width: `${(skill.rating / skill.max) * 100}%` }}></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <NumberCard icon={<TrendingUp size={24} />} value="12" label="Años" description="En el mercado laboral, acumulando experiencia en entornos muy diversos." />
-              <NumberCard icon={<Megaphone size={24} />} value="8" label="Años Marketing" description="En marketing digital, ventas y estrategia de crecimiento." />
-              <NumberCard icon={<Target size={24} />} value="5" label="Años PM" description="Gestionando proyectos, equipos y procesos bajo metodologías ágiles." />
-              <NumberCard icon={<Brain size={24} />} value="3" label="Años IA" description="Trabajando con IA aplicada, automatización y agentes conversacionales." />
-              <NumberCard icon={<Users size={24} />} value="+50" label="Personas" description="Lideradas en equipos multidisciplinares de marketing, tech y operaciones." />
-              <NumberCard icon={<Briefcase size={24} />} value="+30" label="Proyectos" description="Gestionados con éxito como PM, desde webs hasta ERPs enterprise." />
-              <NumberCard icon={<ClipboardList size={24} />} value="30" label="SOPs" description="Procedimientos Operativos Estándar creados para blindar calidad y escalar equipos." />
-              <NumberCard icon={<Globe size={24} />} value="+20" label="Webs" description="Desarrolladas y lanzadas para clientes y proyectos propios." />
-              <NumberCard icon={<Palette size={24} />} value="20" label="Marcas" description="Identidades corporativas creadas desde cero." />
-              <NumberCard icon={<Cpu size={24} />} value="10" label="Soluciones IA" description="Chatbots, agentes de voz y automatizaciones desarrolladas." />
-              <NumberCard icon={<TrendingUp size={24} />} value="1.5M€" label="Presupuesto" description="Gestionado en proyectos de alto valor." />
-              <NumberCard icon={<Rocket size={24} />} value="30k€" label="Freelance" description="Facturados como consultor independiente." />
-              <NumberCard icon={<Database size={24} />} value="3" label="ERPs" description="NetSuite, SAP y ClickUp implementados a nivel enterprise." />
-              <NumberCard icon={<User size={24} />} value="10M" label="Alcance" description="Personas alcanzadas en redes sociales con alcance orgánico." />
-              <NumberCard icon={<Zap size={24} />} value="15" label="Negocios" description="Empresas impulsadas y aceleradas en su crecimiento." />
+              {t.numbers.items.map((item: any, index: number) => {
+                const Icon = iconMap[item.icon] || TrendingUp;
+                // Custom BG for rows 0 and 2 (lines 1 and 3 in human terms)
+                const row = Math.floor(index / 4);
+                const useAltBg = row % 2 === 0;
+
+                return (
+                  <NumberCard
+                    key={index}
+                    icon={<Icon size={24} />}
+                    value={item.value}
+                    label={item.label}
+                    description={item.desc}
+                    className={useAltBg ? "bg-white/5" : undefined}
+                  />
+                );
+              })}
             </div>
           </section>
 
@@ -1366,7 +1391,7 @@ function NumberCard({ icon, value, label, description, className }: { icon: Reac
   return (
     <motion.div
       whileHover={{ y: -5, scale: 1.02 }}
-      className={`p-8 rounded-3xl bg-gradient-to-br from-[#0a0a0a] to-[#111] border border-white/5 hover:border-[#82ff1f]/40 transition-all group h-full flex flex-col justify-between shadow-xl hover:shadow-[0_0_30px_-10px_rgba(130,255,31,0.15)] ${className}`}
+      className={`p-8 rounded-3xl border border-white/5 hover:border-[#82ff1f]/40 transition-all group h-full flex flex-col justify-between shadow-xl hover:shadow-[0_0_30px_-10px_rgba(130,255,31,0.15)] ${className ? className : "bg-gradient-to-br from-[#0a0a0a] to-[#111]"}`}
     >
       <div>
         <div className="p-4 bg-white/5 rounded-2xl text-[#82ff1f] w-fit mb-6 group-hover:bg-[#82ff1f] group-hover:text-black transition-all duration-300 shadow-[0_0_15px_-5px_#82ff1f]">

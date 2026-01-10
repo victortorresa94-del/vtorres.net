@@ -126,20 +126,24 @@ export const translations = {
         numbers: {
             title: "Mis Números",
             items: [
-                { value: "12", label: "Años", desc: "en el mercado laboral, acumulando experiencia en entornos muy diversos", icon: "Calendar" },
-                { value: "8", label: "Años Marketing", desc: "en marketing digital, ventas y estrategia de crecimiento", icon: "Megaphone" },
-                { value: "3", label: "Años IA", desc: "trabajando con IA aplicada, automatización y agentes conversacionales", icon: "Brain" },
-                { value: "+50", label: "Personas Lideradas", desc: "en equipos multidisciplinares de marketing, tech y operaciones", icon: "Users" },
-                { value: "+30", label: "Proyectos", desc: "gestionados con éxito como PM, desde webs hasta ERPs enterprise", icon: "Briefcase" },
+                { value: "9", label: "Años Marketing", desc: "En marketing digital, ventas y estrategia de crecimiento", icon: "Megaphone" },
+                { value: "5", label: "Años PM", desc: "Gestionando proyectos, equipos y procesos bajo metodologías ágiles", icon: "Target" },
+                { value: "3", label: "Años IA", desc: "Trabajando con IA aplicada, automatización y agentes conversacionales", icon: "Brain" },
+                { value: "+50", label: "Personas Lideradas", desc: "En equipos multidisciplinares de marketing, tech y operaciones", icon: "Users" },
+                { value: "+30", label: "Proyectos", desc: "Gestionados con éxito como PM, desde webs hasta ERPs enterprise", icon: "Briefcase" },
                 { value: "30", label: "SOPs", desc: "Procedimientos Operativos Estándar creados para blindar calidad y escalar equipos", icon: "ClipboardList" },
-                { value: "6", label: "Departamentos", desc: "Ventas, Marketing, Logística, Compras, Finanzas y Gerencia", icon: "Building" },
-                { value: "+10", label: "Webs & E-commerce", desc: "desarrollados y lanzados para clientes y proyectos propios", icon: "Globe" },
-                { value: "5", label: "Marcas Branding", desc: "identidades corporativas creadas desde cero", icon: "Palette" },
-                { value: "+15", label: "Soluciones IA", desc: "chatbots, agentes de voz y automatizaciones desarrolladas", icon: "Cpu" },
-                { value: "+1M€", label: "Presupuesto", desc: "gestionado en proyectos de alto valor", icon: "TrendingUp" },
-                { value: "30k€", label: "Freelance", desc: "facturados como consultor independiente", icon: "Wallet" },
-                { value: "3", label: "ERPs Implementados", desc: "NetSuite, SAP y ClickUp a nivel enterprise", icon: "Database" },
-                { value: "+8", label: "Negocios Impulsados", desc: "empresas en las que he trabajado e impulsado su crecimiento", icon: "Rocket" }
+                { value: "+15", label: "Webs & E-commerce", desc: "Desarrollados y lanzados para clientes y proyectos propios", icon: "Globe" },
+                { value: "+30", label: "Marcas Branding", desc: "Identidades corporativas creadas desde cero", icon: "Palette" },
+                { value: "+15", label: "Soluciones IA", desc: "Chatbots, agentes de voz y automatizaciones desarrolladas", icon: "Cpu" },
+                { value: "+1M€", label: "Presupuesto", desc: "Gestionado en proyectos de alto valor", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "Facturados como consultor independiente", icon: "Wallet" },
+                { value: "+8", label: "Negocios Impulsados", desc: "Empresas en las que he trabajado e impulsado su crecimiento", icon: "Rocket" }
+            ],
+            softSkills: [
+                { title: "Creatividad", rating: 7, max: 10 },
+                { title: "Comunicación", rating: 7, max: 10 },
+                { title: "Organización", rating: 8, max: 10 },
+                { title: "Resolutividad", rating: 9, max: 10 }
             ]
         },
         achievements: {
@@ -1796,20 +1800,24 @@ export const translations = {
         numbers: {
             title: "My Numbers",
             items: [
-                { value: "12", label: "Years", desc: "in the workforce, accumulating experience in very diverse environments", icon: "Calendar" },
-                { value: "8", label: "Years Marketing", desc: "in digital marketing, sales and growth strategy", icon: "Megaphone" },
-                { value: "3", label: "Years AI", desc: "working with applied AI, automation and conversational agents", icon: "Brain" },
-                { value: "+50", label: "People Led", desc: "in multidisciplinary teams across marketing, tech and operations", icon: "Users" },
-                { value: "+30", label: "Projects", desc: "successfully managed as PM, from websites to enterprise ERPs", icon: "Briefcase" },
+                { value: "9", label: "Years Marketing", desc: "In digital marketing, sales and growth strategy", icon: "Megaphone" },
+                { value: "5", label: "Years PM", desc: "Managing projects, teams and processes under agile methodologies", icon: "Target" },
+                { value: "3", label: "Years AI", desc: "Working with applied AI, automation and conversational agents", icon: "Brain" },
+                { value: "+50", label: "People Led", desc: "In multidisciplinary teams across marketing, tech and operations", icon: "Users" },
+                { value: "+30", label: "Projects", desc: "Successfully managed as PM, from websites to enterprise ERPs", icon: "Briefcase" },
                 { value: "30", label: "SOPs", desc: "Standard Operating Procedures created to ensure quality and scale teams", icon: "ClipboardList" },
-                { value: "6", label: "Departments", desc: "Sales, Marketing, Logistics, Purchasing, Finance and Management", icon: "Building" },
-                { value: "+10", label: "Webs & E-commerce", desc: "developed and launched for clients and own projects", icon: "Globe" },
-                { value: "5", label: "Branding Projects", desc: "corporate identities created from scratch", icon: "Palette" },
-                { value: "+15", label: "AI Solutions", desc: "chatbots, voice agents and automations developed", icon: "Cpu" },
-                { value: "+1M€", label: "Budget", desc: "managed in high-value projects", icon: "TrendingUp" },
-                { value: "30k€", label: "Freelance", desc: "billed as independent consultant", icon: "Wallet" },
-                { value: "3", label: "ERPs Implemented", desc: "NetSuite, SAP and ClickUp at enterprise level", icon: "Database" },
-                { value: "+8", label: "Businesses Boosted", desc: "companies where I've worked and driven growth", icon: "Rocket" }
+                { value: "+15", label: "Webs & E-commerce", desc: "Developed and launched for clients and own projects", icon: "Globe" },
+                { value: "+30", label: "Branding Projects", desc: "Corporate identities created from scratch", icon: "Palette" },
+                { value: "+15", label: "AI Solutions", desc: "Chatbots, voice agents and automations developed", icon: "Cpu" },
+                { value: "+1M€", label: "Budget", desc: "Managed in high-value projects", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "Billed as independent consultant", icon: "Wallet" },
+                { value: "+8", label: "Businesses Boosted", desc: "Companies where I've worked and driven growth", icon: "Rocket" }
+            ],
+            softSkills: [
+                { title: "Creativity", rating: 7, max: 10 },
+                { title: "Communication", rating: 7, max: 10 },
+                { title: "Organization", rating: 8, max: 10 },
+                { title: "Problem Solving", rating: 9, max: 10 }
             ]
         },
         achievements: {
@@ -3027,20 +3035,24 @@ export const translations = {
         numbers: {
             title: "Els Meus Números",
             items: [
-                { value: "12", label: "Anys", desc: "al mercat laboral, acumulant experiència en entorns molt diversos", icon: "Calendar" },
-                { value: "8", label: "Anys Màrqueting", desc: "en màrqueting digital, vendes i estratègia de creixement", icon: "Megaphone" },
-                { value: "3", label: "Anys IA", desc: "treballant amb IA aplicada, automatització i agents conversacionals", icon: "Brain" },
-                { value: "+50", label: "Persones Liderades", desc: "en equips multidisciplinars de màrqueting, tech i operacions", icon: "Users" },
-                { value: "+30", label: "Projectes", desc: "gestionats amb èxit com a PM, des de webs fins a ERPs enterprise", icon: "Briefcase" },
+                { value: "9", label: "Anys Màrqueting", desc: "En màrqueting digital, vendes i estratègia de creixement", icon: "Megaphone" },
+                { value: "5", label: "Anys PM", desc: "Gestionant projectes, equips i processos sota metodologies àgils", icon: "Target" },
+                { value: "3", label: "Anys IA", desc: "Treballant amb IA aplicada, automatització i agents conversacionals", icon: "Brain" },
+                { value: "+50", label: "Persones Liderades", desc: "En equips multidisciplinars de màrqueting, tech i operacions", icon: "Users" },
+                { value: "+30", label: "Projectes", desc: "Gestionats amb èxit com a PM, des de webs fins a ERPs enterprise", icon: "Briefcase" },
                 { value: "30", label: "SOPs", desc: "Procediments Operatius Estàndard creats per blindar qualitat i escalar equips", icon: "ClipboardList" },
-                { value: "6", label: "Departaments", desc: "Vendes, Màrqueting, Logística, Compres, Finances i Gerència", icon: "Building" },
-                { value: "+10", label: "Webs & E-commerce", desc: "desenvolupats i llançats per a clients i projectes propis", icon: "Globe" },
-                { value: "5", label: "Projectes Branding", desc: "identitats corporatives creades des de zero", icon: "Palette" },
-                { value: "+15", label: "Solucions IA", desc: "chatbots, agents de veu i automatitzacions desenvolupades", icon: "Cpu" },
-                { value: "+1M€", label: "Pressupost", desc: "gestionat en projectes d'alt valor", icon: "TrendingUp" },
-                { value: "30k€", label: "Freelance", desc: "facturats com a consultor independent", icon: "Wallet" },
-                { value: "3", label: "ERPs Implementats", desc: "NetSuite, SAP i ClickUp a nivell enterprise", icon: "Database" },
-                { value: "+8", label: "Negocis Impulsats", desc: "empreses on he treballat i impulsat el creixement", icon: "Rocket" }
+                { value: "+15", label: "Webs & E-commerce", desc: "Desenvolupats i llançats per a clients i projectes propis", icon: "Globe" },
+                { value: "+30", label: "Projectes Branding", desc: "Identitats corporatives creades des de zero", icon: "Palette" },
+                { value: "+15", label: "Solucions IA", desc: "Chatbots, agents de veu i automatitzacions desenvolupades", icon: "Cpu" },
+                { value: "+1M€", label: "Pressupost", desc: "Gestionat en projectes d'alt valor", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "Facturats com a consultor independent", icon: "Wallet" },
+                { value: "+8", label: "Negocis Impulsats", desc: "Empreses on he treballat i impulsat el creixement", icon: "Rocket" }
+            ],
+            softSkills: [
+                { title: "Creativitat", rating: 7, max: 10 },
+                { title: "Comunicació", rating: 7, max: 10 },
+                { title: "Organització", rating: 8, max: 10 },
+                { title: "Resolutivitat", rating: 9, max: 10 }
             ]
         },
         achievements: {
