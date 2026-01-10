@@ -340,43 +340,51 @@ export const translations = {
                     desc: "Desarrollo de un agente de prospección automatizado: scraping web para identificar clientes potenciales (wedding planners), extracción automática de datos de contacto, almacenamiento en Excel y envío de secuencias de correo personalizadas. Sistema completo de captación de leads sin intervención manual."
                 }
             },
-            developmentsTitle: "Desarrollos IA Propios",
+            developmentsTitle: "Mis Experimentos IA",
             developments: {
-                nuria: {
-                    title: "Núria - Agente Rostisseria",
-                    desc: "Agente telefónico que gestiona pedidos retail, consulta stock en tiempo real y registra pedidos automáticamente"
+                aura: {
+                    title: "Aura Tasks AI",
+                    desc: "Super app de productividad con NLP avanzado, desarrollada con Vite + React 19 + TypeScript. Gestión optimista y diseño premium.",
+                    link: "https://aura-tasks-es.vercel.app/",
+                    linkText: "Probar Beta Gratuita"
+                },
+                aetherWeb: {
+                    title: "Aether Labs Web",
+                    desc: "Sitio web corporativo desarrollado con IA en Node.js utilizando Antavitary (Google).",
+                    link: "https://www.aetherlabs.es",
+                    linkText: "Ver Web"
+                },
+                agon: {
+                    title: "AGON - Sports AI",
+                    desc: "Software integral para equipos de fútbol: gestión de entrenamientos, predicción de lesiones y análisis automatizado de rivales."
                 },
                 jason: {
                     title: "Jason ClickUp Manager",
-                    desc: "Agente de productividad que crea tareas en ClickUp por voz/texto, asigna responsables y automatiza proyectos"
+                    desc: "Agente de productividad que crea tareas en ClickUp por voz/texto, asigna responsables y automatiza proyectos."
+                },
+                nuria: {
+                    title: "Laura - Agente Rostisseria",
+                    desc: "Chat de voz para gestión de pedidos retail con consulta de stock en tiempo real."
                 },
                 ugc: {
                     title: "UGC Avatar Studio",
-                    desc: "Generador de avatares consistentes fotorrealistas para marcas, thumbnails y creatividades estáticas"
-                },
-                editor: {
-                    title: "AI Photo Editor",
-                    desc: "Web app de edición: eliminación de objetos/fondos (Inpainting), restauración y mejora de calidad en segundos"
-                },
-                particles: {
-                    title: "Gestor de Partículas 3D",
-                    desc: "Control de partículas con las manos (Webcam). Vision Tech en el navegador con experiencia visual reactiva"
+                    desc: "Generador de avatares consistentes fotorrealistas para marcas y creatividades estáticas."
                 },
                 chleopatra: {
                     title: "Chleopatra - Historias IA",
-                    desc: "Plataforma EdTech que genera historias visuales educativas con voces clonadas y vídeos sintéticos"
-                },
-                aura: {
-                    title: "Aura Tasks AI",
-                    desc: "Super app de productividad con NLP avanzado, CTAs inteligentes y planificación automática por IA"
-                },
-                musikeeo: {
-                    title: "Musikeeo",
-                    desc: "Red social vertical para músicos: marketplace de segunda mano, servicios y pedidos para conciertos"
+                    desc: "Plataforma EdTech que genera historias visuales educativas con voces clonadas y vídeos sintéticos."
                 },
                 numa: {
                     title: "Numa - Asistente Suma Salut",
-                    desc: "Agente de atención al paciente 24/7: gestión de citas, triaje inteligente y resolución de dudas médicas"
+                    desc: "Agente de atención al paciente 24/7: gestión de citas y triaje inteligente."
+                },
+                cv: {
+                    title: "Este CV Interactivo",
+                    desc: "Desarrollado con Next.js, Tailwind y Framer Motion con asistencia de IA."
+                },
+                saasBot: {
+                    title: "SaaS Chatbot (WIP)",
+                    desc: "Asistente a medida para incrustar en plataformas SaaS. (En construcción)"
                 }
             }
         },
@@ -1989,43 +1997,51 @@ export const translations = {
                     { title: "Audiovisual Production", desc: "Standardized coordination of filming and editing." }
                 ]
             },
-            developmentsTitle: "Own AI Developments",
+            developmentsTitle: "My AI Experiments",
             developments: {
-                nuria: {
-                    title: "Núria - Roastisseria Agent",
-                    desc: "Voice agent that manages retail orders, checks real-time stock, and records orders automatically"
+                aura: {
+                    title: "Aura Tasks AI",
+                    desc: "Super productivity app with advanced NLP, built with Vite + React 19 + TypeScript. Optimistic management and premium design.",
+                    link: "https://aura-tasks-es.vercel.app/",
+                    linkText: "Try Free Beta"
+                },
+                aetherWeb: {
+                    title: "Aether Labs Web",
+                    desc: "Experimental corporate website developed entirely with AI using Node.js and Antigravity.",
+                    link: "https://www.aetherlabs.es",
+                    linkText: "Visit Web"
+                },
+                agon: {
+                    title: "AGON - Sports AI",
+                    desc: "Integral software for football teams: training management, injury prediction, and automated rival analysis."
                 },
                 jason: {
                     title: "Jason ClickUp Manager",
-                    desc: "Productivity agent that creates tasks in ClickUp by voice/text, assigns responsible parties and automates projects"
+                    desc: "Productivity agent that creates tasks in ClickUp by voice/text, assigns responsible parties and automates projects."
+                },
+                nuria: {
+                    title: "Laura - Rotisserie Agent",
+                    desc: "Voice chat for retail order management with real-time stock consultation."
                 },
                 ugc: {
                     title: "UGC Avatar Studio",
-                    desc: "Generator of consistent photorealistic avatars for brands, thumbnails and static creative assets"
-                },
-                editor: {
-                    title: "AI Photo Editor",
-                    desc: "Editing web app: object/background removal (Inpainting), restoration and quality improvement in seconds"
-                },
-                particles: {
-                    title: "3D Particle Manager",
-                    desc: "Particle control with hands (Webcam). Vision Tech in the browser with reactive visual experience"
+                    desc: "Consistent photorealistic avatar generator for brands and static creatives."
                 },
                 chleopatra: {
                     title: "Chleopatra - AI Stories",
-                    desc: "EdTech platform that generates visual educational stories with cloned voices and synthetic videos"
-                },
-                aura: {
-                    title: "Aura Tasks AI",
-                    desc: "Productivity super app with advanced NLP, smart CTAs and automatic AI planning"
-                },
-                musikeeo: {
-                    title: "Musikeeo",
-                    desc: "Vertical social network for musicians: second-hand marketplace, services and concert bookings"
+                    desc: "EdTech platform that generates educational visual stories with cloned voices and synthetic videos."
                 },
                 numa: {
                     title: "Numa - Suma Salut Assistant",
-                    desc: "24/7 patient care agent: appointment management, intelligent triage and medical doubt resolution"
+                    desc: "24/7 patient care agent: appointment management and intelligent triage."
+                },
+                cv: {
+                    title: "This Interactive CV",
+                    desc: "Developed with Next.js, Tailwind, and Framer Motion with AI assistance."
+                },
+                saasBot: {
+                    title: "SaaS Chatbot (WIP)",
+                    desc: "Custom assistant to embed in SaaS platforms. (Under construction)"
                 }
             }
         },
@@ -3173,65 +3189,55 @@ export const translations = {
                     desc: "Desenvolupament d'un agent de prospecció automatitzat: scraping web per identificar clients potencials (wedding planners), extracció automàtica de dades de contacte, emmagatzematge en Excel i enviament de seqüències de correu personalitzades. Sistema complet de captació de leads sense intervenció manual."
                 }
             },
-            developmentsTitle: "Desenvolupaments IA Propis",
+            developmentsTitle: "Els meus Experiments IA",
             developments: {
-                nuria: {
-                    title: "Núria - Agent Rostisseria",
-                    desc: "Agent telefònic que gestiona comandes retail, consulta stock en temps real i registra comandes automàticament"
+                aura: {
+                    title: "Aura Tasks AI",
+                    desc: "Super app de productivitat amb NLP avançat, desenvolupada amb Vite + React 19 + TypeScript. Gestió optimista i disseny premium.",
+                    link: "https://aura-tasks-es.vercel.app/",
+                    linkText: "Provar Beta Gratuïta"
+                },
+                aetherWeb: {
+                    title: "Aether Labs Web",
+                    desc: "Lloc web corporatiu desenvolupat amb IA en Node.js utilitzant Antavitary (Google).",
+                    link: "https://www.aetherlabs.es",
+                    linkText: "Veure Web"
+                },
+                agon: {
+                    title: "AGON - Sports AI",
+                    desc: "Software integral per a equips de futbol: gestió d'entrenaments, predicció de lesions i anàlisi automatitzat de rivals."
                 },
                 jason: {
                     title: "Jason ClickUp Manager",
-                    desc: "Agent de productivitat que crea tasques a ClickUp per veu/text, assigna responsables i automatitza projectes"
+                    desc: "Agent de productivitat que crea tasques a ClickUp per veu/text, assigna responsables i automatitza projectes."
+                },
+                nuria: {
+                    title: "Laura - Agent Rostisseria",
+                    desc: "Xat de veu per a gestió de comandes retail amb consulta d'estoc en temps real."
                 },
                 ugc: {
                     title: "UGC Avatar Studio",
-                    desc: "Generador d'avatars consistents fotorealistes per a marques, thumbnails i creativitats estàtiques"
-                },
-                editor: {
-                    title: "AI Photo Editor",
-                    desc: "Web app d'edició: eliminació d'objectes/fons (Inpainting), restauració i millora de qualitat en segons"
-                },
-                particles: {
-                    title: "Gestor de Partícules 3D",
-                    desc: "Control de partícules amb les mans (Webcam). Vision Tech al navegador amb experiència visual reactiva"
+                    desc: "Generador d'avatars consistents fotorealistes per a marques i creativitats estàtiques."
                 },
                 chleopatra: {
                     title: "Chleopatra - Històries IA",
-                    desc: "Plataforma EdTech que genera històries visuals educatives amb veus clonades i vídeos sintètics"
-                },
-                aura: {
-                    title: "Aura Tasks AI",
-                    desc: "Super app de productivitat amb NLP avançat, CTAs intel·ligents i planificació automàtica per IA"
-                },
-                musikeeo: {
-                    title: "Musikeeo",
-                    desc: "Xarxa social vertical per a músics: marketplace de segona mà, serveis i comandes per a concerts"
+                    desc: "Plataforma EdTech que genera històries visuals educatives amb veus clonades i vídeos sintètics."
                 },
                 numa: {
                     title: "Numa - Assistent Suma Salut",
-                    desc: "Agent d'atenció al pacient 24/7: gestió de cites, triatge intel·ligent i resolució de dubtes mèdics"
+                    desc: "Agent d'atenció al pacient 24/7: gestió de cites i triatge intel·ligent."
+                },
+                cv: {
+                    title: "Aquest CV Interactiu",
+                    desc: "Desenvolupat amb Next.js, Tailwind i Framer Motion amb assistència d'IA."
+                },
+                saasBot: {
+                    title: "SaaS Chatbot (WIP)",
+                    desc: "Assistent a mida per incrustar en plataformes SaaS. (En construcció)"
                 }
             }
         },
-        numbers: {
-            title: "Els Meus Números",
-            impact: "Impacte Total",
-            impactDesc: "Persones assolides.",
-            webs: "Webs & E-commerce",
-            websDesc: "Desenvolupats i llançats.",
-            brands: "Marques Branding",
-            brandsDesc: "Identitats corporatives.",
-            ai: "Solucions IA",
-            aiDesc: "Desenvolupades amb codi propi.",
-            systems: "SOPs",
-            systemsDesc: "Processos optimitzats.",
-            budget: "Pressupost",
-            budgetDesc: "Gestionats en projectes.",
-            core: "Sistemes Core",
-            coreDesc: "NetSuite, SAP, ClickUp implementats.",
-            boosted: "Negocis Impulsats",
-            boostedDesc: "Empreses en les quals he treballat i impulsat el seu creixement."
-        },
+
         education: {
             title: "Formació & Certificacions",
             items: [
