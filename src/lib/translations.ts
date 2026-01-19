@@ -1811,6 +1811,48 @@ export const translations = {
                     ],
                     cta: "Ver Mapa Completo de Procesos"
                 },
+                procesos: {
+                    mappedProcesses: {
+                        title: "Procesos Mapeados & Optimizados",
+                        groups: [
+                            {
+                                title: "Administración y Finanzas (CulturA)",
+                                desc: "Enfoque en operación crítica, trazabilidad y reducción de errores.",
+                                items: [
+                                    { title: "1. Registro y facturas", desc: "Recepción, validación y registro homogéneo." },
+                                    { title: "2. Validación facturas", desc: "Control de importes y duplicados pre-registro." },
+                                    { title: "3. Gestión documental", desc: "Archivo estandarizado y recuperación rápida." },
+                                    { title: "4. Seguimiento facturas", desc: "Estados claros: pendiente, aprobado, pagado." },
+                                    { title: "5. Conciliación pagos", desc: "Cruce bancario vs registros internos." },
+                                    { title: "6. Compras", desc: "Solicitud, validación y registro financiero." },
+                                    { title: "7. Gestión proveedores", desc: "Normalización de datos y altas." },
+                                    { title: "8. Pedidos y trazabilidad", desc: "Vinculación pedido-factura-pago." },
+                                    { title: "9. Procesos recurrentes", desc: "Estandarización de tareas diarias." },
+                                    { title: "10. Reporting financiero", desc: "Visibilidad real de bloqueos y pendientes." }
+                                ]
+                            },
+                            {
+                                title: "Operaciones de Agencia & Marketing",
+                                desc: "Enfoque en velocidad, creatividad y satisfacción del cliente.",
+                                items: [
+                                    { title: "1. Onboarding Clientes", desc: "Kickoff, setup de carpetas y plan de 30 días." },
+                                    { title: "2. Producción Contenido", desc: "Flujo idea-diseño-publicación y versiones." },
+                                    { title: "3. Aprobación Creatividades", desc: "Rondas de feedback acotadas y checklists." },
+                                    { title: "4. Reporting Campañas", desc: "Rutinas de análisis y toma de decisiones." },
+                                    { title: "5. Creación Webs", desc: "Brief, wireframe, diseño, build y QA." },
+                                    { title: "6. Entrega Webs", desc: "Go-live, manuales y hand-off." },
+                                    { title: "7. Estrategia Redes", desc: "Framework de pilares, tonos y calendario." },
+                                    { title: "8. Producción Audiovisual", desc: "Pre-producción, rodaje y flujo de edición." },
+                                    { title: "9. Copywriting", desc: "Estructura, revisión y control de cambios." },
+                                    { title: "10. Onboarding Empleados", desc: "Formación por rol y primeras tareas." },
+                                    { title: "11. Gestión Tareas", desc: "Definición de 'tarea bien creada' y prioridades." },
+                                    { title: "12. QA Interno", desc: "Checklist de errores típicos pre-entrega." },
+                                    { title: "13. Planificación Semanal", desc: "Rituales de planning y desbloqueo." }
+                                ]
+                            }
+                        ]
+                    }
+                },
             },
         },
     },
@@ -4149,45 +4191,47 @@ export const translations = {
                 text: "Perfil Senior disponible per a consultoria i direcció de projectes.",
                 button: "Contactar Ara"
             },
-            mappedProcesses: {
-                title: "Processos Mapejats & Optimitzats",
-                groups: [
-                    {
-                        title: "Administració i Finances (CulturA)",
-                        desc: "Enfocament en operació crítica, traçabilitat i reducció d'errors.",
-                        items: [
-                            { title: "1. Registre i factures", desc: "Recepció, validació i registre homogeni." },
-                            { title: "2. Validació factures", desc: "Control d'imports i duplicats pre-registre." },
-                            { title: "3. Gestió documental", desc: "Arxiu estandaritzat i recuperació ràpida." },
-                            { title: "4. Seguiment factures", desc: "Estats clars: pendent, aprovat, pagat." },
-                            { title: "5. Conciliació pagaments", desc: "Creuament bancari vs registres interns." },
-                            { title: "6. Compres", desc: "Sol·licitud, validació i registre financer." },
-                            { title: "7. Gestió proveïdors", desc: "Normalització de dades i altes." },
-                            { title: "8. Comandes i traçabilitat", desc: "Vinculació comanda-factura-pagament." },
-                            { title: "9. Processos recurrents", desc: "Estandarització de tasques diàries." },
-                            { title: "10. Reporting financer", desc: "Visibilitat real de bloquejos i pendents." }
-                        ]
-                    },
-                    {
-                        title: "Operacions d'Agència & Màrqueting",
-                        desc: "Enfocament en velocitat, creativitat i satisfacció del client.",
-                        items: [
-                            { title: "1. Onboarding Clients", desc: "Kickoff, setup de carpetes i pla de 30 dies." },
-                            { title: "2. Producció Contingut", desc: "Flux idea-disseny-publicació i versions." },
-                            { title: "3. Aprovació Creativitats", desc: "Rondes de feedback acotades i checklists." },
-                            { title: "4. Reporting Campanyes", desc: "Rutines d'anàlisi i presa de decisions." },
-                            { title: "5. Creació Webs", desc: "Brief, wireframe, disseny, build i QA." },
-                            { title: "6. Entrega Webs", desc: "Go-live, manuals i hand-off." },
-                            { title: "7. Estratègia Xarxes", desc: "Framework de pilars, tons i calendari." },
-                            { title: "8. Producció Audiovisual", desc: "Pre-producció, rodatge i flux d'edició." },
-                            { title: "9. Copywriting", desc: "Estructura, revisió i control de canvis." },
-                            { title: "10. Onboarding Empleats", desc: "Formació per rol i primeres tasques." },
-                            { title: "11. Gestió Tasques", desc: "Definició de 'tasca ben creada' i prioritats." },
-                            { title: "12. QA Intern", desc: "Checklist d'errors típics pre-entrega." },
-                            { title: "13. Planificació Setmanal", desc: "Rituals de planning i desbloqueig." }
-                        ]
-                    }
-                ]
+            procesos: {
+                mappedProcesses: {
+                    title: "Processos Mapejats & Optimitzats",
+                    groups: [
+                        {
+                            title: "Administració i Finances (CulturA)",
+                            desc: "Enfocament en operació crítica, traçabilitat i reducció d'errors.",
+                            items: [
+                                { title: "1. Registre i factures", desc: "Recepció, validació i registre homogeni." },
+                                { title: "2. Validació factures", desc: "Control d'imports i duplicats pre-registre." },
+                                { title: "3. Gestió documental", desc: "Arxiu estandaritzat i recuperació ràpida." },
+                                { title: "4. Seguiment factures", desc: "Estats clars: pendent, aprovat, pagat." },
+                                { title: "5. Conciliació pagaments", desc: "Creuament bancari vs registres interns." },
+                                { title: "6. Compres", desc: "Sol·licitud, validació i registre financer." },
+                                { title: "7. Gestió proveïdors", desc: "Normalización de dades i altes." },
+                                { title: "8. Comandes i traçabilitat", desc: "Vinculació comanda-factura-pagament." },
+                                { title: "9. Processos recurrents", desc: "Estandarització de tasques diàries." },
+                                { title: "10. Reporting financer", desc: "Visibilitat real de bloquejos i pendents." }
+                            ]
+                        },
+                        {
+                            title: "Operacions d'Agència & Màrqueting",
+                            desc: "Enfocament en velocitat, creativitat i satisfacció del client.",
+                            items: [
+                                { title: "1. Onboarding Clients", desc: "Kickoff, setup de carpetes i pla de 30 dies." },
+                                { title: "2. Producció Contingut", desc: "Flux idea-disseny-publicació i versions." },
+                                { title: "3. Aprovació Creativitats", desc: "Rondes de feedback acotades i checklists." },
+                                { title: "4. Reporting Campanyes", desc: "Rutines d'anàlisi i presa de decisions." },
+                                { title: "5. Creació Webs", desc: "Brief, wireframe, disseny, build i QA." },
+                                { title: "6. Entrega Webs", desc: "Go-live, manuals i hand-off." },
+                                { title: "7. Estratègia Xarxes", desc: "Framework de pilars, tons i calendari." },
+                                { title: "8. Producció Audiovisual", desc: "Pre-producció, rodatge i flux d'edició." },
+                                { title: "9. Copywriting", desc: "Estructura, revisió i control de canvis." },
+                                { title: "10. Onboarding Empleats", desc: "Formació per rol i primeres tasques." },
+                                { title: "11. Gestió Tasques", desc: "Definició de 'tasca ben creada' i prioritats." },
+                                { title: "12. QA Intern", desc: "Checklist d'errors típics pre-entrega." },
+                                { title: "13. Planificació Setmanal", desc: "Rituals de planning i desbloqueig." }
+                            ]
+                        }
+                    ]
+                }
             }
         }
     }

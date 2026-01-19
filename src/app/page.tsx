@@ -740,11 +740,10 @@ export default function Home() {
             </div>
           </ExpandableSection >
 
-          {/* --- PROCESSES section temporarily disabled - needs translations data ---
-          <ExpandableSection id="processes" icon={<Workflow size={32} />} title={t.procesos?.mappedProcesses?.title || "Procesos"}>
+          {/* --- PROCESSES (New Section) --- */}
+          <ExpandableSection id="processes" icon={<Workflow size={32} />} title={(t as any).procesos?.mappedProcesses?.title || (t as any).procesos?.mappedProcesses?.title || "Procesos"}>
             <MappedProcessesSection isEmbedded={true} />
           </ExpandableSection>
-          */}
 
 
 
