@@ -1,0 +1,31 @@
+src/app/page.tsx(598,12): error TS17008: JSX element 'ExpandableSection' has no corresponding closing tag.
+src/app/page.tsx(730,9): error TS17002: Expected corresponding JSX closing tag for 'div'.
+src/app/page.tsx(1026,7): error TS17002: Expected corresponding JSX closing tag for 'main'.
+src/app/page.tsx(1028,7): error TS1005: ')' expected.
+src/app/page.tsx(1031,11): error TS1005: ';' expected.
+src/app/page.tsx(1033,13): error TS1005: ';' expected.
+src/app/page.tsx(1034,11): error TS2657: JSX expressions must have one parent element.
+src/app/page.tsx(1041,9): error TS1128: Declaration or statement expected.
+src/app/page.tsx(1044,11): error TS1005: ';' expected.
+src/app/page.tsx(1045,11): error TS2657: JSX expressions must have one parent element.
+src/app/page.tsx(1057,9): error TS1128: Declaration or statement expected.
+src/app/page.tsx(1060,11): error TS1005: ';' expected.
+src/app/page.tsx(1061,11): error TS2657: JSX expressions must have one parent element.
+src/app/page.tsx(1075,9): error TS1128: Declaration or statement expected.
+src/app/page.tsx(1078,11): error TS1005: ';' expected.
+src/app/page.tsx(1079,11): error TS2657: JSX expressions must have one parent element.
+src/app/page.tsx(1100,9): error TS1128: Declaration or statement expected.
+src/app/page.tsx(1103,11): error TS1005: ';' expected.
+src/app/page.tsx(1104,11): error TS2657: JSX expressions must have one parent element.
+src/app/page.tsx(1116,9): error TS1128: Declaration or statement expected.
+src/app/page.tsx(1119,11): error TS1005: ';' expected.
+src/app/page.tsx(1121,9): error TS1128: Declaration or statement expected.
+src/app/page.tsx(1123,7): error TS1109: Expression expected.
+src/app/page.tsx(1124,5): error TS1109: Expression expected.
+src/app/page.tsx(1125,3): error TS1109: Expression expected.
+src/lib/translations.ts(4189,31): error TS1005: ',' expected.
+src/lib/translations.ts(4191,33): error TS1005: ',' expected.
+src/lib/translations.ts(4191,62): error TS1005: ',' expected.
+src/lib/translations.ts(4192,33): error TS1005: ',' expected.
+src/lib/translations.ts(4192,79): error TS1005: ',' expected.
+src/lib/translations.ts(4193,1): error TS1005: '}' expected.

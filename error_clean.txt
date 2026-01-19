@@ -1,0 +1,12 @@
+src/app/page.tsx(664,43): error TS7006: Parameter 'skill' implicitly has an 'any' type.
+src/app/page.tsx(678,47): error TS7006: Parameter 'skill' implicitly has an 'any' type.
+src/app/page.tsx(692,59): error TS7006: Parameter 'skill' implicitly has an 'any' type.
+src/app/page.tsx(706,55): error TS7006: Parameter 'skill' implicitly has an 'any' type.
+src/app/page.tsx(719,54): error TS7006: Parameter 'skill' implicitly has an 'any' type.
+src/app/page.tsx(794,40): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/app/page.tsx(794,46): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/app/page.tsx(1141,38): error TS7006: Parameter 'item' implicitly has an 'any' type.
+src/app/page.tsx(1141,44): error TS7006: Parameter 'index' implicitly has an 'any' type.
+src/lib/LanguageContext.tsx(29,15): error TS7053: Element implicitly has an 'any' type because expression of type 'Language' can't be used to index type '{ readonly es: { readonly nav: { readonly story: "Historia"; readonly numbers: "Números"; readonly experience: "Experiencia IA"; readonly career: "Trayectoria"; readonly achievements: "Logros"; readonly skills: "Skills"; ... 4 more ...; readonly download: "Descargar CV PDF"; }; ... 17 more ...; readonly en: { ...; }...'.
+  Property 'en' does not exist on type '{ readonly es: { readonly nav: { readonly story: "Historia"; readonly numbers: "Números"; readonly experience: "Experiencia IA"; readonly career: "Trayectoria"; readonly achievements: "Logros"; readonly skills: "Skills"; ... 4 more ...; readonly download: "Descargar CV PDF"; }; ... 17 more ...; readonly en: { ...; }...'.
+src/lib/translations.ts(4180,50): error TS2339: Property 'en' does not exist on type '{ readonly es: { readonly nav: { readonly story: "Historia"; readonly numbers: "Números"; readonly experience: "Experiencia IA"; readonly career: "Trayectoria"; readonly achievements: "Logros"; readonly skills: "Skills"; ... 4 more ...; readonly download: "Descargar CV PDF"; }; ... 17 more ...; readonly en: { ...; }...'.

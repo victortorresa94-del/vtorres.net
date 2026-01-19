@@ -1,0 +1,4 @@
+src/lib/translations.ts(4195,9): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4196,5): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4197,1): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4197,3): error TS1434: Unexpected keyword or identifier.

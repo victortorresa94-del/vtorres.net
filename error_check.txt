@@ -1,0 +1,638 @@
+src/lib/translations.ts(1817,5): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1817,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1821,20): error TS1005: ';' expected.
+src/lib/translations.ts(1822,27): error TS1005: ';' expected.
+src/lib/translations.ts(1823,27): error TS1005: ';' expected.
+src/lib/translations.ts(1824,37): error TS1005: ';' expected.
+src/lib/translations.ts(1825,35): error TS1005: ';' expected.
+src/lib/translations.ts(1826,41): error TS1005: ';' expected.
+src/lib/translations.ts(1827,42): error TS1005: ';' expected.
+src/lib/translations.ts(1828,47): error TS1005: ';' expected.
+src/lib/translations.ts(1829,52): error TS1005: ';' expected.
+src/lib/translations.ts(1830,57): error TS1005: ';' expected.
+src/lib/translations.ts(1831,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1834,17): error TS1005: ';' expected.
+src/lib/translations.ts(1835,22): error TS1005: ';' expected.
+src/lib/translations.ts(1836,32): error TS1005: ';' expected.
+src/lib/translations.ts(1837,32): error TS1005: ';' expected.
+src/lib/translations.ts(1838,37): error TS1005: ';' expected.
+src/lib/translations.ts(1839,35): error TS1005: ';' expected.
+src/lib/translations.ts(1840,46): error TS1005: ';' expected.
+src/lib/translations.ts(1841,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1844,18): error TS1005: ';' expected.
+src/lib/translations.ts(1845,19): error TS1005: ';' expected.
+src/lib/translations.ts(1846,23): error TS1005: ';' expected.
+src/lib/translations.ts(1847,27): error TS1005: ';' expected.
+src/lib/translations.ts(1848,31): error TS1005: ';' expected.
+src/lib/translations.ts(1849,35): error TS1005: ';' expected.
+src/lib/translations.ts(1850,41): error TS1005: ';' expected.
+src/lib/translations.ts(1851,43): error TS1005: ';' expected.
+src/lib/translations.ts(1852,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1855,21): error TS1005: ';' expected.
+src/lib/translations.ts(1941,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1944,18): error TS1005: ';' expected.
+src/lib/translations.ts(1958,27): error TS1005: ';' expected.
+src/lib/translations.ts(1964,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(1967,18): error TS1005: ';' expected.
+src/lib/translations.ts(2043,13): error TS1109: Expression expected.
+src/lib/translations.ts(2043,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2046,22): error TS1005: ';' expected.
+src/lib/translations.ts(2047,19): error TS1005: ';' expected.
+src/lib/translations.ts(2049,21): error TS1005: ';' expected.
+src/lib/translations.ts(2050,26): error TS1005: ';' expected.
+src/lib/translations.ts(2051,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2054,21): error TS1005: ';' expected.
+src/lib/translations.ts(2055,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2058,21): error TS1005: ';' expected.
+src/lib/translations.ts(2059,26): error TS1005: ';' expected.
+src/lib/translations.ts(2060,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2063,21): error TS1005: ';' expected.
+src/lib/translations.ts(2064,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2067,23): error TS1005: ';' expected.
+src/lib/translations.ts(2068,29): error TS1005: ';' expected.
+src/lib/translations.ts(2069,29): error TS1005: ';' expected.
+src/lib/translations.ts(2070,31): error TS1005: ';' expected.
+src/lib/translations.ts(2071,38): error TS1005: ';' expected.
+src/lib/translations.ts(2072,50): error TS1005: ';' expected.
+src/lib/translations.ts(2073,50): error TS1005: ';' expected.
+src/lib/translations.ts(2074,52): error TS1005: ';' expected.
+src/lib/translations.ts(2075,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2077,18): error TS1005: ';' expected.
+src/lib/translations.ts(2079,26): error TS1005: ';' expected.
+src/lib/translations.ts(2080,29): error TS1005: ';' expected.
+src/lib/translations.ts(2081,28): error TS1005: ';' expected.
+src/lib/translations.ts(2082,32): error TS1005: ';' expected.
+src/lib/translations.ts(2084,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2087,21): error TS1005: ';' expected.
+src/lib/translations.ts(2088,21): error TS1005: ';' expected.
+src/lib/translations.ts(2089,26): error TS1005: ';' expected.
+src/lib/translations.ts(2094,35): error TS1005: ';' expected.
+src/lib/translations.ts(2106,32): error TS1005: ';' expected.
+src/lib/translations.ts(2107,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2161,21): error TS1005: ';' expected.
+src/lib/translations.ts(2163,18): error TS1005: ';' expected.
+src/lib/translations.ts(2164,25): error TS1005: ';' expected.
+src/lib/translations.ts(2167,25): error TS1005: ';' expected.
+src/lib/translations.ts(2168,29): error TS1005: ';' expected.
+src/lib/translations.ts(2169,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2172,25): error TS1005: ';' expected.
+src/lib/translations.ts(2173,29): error TS1005: ';' expected.
+src/lib/translations.ts(2174,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2177,25): error TS1005: ';' expected.
+src/lib/translations.ts(2178,29): error TS1005: ';' expected.
+src/lib/translations.ts(2179,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2182,25): error TS1005: ';' expected.
+src/lib/translations.ts(2183,29): error TS1005: ';' expected.
+src/lib/translations.ts(2184,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2186,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2189,21): error TS1005: ';' expected.
+src/lib/translations.ts(2190,26): error TS1005: ';' expected.
+src/lib/translations.ts(2197,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2199,25): error TS1005: ';' expected.
+src/lib/translations.ts(2202,28): error TS1005: ';' expected.
+src/lib/translations.ts(2203,29): error TS1005: ';' expected.
+src/lib/translations.ts(2204,33): error TS1005: ';' expected.
+src/lib/translations.ts(2205,41): error TS1005: ';' expected.
+src/lib/translations.ts(2206,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2209,28): error TS1005: ';' expected.
+src/lib/translations.ts(2210,29): error TS1005: ';' expected.
+src/lib/translations.ts(2211,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2214,28): error TS1005: ';' expected.
+src/lib/translations.ts(2215,29): error TS1005: ';' expected.
+src/lib/translations.ts(2216,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2219,28): error TS1005: ';' expected.
+src/lib/translations.ts(2220,29): error TS1005: ';' expected.
+src/lib/translations.ts(2221,33): error TS1005: ';' expected.
+src/lib/translations.ts(2222,41): error TS1005: ';' expected.
+src/lib/translations.ts(2223,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2226,28): error TS1005: ';' expected.
+src/lib/translations.ts(2227,29): error TS1005: ';' expected.
+src/lib/translations.ts(2228,33): error TS1005: ';' expected.
+src/lib/translations.ts(2229,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2232,28): error TS1005: ';' expected.
+src/lib/translations.ts(2233,29): error TS1005: ';' expected.
+src/lib/translations.ts(2234,33): error TS1005: ';' expected.
+src/lib/translations.ts(2235,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2238,28): error TS1005: ';' expected.
+src/lib/translations.ts(2239,29): error TS1005: ';' expected.
+src/lib/translations.ts(2240,33): error TS1005: ';' expected.
+src/lib/translations.ts(2241,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2244,28): error TS1005: ';' expected.
+src/lib/translations.ts(2245,29): error TS1005: ';' expected.
+src/lib/translations.ts(2246,33): error TS1005: ';' expected.
+src/lib/translations.ts(2247,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2250,28): error TS1005: ';' expected.
+src/lib/translations.ts(2251,29): error TS1005: ';' expected.
+src/lib/translations.ts(2252,33): error TS1005: ';' expected.
+src/lib/translations.ts(2253,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2256,28): error TS1005: ';' expected.
+src/lib/translations.ts(2257,29): error TS1005: ';' expected.
+src/lib/translations.ts(2258,33): error TS1005: ';' expected.
+src/lib/translations.ts(2259,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2262,28): error TS1005: ';' expected.
+src/lib/translations.ts(2263,29): error TS1005: ';' expected.
+src/lib/translations.ts(2264,33): error TS1005: ';' expected.
+src/lib/translations.ts(2265,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2268,28): error TS1005: ';' expected.
+src/lib/translations.ts(2269,29): error TS1005: ';' expected.
+src/lib/translations.ts(2272,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2275,18): error TS1005: ';' expected.
+src/lib/translations.ts(2312,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2315,21): error TS1005: ';' expected.
+src/lib/translations.ts(2316,25): error TS1005: ';' expected.
+src/lib/translations.ts(2317,36): error TS1005: ';' expected.
+src/lib/translations.ts(2318,30): error TS1005: ';' expected.
+src/lib/translations.ts(2321,25): error TS1005: ';' expected.
+src/lib/translations.ts(2322,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2325,25): error TS1005: ';' expected.
+src/lib/translations.ts(2326,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2329,25): error TS1005: ';' expected.
+src/lib/translations.ts(2330,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2333,25): error TS1005: ';' expected.
+src/lib/translations.ts(2334,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2337,25): error TS1005: ';' expected.
+src/lib/translations.ts(2338,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2341,25): error TS1005: ';' expected.
+src/lib/translations.ts(2342,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2345,25): error TS1005: ';' expected.
+src/lib/translations.ts(2346,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2349,25): error TS1005: ';' expected.
+src/lib/translations.ts(2350,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2353,25): error TS1005: ';' expected.
+src/lib/translations.ts(2354,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2357,25): error TS1005: ';' expected.
+src/lib/translations.ts(2360,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2363,19): error TS1005: ';' expected.
+src/lib/translations.ts(2364,23): error TS1005: ';' expected.
+src/lib/translations.ts(2365,28): error TS1005: ';' expected.
+src/lib/translations.ts(2367,21): error TS1005: ';' expected.
+src/lib/translations.ts(2368,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2371,22): error TS1005: ';' expected.
+src/lib/translations.ts(2372,25): error TS1005: ';' expected.
+src/lib/translations.ts(2373,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2375,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2378,18): error TS1005: ';' expected.
+src/lib/translations.ts(2379,21): error TS1005: ';' expected.
+src/lib/translations.ts(2380,25): error TS1005: ';' expected.
+src/lib/translations.ts(2382,21): error TS1005: ';' expected.
+src/lib/translations.ts(2383,36): error TS1005: ';' expected.
+src/lib/translations.ts(2384,30): error TS1005: ';' expected.
+src/lib/translations.ts(2385,45): error TS1005: ';' expected.
+src/lib/translations.ts(2386,40): error TS1005: ';' expected.
+src/lib/translations.ts(2387,55): error TS1005: ';' expected.
+src/lib/translations.ts(2388,48): error TS1005: ';' expected.
+src/lib/translations.ts(2389,63): error TS1005: ';' expected.
+src/lib/translations.ts(2390,55): error TS1005: ';' expected.
+src/lib/translations.ts(2391,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2395,25): error TS1005: ';' expected.
+src/lib/translations.ts(2396,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2399,25): error TS1005: ';' expected.
+src/lib/translations.ts(2400,31): error TS1005: ';' expected.
+src/lib/translations.ts(2401,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2404,25): error TS1005: ';' expected.
+src/lib/translations.ts(2405,31): error TS1005: ';' expected.
+src/lib/translations.ts(2406,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2409,25): error TS1005: ';' expected.
+src/lib/translations.ts(2412,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2415,17): error TS1005: ';' expected.
+src/lib/translations.ts(2416,19): error TS1005: ';' expected.
+src/lib/translations.ts(2417,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2421,22): error TS1005: ';' expected.
+src/lib/translations.ts(2422,29): error TS1005: ';' expected.
+src/lib/translations.ts(2423,29): error TS1005: ';' expected.
+src/lib/translations.ts(2424,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2427,25): error TS1005: ';' expected.
+src/lib/translations.ts(2428,27): error TS1005: ';' expected.
+src/lib/translations.ts(2455,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2458,24): error TS1005: ';' expected.
+src/lib/translations.ts(2459,26): error TS1005: ';' expected.
+src/lib/translations.ts(2460,32): error TS1005: ';' expected.
+src/lib/translations.ts(2466,40): error TS1005: ';' expected.
+src/lib/translations.ts(2469,30): error TS1005: ';' expected.
+src/lib/translations.ts(2477,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2480,30): error TS1005: ';' expected.
+src/lib/translations.ts(2489,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2492,25): error TS1005: ';' expected.
+src/lib/translations.ts(2493,30): error TS1005: ';' expected.
+src/lib/translations.ts(2500,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2507,34): error TS1005: ';' expected.
+src/lib/translations.ts(2509,29): error TS1005: ';' expected.
+src/lib/translations.ts(2510,29): error TS1005: ';' expected.
+src/lib/translations.ts(2511,41): error TS1005: ';' expected.
+src/lib/translations.ts(2517,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2519,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2522,25): error TS1005: ';' expected.
+src/lib/translations.ts(2523,26): error TS1005: ';' expected.
+src/lib/translations.ts(2524,33): error TS1005: ';' expected.
+src/lib/translations.ts(2549,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2552,25): error TS1005: ';' expected.
+src/lib/translations.ts(2553,26): error TS1005: ';' expected.
+src/lib/translations.ts(2554,32): error TS1005: ';' expected.
+src/lib/translations.ts(2581,35): error TS1005: ';' expected.
+src/lib/translations.ts(2583,26): error TS1005: ';' expected.
+src/lib/translations.ts(2588,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2590,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2594,21): error TS1005: ';' expected.
+src/lib/translations.ts(2595,28): error TS1005: ';' expected.
+src/lib/translations.ts(2597,32): error TS1005: ';' expected.
+src/lib/translations.ts(2599,28): error TS1005: ';' expected.
+src/lib/translations.ts(2605,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2608,25): error TS1005: ';' expected.
+src/lib/translations.ts(2609,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2612,26): error TS1005: ';' expected.
+src/lib/translations.ts(2617,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2620,26): error TS1005: ';' expected.
+src/lib/translations.ts(2625,32): error TS1005: ';' expected.
+src/lib/translations.ts(2626,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2629,26): error TS1005: ';' expected.
+src/lib/translations.ts(2634,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2637,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2640,22): error TS1005: ';' expected.
+src/lib/translations.ts(2654,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2657,25): error TS1005: ';' expected.
+src/lib/translations.ts(2658,27): error TS1005: ';' expected.
+src/lib/translations.ts(2690,29): error TS1005: ';' expected.
+src/lib/translations.ts(2692,26): error TS1005: ';' expected.
+src/lib/translations.ts(2694,30): error TS1005: ';' expected.
+src/lib/translations.ts(2699,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2702,30): error TS1005: ';' expected.
+src/lib/translations.ts(2711,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2714,25): error TS1005: ';' expected.
+src/lib/translations.ts(2715,26): error TS1005: ';' expected.
+src/lib/translations.ts(2721,29): error TS1005: ';' expected.
+src/lib/translations.ts(2722,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2725,21): error TS1005: ';' expected.
+src/lib/translations.ts(2726,27): error TS1005: ';' expected.
+src/lib/translations.ts(2727,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2728,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2732,22): error TS1005: ';' expected.
+src/lib/translations.ts(2733,29): error TS1005: ';' expected.
+src/lib/translations.ts(2734,29): error TS1005: ';' expected.
+src/lib/translations.ts(2735,34): error TS1005: ';' expected.
+src/lib/translations.ts(2736,36): error TS1005: ';' expected.
+src/lib/translations.ts(2737,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2740,25): error TS1005: ';' expected.
+src/lib/translations.ts(2741,30): error TS1005: ';' expected.
+src/lib/translations.ts(2742,34): error TS1005: ';' expected.
+src/lib/translations.ts(2743,34): error TS1005: ';' expected.
+src/lib/translations.ts(2749,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2752,25): error TS1005: ';' expected.
+src/lib/translations.ts(2753,31): error TS1005: ';' expected.
+src/lib/translations.ts(2754,30): error TS1005: ';' expected.
+src/lib/translations.ts(2761,33): error TS1005: ';' expected.
+src/lib/translations.ts(2762,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2765,22): error TS1005: ';' expected.
+src/lib/translations.ts(2863,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2866,25): error TS1005: ';' expected.
+src/lib/translations.ts(2867,26): error TS1005: ';' expected.
+src/lib/translations.ts(2868,30): error TS1005: ';' expected.
+src/lib/translations.ts(2874,50): error TS1005: ';' expected.
+src/lib/translations.ts(2875,40): error TS1005: ';' expected.
+src/lib/translations.ts(2876,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2879,25): error TS1005: ';' expected.
+src/lib/translations.ts(2880,27): error TS1005: ';' expected.
+src/lib/translations.ts(2881,31): error TS1005: ';' expected.
+src/lib/translations.ts(2886,39): error TS1005: ';' expected.
+src/lib/translations.ts(2888,25): error TS1005: ';' expected.
+src/lib/translations.ts(2889,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2891,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2894,25): error TS1005: ';' expected.
+src/lib/translations.ts(2895,26): error TS1005: ';' expected.
+src/lib/translations.ts(2896,30): error TS1005: ';' expected.
+src/lib/translations.ts(2902,34): error TS1005: ';' expected.
+src/lib/translations.ts(2904,26): error TS1005: ';' expected.
+src/lib/translations.ts(2905,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2908,26): error TS1005: ';' expected.
+src/lib/translations.ts(2909,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2911,27): error TS1005: ';' expected.
+src/lib/translations.ts(2913,29): error TS1005: ';' expected.
+src/lib/translations.ts(2914,30): error TS1005: ';' expected.
+src/lib/translations.ts(2915,37): error TS1005: ';' expected.
+src/lib/translations.ts(2916,41): error TS1005: ';' expected.
+src/lib/translations.ts(2964,45): error TS1005: ';' expected.
+src/lib/translations.ts(2966,30): error TS1005: ';' expected.
+src/lib/translations.ts(2967,38): error TS1005: ';' expected.
+src/lib/translations.ts(2972,43): error TS1005: ';' expected.
+src/lib/translations.ts(2973,46): error TS1005: ';' expected.
+src/lib/translations.ts(2979,50): error TS1005: ';' expected.
+src/lib/translations.ts(2980,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2982,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2985,32): error TS1005: ';' expected.
+src/lib/translations.ts(2987,36): error TS1005: ';' expected.
+src/lib/translations.ts(2988,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(2990,37): error TS1005: ';' expected.
+src/lib/translations.ts(3008,33): error TS1005: ';' expected.
+src/lib/translations.ts(3010,29): error TS1005: ';' expected.
+src/lib/translations.ts(3011,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3014,30): error TS1005: ';' expected.
+src/lib/translations.ts(3021,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3023,28): error TS1005: ';' expected.
+src/lib/translations.ts(3024,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3027,26): error TS1005: ';' expected.
+src/lib/translations.ts(3028,30): error TS1005: ';' expected.
+src/lib/translations.ts(3029,37): error TS1005: ';' expected.
+src/lib/translations.ts(3031,32): error TS1005: ';' expected.
+src/lib/translations.ts(3037,38): error TS1005: ';' expected.
+src/lib/translations.ts(3038,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3041,30): error TS1005: ';' expected.
+src/lib/translations.ts(3042,39): error TS1005: ';' expected.
+src/lib/translations.ts(3049,41): error TS1005: ';' expected.
+src/lib/translations.ts(3050,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3053,28): error TS1005: ';' expected.
+src/lib/translations.ts(3058,31): error TS1005: ';' expected.
+src/lib/translations.ts(3059,40): error TS1005: ';' expected.
+src/lib/translations.ts(3064,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3067,29): error TS1005: ';' expected.
+src/lib/translations.ts(3068,32): error TS1005: ';' expected.
+src/lib/translations.ts(3069,40): error TS1005: ';' expected.
+src/lib/translations.ts(3070,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3072,28): error TS1005: ';' expected.
+src/lib/translations.ts(3073,28): error TS1005: ';' expected.
+src/lib/translations.ts(3075,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3079,27): error TS1005: ';' expected.
+src/lib/translations.ts(3117,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3120,25): error TS1005: ';' expected.
+src/lib/translations.ts(3121,25): error TS1005: ';' expected.
+src/lib/translations.ts(3122,30): error TS1005: ';' expected.
+src/lib/translations.ts(3127,39): error TS1005: ';' expected.
+src/lib/translations.ts(3139,36): error TS1005: ';' expected.
+src/lib/translations.ts(3140,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3141,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3142,2): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3143,13): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3143,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3144,9): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3144,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3145,5): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3145,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3149,20): error TS1005: ';' expected.
+src/lib/translations.ts(3150,27): error TS1005: ';' expected.
+src/lib/translations.ts(3151,27): error TS1005: ';' expected.
+src/lib/translations.ts(3152,37): error TS1005: ';' expected.
+src/lib/translations.ts(3153,35): error TS1005: ';' expected.
+src/lib/translations.ts(3154,41): error TS1005: ';' expected.
+src/lib/translations.ts(3155,42): error TS1005: ';' expected.
+src/lib/translations.ts(3156,47): error TS1005: ';' expected.
+src/lib/translations.ts(3157,52): error TS1005: ';' expected.
+src/lib/translations.ts(3158,57): error TS1005: ';' expected.
+src/lib/translations.ts(3159,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3162,17): error TS1005: ';' expected.
+src/lib/translations.ts(3163,22): error TS1005: ';' expected.
+src/lib/translations.ts(3164,32): error TS1005: ';' expected.
+src/lib/translations.ts(3165,32): error TS1005: ';' expected.
+src/lib/translations.ts(3166,37): error TS1005: ';' expected.
+src/lib/translations.ts(3167,35): error TS1005: ';' expected.
+src/lib/translations.ts(3168,46): error TS1005: ';' expected.
+src/lib/translations.ts(3169,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3172,18): error TS1005: ';' expected.
+src/lib/translations.ts(3173,19): error TS1005: ';' expected.
+src/lib/translations.ts(3174,23): error TS1005: ';' expected.
+src/lib/translations.ts(3175,27): error TS1005: ';' expected.
+src/lib/translations.ts(3176,31): error TS1005: ';' expected.
+src/lib/translations.ts(3177,35): error TS1005: ';' expected.
+src/lib/translations.ts(3178,41): error TS1005: ';' expected.
+src/lib/translations.ts(3179,43): error TS1005: ';' expected.
+src/lib/translations.ts(3180,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3183,21): error TS1005: ';' expected.
+src/lib/translations.ts(3269,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3272,18): error TS1005: ';' expected.
+src/lib/translations.ts(3286,27): error TS1005: ';' expected.
+src/lib/translations.ts(3292,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3295,18): error TS1005: ';' expected.
+src/lib/translations.ts(3369,17): error TS1109: Expression expected.
+src/lib/translations.ts(3369,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3372,22): error TS1005: ';' expected.
+src/lib/translations.ts(3373,19): error TS1005: ';' expected.
+src/lib/translations.ts(3375,21): error TS1005: ';' expected.
+src/lib/translations.ts(3376,26): error TS1005: ';' expected.
+src/lib/translations.ts(3377,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3380,21): error TS1005: ';' expected.
+src/lib/translations.ts(3381,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3384,21): error TS1005: ';' expected.
+src/lib/translations.ts(3385,26): error TS1005: ';' expected.
+src/lib/translations.ts(3386,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3389,21): error TS1005: ';' expected.
+src/lib/translations.ts(3390,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3393,23): error TS1005: ';' expected.
+src/lib/translations.ts(3394,29): error TS1005: ';' expected.
+src/lib/translations.ts(3395,29): error TS1005: ';' expected.
+src/lib/translations.ts(3396,31): error TS1005: ';' expected.
+src/lib/translations.ts(3397,38): error TS1005: ';' expected.
+src/lib/translations.ts(3398,50): error TS1005: ';' expected.
+src/lib/translations.ts(3399,50): error TS1005: ';' expected.
+src/lib/translations.ts(3400,52): error TS1005: ';' expected.
+src/lib/translations.ts(3401,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3404,26): error TS1005: ';' expected.
+src/lib/translations.ts(3405,29): error TS1005: ';' expected.
+src/lib/translations.ts(3406,28): error TS1005: ';' expected.
+src/lib/translations.ts(3407,32): error TS1005: ';' expected.
+src/lib/translations.ts(3409,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3412,21): error TS1005: ';' expected.
+src/lib/translations.ts(3413,21): error TS1005: ';' expected.
+src/lib/translations.ts(3414,26): error TS1005: ';' expected.
+src/lib/translations.ts(3419,35): error TS1005: ';' expected.
+src/lib/translations.ts(3431,32): error TS1005: ';' expected.
+src/lib/translations.ts(3432,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3486,21): error TS1005: ';' expected.
+src/lib/translations.ts(3488,18): error TS1005: ';' expected.
+src/lib/translations.ts(3489,25): error TS1005: ';' expected.
+src/lib/translations.ts(3492,25): error TS1005: ';' expected.
+src/lib/translations.ts(3493,29): error TS1005: ';' expected.
+src/lib/translations.ts(3494,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3497,25): error TS1005: ';' expected.
+src/lib/translations.ts(3498,29): error TS1005: ';' expected.
+src/lib/translations.ts(3499,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3502,25): error TS1005: ';' expected.
+src/lib/translations.ts(3503,29): error TS1005: ';' expected.
+src/lib/translations.ts(3504,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3507,25): error TS1005: ';' expected.
+src/lib/translations.ts(3508,29): error TS1005: ';' expected.
+src/lib/translations.ts(3509,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3511,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3513,25): error TS1005: ';' expected.
+src/lib/translations.ts(3516,28): error TS1005: ';' expected.
+src/lib/translations.ts(3517,29): error TS1005: ';' expected.
+src/lib/translations.ts(3518,33): error TS1005: ';' expected.
+src/lib/translations.ts(3519,41): error TS1005: ';' expected.
+src/lib/translations.ts(3520,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3523,28): error TS1005: ';' expected.
+src/lib/translations.ts(3524,29): error TS1005: ';' expected.
+src/lib/translations.ts(3525,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3528,28): error TS1005: ';' expected.
+src/lib/translations.ts(3529,29): error TS1005: ';' expected.
+src/lib/translations.ts(3530,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3533,28): error TS1005: ';' expected.
+src/lib/translations.ts(3534,29): error TS1005: ';' expected.
+src/lib/translations.ts(3535,33): error TS1005: ';' expected.
+src/lib/translations.ts(3536,41): error TS1005: ';' expected.
+src/lib/translations.ts(3537,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3540,28): error TS1005: ';' expected.
+src/lib/translations.ts(3541,29): error TS1005: ';' expected.
+src/lib/translations.ts(3542,33): error TS1005: ';' expected.
+src/lib/translations.ts(3543,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3546,28): error TS1005: ';' expected.
+src/lib/translations.ts(3547,29): error TS1005: ';' expected.
+src/lib/translations.ts(3548,33): error TS1005: ';' expected.
+src/lib/translations.ts(3549,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3552,28): error TS1005: ';' expected.
+src/lib/translations.ts(3553,29): error TS1005: ';' expected.
+src/lib/translations.ts(3554,33): error TS1005: ';' expected.
+src/lib/translations.ts(3555,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3558,28): error TS1005: ';' expected.
+src/lib/translations.ts(3559,29): error TS1005: ';' expected.
+src/lib/translations.ts(3560,33): error TS1005: ';' expected.
+src/lib/translations.ts(3561,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3564,28): error TS1005: ';' expected.
+src/lib/translations.ts(3565,29): error TS1005: ';' expected.
+src/lib/translations.ts(3566,33): error TS1005: ';' expected.
+src/lib/translations.ts(3567,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3570,28): error TS1005: ';' expected.
+src/lib/translations.ts(3571,29): error TS1005: ';' expected.
+src/lib/translations.ts(3572,33): error TS1005: ';' expected.
+src/lib/translations.ts(3573,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3576,28): error TS1005: ';' expected.
+src/lib/translations.ts(3577,29): error TS1005: ';' expected.
+src/lib/translations.ts(3578,33): error TS1005: ';' expected.
+src/lib/translations.ts(3579,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3582,28): error TS1005: ';' expected.
+src/lib/translations.ts(3583,29): error TS1005: ';' expected.
+src/lib/translations.ts(3586,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3590,18): error TS1005: ';' expected.
+src/lib/translations.ts(3627,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3630,21): error TS1005: ';' expected.
+src/lib/translations.ts(3631,25): error TS1005: ';' expected.
+src/lib/translations.ts(3632,36): error TS1005: ';' expected.
+src/lib/translations.ts(3633,30): error TS1005: ';' expected.
+src/lib/translations.ts(3636,25): error TS1005: ';' expected.
+src/lib/translations.ts(3637,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3640,25): error TS1005: ';' expected.
+src/lib/translations.ts(3641,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3644,25): error TS1005: ';' expected.
+src/lib/translations.ts(3645,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3648,25): error TS1005: ';' expected.
+src/lib/translations.ts(3649,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3652,25): error TS1005: ';' expected.
+src/lib/translations.ts(3653,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3656,25): error TS1005: ';' expected.
+src/lib/translations.ts(3657,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3660,25): error TS1005: ';' expected.
+src/lib/translations.ts(3661,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3664,25): error TS1005: ';' expected.
+src/lib/translations.ts(3665,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3668,25): error TS1005: ';' expected.
+src/lib/translations.ts(3669,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3672,25): error TS1005: ';' expected.
+src/lib/translations.ts(3675,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3678,18): error TS1005: ';' expected.
+src/lib/translations.ts(3679,22): error TS1005: ';' expected.
+src/lib/translations.ts(3729,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3732,19): error TS1005: ';' expected.
+src/lib/translations.ts(3733,23): error TS1005: ';' expected.
+src/lib/translations.ts(3734,28): error TS1005: ';' expected.
+src/lib/translations.ts(3736,21): error TS1005: ';' expected.
+src/lib/translations.ts(3737,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3740,22): error TS1005: ';' expected.
+src/lib/translations.ts(3741,25): error TS1005: ';' expected.
+src/lib/translations.ts(3742,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3744,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3747,18): error TS1005: ';' expected.
+src/lib/translations.ts(3748,21): error TS1005: ';' expected.
+src/lib/translations.ts(3749,25): error TS1005: ';' expected.
+src/lib/translations.ts(3751,21): error TS1005: ';' expected.
+src/lib/translations.ts(3752,36): error TS1005: ';' expected.
+src/lib/translations.ts(3753,30): error TS1005: ';' expected.
+src/lib/translations.ts(3754,45): error TS1005: ';' expected.
+src/lib/translations.ts(3755,40): error TS1005: ';' expected.
+src/lib/translations.ts(3756,55): error TS1005: ';' expected.
+src/lib/translations.ts(3757,48): error TS1005: ';' expected.
+src/lib/translations.ts(3758,63): error TS1005: ';' expected.
+src/lib/translations.ts(3759,55): error TS1005: ';' expected.
+src/lib/translations.ts(3760,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3764,25): error TS1005: ';' expected.
+src/lib/translations.ts(3765,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3768,25): error TS1005: ';' expected.
+src/lib/translations.ts(3769,31): error TS1005: ';' expected.
+src/lib/translations.ts(3770,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3773,25): error TS1005: ';' expected.
+src/lib/translations.ts(3774,31): error TS1005: ';' expected.
+src/lib/translations.ts(3775,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3778,25): error TS1005: ';' expected.
+src/lib/translations.ts(3781,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3784,17): error TS1005: ';' expected.
+src/lib/translations.ts(3785,19): error TS1005: ';' expected.
+src/lib/translations.ts(3786,6): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3790,22): error TS1005: ';' expected.
+src/lib/translations.ts(3791,29): error TS1005: ';' expected.
+src/lib/translations.ts(3792,29): error TS1005: ';' expected.
+src/lib/translations.ts(3793,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3796,25): error TS1005: ';' expected.
+src/lib/translations.ts(3797,27): error TS1005: ';' expected.
+src/lib/translations.ts(3824,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3827,24): error TS1005: ';' expected.
+src/lib/translations.ts(3828,26): error TS1005: ';' expected.
+src/lib/translations.ts(3829,32): error TS1005: ';' expected.
+src/lib/translations.ts(3835,40): error TS1005: ';' expected.
+src/lib/translations.ts(3838,30): error TS1005: ';' expected.
+src/lib/translations.ts(3846,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3849,30): error TS1005: ';' expected.
+src/lib/translations.ts(3858,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3861,25): error TS1005: ';' expected.
+src/lib/translations.ts(3862,30): error TS1005: ';' expected.
+src/lib/translations.ts(3869,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3876,34): error TS1005: ';' expected.
+src/lib/translations.ts(3878,29): error TS1005: ';' expected.
+src/lib/translations.ts(3879,29): error TS1005: ';' expected.
+src/lib/translations.ts(3880,41): error TS1005: ';' expected.
+src/lib/translations.ts(3886,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3888,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3891,25): error TS1005: ';' expected.
+src/lib/translations.ts(3892,26): error TS1005: ';' expected.
+src/lib/translations.ts(3893,33): error TS1005: ';' expected.
+src/lib/translations.ts(3894,37): error TS1005: ';' expected.
+src/lib/translations.ts(3956,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3959,25): error TS1005: ';' expected.
+src/lib/translations.ts(3960,26): error TS1005: ';' expected.
+src/lib/translations.ts(3961,32): error TS1005: ';' expected.
+src/lib/translations.ts(3988,35): error TS1005: ';' expected.
+src/lib/translations.ts(3990,26): error TS1005: ';' expected.
+src/lib/translations.ts(3995,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(3997,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4001,21): error TS1005: ';' expected.
+src/lib/translations.ts(4002,28): error TS1005: ';' expected.
+src/lib/translations.ts(4004,32): error TS1005: ';' expected.
+src/lib/translations.ts(4006,28): error TS1005: ';' expected.
+src/lib/translations.ts(4012,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4015,25): error TS1005: ';' expected.
+src/lib/translations.ts(4016,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4019,26): error TS1005: ';' expected.
+src/lib/translations.ts(4024,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4027,26): error TS1005: ';' expected.
+src/lib/translations.ts(4032,32): error TS1005: ';' expected.
+src/lib/translations.ts(4033,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4036,26): error TS1005: ';' expected.
+src/lib/translations.ts(4043,14): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4044,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4047,22): error TS1005: ';' expected.
+src/lib/translations.ts(4048,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4052,22): error TS1005: ';' expected.
+src/lib/translations.ts(4066,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4069,25): error TS1005: ';' expected.
+src/lib/translations.ts(4070,27): error TS1005: ';' expected.
+src/lib/translations.ts(4102,29): error TS1005: ';' expected.
+src/lib/translations.ts(4104,26): error TS1005: ';' expected.
+src/lib/translations.ts(4106,30): error TS1005: ';' expected.
+src/lib/translations.ts(4111,18): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4114,30): error TS1005: ';' expected.
+src/lib/translations.ts(4123,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4126,25): error TS1005: ';' expected.
+src/lib/translations.ts(4127,26): error TS1005: ';' expected.
+src/lib/translations.ts(4133,29): error TS1005: ';' expected.
+src/lib/translations.ts(4134,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4137,21): error TS1005: ';' expected.
+src/lib/translations.ts(4138,27): error TS1005: ';' expected.
+src/lib/translations.ts(4139,10): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4142,23): error TS1005: ';' expected.
+src/lib/translations.ts(4182,9): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4183,5): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4184,1): error TS1128: Declaration or statement expected.
+src/lib/translations.ts(4184,3): error TS1434: Unexpected keyword or identifier.

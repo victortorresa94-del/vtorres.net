@@ -14,8 +14,9 @@ import ChangeManagementSection from '@/components/procesos/ChangeManagementSecti
 import OracleExperienceSection from '@/components/procesos/OracleExperienceSection';
 import EmeExperience from '@/components/procesos/EmeExperience';
 import NaturalStandardizationSection from '@/components/procesos/NaturalStandardizationSection';
+import MappedProcessesSection from '@/components/procesos/MappedProcessesSection';
 
-import { Lightbulb, LayoutTemplate, Network, Users, BrainCircuit, Box, ShieldCheck, BarChart3 } from 'lucide-react';
+import { Lightbulb, LayoutTemplate, Network, Users, BrainCircuit, Box, ShieldCheck, BarChart3, Database } from 'lucide-react';
 
 export default function ProcesosPage() {
 
@@ -69,6 +70,17 @@ export default function ProcesosPage() {
         }
     ];
 
+    // Group 3: Process Inventory
+    const inventoryItems = [
+        {
+            id: 'mapped-processes',
+            title: 'Inventario de Procesos Mapeados',
+            subtitle: 'Lista completa de optimizaciones en Finanzas y Marketing',
+            icon: Database,
+            component: <MappedProcessesSection isEmbedded />
+        }
+    ];
+
     return (
         <main className="min-h-screen bg-[#050505] text-white selection:bg-[#82ff1f] selection:text-black font-sans">
 
@@ -107,6 +119,12 @@ export default function ProcesosPage() {
             <AccordionGroup
                 title="Experiencia Aplicada"
                 items={experienceItems}
+            />
+
+            {/* Group 3: Inventory */}
+            <AccordionGroup
+                title="Inventario de Procesos"
+                items={inventoryItems}
             />
 
             <ContactSection />

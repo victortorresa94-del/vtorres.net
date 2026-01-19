@@ -1,0 +1,7 @@
+src/lib/translations.ts(4171,21): error TS1005: ',' expected.
+src/lib/translations.ts(4173,23): error TS1005: ',' expected.
+src/lib/translations.ts(4176,25): error TS1005: ',' expected.
+src/lib/translations.ts(4176,54): error TS1005: ',' expected.
+src/lib/translations.ts(4177,25): error TS1005: ',' expected.
+src/lib/translations.ts(4177,71): error TS1005: ',' expected.
+src/lib/translations.ts(4180,1): error TS1005: '}' expected.

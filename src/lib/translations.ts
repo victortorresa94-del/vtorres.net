@@ -3137,1057 +3137,1057 @@ export const translations = {
                 cta: "View Full Process Map"
             },
         },
-        ca: {
-            nav: {
-                story: "Història",
-                numbers: "Números",
-                experience: "Experiència IA",
-                career: "Trajectòria",
-                achievements: "Èxits",
-                skills: "Skills",
-                projects: "Projectes",
-                stack: "Stack",
-                search: "Què busco",
-                contact: "Contactar",
-                download: "Descarregar CV PDF"
-            },
-            hero: {
-                openToWork: "Open to Work",
-                name: "Víctor Torres Arana",
-                title: "Project Manager / AI Builder & Business Accelerator",
-                description: "",
-                contact: "CONTACTE",
-                linkedin: "LINKEDIN",
-                cv: "CV .PDF",
-                videoHint: "Pots accelerar el vídeo fent clic a"
-            },
-            story: {
-                title: "La Meva Història",
-                intro: "Organitzo i impulso idees, equips i negocis.",
-                p1: "Em considero un perfil 360. Al llarg de la meva trajectòria he treballat en pràcticament tots els departaments d'una empresa —vendes, compres, comptabilitat, logística, màrqueting i gerència—, la qual cosa m'ha permès desenvolupar una visió global i molt pràctica de com funcionen realment les organitzacions i quines són les seves necessitats operatives reals.",
-                p2: "Durant més de vuit anys vaig treballar en màrqueting digital i vendes. El 2022 vaig fer un pas clau en assumir el meu primer rol com a Project Manager i líder de processos en una agència de màrqueting, on vaig dissenyar des de zero l'estructura operativa, aconseguint millorar l'eficiència global al voltant d'un 30%.",
-                p3: "Després de la pandèmia em vaig traslladar a Colòmbia sense un pla definit. Allà vaig crear i gestionar múltiples emprenedories pròpies que es van convertir en un autèntic màster pràctic en negoci i execució sota pressió.",
-                p4: "Vaig descobrir que la meva fortalesa és la capacitat per organitzar el caos i millorar sistemes.",
-                p5: "De tornada a Espanya vaig liderar la implementació d'un ERP d'Oracle i l'estratègia GTM d'una startup d'IA. No soc un perfil purament tècnic, però tampoc exclusivament estratègic. Em situo en un punt intermedi que em permet traduir necessitats de negoci en sistemes funcionals.",
-                p5_5: "Acostumo a ser la mà dreta de la persona que lidera el negoci.",
-                p6: "Actualment busco incorporar-me en una companyia on pugui aportar aquesta experiència híbrida i seguir creixent en un entorn estable."
-            },
-            career: {
-                title: "Trajectòria Professional",
-                sections: [
-                    {
-                        title: "Espanya 1.0",
-                        videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
-                        items: [
-                            {
-                                year: "2018 - 2019",
-                                title: "Business Manager (Operacions)",
-                                role: "Denetic",
-                                desc: "Responsable total de l'operativa de l'empresa. Gestió integral de compres internacionals (Xina), logística, magatzem, facturació i coordinació d'instal·lacions tècniques."
-                            },
-                            {
-                                year: "2017",
-                                title: "Responsable de Màrqueting & Compres",
-                                role: "Reauxi",
-                                desc: "Gestió de projecte crític per a Mercedes (1M€). Responsable de compres internacionals, facturació i registre en ERP."
-                            },
-                            {
-                                year: "2016 - 2018",
-                                title: "Treballs Logístics",
-                                role: "Mosso de Magatzem",
-                                desc: "Gestió eficient d'inventari, optimització de fluxos de càrrega i descàrrega, i coordinació logística per garantir SLA de lliurament."
-                            },
-                            {
-                                year: "2014 - 2016",
-                                title: "Dissenyador Gràfic & Màrqueting B2B",
-                                role: "HTW Spain",
-                                desc: "Primera etapa professional. Creació d'identitat de marca, disseny de catálegs tècnics i suport en màrqueting industrial."
-                            }
-                        ]
-                    },
-                    {
-                        title: "Colòmbia",
-                        videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
-                        items: [
-                            {
-                                year: "2022 - 2023",
-                                title: "PM & Líder de Processos",
-                                role: "Eme Growth Agency",
-                                desc: "Implementació de nou software de gestió de projectes (ClickUp) en un equip de +30 persones, creant +30 nous SOPs i optimitzant l'agència un 30%. Tota la gestió es va realitzar sota metodologia Scrum. Lideratge de projectes web i app com a project manager."
-                            },
-                            {
-                                year: "2022",
-                                title: "Marketing Account Manager",
-                                role: "Growbox Digital",
-                                desc: "Estratègia GTM per a 'Totemica' (Skincare Miami). Branding, recerca de proveïdors internacionals i llançament exitós al mercat."
-                            },
-                            {
-                                year: "2021",
-                                title: "Customer Service & Sales",
-                                role: "AT&T (USA)",
-                                desc: "Suport telefònic diari per a clients dels EUA. Resolució d'incidències tècniques i venda creuada de nous productes i serveis."
-                            }
-                        ]
-                    },
-                    {
-                        title: "Espanya 2.0",
-                        videoUrl: "https://gumlet.tv/watch/6961272a6a1e75f7abb7e7c1/",
-                        items: [
-                            {
-                                year: "2023",
-                                title: "Marketing & Business Development",
-                                role: "Konektor",
-                                desc: "Vaig liderar el llançament del producte d'agents de veu IA, vaig implementar un sistema de captació de leads amb IA, vaig establir les bases de màrqueting digital i vaig participar activament en tasques comercials i de prospecció B2B."
-                            },
-                            {
-                                year: "2023 - 2024",
-                                title: "Project Manager - Netsuite Oracle",
-                                role: "DisrupTT",
-                                desc: "Lideratge en la implementació de l'ERP Oracle Netsuite. Coordinació d'equips tècnics i consultoria de processos."
-                            },
-                            {
-                                year: "2024 - 2025",
-                                title: "CMO",
-                                role: "Kmeleon",
-                                desc: "Estratègia de marca internacional i Go-to-Market per a solucions d'IA. Automatització de processos de venda i narrativa tecnològica."
-                            },
-                            {
-                                year: "2025 - Present",
-                                title: "Consultor de Negoci & IA",
-                                role: "Autònom",
-                                desc: "Implementació de solucions d'IA per a empreses, consultoria estratègica de màrqueting i direcció de projectes tecnològics."
-                            }
-                        ]
-                    }
-                ]
-            },
-            numbers: {
-                title: "Els Meus Números",
-                items: [
-                    { value: "9", label: "Anys Màrqueting", desc: "En màrqueting digital, vendes i estratègia de creixement", icon: "Megaphone" },
-                    { value: "5", label: "Anys PM", desc: "Gestionant projectes, equips i processos sota metodologies àgils", icon: "Target" },
-                    { value: "3", label: "Anys IA", desc: "Treballant amb IA aplicada, automatització i agents conversacionals", icon: "Brain" },
-                    { value: "+50", label: "Persones Liderades", desc: "En equips multidisciplinars de màrqueting, tech i operacions", icon: "Users" },
-                    { value: "+30", label: "Projectes", desc: "Gestionats amb èxit com a PM, des de webs fins a ERPs enterprise", icon: "Briefcase" },
-                    { value: "30", label: "SOPs", desc: "Procediments Operatius Estàndard creats per blindar qualitat i escalar equips", icon: "ClipboardList" },
-                    { value: "+15", label: "Webs & E-commerce", desc: "Desenvolupats i llançats per a clients i projectes propis", icon: "Globe" },
-                    { value: "+30", label: "Projectes Branding", desc: "Identitats corporatives creades des de zero", icon: "Palette" },
-                    { value: "+15", label: "Solucions IA", desc: "Chatbots, agents de veu i automatitzacions desenvolupades", icon: "Cpu" },
-                    { value: "+1M€", label: "Pressupost", desc: "Gestionat en projectes d'alt valor", icon: "TrendingUp" },
-                    { value: "30k€", label: "Freelance", desc: "Facturats com a consultor independent", icon: "Wallet" },
-                    { value: "+8", label: "Negocis Impulsats", desc: "Empreses on he treballat i impulsat el creixement", icon: "Rocket" }
-                ],
-                softSkills: [
-                    { title: "Creativitat", rating: 7, max: 10 },
-                    { title: "Comunicació", rating: 7, max: 10 },
-                    { title: "Organització", rating: 8, max: 10 },
-                    { title: "Resolutivitat", rating: 9, max: 10 }
-                ]
-            },
-            achievements: {
-                title: "Fites & Èxits",
-                items: [
-                    {
-                        id: 1,
-                        title: "Optimització de Processos i Projectes",
-                        role: "Project Manager & Process Architect",
-                        desc: "En una agència de màrqueting amb 40 persones, vaig crear 30 SOPs des de zero i vaig implementar ClickUp com a sistema central. Vaig desmembrar i redissenyar processos complets, reduint els temps de lliurament un 30% i augmentant la capacitat operativa.",
-                        tags: ["ClickUp", "SOPs", "Operations", "Team Management"],
-                        image: "/images/achievements/sop-optimization.jpg",
-                        metric: "+30% Eficiència Operativa"
-                    },
-                    {
-                        id: 2,
-                        title: "Audio Hackers Academy (Soma)",
-                        role: "Music Production & Sound Engineering",
-                        desc: "Seleccionat entre milers de candidats per al programa intensiu amb Soma (productor top d'Espanya). Formació d'elit en enginyeria de so, mescla i producció musical professional al més alt nivell tècnic.",
-                        tags: ["Pro Tools", "Sound Engineering", "Music Production", "Mixing"],
-                        image: "/images/achievements/soma-real.jpg",
-                        metric: "Top 1% Seleccionat"
-                    },
-                    {
-                        id: 3,
-                        title: "Implementació ERP Oracle NetSuite",
-                        role: "Technical Lead & Integrator",
-                        desc: "Vaig liderar la migració completa de sistemes legacy a Oracle NetSuite per a una empresa de distribució tecnològica. Vaig coordinar equips tècnics, vaig definir fluxos de treball financers i logístics, aconseguint una transició sense interrupcions operatives.",
-                        tags: ["Oracle NetSuite", "ERP Migration", "Logistics", "Finance"],
-                        image: "/images/achievements/netsuite-new.jpg",
-                        metric: "100% Migració Exitosa"
-                    },
-                    {
-                        id: 4,
-                        title: "Llançament Kmeleon",
-                        role: "CMO & GTM Strategy",
-                        desc: "Disseny de narrativa, posicionament i estratègia Go-To-Market per a startup d'IA. Llançament a US i Latam, captació de primers clients Enterprise.",
-                        tags: ["AI Startup", "GTM", "Growth"],
-                        metric: "Llançament Global",
-                        image: "/images/achievements/startups-new.jpg"
-                    },
-                    {
-                        id: 5,
-                        title: "Venda Enterprise SaaS",
-                        role: "Sales Lead & Negotiation",
-                        desc: "Lideratge en la negociació i tancament de venda d'Oracle NetSuite a Bluespace. Gestió del cicle de venda complex (6 mesos), validació tècnica i tancament contractual.",
-                        tags: ["B2B", "Negociació", "ERP"],
-                        metric: "100.000 € Deal",
-                        image: "/images/achievements/proyectos-new.jpg"
-                    },
-                    {
-                        id: 6,
-                        title: "Marca Emelson",
-                        role: "Brand Creator & Product",
-                        desc: "Creació des de zero, branding i estratègia de llançament de la marca de climatització Emelson. Avui líder en grans superfícies (Leroy Merlin, Bricomart).",
-                        tags: ["Branding", "Retail", "GTM"],
-                        metric: "Líder de Sector",
-                        image: "/images/achievements/ecommerce.jpg"
-                    },
-                    {
-                        id: 7,
-                        title: "Gestió Projecte 1M€ Mercedes",
-                        role: "Financial & Resource Management",
-                        desc: "Gestió integral d'un projecte de 1.000.000€ per a Mercedes a Reauxi. Control financer mil·limètric en Excel complex. Gestió de compres internacionals i contractació de personal.",
-                        tags: ["Finances", "Logística", "Excel"],
-                        metric: "Control Pressupostari Total",
-                        image: "/images/achievements/mercedes.jpg"
-                    },
-                    {
-                        id: 8,
-                        title: "Gestió Musical & Esdeveniments",
-                        role: "Artist Manager",
-                        desc: "Gestió 360º de carreres artístiques (94 Music, Condor). Booking, producció d'esdeveniments en viu, logística de gires i negociació amb sales.",
-                        tags: ["Booking", "Producció", "Management"],
-                        metric: "+100 Esdeveniments",
-                        image: "/images/achievements/eventos.jpg"
-                    }
-                ],
-            },
-            skills: {
-                title: "Skills & Stack",
-                coreTitle: "Core Skills",
-                pm: {
-                    title: "Project Management",
-                    desc: "Visió estratègica per liderar equips i traduir objectius de negoci en sistemes funcionals.",
-                    items: ["Scrum", "Kanban", "Lideratge d'Equips", "Gestió de Riscos", "Planificació Estratègica"]
-                },
-                marketing: {
-                    title: "Màrqueting & Growth",
-                    desc: "Estratègies GTM, disseny de funnels de conversió i posicionament de marca."
-                },
-                client: {
-                    title: "Client Relationship",
-                    desc: "Gestió de comptes (KAM), fidelització i traducció de necessitats tècniques a llenguatge de negoci.",
-                    items: ["Key Account Management", "Atenció al Client", "Fidelització", "Resolució de Conflictes", "Comunicació Assertiva"]
-                },
-                ai: {
-                    title: "AI Strategy & Execution",
-                    desc: "De l'estratègia a la implementació tècnica real. Cicle complet de projectes d'IA aplicada."
-                },
-                categories: {
-                    pm: "Gestión de Proyectos",
-                    client: "Relación con Clientes",
-                    business: "Habilidades de Negocio",
-                    businessItems: [
-                        "Desarrollo de Negocio",
-                        "Negociación B2B",
-                        "Estrategia GTM",
-                        "Visión de Producto",
-                        "Gestión de Stakeholders"
-                    ],
-                    tech: "Habilidades Técnicas",
-                    techItems: [
-                        "Arquitectura de Soluciones",
-                        "Integración de Sistemas",
-                        "Automatización de Procesos",
-                        "Prompt Engineering",
-                        "Cloud Computing Concepts"
-                    ],
-                    ai: "IA Generativa & Agentes",
-                    aiItems: [
-                        "Vibe Coding (Cursor/Replit)",
-                        "Producción de Video IA",
-                        "Sistemas Multi-Agente",
-                        "Clonación de Voz & TTS"
-                    ],
-                    stack: "Stack",
-                },
-                stack: {
-                    ai: "IA & Automatització Avançada",
-                    marketing: "Màrqueting, Vendes & CRM",
-                    creative: "Disseny & Contingut",
-                    dev: "Desenvolupament Web & Codi",
-                    ops: "Operacions & ERPs"
-                }
-            },
-            processesOverview: {
-                title: "Processos & Operacions",
-                subtitle: "Del Caos a l'Ordre: Experiència Real",
-                desc: "La meva especialitat no és només dissenyar processos en paper, és fer que funcionin a la realitat. He transformat departaments sencers reduint errors, automatitzant tasques manuals i recuperant hores productives per als equips.",
-                stats: [
-                    { value: "+30", label: "Processos Mapejats", desc: "Finances, Màrqueting i Operacions" },
-                    { value: "30%", label: "Eficiència", desc: "Recuperació de temps en tasques manuals" },
-                    { value: "100%", label: "Adopció", desc: "Sistemes dissenyats per ser usats" }
-                ],
-                highlights: [
-                    {
-                        title: "Optimització Financera i Administrativa",
-                        desc: "En entorn multinacional (CulturA), vaig estandaritzar tot el flux de comptes a pagar, facturació i tresoreria. Vam eliminar duplicitats i assegurar traçabilitat total davant auditories.",
-                        tags: ["SAP/ERP", "Tresoreria", "Compliance"]
-                    },
-                    {
-                        title: "Escalat d'Agència de Màrqueting",
-                        desc: "A EME Growth, vam passar de gestionar projectes per WhatsApp a un sistema centralitzat en ClickUp amb 30 SOPs. L'equip va duplicar la seva capacitat d'entrega sense augmentar personal.",
-                        tags: ["ClickUp", "Agència", "SOPs"]
-                    }
-                ],
-                cta: "Veure Mapa Complet de Processos"
-            },
-            stack: [
+    },
+    ca: {
+        nav: {
+            story: "Història",
+            numbers: "Números",
+            experience: "Experiència IA",
+            career: "Trajectòria",
+            achievements: "Èxits",
+            skills: "Skills",
+            projects: "Projectes",
+            stack: "Stack",
+            search: "Què busco",
+            contact: "Contactar",
+            download: "Descarregar CV PDF"
+        },
+        hero: {
+            openToWork: "Open to Work",
+            name: "Víctor Torres Arana",
+            title: "Project Manager / AI Builder & Business Accelerator",
+            description: "",
+            contact: "CONTACTE",
+            linkedin: "LINKEDIN",
+            cv: "CV .PDF",
+            videoHint: "Pots accelerar el vídeo fent clic a"
+        },
+        story: {
+            title: "La Meva Història",
+            intro: "Organitzo i impulso idees, equips i negocis.",
+            p1: "Em considero un perfil 360. Al llarg de la meva trajectòria he treballat en pràcticament tots els departaments d'una empresa —vendes, compres, comptabilitat, logística, màrqueting i gerència—, la qual cosa m'ha permès desenvolupar una visió global i molt pràctica de com funcionen realment les organitzacions i quines són les seves necessitats operatives reals.",
+            p2: "Durant més de vuit anys vaig treballar en màrqueting digital i vendes. El 2022 vaig fer un pas clau en assumir el meu primer rol com a Project Manager i líder de processos en una agència de màrqueting, on vaig dissenyar des de zero l'estructura operativa, aconseguint millorar l'eficiència global al voltant d'un 30%.",
+            p3: "Després de la pandèmia em vaig traslladar a Colòmbia sense un pla definit. Allà vaig crear i gestionar múltiples emprenedories pròpies que es van convertir en un autèntic màster pràctic en negoci i execució sota pressió.",
+            p4: "Vaig descobrir que la meva fortalesa és la capacitat per organitzar el caos i millorar sistemes.",
+            p5: "De tornada a Espanya vaig liderar la implementació d'un ERP d'Oracle i l'estratègia GTM d'una startup d'IA. No soc un perfil purament tècnic, però tampoc exclusivament estratègic. Em situo en un punt intermedi que em permet traduir necessitats de negoci en sistemes funcionals.",
+            p5_5: "Acostumo a ser la mà dreta de la persona que lidera el negoci.",
+            p6: "Actualment busco incorporar-me en una companyia on pugui aportar aquesta experiència híbrida i seguir creixent en un entorn estable."
+        },
+        career: {
+            title: "Trajectòria Professional",
+            sections: [
                 {
-                    title: "IA & Automatització Avançada",
-                    groups: [
-                        { title: "Orquestració & Workflows", tools: ["n8n", "Make", "Zapier", "Power Automate"] },
-                        { title: "LLMs & Research", tools: ["OpenAI (GPT-4)", "Claude 3.5 Sonnet", "Gemini 1.5 Pro", "Perplexity", "Phind"] },
-                        { title: "Code & Dev Agents", tools: ["Cursor", "GitHub Copilot", "Google Antigravity", "Windsurf"] },
-                        { title: "Veu & Avatars", tools: ["ElevenLabs", "HeyGen", "Vapi", "Retell AI", "Synthesia", "Bland AI"] },
-                        { title: "Generació Multimedia", tools: ["Midjourney", "DALL-E 3", "Runway Gen-3", "Luma Dream Machine", "Udio"] }
-                    ]
-                },
-                {
-                    title: "Gestió de Projectes & No-Code",
-                    groups: [
-                        { title: "Gestió & Organització", tools: ["Notion", "ClickUp", "Jira", "Monday.com", "Trello", "Asana", "Slack", "Microsoft Teams"] },
-                        { title: "Bases de Dades & Coneixement", tools: ["Airtable", "Obsidian", "Confluence", "Microsoft Planner"] }
-                    ]
-                },
-                {
-                    title: "Màrqueting, Vendes & CRM",
-                    groups: [
-                        { title: "CRMs", tools: ["Salesforce", "HubSpot", "Pipedrive", "Zoho CRM", "Microsoft Dynamics 365 Sales"] },
-                        { title: "Automatització & Email", tools: ["ActiveCampaign", "Mailchimp", "Klaviyo", "Brevo", "ManyChat"] },
-                        { title: "Analítica & Ads", tools: ["Google Analytics 4", "Looker Studio", "Google Ads", "Meta Ads", "Hotjar"] },
-                        { title: "Growth & Outbound", tools: ["YouTube Growth", "Cold Outbound Tools", "LinkedIn Sales Nav"] }
-                    ]
-                },
-                {
-                    title: "Desenvolupament Web & E-commerce",
-                    groups: [
-                        { title: "CMS & Plataformes", tools: ["WordPress", "Shopify", "WooCommerce", "PrestaShop", "Magento"] },
-                        { title: "Visual Builders", tools: ["Webflow", "Framer", "Elementor", "Divi"] },
-                        { title: "Stack Tècnic & Tools", tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Git/GitHub", "VS Code", "Vercel"] }
-                    ]
-                },
-                {
-                    title: "Disseny Gràfic & Contingut",
-                    groups: [
-                        { title: "Gràfic & UI", tools: ["Figma", "Canva", "Photoshop", "Illustrator", "Adobe XD"] },
-                        { title: "Edició de Vídeo & Streaming", tools: ["Premiere Pro", "DaVinci Resolve", "CapCut", "After Effects", "OBS Studio"] },
-                        { title: "Producció d'Àudio", tools: ["Ableton Live", "Pro Tools", "Logic Pro X", "Audacity", "Studio One"] }
-                    ]
-                },
-                {
-                    title: "Operacions & ERPs",
-                    groups: [
-                        { title: "Enterprise ERP", tools: ["Oracle NetSuite", "SAP Business One", "Microsoft Dynamics 365 BC", "Sage 200"] },
-                        { title: "Solucions Pymes", tools: ["Odoo", "Holded", "Wingest", "QuickBooks"] },
-                        { title: "Dades & Finances", tools: ["Excel (Avançat/VBA)", "Power BI", "SQL"] },
-                        { title: "Comunicació", tools: ["Slack", "Microsoft Teams", "Discord", "Zoom"] }
-                    ]
-                }
-            ],
-            aiExperience: {
-                title: "Experiència IA",
-                intro: "El meu enfocament en la Intel·ligència Artificial combina la visió estratègica amb la capacitat d'execució tècnica. M'especialitzo en el cicle complet de vida del projecte: des del disseny de l'arquitectura de la solució fins a la implementació tècnica d'agents i l'orquestració de workflows complexos. Actuo com el pont que tradueix els objectius de negoci en sistemes operatius eficients.",
-                projects: {
-                    aether: {
-                        title: "Aether Labs",
-                        role: "Founder & AI Engineer",
-                        desc: "El meu laboratori d'implementació tècnica. Desenvolupament d'agents de veu autònoms per a Call Centers (integrant Twilio + Vapi/Retell). Orquestració de workflows complexos en n8n per automatitzar processos de research i generació de contingut SEO-friendly massiu. Connexió de LLMs amb APIs externes (Gmail, Calendar, CRMs)."
-                    },
-                    futura: {
-                        title: "Futura AI (by Konektor)",
-                        role: "Product Lead & Strategy",
-                        desc: "Vaig liderar la creació d'aquesta marca des de zero. Vaig realitzar el benchmark tècnic de proveïdors de veu (ElevenLabs vs PlayHT vs Rime), vaig definir l'stack tecnològic i vaig construir l'oferta comercial B2B. Vaig dissenyar els funnels de venda i els scripts per vendre 'empleats digitals' a empreses tradicionals."
-                    },
-                    suma: {
-                        title: "Suma Salut - Clínica",
-                        role: "Full-Stack AI Implementation",
-                        desc: "Desenvolupament i integració d'un assistent virtual per a triatge mèdic i cita prèvia. Enginyeria de prompts avançada per dotar el bot d'empatia i seguretat clínica. Connexió amb WhatsApp Business API i automatització de l'agenda de doctors mitjançant webhooks."
-                    },
-                    kmeleon: {
-                        title: "Kmeleon Startup",
-                        role: "CMO & AI Strategist",
-                        desc: "Traducció de capacitats tècniques complexes (Sistemes Multi-Agent) a una narrativa de negoci comprensible per a clients Enterprise. Vaig liderar l'estratègia GTM per posicionar la startup al mercat de la IA corporativa, treballant colze a colze amb enginyers ex-Microsoft per alinear producte i mercat."
-                    },
-
-                },
-                developmentsTitle: "Els meus Experiments IA",
-                developments: {
-                    aura: {
-                        title: "Aura Tasks AI",
-                        tagline: "AI Task Management Software",
-                        desc: "Super app de productivitat amb NLP avançat, desenvolupada amb Vite + React 19 + TypeScript. Gestió optimista i disseny premium.",
-                        link: "https://aura-tasks-es.vercel.app/",
-                        linkText: "Provar Beta Gratuïta"
-                    },
-                    agon: {
-                        title: "AGON - Sports AI",
-                        tagline: "SaaS Esportiu",
-                        desc: "Software integral per a equips de futbol: gestió d'entrenaments, predicció de lesions i anàlisi automatitzat de rivals."
-                    },
-                    saasBot: {
-                        title: "SaaS Chatbot (WIP)",
-                        tagline: "Assistent Encrustat",
-                        desc: "Assistent a mida per incrustar en plataformes SaaS. (En construcció)"
-                    },
-                    aetherWeb: {
-                        title: "Aether Labs Web",
-                        tagline: "Pàgina Web amb IA",
-                        desc: "Lloc web corporatiu desenvolupat amb IA en Node.js utilitzant Antigravity (Google).",
-                        link: "https://www.aetherlabs.es",
-                        linkText: "Veure Web"
-                    },
-                    jason: {
-                        title: "Jason ClickUp Manager",
-                        tagline: "AI n8n Agent",
-                        desc: "Agent de productivitat que crea tasques a ClickUp per veu/text, assigna responsables i automatitza projectes.",
-                        link: "https://www.aetherlabs.es/experimentos/jason-clickup"
-                    },
-                    nuria: {
-                        title: "Laura - Agent Rostisseria",
-                        tagline: "Agent de Veu Retail",
-                        desc: "Xat de veu per a gestió de comandes retail amb consulta d'estoc en temps real.",
-                        link: "https://www.aetherlabs.es/experimentos/nuria-rostisseria"
-                    },
-                    ugc: {
-                        title: "UGC Avatar Studio",
-                        tagline: "Generador d'Avatars",
-                        desc: "Generador d'avatars consistents fotorealistes per a marques i creativitats estàtiques.",
-                        link: "https://www.aetherlabs.es/experimentos/ugc-avatar-studio"
-                    },
-                    editor: {
-                        title: "Editor de Fotos IA",
-                        tagline: "Web App d'Edició",
-                        desc: "Eliminació d'objectes/fons (Inpainting), restauració i millora de qualitat en segons.",
-                        link: "https://www.aetherlabs.es/experimentos/editor-fotos-ia"
-                    },
-                    chleopatra: {
-                        title: "Chleopatra - Històries IA",
-                        tagline: "Plataforma EdTech",
-                        desc: "Plataforma EdTech que genera històries visuals educatives amb veus clonades i vídeos sintètics.",
-                        link: "https://www.aetherlabs.es/experimentos/chleopatra-historias"
-                    },
-                    musicBot: {
-                        title: "94 Music Agent",
-                        tagline: "Agent de Vendes",
-                        desc: "Prospecció automatitzada: scraping web de wedding planners, extracció de dades i enviament d'emails personalitzats.",
-                        link: "https://www.aetherlabs.es/experimentos/94music-bot"
-                    },
-                    numa: {
-                        title: "Numa - Suma Salut",
-                        tagline: "Assistent Sanitari",
-                        desc: "Agent d'atenció al pacient 24/7: gestió de cites i triatge intel·ligent.",
-                        link: "https://www.aetherlabs.es/proyectos/suma-salut"
-                    },
-                    cv: {
-                        title: "Aquest CV Interactiu",
-                        tagline: "Web App Next.js",
-                        desc: "Desenvolupat amb Next.js, Tailwind i Framer Motion amb assistència d'IA."
-                    }
-                }
-            },
-
-            education: {
-                title: "Formació & Certificacions",
-                items: [
-                    {
-                        title: "Certificacions HubSpot Academy",
-                        role: "Inbound Marketing, CRM & Sales Software",
-                        desc: "Especialització en automatització de màrqueting, gestió de pipelines de venda i metodologia Inbound. (5 Certificacions)."
-                    },
-                    {
-                        title: "Google Ads & Facebook Ads",
-                        role: "Mercatitlán",
-                        desc: "2022. Formació intensiva en estratègia de trànsit pagat (PPC), segmentació d'audiències i optimització de campanyes."
-                    },
-                    {
-                        title: "Google Project Management",
-                        role: "Certificació Professional Google",
-                        desc: "Metodologies Àgils, gestió del canvi, planificació estratègica i lideratge de projectes complexos."
-                    },
-                    {
-                        title: "Oracle NetSuite Fundamentals",
-                        role: "Project Management, Sales & Programmer",
-                        desc: "2023. Formació tècnica oficial: Administració de l'ERP, SuiteFlow, SuiteAnalytics i fonaments de programació."
-                    },
-                    {
-                        title: "Administració, Comptabilitat i Finances",
-                        role: "Reauxi Formació Interna",
-                        desc: "2016 - 2018. Capacitació pràctica en gestió financera, comptabilitat analítica, facturació internacional i control de tresoreria."
-                    },
-                    {
-                        title: "Màster de Mescla i Producció",
-                        role: "Audio Hacker Academy (Soma)",
-                        desc: "2021. Enginyeria de so avançada i producció musical professional. Mentalitat d'alt rendiment."
-                    },
-                    {
-                        title: "Cicle Superior Comerç i Màrqueting",
-                        role: "Grau Superior Oficial",
-                        desc: "Investigació de mercats, logística comercial, gestió de punts de venda i màrqueting estratègic."
-                    }
-                ]
-            },
-            freelance: {
-                title: "Emprenedoria & Freelance",
-                videoUrl: "https://gumlet.tv/watch/696276126a1e75f7abcf59fe/",
-                ownTitle: "Projectes Propis & Startups",
-                consultingTitle: "Consultoria & Freelance",
-                items: {
-                    aether: {
-                        title: "Aether Labs",
-                        desc: "Consultoria d'Intel·ligència Artificial i automatització. El meu vehicle principal per materialitzar solucions tècniques: agents de veu, chatbots i workflows complexos per a empreses."
-                    },
-                    music: {
-                        title: "94 Music",
-                        desc: "Mitjà digital i agència. Creació de contingut viral (+5M views, 16k comunitat) i gestió de booking. He organitzat i sonoritzat més de 100 esdeveniments musicals."
-                    },
-                    condor: {
-                        title: "Condor Music",
-                        desc: "Agència 360º a Colòmbia. Vaig gestionar la carrera de 4 artistes (La Payara, Savahna...), aconseguint gires de mitjans en TV/Ràdio nacional, producció de videoclips i concerts."
-                    },
-                    rings: {
-                        title: "El Hombre de los Anillos",
-                        desc: "Ecommerce de joieria masculina creat a cost zero. Estratègia de creixement orgànic que va permetre vendes internacionals en 8 països i sostenir el negoci."
-                    },
-                    jarana: {
-                        title: "Lady Jarana",
-                        desc: "Banda de Pop-Rock i Rumba 'Millenial'. Projecte nascut el 2025: creació de marca, repertori i tancament de 8 concerts en els primers mesos de vida."
-                    },
-                    cataleya: {
-                        title: "Cataleya Flamenco",
-                        desc: "Fusió flamenc-llatina per al sector Premium/Corporatiu. Actuacions en esdeveniments d'alt perfil."
-                    },
-                    konektor: {
-                        title: "Konektor",
-                        desc: "Mà dreta de direcció. Vaig liderar el llançament de 'Futura AI' (agents de veu): benchmark, producte i funnels. Captació B2B per a Metavers i vendes consultives."
-                    },
-                    soma: {
-                        title: "Soma",
-                        desc: "Estratègia integral per a infoproducte: creació de contingut diari d'alta conversió, ompliment d'esdeveniments presencials i tancament de vendes High-Ticket."
-                    },
-                    deodi: {
-                        title: "Deodi",
-                        desc: "360º business expansió. Creació d'ecommerce de cosmètica (web+proveïdors), rebranding complet del local i estratègia de captació digital."
-                    },
-                    suma: {
-                        title: "Suma Salut",
-                        desc: "Modernització operativa. Optimització web, disseny d'identitat corporativa i desenvolupament de chatbot IA per automatitzar cites i atenció al pacient."
-                    }
-                }
-            },
-            portfolio: {
-                title: "Referencias",
-                intro: "Més enllà de les paraules, els fets. Projectes reals, webs actives i comptes socials que demostren l'experiència.",
-                items: [
-                    {
-                        title: "94 Music - 16k Community",
-                        role: "Growth & Community",
-                        desc: "Crecimiento 100% orgánico de 0 a 16.000 seguidores. Estrategia de contenido viral y fidelización.",
-                        tags: ["Instagram", "Growth", "Viral"],
-                        link: "https://www.instagram.com/the94music/",
-                        image: "/images/music.png"
-                    },
-                    {
-                        title: "Aether Labs",
-                        role: "Web & AI Brand",
-                        desc: "Web corporativa para agencia de IA. Estética futurista, SEO y conversión B2B.",
-                        tags: ["Web Design", "Next.js", "Branding"],
-                        link: "https://aetherlabs.es",
-                        image: "/images/ai-hero-new.jpg"
-                    },
-                    {
-                        title: "Puerta de Oro",
-                        role: "Album Launch",
-                        desc: "Lanzamiento de disco, producción de videoclips y estrategia visual en redes.",
-                        tags: ["Spotify", "Video", "Creative"],
-                        link: "https://open.spotify.com/intl-es/album/00fk8QWotfjQgfiLPV6rb3?si=W61mfdd1TKuZZuxiwek6Og",
-                        image: "/images/music.png"
-                    },
-                    {
-                        title: "Soma Indomable",
-                        role: "Campaign Strategy",
-                        desc: "Gestión estratégica de campaña. Narrativa visual y storytelling para maximizar alcance.",
-                        tags: ["Instagram", "Storytelling", "Copy"],
-                        link: "https://www.instagram.com/soma_indomable",
-                        image: "/images/branding.png"
-                    },
-                    {
-                        title: "La Payara",
-                        role: "Artist Management",
-                        desc: "Gestión digital y estrategia de contenidos para proyecto musical internacional.",
-                        tags: ["Music Mgmt", "Social Media", "Strategy"],
-                        link: "https://www.instagram.com/lapayara",
-                        image: "/images/music.png"
-                    },
-                    {
-                        title: "Web Eme",
-                        role: "Web Development",
-                        desc: "Desarrollo web enfocado en velocidad, usabilidad y presentación de servicios high-ticket.",
-                        tags: ["Web Dev", "UX/UI", "Optimization"],
-                        link: "#",
-                        image: "/images/startup.png"
-                    }
-                ]
-            },
-            seeking: {
-                title: "Els Meus Objectius",
-                intro1: "Porto molt de temps treballant pel meu compte. El camí de l'emprenedor solitari curteix, però també esgota. Ara busco un canvi d'etapa: busco llar.",
-                intro2: "Vull una empresa on estabilitzar-me a llarg termini (anys, no mesos). Un lloc on no em limiti a complir tickets, sinó on pugui aportar la meva visió, prendre la iniciativa i realment sentir el projecte com a propi.",
-                startup: {
-                    title: "Startup",
-                    desc: "Un projecte que necessiti algú tot terreny per impulsar el creixement, posar ordre en el caos inicial i escalar operacions."
-                },
-                company: {
-                    title: "Empresa Consolidada",
-                    badge: "Preferible",
-                    desc: "Un entorn estable on pugui encarregar-me de l'operativa interna, optimitzar processos i assegurar l'eficiència. On es valori la resolució i l'autonomia."
-                },
-                quote: "\"Busco quelcom més que una feina; busco un equip, una cultura i una 'família' professional amb la qual créixer.\""
-            },
-            contactSection: {
-                badge: "Disponible per a Nous Reptes",
-                title: "Quan comencem?",
-                desc: "¿Busques algú que entengui tant l'estratègia com l'execució? Connectem.",
-                form: {
-                    title: "Envia'm un missatge",
-                    name: "Nom",
-                    namePlaceholder: "El teu nom",
-                    email: "Email",
-                    emailPlaceholder: "tu@email.com",
-                    company: "Empresa (opcional)",
-                    companyPlaceholder: "La teva empresa",
-                    message: "Missatge",
-                    messagePlaceholder: "Explica'm en què puc ajudar-te...",
-                    submit: "Enviar missatge"
-                },
-                options: {
-                    email: {
-                        title: "Email",
-                        desc: "victortorresa94@gmail.com"
-                    },
-                    whatsapp: {
-                        title: "WhatsApp",
-                        desc: "Escriu-me directament",
-                        button: "Obrir WhatsApp"
-                    },
-                    call: {
-                        title: "Trucada",
-                        desc: "Prefereixo parlar per telèfon",
-                        button: "+34 627 28 14 59"
-                    },
-                    linkedin: {
-                        title: "LinkedIn",
-                        link: "/in/victortorresarana"
-                    }
-                }
-            },
-            footer: {
-                rights: "© 2025 Víctor Torres Arana. Built with Next.js & Tailwind.",
-                home: "Inici",
-                cv: "CV PDF"
-            },
-            procesos: {
-                hero: {
-                    label: "CONSULTOR DE PROCESSOS",
-                    title: "Consultor de Processos i Transformació Operativa",
-                    subtitle: "Arquitectura d'operacions · Estandarització · Millora contínua",
-                    desc: "La meva especialitat és entendre com funcionen les coses. Des de fa anys tinc una capacitat analítica natural per detectar com s'estructuren els processos, on es perd temps i per què els sistemes deixen d'escalar. El 2022 vaig prendre consciència que aquesta habilitat era el meu major valor professional: no només gestionar tasques o projectes, sinó dissenyar la forma òptima en què la feina s'ha d'executar.\n\nHe aplicat aquest enfocament en contextos molt diferents —operacions manuals, logística, esdeveniments, màrqueting, tecnologia i gestió d'equips— sempre amb el mateix principi: observar primer, ordenar després i millorar de forma progressiva.\n\nNo concebo l'automatització sense estandardització prèvia, ni la transformació digital sense una comprensió profunda del procés real. La meva feina consisteix a convertir el caos operatiu en sistemes clars, eficients i sostenibles."
-                },
-                mindset: {
-                    title: "Com Penso els Processos",
-                    subtitle: "L'optimització no és una eina, és una mentalitat.",
-                    phases: [
-                        {
-                            step: "01",
-                            title: "Observació Analítica",
-                            desc: "Anàlisi profunda del flux actual sense interferències. Identificació de punts de dolor, colls d'ampolla i redundàncies no documentades."
-                        },
-                        {
-                            step: "02",
-                            title: "Detecció de Fricció",
-                            desc: "Localització d'ineficiències operatives. On es perd informació? On es duplica l'esforç? Diagnòstic basat en dades qualitatives i quantitatives."
-                        },
-                        {
-                            step: "03",
-                            title: "Estandarització (SOPs)",
-                            desc: "El caos no s'escala. Documentació rigorosa de procediments operatius estàndard (SOPs) per garantir consistència i predictibilitat abans de qualsevol automatització."
-                        },
-                        {
-                            step: "04",
-                            title: "Millora Elemental (Kaizen)",
-                            desc: "Implementació d'ajustos incrementals. Validació de millores en entorn real. La revolució operativa es construeix amb petites victòries sostenibles."
-                        },
-                        {
-                            step: "05",
-                            title: "Automatització Intel·ligent",
-                            desc: "Només quan el procés és robust, s'aplica tecnologia. Automatització estratègica per eliminar tasques de baix valor i alliberar capital humà."
-                        }
-                    ]
-                },
-                emeDeepDive: {
-                    title: "Project Manager & Líder de Processos",
-                    company: "EME GROWTH AGENCY (2022)",
-                    intro: "Era una agència operativa sense sistemes definits, on la manca de processos generava retards constants i clients insatisfets. Vaig implementar ClickUp com a sistema operatiu central, vaig estandarditzar fluxos de treball i vaig gestionar el canvi cultural necessari per assegurar l'adopció. No només vaig crear documents; vaig transformar la forma de treballar per recuperar l'eficiència i la confiança del client.",
-                    metrics: [
-                        { value: "+40", label: "SOPs Implementats", desc: "Procediments actius" },
-                        { value: "+30%", label: "Eficiència", desc: "Millora operativa global" },
-                        { value: "-60%", label: "Temps Lliurament", desc: "De 12 a 4 setmanes" },
-                        { value: "30+", label: "Projectes", desc: "Gestionats en paral·lel" }
-                    ],
-                    beforeAfter: {
-                        before: {
-                            title: "ANTES (Caos Operatiu)",
-                            items: [
-                                "Processos implícits i tribals",
-                                "Dependència de persones clau",
-                                "Retards freqüents i impredictibles",
-                                "Manca de documentació",
-                                "Prioritats poc clares i canviants",
-                                "Clients insatisfets per retards"
-                            ]
-                        },
-                        after: {
-                            title: "DESPUÉS (Estructura)",
-                            items: [
-                                "Processos documentats i accessibles",
-                                "SOPs clars i sistema centralitzat",
-                                "Lliuraments previsibles i a temps",
-                                "Flujos clars a ClickUp",
-                                "Equips autònoms i coordinats",
-                                "Millora en la satisfacció del client"
-                            ]
-                        }
-                    },
-                    sops: {
-                        title: "Estandarització Real (SOPs)",
-                        desc: "L'estandarització no frena la creativitat, l'allibera de tasques repetitives.",
-                        items: [
-                            { title: "Onboarding d'Empleats", desc: "Integració ràpida i efectiva de nous talents." },
-                            { title: "Producció Web Corp", desc: "Flux pas a pas des del disseny fins al desplegament." },
-                            { title: "Estratègia Xarxes Socials", desc: "Sistematització de la creació i publicació de continguts." },
-                            { title: "Control de Qualitat (QA)", desc: "Checklists per garantir lliuraments sense errors." },
-                            { title: "Gestió d'Incidències", desc: "Protocol clar per desbloquejar equips ràpidament." }
-                        ]
-                    },
-                    insights: [
-                        "Automatitzar sense un procés sòlid només amplifica el caos.",
-                        "El canvi operatiu requereix acompanyament humà, no només eines.",
-                        "La millora contínua es construeix amb petits ajustos diaris.",
-                        "L'adopció per l'equip és més importante que la sofisticació de l'eina."
-                    ],
-                    projectManagement: {
-                        title: "Un cop optimitzat, vaig ser Project Manager",
-                        subtitle: "Escalant de 3 mesos a 1 mes per web",
-                        desc: "Amb l'operativa fixada, vaig assumir la gestió integral de més de 30 projectes Web/App. En alliberar els estrategues de la gestió tècnica i centralitzar la responsabilitat, vam aconseguir entendre millor les necessitats del client.",
-                        achievements: [
-                            "Reducció del temps de lliurament de 3 mesos a 1 mes.",
-                            "Augment estimat del 60% en satisfacció del client.",
-                            "Implementació d'auditories de qualitat i optimització pre-llançament.",
-                            "Gestió exitosa de +30 projectes complexos en paral·lel."
-                        ]
-                    },
-                    closing: "Aquesta experiència va establir les bases del meu perfil com a consultor: observar, estructurar, estandaritzar, acompanyar i millorar de forma contínua."
-                },
-                automation: {
-                    title: "Automatització com a Cultura",
-                    subtitle: "(abans i després de la IA)",
-                    intro: "L'automatització no va arribar al meu perfil amb la IA. La IA només va accelerar el que portava anys fent: detectar repetició, eliminar fricció i convertir tasques en sistemes.",
-                    question: "Abans de parlar d'eines, sempre parteixo d'una pregunta simple: quina part d'aquesta feina es repeteix i no aporta valor humà?",
-                    sections: [
-                        {
-                            title: "Automatització abans de la IA: mètode, no software",
-                            desc: "Molt abans de treballar amb IA, ja automatitzava processos des de l'operativa i la metodologia.",
-                            context: "En entorns com Reauxi (compres i facturació) o Denetic (logística i operacions), vaig dissenyar sistemes de treball estables per reduir errors.",
-                            items: [
-                                {
-                                    company: "Reauxi",
-                                    role: "Administració i Compres",
-                                    text: "Volum administratiu insostenible. Creació de seqüències lògiques de validació i rutines de gestió diària.",
-                                    tags: ["Processos", "Validació"]
-                                },
-                                {
-                                    company: "Denetic",
-                                    role: "Logística i Magatzem",
-                                    text: "Magatzem caòtic. Definició de fluxos físics, ubicacions fixes i regles de reposició.",
-                                    tags: ["Inventari", "Fluxos Físics"]
-                                },
-                                {
-                                    company: "Música en Viu",
-                                    role: "Producció d'Esdeveniments",
-                                    text: "Alta pressió i marge d'error zero. Checklists de muntatge, fluxos de booking i protocols de crisi.",
-                                    tags: ["Checklists", "Protocols"]
-                                }
-                            ],
-                            closure: "No hi havia IA. Hi havia mètode, prova-error i estandarització."
-                        },
-                        {
-                            title: "Automatització Estructural",
-                            desc: "El següent pas: automatitzar a escala d'equip.",
-                            context: "Creació de processos operatius estandaritzats per treballar amb menys fricció:",
-                            items: [
-                                "Automatització pre-IA basada en SOPs i ClickUp.",
-                                "Reducció d'errors humans.",
-                                "Processos dissenyats per sobreviure a la rotació."
-                            ],
-                            highlight: {
-                                title: "Departament d'Automatització (ManyChat)",
-                                desc: "Fa més de 4 anys vaig liderar:",
-                                items: [
-                                    "Definició del servei i abast.",
-                                    "Disseny de fluxos estàndard de captació.",
-                                    "Creació de SOPs per departament.",
-                                    "Formació de l'equip responsable."
-                                ]
-                            },
-                            closure: "Abans de l'auge de la IA, ja automatitzava en producció."
-                        },
-                        {
-                            title: "De fluxos rígids a sistemes intel·ligents",
-                            desc: "L'arribada de la IA no va canviar la meva forma de pensar. La va amplificar.",
-                            evolution: "El pas va ser natural: de fluxos rígids → a sistemes amb context. De fluxos tancats → a agents que entenen intent.",
-                            applications: "Des de llavors he dissenyat:",
-                            items: [
-                                "Automatitzacions conversacionals (xat i veu).",
-                                "Agents d'atenció i suport.",
-                                "Sistemes híbrids humà-IA.",
-                                "Automatitzacions operatives."
-                            ],
-                            examples: "Exemples aplicats en projectes reals (94 Music, Chatbots web, Agents de veu)."
-                        }
-                    ]
-                },
-                changeManagement: {
-                    title: "Gestió del Canvi & Factor Humà",
-                    subtitle: "Canviar processos no és un problema tècnic. És un problema humà.",
-                    intro: "La meva feina no consisteix en 'posar un nou sistema', sinó en canviar la forma en la qual les persones treballen. Si un procés no s'usa, no existeix. I si no s'adopta, és culpa del disseny, no de l'equip.",
-                    pillars: [
-                        {
-                            title: "1. Empatia Operativa",
-                            desc: "No canvio el que no entenc. Abans de dissenyar, m'assec amb les persones, veig com treballen realment i identifico les seves pors i dreceres.",
-                            icon: "HeartHandshake"
-                        },
-                        {
-                            title: "2. Co-Construcció",
-                            desc: "No imposo processos tancats. Involucro els perfils clau des de l'inici. El resultat és compromís i sensació d'autoria compartida.",
-                            icon: "Users"
-                        },
-                        {
-                            title: "3. Formació en Context",
-                            desc: "Un procés s'aprèn fent-lo servir, no llegint un PDF. Acompanyo les primeres execucions i corregeixo en directe sobre la realitat.",
-                            icon: "Briefcase"
-                        },
-                        {
-                            title: "4. Gestió de Resistència",
-                            desc: "La resistència no es combat, s'escolta. Diferencio la por al canvi de la fricció real i ajusto el procés si no encaixa.",
-                            icon: "Ear"
-                        },
-                        {
-                            title: "5. Creació d'Hàbit",
-                            desc: "El canvi no acaba amb el disseny. Faig seguiment i ajustos iteratius fins que el nou estàndard deixa de sentir-se com a 'nou'.",
-                            icon: "Repeat"
-                        }
-                    ],
-                    impact: {
-                        text: "Resultats d'un enfocament humà:",
-                        items: [
-                            { label: "Adopció Real", value: ">90%" },
-                            { label: "Conflictes", value: "Minimitzats" },
-                            { label: "Autonomia", value: "Total" }
-                        ]
-                    },
-                    closing: "No transformo empreses. Ajudo a les persones a treballar millor."
-                },
-                oracleExperience: {
-                    title: "Oracle NetSuite Transformation",
-                    // Header / Context data
-                    role: "Project Manager & Process Consultant",
-                    company: "DisrupTT (Partner) / CulturA (Client Final)",
-
-                    context: {
-                        intro: "CulturA és un operador logístic internacional especialitzat en transport marítim de matèries primeres a granel (guix, pedra calcària, clínquer), amb operacions end-to-end crítiques entre Malta, Espanya, Luxemburg, Dubai i Turquia. Una organització amb creixement accelerat, alta complexitat operativa i múltiples sistemes heretats que requeria una transformació estructural profunda per poder escalar.",
-                        metrics: [
-                            { value: "+3M", label: "Tones / Any" },
-                            { value: "x30", label: "Creixement en 6 anys" },
-                            { value: "5", label: "Països Operatius" },
-                            { value: "9 Mesos", label: "Projecte Continu" }
-                        ]
-                    },
-                    projectType: {
-                        title: "Oracle NetSuite Transformation — ERP Core Migration",
-                        desc: "Migració completa del sistema operatiu i financer a Oracle NetSuite, afectant a tots els departaments i operacions internacionals."
-                    },
-                    bdr: {
-                        title: "BDR — Business Design Requirements",
-                        cards: [
-                            { title: "Mapeig Forense (As-Is real)", desc: "Aixecament de centenars de processos reals, amb excepcions, dreceres i dependències humanes." },
-                            { title: "Traducció Negoci → Sistema", desc: "Conversió del llenguatge operatiu (logística, nolis, contractes) en fluxos ERP estructurats." },
-                            { title: "Disseny To-Be Escalable", desc: "Definició de workflows estandarditzats llestos per operar a escala internacional." }
-                        ]
-                    },
-                    impact: {
-                        title: "Impacte del Projecte",
-                        items: [
-                            "Base operativa per escalar fins a +5M tones",
-                            "Unificació d'operacions sota una única font de veritat",
-                            "Reducció de risc operatiu en entorn internacional"
-                        ],
-                        closing: "Un ERP no ordena una empresa. Un bon mapeig de processos, sí."
-                    },
-                    scope: {
-                        title: "Abast del Projecte",
-                        items: [
-                            "+100 processos mapejats",
-                            "Tots els departaments implicats",
-                            "9 mesos de treball continu",
-                            "Coordinació entre NetSuite, Salesforce i McKinsey",
-                            "Operació multipaís"
-                        ]
-                    },
-                },
-                experience: {
-                    title: "Experiència Aplicada",
-                    cases: []
-                },
-
-                methodology: {
-                    title: "Marc Metodològic",
+                    title: "Espanya 1.0",
+                    videoUrl: "https://gumlet.tv/watch/6960362fac93fe08564ff67f",
                     items: [
                         {
-                            name: "Lean Thinking",
-                            desc: "Eliminació sistemàtica de 'muda' (desperdici). Enfocament obsessiu en aportar valor al client final, suprimint burocràcia innecessària i passos sense retorn."
+                            year: "2018 - 2019",
+                            title: "Business Manager (Operacions)",
+                            role: "Denetic",
+                            desc: "Responsable total de l'operativa de l'empresa. Gestió integral de compres internacionals (Xina), logística, magatzem, facturació i coordinació d'instal·lacions tècniques."
                         },
                         {
-                            name: "Scrum & Agile",
-                            desc: "Execució iterativa de projectes complexos. Sprints de treball, revisió constant i adaptació àgil a canvis sense perdre el focus en els lliurables estratègics."
+                            year: "2017",
+                            title: "Responsable de Màrqueting & Compres",
+                            role: "Reauxi",
+                            desc: "Gestió de projecte crític per a Mercedes (1M€). Responsable de compres internacionals, facturació i registre en ERP."
                         },
                         {
-                            name: "Filosofia Kaizen",
-                            desc: "Millora contínua com a hàbit. Evolució constant dels processos mitjançant petits ajustos diaris que generen un impacte compost massiu a llarg termini."
+                            year: "2016 - 2018",
+                            title: "Treballs Logístics",
+                            role: "Mosso de Magatzem",
+                            desc: "Gestió eficient d'inventari, optimització de fluxos de càrrega i descàrrega, i coordinació logística per garantir SLA de lliurament."
+                        },
+                        {
+                            year: "2014 - 2016",
+                            title: "Dissenyador Gràfic & Màrqueting B2B",
+                            role: "HTW Spain",
+                            desc: "Primera etapa professional. Creació d'identitat de marca, disseny de catálegs tècnics i suport en màrqueting industrial."
                         }
                     ]
                 },
-                processDesign: {
-                    title: "Disseny de Processos Operatius des de Zero",
-                    subtitle: "De l'observació al sistema operatiu. Mètode real pas a pas.",
-                    phases: [
+                {
+                    title: "Colòmbia",
+                    videoUrl: "https://gumlet.tv/watch/6960f51f195f98d9e16499e9/",
+                    items: [
                         {
-                            title: "1. Observació sense intervenir",
-                            desc: "Immersió real. M'assec amb les persones, analitzo el dia a dia sense jutjar i detecto l'“ombra operativa”: el que passa de debò vs el que diu el manual.",
-                            details: ["Escolta activa", "Detecció de dreceres", "Friccions invisibles"]
+                            year: "2022 - 2023",
+                            title: "PM & Líder de Processos",
+                            role: "Eme Growth Agency",
+                            desc: "Implementació de nou software de gestió de projectes (ClickUp) en un equip de +30 persones, creant +30 nous SOPs i optimitzant l'agència un 30%. Tota la gestió es va realitzar sota metodologia Scrum. Lideratge de projectes web i app com a project manager."
                         },
                         {
-                            title: "2. Mapeig REAL del procés",
-                            desc: "No dibuixo ideals. Documento la realitat: Què es fa? Qui? Amb quina info? Identifico on es trenca la cadena i on neixen els errors.",
-                            details: ["Fluxos d'informació", "Punts de trencament", "Dependències crítiques"]
+                            year: "2022",
+                            title: "Marketing Account Manager",
+                            role: "Growbox Digital",
+                            desc: "Estratègia GTM per a 'Totemica' (Skincare Miami). Branding, recerca de proveïdors internacionals i llançament exitós al mercat."
                         },
                         {
-                            title: "3. Detecció de Fricció (Lean)",
-                            desc: "Elimino el malbaratament. Busco tasques repetitives, esperes innecessàries i decisions sense criteri. Si no aporta valor, s'elimina o se simplifica.",
-                            details: ["Eliminació de burocràcia", "Reducció de càrrega cognitiva", "Neteja operativa"]
-                        },
-                        {
-                            title: "4. Estandarització (SOPs Reals)",
-                            desc: "Un SOP és un acord operatiu. Dissenyo checklists i guies visuals que s'entenen d'un cop d'ull. Si no s'usa, no existeix.",
-                            details: ["Llenguatge simple", "Checklists accionables", "Criteris d'èxit clars"]
-                        },
-                        {
-                            title: "5. Validació i Canvi",
-                            desc: "El canvi es guanya amb claredat. Executo el procés amb l'equip, ajusto segons feedback real i asseguro que la resistència es converteixi en adopció.",
-                            details: ["Formació pràctica", "Ajust en calent", "Gestió de resistència"]
-                        },
-                        {
-                            title: "6. Iteració Contínua (Kaizen)",
-                            desc: "No busco la perfecció, busco l'evolució. Ajustos constants de l'1-5% basats en dades reals i feedback de l'equip.",
-                            details: ["Millora incremental", "Versionat de processos", "Evolució constant"]
+                            year: "2021",
+                            title: "Customer Service & Sales",
+                            role: "AT&T (USA)",
+                            desc: "Suport telefònic diari per a clients dels EUA. Resolució d'incidències tècniques i venda creuada de nous productes i serveis."
                         }
-                    ],
-                    kpis: {
-                        sectionTitle: "Com mesuro l'impacte?",
-                        macro: {
-                            title: "KPIs Macro (Impacte Global)",
-                            items: [
-                                { label: "Adopció Real", value: "+90%" },
-                                { label: "Reducció Errors", value: "-30%" },
-                                { label: "Velocitat Lliurament", value: "x2" }
-                            ]
-                        },
-                        micro: {
-                            title: "KPIs Micro (Control Operatiu)",
-                            items: [
-                                { label: "Temps per Tasca", desc: "Detecció de desviacions temps real" },
-                                { label: "Taxa de Retreball", desc: "Tasques retornades per errors" },
-                                { label: "Ús de Checklists", desc: "% de passos verificats per l'equip" },
-                                { label: "Bloquejos Operatius", desc: "Nº d'incidències reportades/setmana" },
-                                { label: "Lead Time Total", desc: "Temps des d'entrada fins a lliurament" }
-                            ]
-                        }
-                    }
+                    ]
                 },
-                transformation: {
-                    title: "Transformació Digital",
-                    subtitle: "Primer el procés, després la tecnologia.",
-                    steps: [
-                        { label: "Procés Manual", status: "Caos / Fricció" },
-                        { label: "Procés Estàndard", status: "Ordre / Control" },
-                        { label: "Digitalització", status: "Dades / Traçabilitat" },
-                        { label: "Automatització", status: "Escala / Eficiència" }
-                    ],
-                    desc: "La tecnologia no arregla processos trencats; els accelera. El meu enfocament garanteix que la transformació digital s'assenti sobre una base operativa sòlida, assegurant un ROI real i sostenible."
-                },
-                cta: {
-                    title: "Parlem de Processos?",
-                    text: "Perfil Senior disponible per a consultoria i direcció de projectes.",
-                    button: "Contactar Ara"
-                },
-                mappedProcesses: {
-                    title: "Processos Mapejats & Optimitzats",
-                    groups: [
+                {
+                    title: "Espanya 2.0",
+                    videoUrl: "https://gumlet.tv/watch/6961272a6a1e75f7abb7e7c1/",
+                    items: [
                         {
-                            title: "Administració i Finances (CulturA)",
-                            desc: "Enfocament en operació crítica, traçabilitat i reducció d'errors.",
-                            items: [
-                                { title: "1. Registre i factures", desc: "Recepció, validació i registre homogeni." },
-                                { title: "2. Validació factures", desc: "Control d'imports i duplicats pre-registre." },
-                                { title: "3. Gestió documental", desc: "Arxiu estandaritzat i recuperació ràpida." },
-                                { title: "4. Seguiment factures", desc: "Estats clars: pendent, aprovat, pagat." },
-                                { title: "5. Conciliació pagaments", desc: "Creuament bancari vs registres interns." },
-                                { title: "6. Compres", desc: "Sol·licitud, validació i registre financer." },
-                                { title: "7. Gestió proveïdors", desc: "Normalització de dades i altes." },
-                                { title: "8. Comandes i traçabilitat", desc: "Vinculació comanda-factura-pagament." },
-                                { title: "9. Processos recurrents", desc: "Estandarització de tasques diàries." },
-                                { title: "10. Reporting financer", desc: "Visibilitat real de bloquejos i pendents." }
-                            ]
+                            year: "2023",
+                            title: "Marketing & Business Development",
+                            role: "Konektor",
+                            desc: "Vaig liderar el llançament del producte d'agents de veu IA, vaig implementar un sistema de captació de leads amb IA, vaig establir les bases de màrqueting digital i vaig participar activament en tasques comercials i de prospecció B2B."
                         },
                         {
-                            title: "Operacions d'Agència & Màrqueting",
-                            desc: "Enfocament en velocitat, creativitat i satisfacció del client.",
-                            items: [
-                                { title: "1. Onboarding Clients", desc: "Kickoff, setup de carpetes i pla de 30 dies." },
-                                { title: "2. Producció Contingut", desc: "Flux idea-disseny-publicació i versions." },
-                                { title: "3. Aprovació Creativitats", desc: "Rondes de feedback acotades i checklists." },
-                                { title: "4. Reporting Campanyes", desc: "Rutines d'anàlisi i presa de decisions." },
-                                { title: "5. Creació Webs", desc: "Brief, wireframe, disseny, build i QA." },
-                                { title: "6. Entrega Webs", desc: "Go-live, manuals i hand-off." },
-                                { title: "7. Estratègia Xarxes", desc: "Framework de pilars, tons i calendari." },
-                                { title: "8. Producció Audiovisual", desc: "Pre-producció, rodatge i flux d'edició." },
-                                { title: "9. Copywriting", desc: "Estructura, revisió i control de canvis." },
-                                { title: "10. Onboarding Empleats", desc: "Formació per rol i primeres tasques." },
-                                { title: "11. Gestió Tasques", desc: "Definició de 'tasca ben creada' i prioritats." },
-                                { title: "12. QA Intern", desc: "Checklist d'errors típics pre-entrega." },
-                                { title: "13. Planificació Setmanal", desc: "Rituals de planning i desbloqueig." }
-                            ]
+                            year: "2023 - 2024",
+                            title: "Project Manager - Netsuite Oracle",
+                            role: "DisrupTT",
+                            desc: "Lideratge en la implementació de l'ERP Oracle Netsuite. Coordinació d'equips tècnics i consultoria de processos."
+                        },
+                        {
+                            year: "2024 - 2025",
+                            title: "CMO",
+                            role: "Kmeleon",
+                            desc: "Estratègia de marca internacional i Go-to-Market per a solucions d'IA. Automatització de processos de venda i narrativa tecnològica."
+                        },
+                        {
+                            year: "2025 - Present",
+                            title: "Consultor de Negoci & IA",
+                            role: "Autònom",
+                            desc: "Implementació de solucions d'IA per a empreses, consultoria estratègica de màrqueting i direcció de projectes tecnològics."
                         }
                     ]
                 }
+            ]
+        },
+        numbers: {
+            title: "Els Meus Números",
+            items: [
+                { value: "9", label: "Anys Màrqueting", desc: "En màrqueting digital, vendes i estratègia de creixement", icon: "Megaphone" },
+                { value: "5", label: "Anys PM", desc: "Gestionant projectes, equips i processos sota metodologies àgils", icon: "Target" },
+                { value: "3", label: "Anys IA", desc: "Treballant amb IA aplicada, automatització i agents conversacionals", icon: "Brain" },
+                { value: "+50", label: "Persones Liderades", desc: "En equips multidisciplinars de màrqueting, tech i operacions", icon: "Users" },
+                { value: "+30", label: "Projectes", desc: "Gestionats amb èxit com a PM, des de webs fins a ERPs enterprise", icon: "Briefcase" },
+                { value: "30", label: "SOPs", desc: "Procediments Operatius Estàndard creats per blindar qualitat i escalar equips", icon: "ClipboardList" },
+                { value: "+15", label: "Webs & E-commerce", desc: "Desenvolupats i llançats per a clients i projectes propis", icon: "Globe" },
+                { value: "+30", label: "Projectes Branding", desc: "Identitats corporatives creades des de zero", icon: "Palette" },
+                { value: "+15", label: "Solucions IA", desc: "Chatbots, agents de veu i automatitzacions desenvolupades", icon: "Cpu" },
+                { value: "+1M€", label: "Pressupost", desc: "Gestionat en projectes d'alt valor", icon: "TrendingUp" },
+                { value: "30k€", label: "Freelance", desc: "Facturats com a consultor independent", icon: "Wallet" },
+                { value: "+8", label: "Negocis Impulsats", desc: "Empreses on he treballat i impulsat el creixement", icon: "Rocket" }
+            ],
+            softSkills: [
+                { title: "Creativitat", rating: 7, max: 10 },
+                { title: "Comunicació", rating: 7, max: 10 },
+                { title: "Organització", rating: 8, max: 10 },
+                { title: "Resolutivitat", rating: 9, max: 10 }
+            ]
+        },
+        achievements: {
+            title: "Fites & Èxits",
+            items: [
+                {
+                    id: 1,
+                    title: "Optimització de Processos i Projectes",
+                    role: "Project Manager & Process Architect",
+                    desc: "En una agència de màrqueting amb 40 persones, vaig crear 30 SOPs des de zero i vaig implementar ClickUp com a sistema central. Vaig desmembrar i redissenyar processos complets, reduint els temps de lliurament un 30% i augmentant la capacitat operativa.",
+                    tags: ["ClickUp", "SOPs", "Operations", "Team Management"],
+                    image: "/images/achievements/sop-optimization.jpg",
+                    metric: "+30% Eficiència Operativa"
+                },
+                {
+                    id: 2,
+                    title: "Audio Hackers Academy (Soma)",
+                    role: "Music Production & Sound Engineering",
+                    desc: "Seleccionat entre milers de candidats per al programa intensiu amb Soma (productor top d'Espanya). Formació d'elit en enginyeria de so, mescla i producció musical professional al més alt nivell tècnic.",
+                    tags: ["Pro Tools", "Sound Engineering", "Music Production", "Mixing"],
+                    image: "/images/achievements/soma-real.jpg",
+                    metric: "Top 1% Seleccionat"
+                },
+                {
+                    id: 3,
+                    title: "Implementació ERP Oracle NetSuite",
+                    role: "Technical Lead & Integrator",
+                    desc: "Vaig liderar la migració completa de sistemes legacy a Oracle NetSuite per a una empresa de distribució tecnològica. Vaig coordinar equips tècnics, vaig definir fluxos de treball financers i logístics, aconseguint una transició sense interrupcions operatives.",
+                    tags: ["Oracle NetSuite", "ERP Migration", "Logistics", "Finance"],
+                    image: "/images/achievements/netsuite-new.jpg",
+                    metric: "100% Migració Exitosa"
+                },
+                {
+                    id: 4,
+                    title: "Llançament Kmeleon",
+                    role: "CMO & GTM Strategy",
+                    desc: "Disseny de narrativa, posicionament i estratègia Go-To-Market per a startup d'IA. Llançament a US i Latam, captació de primers clients Enterprise.",
+                    tags: ["AI Startup", "GTM", "Growth"],
+                    metric: "Llançament Global",
+                    image: "/images/achievements/startups-new.jpg"
+                },
+                {
+                    id: 5,
+                    title: "Venda Enterprise SaaS",
+                    role: "Sales Lead & Negotiation",
+                    desc: "Lideratge en la negociació i tancament de venda d'Oracle NetSuite a Bluespace. Gestió del cicle de venda complex (6 mesos), validació tècnica i tancament contractual.",
+                    tags: ["B2B", "Negociació", "ERP"],
+                    metric: "100.000 € Deal",
+                    image: "/images/achievements/proyectos-new.jpg"
+                },
+                {
+                    id: 6,
+                    title: "Marca Emelson",
+                    role: "Brand Creator & Product",
+                    desc: "Creació des de zero, branding i estratègia de llançament de la marca de climatització Emelson. Avui líder en grans superfícies (Leroy Merlin, Bricomart).",
+                    tags: ["Branding", "Retail", "GTM"],
+                    metric: "Líder de Sector",
+                    image: "/images/achievements/ecommerce.jpg"
+                },
+                {
+                    id: 7,
+                    title: "Gestió Projecte 1M€ Mercedes",
+                    role: "Financial & Resource Management",
+                    desc: "Gestió integral d'un projecte de 1.000.000€ per a Mercedes a Reauxi. Control financer mil·limètric en Excel complex. Gestió de compres internacionals i contractació de personal.",
+                    tags: ["Finances", "Logística", "Excel"],
+                    metric: "Control Pressupostari Total",
+                    image: "/images/achievements/mercedes.jpg"
+                },
+                {
+                    id: 8,
+                    title: "Gestió Musical & Esdeveniments",
+                    role: "Artist Manager",
+                    desc: "Gestió 360º de carreres artístiques (94 Music, Condor). Booking, producció d'esdeveniments en viu, logística de gires i negociació amb sales.",
+                    tags: ["Booking", "Producció", "Management"],
+                    metric: "+100 Esdeveniments",
+                    image: "/images/achievements/eventos.jpg"
+                }
+            ],
+        },
+        skills: {
+            title: "Skills & Stack",
+            coreTitle: "Core Skills",
+            pm: {
+                title: "Project Management",
+                desc: "Visió estratègica per liderar equips i traduir objectius de negoci en sistemes funcionals.",
+                items: ["Scrum", "Kanban", "Lideratge d'Equips", "Gestió de Riscos", "Planificació Estratègica"]
+            },
+            marketing: {
+                title: "Màrqueting & Growth",
+                desc: "Estratègies GTM, disseny de funnels de conversió i posicionament de marca."
+            },
+            client: {
+                title: "Client Relationship",
+                desc: "Gestió de comptes (KAM), fidelització i traducció de necessitats tècniques a llenguatge de negoci.",
+                items: ["Key Account Management", "Atenció al Client", "Fidelització", "Resolució de Conflictes", "Comunicació Assertiva"]
+            },
+            ai: {
+                title: "AI Strategy & Execution",
+                desc: "De l'estratègia a la implementació tècnica real. Cicle complet de projectes d'IA aplicada."
+            },
+            categories: {
+                pm: "Gestión de Proyectos",
+                client: "Relación con Clientes",
+                business: "Habilidades de Negocio",
+                businessItems: [
+                    "Desarrollo de Negocio",
+                    "Negociación B2B",
+                    "Estrategia GTM",
+                    "Visión de Producto",
+                    "Gestión de Stakeholders"
+                ],
+                tech: "Habilidades Técnicas",
+                techItems: [
+                    "Arquitectura de Soluciones",
+                    "Integración de Sistemas",
+                    "Automatización de Procesos",
+                    "Prompt Engineering",
+                    "Cloud Computing Concepts"
+                ],
+                ai: "IA Generativa & Agentes",
+                aiItems: [
+                    "Vibe Coding (Cursor/Replit)",
+                    "Producción de Video IA",
+                    "Sistemas Multi-Agente",
+                    "Clonación de Voz & TTS"
+                ],
+                stack: "Stack",
+            },
+            stack: {
+                ai: "IA & Automatització Avançada",
+                marketing: "Màrqueting, Vendes & CRM",
+                creative: "Disseny & Contingut",
+                dev: "Desenvolupament Web & Codi",
+                ops: "Operacions & ERPs"
+            }
+        },
+        processesOverview: {
+            title: "Processos & Operacions",
+            subtitle: "Del Caos a l'Ordre: Experiència Real",
+            desc: "La meva especialitat no és només dissenyar processos en paper, és fer que funcionin a la realitat. He transformat departaments sencers reduint errors, automatitzant tasques manuals i recuperant hores productives per als equips.",
+            stats: [
+                { value: "+30", label: "Processos Mapejats", desc: "Finances, Màrqueting i Operacions" },
+                { value: "30%", label: "Eficiència", desc: "Recuperació de temps en tasques manuals" },
+                { value: "100%", label: "Adopció", desc: "Sistemes dissenyats per ser usats" }
+            ],
+            highlights: [
+                {
+                    title: "Optimització Financera i Administrativa",
+                    desc: "En entorn multinacional (CulturA), vaig estandaritzar tot el flux de comptes a pagar, facturació i tresoreria. Vam eliminar duplicitats i assegurar traçabilitat total davant auditories.",
+                    tags: ["SAP/ERP", "Tresoreria", "Compliance"]
+                },
+                {
+                    title: "Escalat d'Agència de Màrqueting",
+                    desc: "A EME Growth, vam passar de gestionar projectes per WhatsApp a un sistema centralitzat en ClickUp amb 30 SOPs. L'equip va duplicar la seva capacitat d'entrega sense augmentar personal.",
+                    tags: ["ClickUp", "Agència", "SOPs"]
+                }
+            ],
+            cta: "Veure Mapa Complet de Processos"
+        },
+        stack: [
+            {
+                title: "IA & Automatització Avançada",
+                groups: [
+                    { title: "Orquestració & Workflows", tools: ["n8n", "Make", "Zapier", "Power Automate"] },
+                    { title: "LLMs & Research", tools: ["OpenAI (GPT-4)", "Claude 3.5 Sonnet", "Gemini 1.5 Pro", "Perplexity", "Phind"] },
+                    { title: "Code & Dev Agents", tools: ["Cursor", "GitHub Copilot", "Google Antigravity", "Windsurf"] },
+                    { title: "Veu & Avatars", tools: ["ElevenLabs", "HeyGen", "Vapi", "Retell AI", "Synthesia", "Bland AI"] },
+                    { title: "Generació Multimedia", tools: ["Midjourney", "DALL-E 3", "Runway Gen-3", "Luma Dream Machine", "Udio"] }
+                ]
+            },
+            {
+                title: "Gestió de Projectes & No-Code",
+                groups: [
+                    { title: "Gestió & Organització", tools: ["Notion", "ClickUp", "Jira", "Monday.com", "Trello", "Asana", "Slack", "Microsoft Teams"] },
+                    { title: "Bases de Dades & Coneixement", tools: ["Airtable", "Obsidian", "Confluence", "Microsoft Planner"] }
+                ]
+            },
+            {
+                title: "Màrqueting, Vendes & CRM",
+                groups: [
+                    { title: "CRMs", tools: ["Salesforce", "HubSpot", "Pipedrive", "Zoho CRM", "Microsoft Dynamics 365 Sales"] },
+                    { title: "Automatització & Email", tools: ["ActiveCampaign", "Mailchimp", "Klaviyo", "Brevo", "ManyChat"] },
+                    { title: "Analítica & Ads", tools: ["Google Analytics 4", "Looker Studio", "Google Ads", "Meta Ads", "Hotjar"] },
+                    { title: "Growth & Outbound", tools: ["YouTube Growth", "Cold Outbound Tools", "LinkedIn Sales Nav"] }
+                ]
+            },
+            {
+                title: "Desenvolupament Web & E-commerce",
+                groups: [
+                    { title: "CMS & Plataformes", tools: ["WordPress", "Shopify", "WooCommerce", "PrestaShop", "Magento"] },
+                    { title: "Visual Builders", tools: ["Webflow", "Framer", "Elementor", "Divi"] },
+                    { title: "Stack Tècnic & Tools", tools: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Node.js", "Git/GitHub", "VS Code", "Vercel"] }
+                ]
+            },
+            {
+                title: "Disseny Gràfic & Contingut",
+                groups: [
+                    { title: "Gràfic & UI", tools: ["Figma", "Canva", "Photoshop", "Illustrator", "Adobe XD"] },
+                    { title: "Edició de Vídeo & Streaming", tools: ["Premiere Pro", "DaVinci Resolve", "CapCut", "After Effects", "OBS Studio"] },
+                    { title: "Producció d'Àudio", tools: ["Ableton Live", "Pro Tools", "Logic Pro X", "Audacity", "Studio One"] }
+                ]
+            },
+            {
+                title: "Operacions & ERPs",
+                groups: [
+                    { title: "Enterprise ERP", tools: ["Oracle NetSuite", "SAP Business One", "Microsoft Dynamics 365 BC", "Sage 200"] },
+                    { title: "Solucions Pymes", tools: ["Odoo", "Holded", "Wingest", "QuickBooks"] },
+                    { title: "Dades & Finances", tools: ["Excel (Avançat/VBA)", "Power BI", "SQL"] },
+                    { title: "Comunicació", tools: ["Slack", "Microsoft Teams", "Discord", "Zoom"] }
+                ]
+            }
+        ],
+        aiExperience: {
+            title: "Experiència IA",
+            intro: "El meu enfocament en la Intel·ligència Artificial combina la visió estratègica amb la capacitat d'execució tècnica. M'especialitzo en el cicle complet de vida del projecte: des del disseny de l'arquitectura de la solució fins a la implementació tècnica d'agents i l'orquestració de workflows complexos. Actuo com el pont que tradueix els objectius de negoci en sistemes operatius eficients.",
+            projects: {
+                aether: {
+                    title: "Aether Labs",
+                    role: "Founder & AI Engineer",
+                    desc: "El meu laboratori d'implementació tècnica. Desenvolupament d'agents de veu autònoms per a Call Centers (integrant Twilio + Vapi/Retell). Orquestració de workflows complexos en n8n per automatitzar processos de research i generació de contingut SEO-friendly massiu. Connexió de LLMs amb APIs externes (Gmail, Calendar, CRMs)."
+                },
+                futura: {
+                    title: "Futura AI (by Konektor)",
+                    role: "Product Lead & Strategy",
+                    desc: "Vaig liderar la creació d'aquesta marca des de zero. Vaig realitzar el benchmark tècnic de proveïdors de veu (ElevenLabs vs PlayHT vs Rime), vaig definir l'stack tecnològic i vaig construir l'oferta comercial B2B. Vaig dissenyar els funnels de venda i els scripts per vendre 'empleats digitals' a empreses tradicionals."
+                },
+                suma: {
+                    title: "Suma Salut - Clínica",
+                    role: "Full-Stack AI Implementation",
+                    desc: "Desenvolupament i integració d'un assistent virtual per a triatge mèdic i cita prèvia. Enginyeria de prompts avançada per dotar el bot d'empatia i seguretat clínica. Connexió amb WhatsApp Business API i automatització de l'agenda de doctors mitjançant webhooks."
+                },
+                kmeleon: {
+                    title: "Kmeleon Startup",
+                    role: "CMO & AI Strategist",
+                    desc: "Traducció de capacitats tècniques complexes (Sistemes Multi-Agent) a una narrativa de negoci comprensible per a clients Enterprise. Vaig liderar l'estratègia GTM per posicionar la startup al mercat de la IA corporativa, treballant colze a colze amb enginyers ex-Microsoft per alinear producte i mercat."
+                },
+
+            },
+            developmentsTitle: "Els meus Experiments IA",
+            developments: {
+                aura: {
+                    title: "Aura Tasks AI",
+                    tagline: "AI Task Management Software",
+                    desc: "Super app de productivitat amb NLP avançat, desenvolupada amb Vite + React 19 + TypeScript. Gestió optimista i disseny premium.",
+                    link: "https://aura-tasks-es.vercel.app/",
+                    linkText: "Provar Beta Gratuïta"
+                },
+                agon: {
+                    title: "AGON - Sports AI",
+                    tagline: "SaaS Esportiu",
+                    desc: "Software integral per a equips de futbol: gestió d'entrenaments, predicció de lesions i anàlisi automatitzat de rivals."
+                },
+                saasBot: {
+                    title: "SaaS Chatbot (WIP)",
+                    tagline: "Assistent Encrustat",
+                    desc: "Assistent a mida per incrustar en plataformes SaaS. (En construcció)"
+                },
+                aetherWeb: {
+                    title: "Aether Labs Web",
+                    tagline: "Pàgina Web amb IA",
+                    desc: "Lloc web corporatiu desenvolupat amb IA en Node.js utilitzant Antigravity (Google).",
+                    link: "https://www.aetherlabs.es",
+                    linkText: "Veure Web"
+                },
+                jason: {
+                    title: "Jason ClickUp Manager",
+                    tagline: "AI n8n Agent",
+                    desc: "Agent de productivitat que crea tasques a ClickUp per veu/text, assigna responsables i automatitza projectes.",
+                    link: "https://www.aetherlabs.es/experimentos/jason-clickup"
+                },
+                nuria: {
+                    title: "Laura - Agent Rostisseria",
+                    tagline: "Agent de Veu Retail",
+                    desc: "Xat de veu per a gestió de comandes retail amb consulta d'estoc en temps real.",
+                    link: "https://www.aetherlabs.es/experimentos/nuria-rostisseria"
+                },
+                ugc: {
+                    title: "UGC Avatar Studio",
+                    tagline: "Generador d'Avatars",
+                    desc: "Generador d'avatars consistents fotorealistes per a marques i creativitats estàtiques.",
+                    link: "https://www.aetherlabs.es/experimentos/ugc-avatar-studio"
+                },
+                editor: {
+                    title: "Editor de Fotos IA",
+                    tagline: "Web App d'Edició",
+                    desc: "Eliminació d'objectes/fons (Inpainting), restauració i millora de qualitat en segons.",
+                    link: "https://www.aetherlabs.es/experimentos/editor-fotos-ia"
+                },
+                chleopatra: {
+                    title: "Chleopatra - Històries IA",
+                    tagline: "Plataforma EdTech",
+                    desc: "Plataforma EdTech que genera històries visuals educatives amb veus clonades i vídeos sintètics.",
+                    link: "https://www.aetherlabs.es/experimentos/chleopatra-historias"
+                },
+                musicBot: {
+                    title: "94 Music Agent",
+                    tagline: "Agent de Vendes",
+                    desc: "Prospecció automatitzada: scraping web de wedding planners, extracció de dades i enviament d'emails personalitzats.",
+                    link: "https://www.aetherlabs.es/experimentos/94music-bot"
+                },
+                numa: {
+                    title: "Numa - Suma Salut",
+                    tagline: "Assistent Sanitari",
+                    desc: "Agent d'atenció al pacient 24/7: gestió de cites i triatge intel·ligent.",
+                    link: "https://www.aetherlabs.es/proyectos/suma-salut"
+                },
+                cv: {
+                    title: "Aquest CV Interactiu",
+                    tagline: "Web App Next.js",
+                    desc: "Desenvolupat amb Next.js, Tailwind i Framer Motion amb assistència d'IA."
+                }
+            }
+        },
+
+        education: {
+            title: "Formació & Certificacions",
+            items: [
+                {
+                    title: "Certificacions HubSpot Academy",
+                    role: "Inbound Marketing, CRM & Sales Software",
+                    desc: "Especialització en automatització de màrqueting, gestió de pipelines de venda i metodologia Inbound. (5 Certificacions)."
+                },
+                {
+                    title: "Google Ads & Facebook Ads",
+                    role: "Mercatitlán",
+                    desc: "2022. Formació intensiva en estratègia de trànsit pagat (PPC), segmentació d'audiències i optimització de campanyes."
+                },
+                {
+                    title: "Google Project Management",
+                    role: "Certificació Professional Google",
+                    desc: "Metodologies Àgils, gestió del canvi, planificació estratègica i lideratge de projectes complexos."
+                },
+                {
+                    title: "Oracle NetSuite Fundamentals",
+                    role: "Project Management, Sales & Programmer",
+                    desc: "2023. Formació tècnica oficial: Administració de l'ERP, SuiteFlow, SuiteAnalytics i fonaments de programació."
+                },
+                {
+                    title: "Administració, Comptabilitat i Finances",
+                    role: "Reauxi Formació Interna",
+                    desc: "2016 - 2018. Capacitació pràctica en gestió financera, comptabilitat analítica, facturació internacional i control de tresoreria."
+                },
+                {
+                    title: "Màster de Mescla i Producció",
+                    role: "Audio Hacker Academy (Soma)",
+                    desc: "2021. Enginyeria de so avançada i producció musical professional. Mentalitat d'alt rendiment."
+                },
+                {
+                    title: "Cicle Superior Comerç i Màrqueting",
+                    role: "Grau Superior Oficial",
+                    desc: "Investigació de mercats, logística comercial, gestió de punts de venda i màrqueting estratègic."
+                }
+            ]
+        },
+        freelance: {
+            title: "Emprenedoria & Freelance",
+            videoUrl: "https://gumlet.tv/watch/696276126a1e75f7abcf59fe/",
+            ownTitle: "Projectes Propis & Startups",
+            consultingTitle: "Consultoria & Freelance",
+            items: {
+                aether: {
+                    title: "Aether Labs",
+                    desc: "Consultoria d'Intel·ligència Artificial i automatització. El meu vehicle principal per materialitzar solucions tècniques: agents de veu, chatbots i workflows complexos per a empreses."
+                },
+                music: {
+                    title: "94 Music",
+                    desc: "Mitjà digital i agència. Creació de contingut viral (+5M views, 16k comunitat) i gestió de booking. He organitzat i sonoritzat més de 100 esdeveniments musicals."
+                },
+                condor: {
+                    title: "Condor Music",
+                    desc: "Agència 360º a Colòmbia. Vaig gestionar la carrera de 4 artistes (La Payara, Savahna...), aconseguint gires de mitjans en TV/Ràdio nacional, producció de videoclips i concerts."
+                },
+                rings: {
+                    title: "El Hombre de los Anillos",
+                    desc: "Ecommerce de joieria masculina creat a cost zero. Estratègia de creixement orgànic que va permetre vendes internacionals en 8 països i sostenir el negoci."
+                },
+                jarana: {
+                    title: "Lady Jarana",
+                    desc: "Banda de Pop-Rock i Rumba 'Millenial'. Projecte nascut el 2025: creació de marca, repertori i tancament de 8 concerts en els primers mesos de vida."
+                },
+                cataleya: {
+                    title: "Cataleya Flamenco",
+                    desc: "Fusió flamenc-llatina per al sector Premium/Corporatiu. Actuacions en esdeveniments d'alt perfil."
+                },
+                konektor: {
+                    title: "Konektor",
+                    desc: "Mà dreta de direcció. Vaig liderar el llançament de 'Futura AI' (agents de veu): benchmark, producte i funnels. Captació B2B per a Metavers i vendes consultives."
+                },
+                soma: {
+                    title: "Soma",
+                    desc: "Estratègia integral per a infoproducte: creació de contingut diari d'alta conversió, ompliment d'esdeveniments presencials i tancament de vendes High-Ticket."
+                },
+                deodi: {
+                    title: "Deodi",
+                    desc: "360º business expansió. Creació d'ecommerce de cosmètica (web+proveïdors), rebranding complet del local i estratègia de captació digital."
+                },
+                suma: {
+                    title: "Suma Salut",
+                    desc: "Modernització operativa. Optimització web, disseny d'identitat corporativa i desenvolupament de chatbot IA per automatitzar cites i atenció al pacient."
+                }
+            }
+        },
+        portfolio: {
+            title: "Referencias",
+            intro: "Més enllà de les paraules, els fets. Projectes reals, webs actives i comptes socials que demostren l'experiència.",
+            items: [
+                {
+                    title: "94 Music - 16k Community",
+                    role: "Growth & Community",
+                    desc: "Crecimiento 100% orgánico de 0 a 16.000 seguidores. Estrategia de contenido viral y fidelización.",
+                    tags: ["Instagram", "Growth", "Viral"],
+                    link: "https://www.instagram.com/the94music/",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Aether Labs",
+                    role: "Web & AI Brand",
+                    desc: "Web corporativa para agencia de IA. Estética futurista, SEO y conversión B2B.",
+                    tags: ["Web Design", "Next.js", "Branding"],
+                    link: "https://aetherlabs.es",
+                    image: "/images/ai-hero-new.jpg"
+                },
+                {
+                    title: "Puerta de Oro",
+                    role: "Album Launch",
+                    desc: "Lanzamiento de disco, producción de videoclips y estrategia visual en redes.",
+                    tags: ["Spotify", "Video", "Creative"],
+                    link: "https://open.spotify.com/intl-es/album/00fk8QWotfjQgfiLPV6rb3?si=W61mfdd1TKuZZuxiwek6Og",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Soma Indomable",
+                    role: "Campaign Strategy",
+                    desc: "Gestión estratégica de campaña. Narrativa visual y storytelling para maximizar alcance.",
+                    tags: ["Instagram", "Storytelling", "Copy"],
+                    link: "https://www.instagram.com/soma_indomable",
+                    image: "/images/branding.png"
+                },
+                {
+                    title: "La Payara",
+                    role: "Artist Management",
+                    desc: "Gestión digital y estrategia de contenidos para proyecto musical internacional.",
+                    tags: ["Music Mgmt", "Social Media", "Strategy"],
+                    link: "https://www.instagram.com/lapayara",
+                    image: "/images/music.png"
+                },
+                {
+                    title: "Web Eme",
+                    role: "Web Development",
+                    desc: "Desarrollo web enfocado en velocidad, usabilidad y presentación de servicios high-ticket.",
+                    tags: ["Web Dev", "UX/UI", "Optimization"],
+                    link: "#",
+                    image: "/images/startup.png"
+                }
+            ]
+        },
+        seeking: {
+            title: "Els Meus Objectius",
+            intro1: "Porto molt de temps treballant pel meu compte. El camí de l'emprenedor solitari curteix, però també esgota. Ara busco un canvi d'etapa: busco llar.",
+            intro2: "Vull una empresa on estabilitzar-me a llarg termini (anys, no mesos). Un lloc on no em limiti a complir tickets, sinó on pugui aportar la meva visió, prendre la iniciativa i realment sentir el projecte com a propi.",
+            startup: {
+                title: "Startup",
+                desc: "Un projecte que necessiti algú tot terreny per impulsar el creixement, posar ordre en el caos inicial i escalar operacions."
+            },
+            company: {
+                title: "Empresa Consolidada",
+                badge: "Preferible",
+                desc: "Un entorn estable on pugui encarregar-me de l'operativa interna, optimitzar processos i assegurar l'eficiència. On es valori la resolució i l'autonomia."
+            },
+            quote: "\"Busco quelcom més que una feina; busco un equip, una cultura i una 'família' professional amb la qual créixer.\""
+        },
+        contactSection: {
+            badge: "Disponible per a Nous Reptes",
+            title: "Quan comencem?",
+            desc: "¿Busques algú que entengui tant l'estratègia com l'execució? Connectem.",
+            form: {
+                title: "Envia'm un missatge",
+                name: "Nom",
+                namePlaceholder: "El teu nom",
+                email: "Email",
+                emailPlaceholder: "tu@email.com",
+                company: "Empresa (opcional)",
+                companyPlaceholder: "La teva empresa",
+                message: "Missatge",
+                messagePlaceholder: "Explica'm en què puc ajudar-te...",
+                submit: "Enviar missatge"
+            },
+            options: {
+                email: {
+                    title: "Email",
+                    desc: "victortorresa94@gmail.com"
+                },
+                whatsapp: {
+                    title: "WhatsApp",
+                    desc: "Escriu-me directament",
+                    button: "Obrir WhatsApp"
+                },
+                call: {
+                    title: "Trucada",
+                    desc: "Prefereixo parlar per telèfon",
+                    button: "+34 627 28 14 59"
+                },
+                linkedin: {
+                    title: "LinkedIn",
+                    link: "/in/victortorresarana"
+                }
+            }
+        },
+        footer: {
+            rights: "© 2025 Víctor Torres Arana. Built with Next.js & Tailwind.",
+            home: "Inici",
+            cv: "CV PDF"
+        },
+        procesos: {
+            hero: {
+                label: "CONSULTOR DE PROCESSOS",
+                title: "Consultor de Processos i Transformació Operativa",
+                subtitle: "Arquitectura d'operacions · Estandarització · Millora contínua",
+                desc: "La meva especialitat és entendre com funcionen les coses. Des de fa anys tinc una capacitat analítica natural per detectar com s'estructuren els processos, on es perd temps i per què els sistemes deixen d'escalar. El 2022 vaig prendre consciència que aquesta habilitat era el meu major valor professional: no només gestionar tasques o projectes, sinó dissenyar la forma òptima en què la feina s'ha d'executar.\n\nHe aplicat aquest enfocament en contextos molt diferents —operacions manuals, logística, esdeveniments, màrqueting, tecnologia i gestió d'equips— sempre amb el mateix principi: observar primer, ordenar després i millorar de forma progressiva.\n\nNo concebo l'automatització sense estandardització prèvia, ni la transformació digital sense una comprensió profunda del procés real. La meva feina consisteix a convertir el caos operatiu en sistemes clars, eficients i sostenibles."
+            },
+            mindset: {
+                title: "Com Penso els Processos",
+                subtitle: "L'optimització no és una eina, és una mentalitat.",
+                phases: [
+                    {
+                        step: "01",
+                        title: "Observació Analítica",
+                        desc: "Anàlisi profunda del flux actual sense interferències. Identificació de punts de dolor, colls d'ampolla i redundàncies no documentades."
+                    },
+                    {
+                        step: "02",
+                        title: "Detecció de Fricció",
+                        desc: "Localització d'ineficiències operatives. On es perd informació? On es duplica l'esforç? Diagnòstic basat en dades qualitatives i quantitatives."
+                    },
+                    {
+                        step: "03",
+                        title: "Estandarització (SOPs)",
+                        desc: "El caos no s'escala. Documentació rigorosa de procediments operatius estàndard (SOPs) per garantir consistència i predictibilitat abans de qualsevol automatització."
+                    },
+                    {
+                        step: "04",
+                        title: "Millora Elemental (Kaizen)",
+                        desc: "Implementació d'ajustos incrementals. Validació de millores en entorn real. La revolució operativa es construeix amb petites victòries sostenibles."
+                    },
+                    {
+                        step: "05",
+                        title: "Automatització Intel·ligent",
+                        desc: "Només quan el procés és robust, s'aplica tecnologia. Automatització estratègica per eliminar tasques de baix valor i alliberar capital humà."
+                    }
+                ]
+            },
+            emeDeepDive: {
+                title: "Project Manager & Líder de Processos",
+                company: "EME GROWTH AGENCY (2022)",
+                intro: "Era una agència operativa sense sistemes definits, on la manca de processos generava retards constants i clients insatisfets. Vaig implementar ClickUp com a sistema operatiu central, vaig estandarditzar fluxos de treball i vaig gestionar el canvi cultural necessari per assegurar l'adopció. No només vaig crear documents; vaig transformar la forma de treballar per recuperar l'eficiència i la confiança del client.",
+                metrics: [
+                    { value: "+40", label: "SOPs Implementats", desc: "Procediments actius" },
+                    { value: "+30%", label: "Eficiència", desc: "Millora operativa global" },
+                    { value: "-60%", label: "Temps Lliurament", desc: "De 12 a 4 setmanes" },
+                    { value: "30+", label: "Projectes", desc: "Gestionats en paral·lel" }
+                ],
+                beforeAfter: {
+                    before: {
+                        title: "ANTES (Caos Operatiu)",
+                        items: [
+                            "Processos implícits i tribals",
+                            "Dependència de persones clau",
+                            "Retards freqüents i impredictibles",
+                            "Manca de documentació",
+                            "Prioritats poc clares i canviants",
+                            "Clients insatisfets per retards"
+                        ]
+                    },
+                    after: {
+                        title: "DESPUÉS (Estructura)",
+                        items: [
+                            "Processos documentats i accessibles",
+                            "SOPs clars i sistema centralitzat",
+                            "Lliuraments previsibles i a temps",
+                            "Flujos clars a ClickUp",
+                            "Equips autònoms i coordinats",
+                            "Millora en la satisfacció del client"
+                        ]
+                    }
+                },
+                sops: {
+                    title: "Estandarització Real (SOPs)",
+                    desc: "L'estandarització no frena la creativitat, l'allibera de tasques repetitives.",
+                    items: [
+                        { title: "Onboarding d'Empleats", desc: "Integració ràpida i efectiva de nous talents." },
+                        { title: "Producció Web Corp", desc: "Flux pas a pas des del disseny fins al desplegament." },
+                        { title: "Estratègia Xarxes Socials", desc: "Sistematització de la creació i publicació de continguts." },
+                        { title: "Control de Qualitat (QA)", desc: "Checklists per garantir lliuraments sense errors." },
+                        { title: "Gestió d'Incidències", desc: "Protocol clar per desbloquejar equips ràpidament." }
+                    ]
+                },
+                insights: [
+                    "Automatitzar sense un procés sòlid només amplifica el caos.",
+                    "El canvi operatiu requereix acompanyament humà, no només eines.",
+                    "La millora contínua es construeix amb petits ajustos diaris.",
+                    "L'adopció per l'equip és més importante que la sofisticació de l'eina."
+                ],
+                projectManagement: {
+                    title: "Un cop optimitzat, vaig ser Project Manager",
+                    subtitle: "Escalant de 3 mesos a 1 mes per web",
+                    desc: "Amb l'operativa fixada, vaig assumir la gestió integral de més de 30 projectes Web/App. En alliberar els estrategues de la gestió tècnica i centralitzar la responsabilitat, vam aconseguir entendre millor les necessitats del client.",
+                    achievements: [
+                        "Reducció del temps de lliurament de 3 mesos a 1 mes.",
+                        "Augment estimat del 60% en satisfacció del client.",
+                        "Implementació d'auditories de qualitat i optimització pre-llançament.",
+                        "Gestió exitosa de +30 projectes complexos en paral·lel."
+                    ]
+                },
+                closing: "Aquesta experiència va establir les bases del meu perfil com a consultor: observar, estructurar, estandaritzar, acompanyar i millorar de forma contínua."
+            },
+            automation: {
+                title: "Automatització com a Cultura",
+                subtitle: "(abans i després de la IA)",
+                intro: "L'automatització no va arribar al meu perfil amb la IA. La IA només va accelerar el que portava anys fent: detectar repetició, eliminar fricció i convertir tasques en sistemes.",
+                question: "Abans de parlar d'eines, sempre parteixo d'una pregunta simple: quina part d'aquesta feina es repeteix i no aporta valor humà?",
+                sections: [
+                    {
+                        title: "Automatització abans de la IA: mètode, no software",
+                        desc: "Molt abans de treballar amb IA, ja automatitzava processos des de l'operativa i la metodologia.",
+                        context: "En entorns com Reauxi (compres i facturació) o Denetic (logística i operacions), vaig dissenyar sistemes de treball estables per reduir errors.",
+                        items: [
+                            {
+                                company: "Reauxi",
+                                role: "Administració i Compres",
+                                text: "Volum administratiu insostenible. Creació de seqüències lògiques de validació i rutines de gestió diària.",
+                                tags: ["Processos", "Validació"]
+                            },
+                            {
+                                company: "Denetic",
+                                role: "Logística i Magatzem",
+                                text: "Magatzem caòtic. Definició de fluxos físics, ubicacions fixes i regles de reposició.",
+                                tags: ["Inventari", "Fluxos Físics"]
+                            },
+                            {
+                                company: "Música en Viu",
+                                role: "Producció d'Esdeveniments",
+                                text: "Alta pressió i marge d'error zero. Checklists de muntatge, fluxos de booking i protocols de crisi.",
+                                tags: ["Checklists", "Protocols"]
+                            }
+                        ],
+                        closure: "No hi havia IA. Hi havia mètode, prova-error i estandarització."
+                    },
+                    {
+                        title: "Automatització Estructural",
+                        desc: "El següent pas: automatitzar a escala d'equip.",
+                        context: "Creació de processos operatius estandaritzats per treballar amb menys fricció:",
+                        items: [
+                            "Automatització pre-IA basada en SOPs i ClickUp.",
+                            "Reducció d'errors humans.",
+                            "Processos dissenyats per sobreviure a la rotació."
+                        ],
+                        highlight: {
+                            title: "Departament d'Automatització (ManyChat)",
+                            desc: "Fa més de 4 anys vaig liderar:",
+                            items: [
+                                "Definició del servei i abast.",
+                                "Disseny de fluxos estàndard de captació.",
+                                "Creació de SOPs per departament.",
+                                "Formació de l'equip responsable."
+                            ]
+                        },
+                        closure: "Abans de l'auge de la IA, ja automatitzava en producció."
+                    },
+                    {
+                        title: "De fluxos rígids a sistemes intel·ligents",
+                        desc: "L'arribada de la IA no va canviar la meva forma de pensar. La va amplificar.",
+                        evolution: "El pas va ser natural: de fluxos rígids → a sistemes amb context. De fluxos tancats → a agents que entenen intent.",
+                        applications: "Des de llavors he dissenyat:",
+                        items: [
+                            "Automatitzacions conversacionals (xat i veu).",
+                            "Agents d'atenció i suport.",
+                            "Sistemes híbrids humà-IA.",
+                            "Automatitzacions operatives."
+                        ],
+                        examples: "Exemples aplicats en projectes reals (94 Music, Chatbots web, Agents de veu)."
+                    }
+                ]
+            },
+            changeManagement: {
+                title: "Gestió del Canvi & Factor Humà",
+                subtitle: "Canviar processos no és un problema tècnic. És un problema humà.",
+                intro: "La meva feina no consisteix en 'posar un nou sistema', sinó en canviar la forma en la qual les persones treballen. Si un procés no s'usa, no existeix. I si no s'adopta, és culpa del disseny, no de l'equip.",
+                pillars: [
+                    {
+                        title: "1. Empatia Operativa",
+                        desc: "No canvio el que no entenc. Abans de dissenyar, m'assec amb les persones, veig com treballen realment i identifico les seves pors i dreceres.",
+                        icon: "HeartHandshake"
+                    },
+                    {
+                        title: "2. Co-Construcció",
+                        desc: "No imposo processos tancats. Involucro els perfils clau des de l'inici. El resultat és compromís i sensació d'autoria compartida.",
+                        icon: "Users"
+                    },
+                    {
+                        title: "3. Formació en Context",
+                        desc: "Un procés s'aprèn fent-lo servir, no llegint un PDF. Acompanyo les primeres execucions i corregeixo en directe sobre la realitat.",
+                        icon: "Briefcase"
+                    },
+                    {
+                        title: "4. Gestió de Resistència",
+                        desc: "La resistència no es combat, s'escolta. Diferencio la por al canvi de la fricció real i ajusto el procés si no encaixa.",
+                        icon: "Ear"
+                    },
+                    {
+                        title: "5. Creació d'Hàbit",
+                        desc: "El canvi no acaba amb el disseny. Faig seguiment i ajustos iteratius fins que el nou estàndard deixa de sentir-se com a 'nou'.",
+                        icon: "Repeat"
+                    }
+                ],
+                impact: {
+                    text: "Resultats d'un enfocament humà:",
+                    items: [
+                        { label: "Adopció Real", value: ">90%" },
+                        { label: "Conflictes", value: "Minimitzats" },
+                        { label: "Autonomia", value: "Total" }
+                    ]
+                },
+                closing: "No transformo empreses. Ajudo a les persones a treballar millor."
+            },
+            oracleExperience: {
+                title: "Oracle NetSuite Transformation",
+                // Header / Context data
+                role: "Project Manager & Process Consultant",
+                company: "DisrupTT (Partner) / CulturA (Client Final)",
+
+                context: {
+                    intro: "CulturA és un operador logístic internacional especialitzat en transport marítim de matèries primeres a granel (guix, pedra calcària, clínquer), amb operacions end-to-end crítiques entre Malta, Espanya, Luxemburg, Dubai i Turquia. Una organització amb creixement accelerat, alta complexitat operativa i múltiples sistemes heretats que requeria una transformació estructural profunda per poder escalar.",
+                    metrics: [
+                        { value: "+3M", label: "Tones / Any" },
+                        { value: "x30", label: "Creixement en 6 anys" },
+                        { value: "5", label: "Països Operatius" },
+                        { value: "9 Mesos", label: "Projecte Continu" }
+                    ]
+                },
+                projectType: {
+                    title: "Oracle NetSuite Transformation — ERP Core Migration",
+                    desc: "Migració completa del sistema operatiu i financer a Oracle NetSuite, afectant a tots els departaments i operacions internacionals."
+                },
+                bdr: {
+                    title: "BDR — Business Design Requirements",
+                    cards: [
+                        { title: "Mapeig Forense (As-Is real)", desc: "Aixecament de centenars de processos reals, amb excepcions, dreceres i dependències humanes." },
+                        { title: "Traducció Negoci → Sistema", desc: "Conversió del llenguatge operatiu (logística, nolis, contractes) en fluxos ERP estructurats." },
+                        { title: "Disseny To-Be Escalable", desc: "Definició de workflows estandarditzats llestos per operar a escala internacional." }
+                    ]
+                },
+                impact: {
+                    title: "Impacte del Projecte",
+                    items: [
+                        "Base operativa per escalar fins a +5M tones",
+                        "Unificació d'operacions sota una única font de veritat",
+                        "Reducció de risc operatiu en entorn internacional"
+                    ],
+                    closing: "Un ERP no ordena una empresa. Un bon mapeig de processos, sí."
+                },
+                scope: {
+                    title: "Abast del Projecte",
+                    items: [
+                        "+100 processos mapejats",
+                        "Tots els departaments implicats",
+                        "9 mesos de treball continu",
+                        "Coordinació entre NetSuite, Salesforce i McKinsey",
+                        "Operació multipaís"
+                    ]
+                },
+            },
+            experience: {
+                title: "Experiència Aplicada",
+                cases: []
+            },
+
+            methodology: {
+                title: "Marc Metodològic",
+                items: [
+                    {
+                        name: "Lean Thinking",
+                        desc: "Eliminació sistemàtica de 'muda' (desperdici). Enfocament obsessiu en aportar valor al client final, suprimint burocràcia innecessària i passos sense retorn."
+                    },
+                    {
+                        name: "Scrum & Agile",
+                        desc: "Execució iterativa de projectes complexos. Sprints de treball, revisió constant i adaptació àgil a canvis sense perdre el focus en els lliurables estratègics."
+                    },
+                    {
+                        name: "Filosofia Kaizen",
+                        desc: "Millora contínua com a hàbit. Evolució constant dels processos mitjançant petits ajustos diaris que generen un impacte compost massiu a llarg termini."
+                    }
+                ]
+            },
+            processDesign: {
+                title: "Disseny de Processos Operatius des de Zero",
+                subtitle: "De l'observació al sistema operatiu. Mètode real pas a pas.",
+                phases: [
+                    {
+                        title: "1. Observació sense intervenir",
+                        desc: "Immersió real. M'assec amb les persones, analitzo el dia a dia sense jutjar i detecto l'“ombra operativa”: el que passa de debò vs el que diu el manual.",
+                        details: ["Escolta activa", "Detecció de dreceres", "Friccions invisibles"]
+                    },
+                    {
+                        title: "2. Mapeig REAL del procés",
+                        desc: "No dibuixo ideals. Documento la realitat: Què es fa? Qui? Amb quina info? Identifico on es trenca la cadena i on neixen els errors.",
+                        details: ["Fluxos d'informació", "Punts de trencament", "Dependències crítiques"]
+                    },
+                    {
+                        title: "3. Detecció de Fricció (Lean)",
+                        desc: "Elimino el malbaratament. Busco tasques repetitives, esperes innecessàries i decisions sense criteri. Si no aporta valor, s'elimina o se simplifica.",
+                        details: ["Eliminació de burocràcia", "Reducció de càrrega cognitiva", "Neteja operativa"]
+                    },
+                    {
+                        title: "4. Estandarització (SOPs Reals)",
+                        desc: "Un SOP és un acord operatiu. Dissenyo checklists i guies visuals que s'entenen d'un cop d'ull. Si no s'usa, no existeix.",
+                        details: ["Llenguatge simple", "Checklists accionables", "Criteris d'èxit clars"]
+                    },
+                    {
+                        title: "5. Validació i Canvi",
+                        desc: "El canvi es guanya amb claredat. Executo el procés amb l'equip, ajusto segons feedback real i asseguro que la resistència es converteixi en adopció.",
+                        details: ["Formació pràctica", "Ajust en calent", "Gestió de resistència"]
+                    },
+                    {
+                        title: "6. Iteració Contínua (Kaizen)",
+                        desc: "No busco la perfecció, busco l'evolució. Ajustos constants de l'1-5% basats en dades reals i feedback de l'equip.",
+                        details: ["Millora incremental", "Versionat de processos", "Evolució constant"]
+                    }
+                ],
+                kpis: {
+                    sectionTitle: "Com mesuro l'impacte?",
+                    macro: {
+                        title: "KPIs Macro (Impacte Global)",
+                        items: [
+                            { label: "Adopció Real", value: "+90%" },
+                            { label: "Reducció Errors", value: "-30%" },
+                            { label: "Velocitat Lliurament", value: "x2" }
+                        ]
+                    },
+                    micro: {
+                        title: "KPIs Micro (Control Operatiu)",
+                        items: [
+                            { label: "Temps per Tasca", desc: "Detecció de desviacions temps real" },
+                            { label: "Taxa de Retreball", desc: "Tasques retornades per errors" },
+                            { label: "Ús de Checklists", desc: "% de passos verificats per l'equip" },
+                            { label: "Bloquejos Operatius", desc: "Nº d'incidències reportades/setmana" },
+                            { label: "Lead Time Total", desc: "Temps des d'entrada fins a lliurament" }
+                        ]
+                    }
+                }
+            },
+            transformation: {
+                title: "Transformació Digital",
+                subtitle: "Primer el procés, després la tecnologia.",
+                steps: [
+                    { label: "Procés Manual", status: "Caos / Fricció" },
+                    { label: "Procés Estàndard", status: "Ordre / Control" },
+                    { label: "Digitalització", status: "Dades / Traçabilitat" },
+                    { label: "Automatització", status: "Escala / Eficiència" }
+                ],
+                desc: "La tecnologia no arregla processos trencats; els accelera. El meu enfocament garanteix que la transformació digital s'assenti sobre una base operativa sòlida, assegurant un ROI real i sostenible."
+            },
+            cta: {
+                title: "Parlem de Processos?",
+                text: "Perfil Senior disponible per a consultoria i direcció de projectes.",
+                button: "Contactar Ara"
+            },
+            mappedProcesses: {
+                title: "Processos Mapejats & Optimitzats",
+                groups: [
+                    {
+                        title: "Administració i Finances (CulturA)",
+                        desc: "Enfocament en operació crítica, traçabilitat i reducció d'errors.",
+                        items: [
+                            { title: "1. Registre i factures", desc: "Recepció, validació i registre homogeni." },
+                            { title: "2. Validació factures", desc: "Control d'imports i duplicats pre-registre." },
+                            { title: "3. Gestió documental", desc: "Arxiu estandaritzat i recuperació ràpida." },
+                            { title: "4. Seguiment factures", desc: "Estats clars: pendent, aprovat, pagat." },
+                            { title: "5. Conciliació pagaments", desc: "Creuament bancari vs registres interns." },
+                            { title: "6. Compres", desc: "Sol·licitud, validació i registre financer." },
+                            { title: "7. Gestió proveïdors", desc: "Normalització de dades i altes." },
+                            { title: "8. Comandes i traçabilitat", desc: "Vinculació comanda-factura-pagament." },
+                            { title: "9. Processos recurrents", desc: "Estandarització de tasques diàries." },
+                            { title: "10. Reporting financer", desc: "Visibilitat real de bloquejos i pendents." }
+                        ]
+                    },
+                    {
+                        title: "Operacions d'Agència & Màrqueting",
+                        desc: "Enfocament en velocitat, creativitat i satisfacció del client.",
+                        items: [
+                            { title: "1. Onboarding Clients", desc: "Kickoff, setup de carpetes i pla de 30 dies." },
+                            { title: "2. Producció Contingut", desc: "Flux idea-disseny-publicació i versions." },
+                            { title: "3. Aprovació Creativitats", desc: "Rondes de feedback acotades i checklists." },
+                            { title: "4. Reporting Campanyes", desc: "Rutines d'anàlisi i presa de decisions." },
+                            { title: "5. Creació Webs", desc: "Brief, wireframe, disseny, build i QA." },
+                            { title: "6. Entrega Webs", desc: "Go-live, manuals i hand-off." },
+                            { title: "7. Estratègia Xarxes", desc: "Framework de pilars, tons i calendari." },
+                            { title: "8. Producció Audiovisual", desc: "Pre-producció, rodatge i flux d'edició." },
+                            { title: "9. Copywriting", desc: "Estructura, revisió i control de canvis." },
+                            { title: "10. Onboarding Empleats", desc: "Formació per rol i primeres tasques." },
+                            { title: "11. Gestió Tasques", desc: "Definició de 'tasca ben creada' i prioritats." },
+                            { title: "12. QA Intern", desc: "Checklist d'errors típics pre-entrega." },
+                            { title: "13. Planificació Setmanal", desc: "Rituals de planning i desbloqueig." }
+                        ]
+                    }
+                ]
             }
         }
     }
