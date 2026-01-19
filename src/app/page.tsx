@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Mail, Linkedin, Globe, Code, Menu, X, Download, TrendingUp, Target, Lightbulb, Zap, Workflow, ChevronDown, Briefcase, Terminal, MessageSquare, Database, Mic, ClipboardList, Brain, Video, Music, ShoppingBag, Users, Palette, Megaphone, Award, ShieldCheck, Search, GraduationCap, Cpu, User, Rocket, Settings, Calendar, Building, Wallet, ExternalLink, Activity, FileText, Image as ImageIcon } from "lucide-react";
+import { ChevronDown, Download, Globe, GraduationCap, Languages, Layers, Linkedin, Mail, MapPin, Mic, Phone, Search, Settings, Share2, Sparkles, User, Workflow, CheckCircle2, ArrowRight, Code, Menu, X, TrendingUp, Target, Lightbulb, Zap, Briefcase, Terminal, MessageSquare, Database, ClipboardList, Brain, Video, Music, ShoppingBag, Palette, Megaphone, Award, ShieldCheck, Cpu, Rocket, Calendar, Building, Wallet, ExternalLink, Activity, FileText, Image as ImageIcon, Users } from 'lucide-react';
+import MappedProcessesSection from '@/components/procesos/MappedProcessesSection';
 import { motion, AnimatePresence } from "framer-motion";
 import { useState, useEffect } from "react";
 import AchievementsCarousel from "@/components/AchievementsCarousel";
@@ -661,7 +662,7 @@ export default function Home() {
                   <ClipboardList size={16} className="text-[#82ff1f]" /> {t.skills.categories.pm}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.pm.items.map((skill) => (
+                  {t.skills.pm.items.map((skill: string) => (
                     <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
                       <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
                     </div>
@@ -675,7 +676,7 @@ export default function Home() {
                   <Users size={16} className="text-[#82ff1f]" /> {t.skills.categories.client}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.client.items.map((skill) => (
+                  {t.skills.client.items.map((skill: string) => (
                     <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
                       <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
                     </div>
@@ -689,7 +690,7 @@ export default function Home() {
                   <Briefcase size={16} className="text-[#82ff1f]" /> {t.skills.categories.business}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.categories.businessItems.map((skill) => (
+                  {t.skills.categories.businessItems.map((skill: string) => (
                     <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
                       <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
                     </div>
@@ -703,7 +704,7 @@ export default function Home() {
                   <Code size={16} className="text-[#82ff1f]" /> {t.skills.categories.tech}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.categories.techItems.map((skill) => (
+                  {t.skills.categories.techItems.map((skill: string) => (
                     <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
                       <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
                     </div>
@@ -716,7 +717,7 @@ export default function Home() {
                   <Brain size={16} className="text-[#82ff1f]" /> {t.skills.categories.ai}
                 </h3>
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
-                  {t.skills.categories.aiItems?.map((skill) => (
+                  {t.skills.categories.aiItems?.map((skill: string) => (
                     <div key={skill} className="px-4 py-3 rounded-xl bg-white/5 border border-white/5 hover:border-[#82ff1f]/20 transition-all group">
                       <p className="text-sm font-medium text-white/70 group-hover:text-white transition-colors">{skill}</p>
                     </div>
@@ -725,72 +726,24 @@ export default function Home() {
               </div >
             </div >
 
-            {/* --- TECH STACK & HERRAMIENTAS (Bloque Diferenciado) --- */}
-            <div id="stack" className="mt-12 pt-8 border-t border-white/10">
-              <h3 className="text-xl font-bold text-white mb-8 flex items-center gap-2">
-                <span className="text-[#82ff1f]">#</span> {t.skills.categories.stack}
-              </h3>
+          </ExpandableSection >
 
-              <div className="space-y-8">
-
-                {/* Dynamic Stack Accordion */}
-                <div className="grid grid-cols-1 gap-4">
-                  {t.stack?.map((section: any, index: number) => (
-                    <StackCategory key={index} title={section.title} groups={section.groups} />
-                  ))}
-                </div>
-
-                {/* Stack Marketing & Ventas */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.marketing}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["HubSpot CRM", "Salesforce", "Google Ads", "Meta Ads", "YouTube Growth", "Email Automation (ActiveC)", "Pipedrive", "Cold Outbound Tools", "Google Analytics 4"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Creativo */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.creative}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Adobe Photoshop", "Adobe Illustrator", "Adobe InDesign", "Premiere Pro", "CapCut", "DaVinci Resolve", "Studio One", "Canva", "OBS Studio"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Desarrollo & Web */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.dev}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Next.js", "React", "Node.js", "Tailwind CSS", "TypeScript", "Git/GitHub", "VS Code", "Vercel"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Stack Operaciones & ERP */}
-                <div>
-                  <h4 className="text-sm font-bold text-zinc-400 mb-3 uppercase tracking-wider">{t.skills.stack.ops}</h4>
-                  <div className="flex flex-wrap gap-2">
-                    {["Oracle NetSuite", "SAP ERP", "ClickUp", "Notion", "Slack", "Jira", "Monday", "Microsoft Excel (Adv)"].map((tool) => (
-                      <span key={tool} className="px-3 py-1.5 rounded-lg bg-white/5 text-zinc-300 text-sm border border-white/10">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-
+          {/* --- TECH STACK & HERRAMIENTAS (Bloque Diferenciado) --- */}
+          <ExpandableSection id="stack" icon={<Layers size={32} />} title={t.skills?.categories?.stack || "Stack"}>
+            <div className="space-y-8">
+              {/* Dynamic Stack Grid */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {t.stack?.map((section: any, index: number) => (
+                  <StackCategory key={index} title={section.title} groups={section.groups} />
+                ))}
               </div>
             </div>
           </ExpandableSection >
+
+          {/* --- PROCESSES (New Section) --- */}
+          <ExpandableSection id="processes" icon={<Workflow size={32} />} title={t.procesos?.mappedProcesses?.title || "Procesos"}>
+            <MappedProcessesSection isEmbedded={true} />
+          </ExpandableSection>
 
 
 
@@ -802,7 +755,7 @@ export default function Home() {
           {/* --- FORMACIÓN --- */}
           <ExpandableSection id="education" icon={<GraduationCap size={32} />} title={t.education.title}>
             <div className="relative border-l border-white/10 ml-3 space-y-8 pl-8">
-              {t.education.items?.map((item, index) => (
+              {t.education.items?.map((item: any, index: number) => (
                 <div key={index} className="relative group">
                   <div className="absolute -left-[41px] top-1.5 w-3 h-3 rounded-full bg-[#82ff1f] shadow-[0_0_10px_#82ff1f] opacity-50 group-hover:opacity-100 transition-opacity"></div>
                   <div className="p-6 bg-white/5 rounded-2xl border border-white/5 hover:border-[#82ff1f]/30 transition-all hover:bg-white/[0.07]">
@@ -1071,12 +1024,12 @@ export default function Home() {
           </footer >
         </div >
 
-      </div>
+      </div >
 
       {/* --- PRINT ONLY DOCUMENT --- */}
-      <div className="print-only max-w-[21cm] mx-auto p-0 bg-white text-black">
+      < div className="print-only max-w-[21cm] mx-auto p-0 bg-white text-black" >
         {/* Header */}
-        <div className="text-center mb-8 border-b-2 border-black pb-6">
+        < div className="text-center mb-8 border-b-2 border-black pb-6" >
           <h1 className="text-4xl font-bold mb-2 uppercase tracking-wide text-black">{t.hero.name}</h1>
           <h2 className="text-xl text-zinc-600 mb-4 font-light tracking-widest uppercase">{t.hero.title}</h2>
           <div className="flex justify-center gap-6 text-sm text-zinc-600 font-medium">
@@ -1084,26 +1037,28 @@ export default function Home() {
             <span>+34 627 28 14 59</span>
             <a href="https://vtorres.net" className="text-zinc-600 hover:text-black underline">vtorres.net</a>
           </div>
-        </div>
+        </div >
 
         {/* Experience */}
-        <div className="mb-8">
+        < div className="mb-8" >
           <h3 className="text-lg font-bold uppercase tracking-wider mb-6 border-b border-zinc-200 pb-2 text-black">{t.career.title}</h3>
           <div className="space-y-6">
-            {t.career.sections?.flatMap((section: any) => section.items).map((item: any, index: number) => (
-              <div key={index} className="grid grid-cols-[100px_1fr] gap-6 break-inside-avoid">
-                <div className="text-xs font-bold text-zinc-500 pt-1 text-right">{item.year}</div>
-                <div>
-                  <h4 className="font-bold text-base text-black">{item.title} <span className="font-normal text-zinc-600">| {item.role}</span></h4>
-                  <p className="text-xs text-zinc-700 mt-1 leading-snug max-w-2xl">{item.desc}</p>
+            {t.career.sections?.flatMap((section: any) => section.items)
+              .filter((item: any) => item.title !== "Trabajos Logísticos" && item.title !== "Customer Service & Sales")
+              .map((item: any, index: number) => (
+                <div key={index} className="grid grid-cols-[100px_1fr] gap-6 break-inside-avoid">
+                  <div className="text-xs font-bold text-zinc-500 pt-1 text-right">{item.year}</div>
+                  <div>
+                    <h4 className="font-bold text-base text-black">{item.title} <span className="font-normal text-zinc-600">| {item.role}</span></h4>
+                    <p className="text-xs text-zinc-700 mt-1 leading-snug max-w-2xl">{item.desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              ))}
           </div>
-        </div>
+        </div >
 
         {/* AI & Automation Projects (PDF ONLY) */}
-        <div className="mb-8">
+        < div className="mb-8" >
           <h3 className="text-lg font-bold uppercase tracking-wider mb-6 border-b border-zinc-200 pb-2 text-black">{t.nav.experience}</h3>
           <div className="space-y-4">
             {Object.values(t.aiExperience?.projects || {}).map((item: any, index: number) => (
@@ -1118,10 +1073,10 @@ export default function Home() {
               </div>
             ))}
           </div>
-        </div>
+        </div >
 
         {/* Skills */}
-        <div className="mb-8 break-before-page">
+        < div className="mb-8 break-before-page" >
           <h3 className="text-lg font-bold uppercase tracking-wider mb-6 border-b border-zinc-200 pb-2 text-black">{t.skills.title}</h3>
           <div className="grid grid-cols-2 gap-x-12 gap-y-6">
             <div>
@@ -1143,13 +1098,13 @@ export default function Home() {
               </p>
             </div>
           </div>
-        </div>
+        </div >
 
         {/* Education (PDF ONLY) */}
-        <div className="mb-8 break-inside-avoid">
+        < div className="mb-8 break-inside-avoid" >
           <h3 className="text-lg font-bold uppercase tracking-wider mb-6 border-b border-zinc-200 pb-2 text-black">{t.education.title}</h3>
           <div className="space-y-4">
-            {t.education.items?.map((item, index) => (
+            {t.education.items?.map((item: any, index: number) => (
               <div key={index} className="grid grid-cols-[1fr_auto] gap-4">
                 <div>
                   <h4 className="font-bold text-sm text-black">{item.title}</h4>
@@ -1159,15 +1114,24 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div >
+
+        {/* CTA for Print */}
+        <div className="mt-8 mb-8 p-6 border-2 border-dashed border-zinc-300 rounded-xl text-center break-inside-avoid bg-zinc-50">
+          <p className="text-lg font-bold uppercase mb-2 text-black">¿Quieres conocer toda la historia?</p>
+          <p className="text-sm text-zinc-600 mb-4 max-w-md mx-auto">Este PDF es solo un resumen ejecutivo. Visita mi web para ver la versión completa, los vídeos y la experiencia interactiva.</p>
+          <a href="https://vtorres.net" className="inline-block bg-black text-white px-8 py-3 rounded-full font-bold text-sm uppercase tracking-wider hover:bg-zinc-800 transition-colors">
+            👉 vtorres.net
+          </a>
         </div>
 
         {/* Footer for Print */}
-        <div className="text-center mt-12 pt-6 border-t border-zinc-100">
+        < div className="text-center mt-4 pt-6 border-t border-zinc-100" >
           <p className="text-[10px] text-zinc-400">Documento generado automáticamente desde vtrx.ai</p>
-        </div>
+        </div >
 
-      </div>
-    </main>
+      </div >
+    </main >
   );
 }
 
@@ -1294,42 +1258,26 @@ function SkillCard({ icon, title, desc, className }: { icon: React.ReactNode; ti
 }
 
 function StackCategory({ title, groups }: { title: string, groups: { title: string, tools: string[] }[] }) {
-  const [isOpen, setIsOpen] = useState(false);
-
   return (
-    <div className="border border-white/10 rounded-xl overflow-hidden bg-white/5 hover:border-[#82ff1f]/30 transition-colors">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full flex items-center justify-between p-4 text-left group"
-      >
-        <h4 className="text-base font-bold text-zinc-100 group-hover:text-[#82ff1f] transition-colors">{title}</h4>
-        <ChevronDown size={20} className={`text-zinc-500 transition-transform duration-300 group-hover:text-[#82ff1f] ${isOpen ? 'rotate-180' : ''}`} />
-      </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3, ease: "easeInOut" }}
-          >
-            <div className="px-4 pb-6 pt-0 space-y-6 border-t border-white/5 mt-2">
-              {groups.map((group, idx) => (
-                <div key={idx} className="pt-4">
-                  <h5 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-3 pl-1">{group.title}</h5>
-                  <div className="flex flex-wrap gap-2">
-                    {group.tools.map((tool) => (
-                      <span key={tool} className="text-xs px-2.5 py-1 rounded bg-black/20 text-zinc-300 border border-white/5 hover:bg-[#82ff1f]/10 hover:text-[#82ff1f] hover:border-[#82ff1f]/20 transition-all cursor-default">
-                        {tool}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+    <div className="border border-white/10 rounded-xl bg-white/5 hover:border-[#82ff1f]/30 transition-colors p-6">
+      <h4 className="text-lg font-bold text-white mb-6 flex items-center gap-2">
+        <span className="w-1.5 h-1.5 rounded-full bg-[#82ff1f]"></span>
+        {title}
+      </h4>
+      <div className="space-y-6">
+        {groups.map((group, idx) => (
+          <div key={idx}>
+            <h5 className="text-xs font-bold text-zinc-500 uppercase tracking-wider mb-3 pl-1">{group.title}</h5>
+            <div className="flex flex-wrap gap-2">
+              {group.tools.map((tool) => (
+                <span key={tool} className="text-xs px-2.5 py-1 rounded bg-black/20 text-zinc-300 border border-white/5 hover:bg-[#82ff1f]/10 hover:text-[#82ff1f] hover:border-[#82ff1f]/20 transition-all cursor-default">
+                  {tool}
+                </span>
               ))}
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        ))}
+      </div>
     </div>
   );
 }
